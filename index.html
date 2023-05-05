@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.18">
-<title>Purpose</title>
+<meta name="author" content="Norwegian Digitalisation Agency (Digdir)">
+<title>showrooms</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -435,25 +436,102 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Generate a nice TOC -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
+<!-- We do not need the tocify CSS because the asciidoc CSS already provides most of what we neeed -->
+
+<style>
+.tocify-header {
+    font-style: italic;
+}
+
+.tocify-subheader {
+    font-style: normal;
+    font-size: 90%;
+}
+
+.tocify ul {
+    margin: 0;
+ }
+
+.tocify-focus {
+    color: #7a2518;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tocify-focus > a {
+    color: #7a2518;
+}
+</style>
+
+<script type="text/javascript">
+    $(function () {
+        // Add a new container for the tocify toc into the existing toc so we can re-use its
+        // styling
+        $("#toc").append("<div id='generated-toc'></div>");
+        $("#generated-toc").tocify({
+            extendPage: true,
+            context: "#content",
+            highlightOnScroll: true,
+            hideEffect: "slideUp",
+            // Use the IDs that asciidoc already provides so that TOC links and intra-document
+            // links are the same. Anything else might confuse users when they create bookmarks.
+            hashGenerator: function(text, element) {
+                return $(element).attr("id");
+            },
+            // Smooth scrolling doesn't work properly if we use the asciidoc IDs
+            smoothScroll: false,
+            // Set to 'none' to use the tocify classes
+            theme: "none",
+            // Handle book (may contain h1) and article (only h2 deeper)
+            selectors: $( "#content" ).has( "h1" ).size() > 0 ? "h1,h2,h3,h4,h5" : "h2,h3,h4,h5",
+            ignoreSelector: ".discrete"
+        });
+
+        // Switch between static asciidoc toc and dynamic tocify toc based on browser size
+        // This is set to match the media selectors in the asciidoc CSS
+        // Without this, we keep the dynamic toc even if it is moved from the side to preamble
+        // position which will cause odd scrolling behavior
+        var handleTocOnResize = function() {
+            if ($(document).width() < 768) {
+                $("#generated-toc").hide();
+                $(".sectlevel0").show();
+                $(".sectlevel1").show();
+            }
+            else {
+                $("#generated-toc").show();
+                $(".sectlevel0").hide();
+                $(".sectlevel1").hide();
+            }
+        }
+
+        $(window).resize(handleTocOnResize);
+        handleTocOnResize();
+    });
+</script>
 </head>
-<body class="article">
+<body id="demo-classification" class="book toc2 toc-left">
 <div id="header">
+<h1><span class="image"><img src="images/Digdir.png" alt="Digdir" width="200" height="200"></span> showrooms</h1>
+<div class="details">
+<span id="author" class="author">Norwegian Digitalisation Agency (Digdir)</span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Jim's showrooms</div>
+<ul class="sectlevel1">
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#overview">Overview and cross-references between the showrooms</a></li>
+<li><a href="#about-demo-portal">Making the resources findable via a data portal</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
 </div>
 <div id="content">
-<div class="paragraph">
-<p>Unresolved directive in main.adoc - include::../locale/attributes.adoc[]
-= <span class="image"><img src="images/Digdir.png" alt="Digdir" width="200" height="200"></span> showrooms <a id="demo-classification"></a>
-Norwegian Digitalisation Agency (Digdir)
-:doctype: book
-:docinfo: shared
-:icons: font
-:toc: left
-:toc-title: Jim&#8217;s showrooms
-:toclevels: 4
-:sectanchors:
-:table-stripes: even
-:xrefstyle: short</p>
-</div>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong>Welcome</strong> to the showrooms of the <a href="https://digdir.no" class="ext-link" target="_blank" rel="noopener">Norwegian Digitalisation Agency ↗</a>, with RDF-based machine-readable demo resources!</p>
 </div>
@@ -463,8 +541,10 @@ Norwegian Digitalisation Agency (Digdir)
 <div class="paragraph">
 <p><strong><em>Disclaimer</em></strong>: <em>The demo resources made available from the various showrooms are meant for demo purposes only.</em></p>
 </div>
+</div>
+</div>
 <div class="sect1">
-<h2 id="purpose">Purpose</h2>
+<h2 id="purpose"><a class="anchor" href="#purpose"></a>Purpose</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The <strong>main purpose</strong> of the showrooms is to</p>
@@ -485,7 +565,7 @@ Norwegian Digitalisation Agency (Digdir)
 </div>
 </div>
 <div class="sect1">
-<h2 id="overview">Overview and cross-references between the showrooms</h2>
+<h2 id="overview"><a class="anchor" href="#overview"></a>Overview and cross-references between the showrooms</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>We have currently following showrooms:</p>
@@ -516,7 +596,7 @@ Norwegian Digitalisation Agency (Digdir)
 </ul>
 </div>
 <div class="paragraph">
-<p><a href="#img-overiew">Overview and cross-references between the resource types that are demonstrated in the showrooms.</a> illustrates some of the cross-references between the resource types that are demonstrated in the various showrooms. The cross-references will be explained in the respective showrooms.</p>
+<p><a href="#img-overiew">Figure 1</a> illustrates some of the cross-references between the resource types that are demonstrated in the various showrooms. The cross-references will be explained in the respective showrooms.</p>
 </div>
 <div id="img-overiew" class="imageblock">
 <div class="content">
@@ -527,7 +607,7 @@ Norwegian Digitalisation Agency (Digdir)
 </div>
 </div>
 <div class="sect1">
-<h2 id="about-demo-portal">Making the resources findable via a data portal</h2>
+<h2 id="about-demo-portal"><a class="anchor" href="#about-demo-portal"></a>Making the resources findable via a data portal</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The Norwegian national specifications demonstrated in the various showrooms here, are also specifications for how to make the resource descriptions (metadata) available in a data portal, and in particular, <a href="https://data.norge.no/" class="ext-link" target="_blank" rel="noopener">the National Data Catalog of Norway ↗</a> maintained by the Norwegian Digitalisation Agency. The resources will thus be findable via the National Data Catalog.</p>
@@ -546,7 +626,7 @@ Norwegian Digitalisation Agency (Digdir)
 </ol>
 </div>
 <div class="paragraph">
-<p>This is illustrated in <a href="#img-registering-n-harvesting">Making your resources available and findable through the National Data Catalog.</a>, which also shows the usage of the national specifications in the data portal.</p>
+<p>This is illustrated in <a href="#img-registering-n-harvesting">Figure 2</a>, which also shows the usage of the national specifications in the data portal.</p>
 </div>
 <div id="img-registering-n-harvesting" class="imageblock">
 <div class="content">
@@ -582,7 +662,7 @@ Norwegian Digitalisation Agency (Digdir)
 </div>
 </div>
 <div class="sect1">
-<h2 id="references">References</h2>
+<h2 id="references"><a class="anchor" href="#references"></a>References</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Some of the RDF-based Norwegian national specifications for data sharing and reuse:</p>
@@ -674,7 +754,7 @@ Norwegian Digitalisation Agency (Digdir)
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-05 10:48:25 UTC
+Last updated 2023-05-05 10:53:38 UTC
 </div>
 </div>
 </body>
