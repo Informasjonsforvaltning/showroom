@@ -3,7 +3,7 @@ name: Build adocs and deploy skos-ap-no to Github Pages
 on:
   push:
     branches:
-      - main
+      - develop
     paths:
       - skos-ap-no/**
   workflow_dispatch:

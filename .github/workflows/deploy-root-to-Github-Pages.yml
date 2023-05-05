@@ -3,7 +3,7 @@ name: Build adocs and deploy root to Github Pages
 on:
   push:
     branches:
-      - main
+      - develop
     paths:
       - docs/**
   workflow_dispatch:

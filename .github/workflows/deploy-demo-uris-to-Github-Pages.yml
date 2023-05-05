@@ -3,7 +3,7 @@ name: Build adocs and deploy demo-uris to Github Pages
 on:
   push:
     branches:
-    - main
+    - develop
     paths:
     - demo-uris/**
   workflow_dispatch:
