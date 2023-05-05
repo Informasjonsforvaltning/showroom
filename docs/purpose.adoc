@@ -1,0 +1,8 @@
+== Purpose [[purpose]]
+
+
+The *main purpose* of the showrooms is to
+
+* demonstrate how to use the various RDF-based Norwegian national specifications to make available  machine-readable resources in accordance with the specifications; 
+* demonstrate how to cross-reference/link between the resources across the specifications;
+* provide machine-readable RDF-based resources, for testing and demonstration purposes. 
