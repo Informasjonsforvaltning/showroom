@@ -30,6 +30,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
-        publish_dir: cpsv-ap-no
+        publish_dir: ./cpsv-ap-no
         destination_dir: cpsv-ap-no
         keep_files: true
