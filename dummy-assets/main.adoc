@@ -1,0 +1,90 @@
+include::../locale/attributes.adoc[]
+= image:../images/Digdir.png[Digdir,200,200] showroom with dummy assets
+Norwegian Digitalisation Agency (Digdir)
+:doctype: book
+:docinfo: shared
+:docinfodir: ../docs
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toc-title: Content
+:toclevels: 4
+// :sectlinks:
+:sectanchors:
+:table-stripes: even
+:xrefstyle: short
+
+Welcome to the showroom with some basic/generic dummy assets! 
+
+image:../images/work-in-progress.png[WIP,72,72] _This showroom is under construction and will be "continuously" renewed._ 
+
+== Purpose [[purpose]]
+
+This showroom is meant to 
+
+* provide dummy assets as machine-readable RDF Turtle resources, to be referred to in e.g. examples/tests.
+
+== Why dummy assets? [[why]]
+
+When testing or demonstrating your implementation of a given specification, you may often need to refer to instances of specific classes. You may of course use `\https://example.org/nonExisting`, however, such a reference will usually cause validation errors because the instance your refer to doesn't exist. 
+
+We provide therefore in this showroom a number of generic dummy assets which you can refer to in e.g. your test implementations. "Dummy" because We have filled the assets with dummy data, such that they _hopefully_ will validate correctly, though only in accordance with the Norwegian national specifications that are demonstrated in the other showrooms here. "Generic" because the assets will not contain value for optional properties that are only specific for a particular specification. 
+
+== Demo resources in this showroom [[demo-resources]]
+
+There are mainly the following types of dummy-assets provided here in this showroom:
+
+* *Agents*, Organizations, Public Organizations etc.: In link:files/dummy-agents-en[this collection of dummy assets] (in link:files/dummy-agents.ttl[RDF Turtle]) we have dummy instances of the following classes: 
+** Agent, `foaf:Agent`
+** Organization, `org:Organization`
+** Public organization, `cp:PublicOrganization` 
+
+
+* *Contact points*: In link:files/dummy-contact-points-en[this collection of dummy assets] (in link:files/dummy-contact-points.ttl[RDF Turtle]) we have dummy instances of the following classes:
+** Organization, `vcard:Organization`
+** #(_to come_)# Group, `vcard:Group`
+** #(_to come_)# Contact point, `cv:ContactPoint` 
+
+
+* *Datasets*, Distributions, Data services, etc.: In link:files/dummy-datasets-en[this collection of dummy assets] (in link:files/dummy-datasets.ttl[RDF Turtle]) we have dummy instances of the following classes:
+** Dataset, `dcat:Dataset`
+** Distribution, `dcat:Distribution`
+** Data service, `dcat:DataService`
+
+* *Documents*, Standards, etc.: In link:files/dummy-documents-en[this collection of dummy assets] (in link:files/dummy-documents.ttl[RDF Turtle]) we have dummy instances of the following classes:
+** Document, `foaf:Document` 
+** #(_to come_)# Standard, `dct:Standard`
+
+
+* *Events* etc.: In link:files/dummy-events-en[this collection of dummy assets] (in link:files/dummy-events.ttl[RDF Turtle]) we have dummy instances of the following classes:
+** Event, `cv:Event`
+** Life event, `cv:LifeEvent`
+** Business event, `cv:BusinessEvent`
+
+* *Evidences* etc.: In link:files/dummy-evidences-en[this collection of dummy assets] (in link:files/dummy-evidences.ttl[RDF Turtle]) we have dummy instances of the following classes:
+** Evidence, `cv:Evidence`
+** Evidence type, `cv:EvidenceType`
+Evidence type list, `cv:EvidenceTypeList`
+
+
+* *Locations/addresses* etc.: In link:files/dummy-locations-en[this collection of dummy assets] (in link:files/dummy-locations.ttl[RDF Turtle]) we have dummy instances of the following classes:
+** Location, `dct:Location`
+** Address, `locn:Address`
+
+* *Services*, Public Services etc.: In link:files/dummy-services-en[this collection of dummy assets] (in link:files/dummy-services.ttl[RDF Turtle]) we have dummy instances of the following classes:
+** Service, `cpsvno:Service`
+** Public service, `cpsv:PublicService`
+** (Service) Output, `cv:Output`
+** (Service) Channel, `cv:Channel`
+
+* *Time* periods, time entities etc.: In link:files/dummy-times-en[this collection of dummy assets] (in link:files/dummy-times.ttl[RDF Turtle]) we have dummy instances of the following classes:
+** Period of time, `dct:PeriodOfTime`
+** Proper interval, `time:ProperInterval`
+** Temporal entity, `time:TemporalEntity`
+** Time instant, `time:Instant`
+** Date time description, `time:DateTimeDescription`
+
+
+== _to the overview of the showrooms_ [[to-overview]]
+
+link:../#overview[Click here for the overview of all the showrooms]
