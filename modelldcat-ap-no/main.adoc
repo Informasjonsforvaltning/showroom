@@ -14,7 +14,7 @@ ifdef::backend-pdf[:toc: macro]
 :table-stripes: even
 :xrefstyle: short
 
-Welcome to the showroom with demo information models, demonstrating the usage of ModellDCAT-AP-NO! 
+Welcome to the showroom with demo information models, demonstrating the usage of ModellDCAT-AP-NO!
 
 _https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO ↗, window="_blank", role="ext-link"] (in Norwegian only) is the Norwegian application profile of https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO ↗, window="_blank", role="ext-link"], for describing information models and catalogs of information models._
 
