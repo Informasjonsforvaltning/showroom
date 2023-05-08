@@ -15,7 +15,7 @@ ifdef::backend-pdf[:toc: macro]
 :xrefstyle: short
 
 
-Welcome to the showroom with demo classifications, demonstrating the usage of XKOS-AP-NO! 
+Welcome to the showroom with demo classifications, demonstrating the usage of XKOS-AP-NO!
 
 _https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO ↗, window="_blank", role="ext-link"] is the Norwegian application profile of https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS ↗, window="_blank", role="ext-link"], for describing and publishing classifications, controlled vocabularies, code lists etc._ 
 
