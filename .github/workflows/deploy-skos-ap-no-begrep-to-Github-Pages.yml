@@ -31,5 +31,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: skos-ap-no
-        destination_dir: ./skos-ap-no
+        destination_dir: skos-ap-no
         keep_files: true

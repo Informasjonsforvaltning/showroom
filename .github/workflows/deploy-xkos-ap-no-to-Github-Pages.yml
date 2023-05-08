@@ -31,5 +31,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: xkos-ap-no
-        destination_dir: ./xkos-ap-no
+        destination_dir: xkos-ap-no
         keep_files: true

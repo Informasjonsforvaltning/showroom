@@ -31,5 +31,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: modelldcat-ap-no
-        destination_dir: ./modelldcat-ap-no
+        destination_dir: modelldcat-ap-no
         keep_files: true

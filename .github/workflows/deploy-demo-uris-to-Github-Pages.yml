@@ -31,5 +31,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: demo-uris
-        destination_dir: ./demo-uris
+        destination_dir: demo-uris
         keep_files: true
