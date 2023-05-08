@@ -3,9 +3,9 @@ name: Build adocs and deploy dummy-assets to Github Pages
 on:
   push:
     branches:
-    - develop
+      - develop
     paths:
-    - dummy-assets/**
+      - dummy-assets/**
   workflow_dispatch:
 
 jobs:

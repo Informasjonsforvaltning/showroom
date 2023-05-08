@@ -3,9 +3,9 @@ name: Build adocs and deploy modelldcat-ap-no to Github Pages
 on:
   push:
     branches:
-    - develop
+      - develop
     paths:
-    - modelldcat-ap-no/**
+      - modelldcat-ap-no/**
   workflow_dispatch:
 
 jobs:

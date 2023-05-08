@@ -3,9 +3,9 @@ name: Build adocs and deploy dcat-ap-no to Github Pages
 on:
   push:
     branches:
-    - develop
+      - develop
     paths:
-    - dcat-ap-no/**
+      - dcat-ap-no/**
   workflow_dispatch:
 
 jobs:

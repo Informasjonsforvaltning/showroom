@@ -3,9 +3,9 @@ name: Build adocs and deploy cpsv-ap-no to Github Pages
 on:
   push:
     branches:
-    - develop
+      - develop
     paths:
-    - cpsv-ap-no/**
+      - cpsv-ap-no/**
   workflow_dispatch:
 
 jobs:
