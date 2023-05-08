@@ -22,7 +22,7 @@ image:../images/work-in-progress.png[WIP,72,72] _This showroom is under construc
 
 This showroom is meant to 
 
-* provide dummy assets as machine-readable RDF Turtle resources, to be referred to in e.g. examples/tests. 
+* provide dummy assets as machine-readable RDF Turtle resources, to be referred to in e.g. examples/tests.
 
 == Why dummy assets? [[why]]
 
