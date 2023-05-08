@@ -6,7 +6,7 @@ Norwegian Digitalisation Agency (Digdir)
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
-:toc-title: Jim's showrooms
+:toc-title: Digdir showrooms
 :toclevels: 4
 // :sectlinks:
 :sectanchors:
