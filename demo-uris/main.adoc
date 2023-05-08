@@ -15,7 +15,7 @@ ifdef::backend-pdf[:toc: macro]
 :xrefstyle: short
 
 
-Welcome to the showroom with permanent/persistent and dereferenced demo URIs, demonstrating a possible implementation of the Norwegian URI-standard! 
+Welcome to the showroom with permanent/persistent and dereferenced demo URIs, demonstrating a possible implementation of the Norwegian URI-standard!
 
 _https://www.digdir.no/standarder/peikarar-til-offentlege-ressursar-pa-nett/1492[The Norwegian URI-standard ↗, window="_blank", role="ext-link"] (in Norwegian only) is based on EU's https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs ↗, window="_blank", role="ext-link"]._ 
 
