@@ -7,7 +7,7 @@ Norwegian Digitalisation Agency (Digdir)
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
-:toc-title: Content
+:toc-title: Dummy assets
 :toclevels: 4
 // :sectlinks:
 :sectanchors:
