@@ -32,8 +32,8 @@ jobs:
           host: "https://data.norge.no"
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
           files: |
-              docs/index.html text/html en
-              docs/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
-              docs/images/Digdir.png image/png en images/Digdir.png
-              docs/images/registering-n-harvesting.png image/png en images/registering-n-harvesting.png
-              docs/images/work-in-progress.png image/png en images/work-in-progress.png
+            docs/index.html text/html en
+            docs/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
+            docs/images/Digdir.png image/png en images/Digdir.png
+            docs/images/registering-n-harvesting.png image/png en images/registering-n-harvesting.png
+            docs/images/work-in-progress.png image/png en images/work-in-progress.png
