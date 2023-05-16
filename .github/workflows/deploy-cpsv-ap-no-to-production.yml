@@ -34,5 +34,5 @@ jobs:
           files: |
             cpsv-ap-no/index.html text/html en
             cpsv-ap-no/files/demo-services-events.ttl text/turtle en
-            cpsv-ap-no/files/ddemo-services-events-en.html text/html en
-            cpsv-ap-no/files/ddemo-services-events-nb.html text/html nb
+            cpsv-ap-no/files/demo-services-events-en.html text/html en
+            cpsv-ap-no/files/demo-services-events-nb.html text/html nb
