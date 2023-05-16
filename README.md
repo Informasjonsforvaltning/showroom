@@ -1,5 +1,9 @@
 # showroom
 
-Showroom, mainly for demonstrating the usage of various Norwegian standards/specifications for data sharing and reuse 
+Digdir's showroom, mainly for demonstrating the usage of various Norwegian standards/specifications for data sharing and reuse. 
 
-\ [_Digitaliseringsdirektoratet / Norwegian Digitalisation Agency_](https://digdir.no)
+**Latest editor's draft**: https://informasjonsforvaltning.github.io/showroom/
+
+**Latest published version**: (coming) data.norge.no/showroom 
+
+\ [_Digdir - Digitaliseringsdirektoratet / Norwegian Digitalisation Agency_](https://digdir.no)
