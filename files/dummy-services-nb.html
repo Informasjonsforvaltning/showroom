@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
-<meta name="author" content="Norwegian Digitalisation Agency (Digdir)">
-<title>showroom with dummy assets</title>
+<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="author" content="HTML-visning av RDF Turtle ressurs">
+<title>w3id.org/demo-resources/dummy-services</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -209,10 +209,13 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -391,7 +394,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -434,95 +437,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Generate a nice TOC -->
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
-<!-- We do not need the tocify CSS because the asciidoc CSS already provides most of what we neeed -->
-
-<style>
-.tocify-header {
-    font-style: italic;
-}
-
-.tocify-subheader {
-    font-style: normal;
-    font-size: 90%;
-}
-
-.tocify ul {
-    margin: 0;
- }
-
-.tocify-focus {
-    color: #7a2518;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.tocify-focus > a {
-    color: #7a2518;
-}
-</style>
-
-<script type="text/javascript">
-    $(function () {
-        // Add a new container for the tocify toc into the existing toc so we can re-use its
-        // styling
-        $("#toc").append("<div id='generated-toc'></div>");
-        $("#generated-toc").tocify({
-            extendPage: true,
-            context: "#content",
-            highlightOnScroll: true,
-            hideEffect: "slideUp",
-            // Use the IDs that asciidoc already provides so that TOC links and intra-document
-            // links are the same. Anything else might confuse users when they create bookmarks.
-            hashGenerator: function(text, element) {
-                return $(element).attr("id");
-            },
-            // Smooth scrolling doesn't work properly if we use the asciidoc IDs
-            smoothScroll: false,
-            // Set to 'none' to use the tocify classes
-            theme: "none",
-            // Handle book (may contain h1) and article (only h2 deeper)
-            selectors: $( "#content" ).has( "h1" ).size() > 0 ? "h1,h2,h3,h4,h5" : "h2,h3,h4,h5",
-            ignoreSelector: ".discrete"
-        });
-
-        // Switch between static asciidoc toc and dynamic tocify toc based on browser size
-        // This is set to match the media selectors in the asciidoc CSS
-        // Without this, we keep the dynamic toc even if it is moved from the side to preamble
-        // position which will cause odd scrolling behavior
-        var handleTocOnResize = function() {
-            if ($(document).width() < 768) {
-                $("#generated-toc").hide();
-                $(".sectlevel0").show();
-                $(".sectlevel1").show();
-            }
-            else {
-                $("#generated-toc").show();
-                $(".sectlevel0").hide();
-                $(".sectlevel1").hide();
-            }
-        }
-
-        $(window).resize(handleTocOnResize);
-        handleTocOnResize();
-    });
-</script>
 </head>
-<body class="book toc2 toc-left">
+<body class="article toc2 toc-left">
 <div id="header">
-<h1><span class="image"><img src="../images/Digdir.png" alt="Digdir" width="200" height="200"></span> showroom with dummy assets</h1>
+<h1>w3id.org/demo-resources/dummy-services</h1>
 <div class="details">
-<span id="author" class="author">Norwegian Digitalisation Agency (Digdir)</span><br>
+<span id="author" class="author">HTML-visning av RDF Turtle ressurs</span><br>
 </div>
 <div id="toc" class="toc2">
-<div id="toctitle">Dummy assets</div>
+<div id="toctitle">Innhold</div>
 <ul class="sectlevel1">
-<li><a href="#purpose">Purpose</a></li>
-<li><a href="#why">Why dummy assets?</a></li>
-<li><a href="#demo-resources">Demo resources in this showroom</a></li>
-<li><a href="#to-overview"><em>to the overview of the showrooms</em></a></li>
+<li><a href="#dmySrvc1">&lt;https://w3id.org/demo-resources/dummy-services#dmySrvc1&gt;</a></li>
+<li><a href="#dmyPublSrvc1">&lt;https://w3id.org/demo-resources/dummy-services#dmyPublSrvc1&gt;</a></li>
+<li><a href="#dmyOutput1">&lt;https://w3id.org/demo-resources/dummy-services#dmyOutput1&gt;</a></li>
+<li><a href="#dmySrvcChannel1">&lt;https://w3id.org/demo-resources/dummy-services#dmySrvcChannel1&gt;</a></li>
+<li><a href="#Namespace">Navnerom</a></li>
 </ul>
 </div>
 </div>
@@ -530,208 +459,317 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Welcome to the showroom with some basic/generic dummy assets!</p>
+<p><span class="image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAc0AAACcCAYAAAAd4PD7AAAACXBIWXMAACxKAAAsSgF3enRNAAAScklEQVR42u2dTXIaSbeG3+7oORowL+4cQtwFVIhegekVCK/A9AqMV2C8AqMVGK3AKGoBhoD5R80ZwAp8B3X4mta1pCzqN6ueJ4LojrD4yaysfOrkz8nffv78KQAAAHib36kCAAAApAkAAIA0AQAAkCYAAADSBAAAQJoAAABIEwAAAJAmAAAA0gQAAECaAAAASBMAAABpAgAAIE0AAACkCQAAAEgTAAAAaQIAACBNAAAApAkAAIA0AQAAkCYAAAAgTQAAAKQJAACANAEAAJAmAAAA0gQAAECaAAAASBMAAAB+xR9VfGnUHQwljRtYn/vzKzxs9zQvAIBm8dvPnz/LFuaNiaXTgvp9srKuJK0QKQAA0kwrzZGk7y2t79gEugwP2yXNDwAAaSJNN06SlpIW4WG7ojoAAOoPC4GqoyPpXtL3qDvYR93BhCoBACDSJNJMF33OJc3Dw/ZIdQAAEGnC69HnR0lEngAASBNSyPNr1B2sLTIHAACkCW9wq2TOc25bdQAAAGnCG3yQtLakEAAAgDThDQJJP6LuYEpVAAAgTXDjc9QdLBiuBQBAmuDGvaQV4gQAQJrgxq2Y5wQAKJU/qAKvCSziHIWH7brRBe2HQ0llRtbHeBeta14nI9e/jXfRitvFi3bek9R748/W8S460maqgYxAL7ORtNY/p5TopRyxNkx67tSHkkb237JOcjlJaqw4TZg/Km4LR2sHa0mrazutHOtkKulzirf8SSfoRVs/OvQbj/EuGtNmiDSr5pxAfaXkFBLnTtH+9ty4lhcyPQt0omQ4tSg6FnH2Gpp+r+q52/O1u7vogDaSFpKW8S7at7BOoLh7uahrT5tBmrnwdO788haORX5rSfOoO+hJmppAOwXdbOehWvLWliPSz5I+B/3wUdKcp3KA5tPmhUBPkv4MD9tReNguihZNeNjuw8N2qmS+4r2SszWL6MgXNOvSeSfpe9APV2nmjAAAafrA5kKWpUcG4WF7DA/bhZI5z09KhoVz7cCj7mBG066EO5PnPOiHDIUBIE2vOUn6Ozxsh3U49NnkOTN5Pub88R9J9F4pHyStbAETACBNL6PLYXjYzuv2w2zYdqxkyDbPqHNJ8oNKuTVxjqkKAKTpEw8WXe7r/CNtyHZkgs+DjpjfrJqOpG9BP5xQFQDNoOmrZ9+bjLwgPGzP52cudbG9IQPvou5gHB62y5a055OkvEYTLvfdZl3t/DXoh4p3EQ8xAEgTYeYszqOkUdQdLJTkmM3KPOoOVi3ZhrKOd9Es7w+1LC0jJduFrn2YmQf9cF33LEMA8DpNHZ71UpjP5DmR9JBHn69kfyhcSbyL9vEuWsS7aCTpf668Lh1JS1bVAhBpIswCxWmLed5l/Khp1B0s6j6v64tAJU2CfjhXMmecJtNTYO/JY3FQ2jZOhAtz2gzSfM7fTRHmBRMlKfqypOHrSJrZZ0E+8lxLGpo8P6R467ugH47jXbTM+P17u6YArm3mSJvJTpOGZx/quKUkh2jzaJFJ1u0o95bKD/LtiKZKtgulihIZpgVAmpX2XWrwvJ0Nq+YRJTK3WYw4FynF2eFaACDNKpk0fXWobRv5krWeSHhQqDjTXJ8p0SYA0qyCL3VIi1cSM2VL9N5RPotQ4NfinMo9OQXRJgDSLJ2TWjSxbdF01vLSURfLmGsB0Fx8Xz07bdvZkeFhu4i6g4mu32R/a4dV72n+hUSb+6AffpL00SXaDPrhpKmZgmz4+Zy0vmcv6Z8D29e2orMpZTxnkWpUGSuu33Odjl74k2XZCUN8lmbcwO0lrswkfc8YDc25JQtjblFkx/FaXNWOrcN+K1o9xruolGttmZPG1sGNXin/x4v3bEwwC5fOzxLgv3Z6zDrrdh7HMp5/h0sZYyvjssjfVoc2k8f1MVFOrY7fuodGrwgVaf5CHK0kPGxXUXew0fV7NydIs9Bo82j7N12izXdBP7y5MhqZunyHpe9bFdgRT3R9isFbe30wuSwkzV+pj28On/lbQWWcXnnPBUpSYt47lrFIim4zU4d28NsrDyQL5ZN3uzB8ndM8KUlq3vZo5lpu2bNZq+vj5eKsoB+Ogn64l/Q1p44usA59H/TD2fPVxUE/HFVQxslFGW9zLmMr57R/dc5s0A9nkv5Td2H6LM1F2+YyfxFtLpQt4cFIUGi0KfcctV5JM+iHN0E/XCqZIggK+IrOhVjGVbTZoB/2gn64MlkWVcbPQT/cV/EwUDGjZ21pJbdRGaSZRZp0y1LGaBtp1uf6eHMtLEpYK3s+ZFexfAv64aLMejKJrUuKegJJ31sWdY4u2tLKh+jSd2nG4WFLIuHs0hxSfYVHm67Xp2PzOT4Ic1VQ5PUa9zZEeldCGScWQXdKLuNni7jawNDqeaV8hryRZoGiaBSWJejaIdpbarAUnprwEHMhzE5VP6EkYX6tsJrvWnJPBFbPHR9/vI/SbMvTWOH1EXUHI6qvNtenttKsgTDLKiMryuFNfNxygjT/TZb5pR7VV0p7dVnkUEtp2grWRQZhnqwO1pKO9t9zQoDzpvXbGpQxy0PBeR/mvq5l9JTzHt7jK/3+Hmm+0Tjbvmo2Q6eMNKvB9aaua/L22ZUd/oOShAUvdXbLZ9KaKNnjF1RQxmsfCh6U7LdcO5Sxd1HGDrfFqw9Zc2s7+zr+QN+kuadN/TLSvBakWfRTXpJWz+VPazefZUOWH1K+bSNpkia1mW3Pmdsq2dkV35mljGOlH6l5sjLu07QDSTNLelFqGT2LLMd1laWv0mTV7DPCw/YYdQdIs948yc9FHmnn+B7iXTTJ8IBxVHJk2lrlLchJW8ZP8S6aeVZGH8jUdsrEt4VADM2+3CkD5BmBjVKKPrdO74pDva8t40TphoPfZxFmFWX0hEdfhOmjNPe0L2i4qOpCms32uXd6JpVPNSrjQ96n0VxxcHkTiZXM9XoD0mw3d1RBKaw8k3dP7vN8p6I6PYvqNgWVcSj3BU6bAiOhmbIdLO87E9+OTvtdAAD/JtVB2gV3ekWll5vU4Df8d46zpe3sscjTd5AmANRNmpuiD9C2TvWpwjI+Fd2xW7rFNkabXiaTQJoA8BzXYfuyOr1cv8eGn10XAM1KKuOsZW1s42OU6aM0STKeL6y6hedCGTn+6anoKPNZJHbK8SNdyxiX2LG3Laf2ytcf7ps0bwTgHz61W9cH07I7vTy/r1c3kdnc5qZF94S3DwlIsxmwCrYZIqrDKkJXofgszVELylh3vE1Uw/Cs50TdQZYHiT01WB/SpJ6rwT1W9m/N8/tc75mVx2Wse1v3NlEN0mxPFIM06x+9+dTplS2UPNvqrWMZjx6XEZCmJKkTdQc9LhvS9AyXlZpxA9pTkZIuu61WsUiO+xFpFsKIy5ZbfXCTFm3LJPOMT9fC5diqDVe2EQ8GgDSRZhrCw3ZF9dUmcvOpw+TgBECaHjHmsiVE3cFQ1x9oS7SANAGgBdLsRN0B4kyYZHgvZ5PWayTAp6ifrV+ANIk2WyfNFdVXLJauzfUkjbo8xLgsSLrl6hbSXngYQZrFSTPj/kTvibqDia4fmpXal7arzg93mxrtW9sjFEnVJAxhSx3SLIyO2nucTh5R5iY8bFnMUTyubdS7qL+CA7PzFMrGsYxli5pIE2kW2yG1NdqMuoNRxifhBU2/FKm4nqRRp6jfVeBlR0V5fp/rA6PPDwaANIk2L5hlfD9Ds/W5RqeaHZG0r6lQ8vy+VQvKCEiTaNOizHHGKHMTHrZ7mn6hUWaaa1S3qN91QZLPQnFt/+MS28yNOHgBaZYUbc7bcrHsASFreec0+8I7v4Wv18OSxrucXdkJ+uGkxIeQTo4f6RppBiXO3bIjAGmWxr3N8bWBmdznyX7FSQzNFs0iRQf/VNPUacsU7bEMcp2GsTqPm1xGQJpvdlRNH6a1B4MPWaNMVs0WGhHNJb1L+RBUR1ylGRQdbVqkd1dhGe+Kjjbt89n7ijTL7a/U4BWhdrJLHhHigiZfWMc3TflQ81SzBUCXkdhSbkO0kjQveGtGUQ8Wae6FoofQuS+RZiW8i7qDxs3XWQS9VPY5nQcWABUmzIWkzynfVvfhONd7qVNUpx/0w1lBUeZ57tZ1iPbWrnFRoxMBdxHSrIoPlimnSSyUfejmJOZMiujwhkE/XEu6T/nWT9Zp173dOT+w5i0VG/b9WHAZ00Sx93kPRdvnfeBOQppV87Up4oy6g4XSzZG9GDUwl5lrZ9czSfy44oFmE++iWd3LaItlPqWUyiKn+p1I+lpCGRdKd/j3V4t+vSkj5M8fDS3X16g7UHjYLnwtgAnzPo++QWwzyaOTu1GyLWCc4UHmJL+2FsyVpGt0HT68t0O3J9dE0lbHs5Kjr6mkbyn+/qMt3Jlcs/LZyjjP6d4GpJm7OG/Cw9YrYVzMYeY1lzNtUZTZy3Gl41BJLtCe/X8eqxtHNd1i8lIkdrQFTmmkcivpR9APHyTNXeRpIpmYwIKSy7gM+uFjygehO0n/SVnG3kUZOwKkWVM+20HNXojDfutC+S0/fwwP2zbtywwkfa/pb3vvwTzmS1L5ckX0d2+RZ6wkmcD+4iX9k+FnpOoz4Uzsd3VyKONa/+S2HdmD10hsKUGaHnEvaRh1B5PwsK1tp2XzsPMcn0JPynYSCuR4HWwbh5fEu2hqw67XyC1QzYciLaIeKZmjVhPLCPnxe0vKeSvpR9QdzGooy17UHSyVLArIc9hmzOKf6vtjJUOyTYj2x3I8UsvTB4O1pPc0WUCa/+Zj1B3sLel5HYQ5UzKc8y7nj/4UHrYrmnelPEoa+jgk+1I0pmSYcVNhfRZdxkXF4jxx2yDNOhJI+hZ1B6uqctZG3cEk6g72Svah5b0o4DE8bGc07Uqjyz/jXTQ20TQpGjvGu2go6aHkr36Id9G4pDIuJP1VgcD+jnfRjdJtgQGkWSp3kr5b5Fn4EWM2DDuPuoOjkqHYIlYJbsQ8ZlVslCz26dU1PV6OYplYRFa0WE6S/rLvK7N8SyUrpsuIqs8PWedV/itupXrzB1WgQEkKtM9Rd/CoZLvHKo+Uc7YadmQiK3r13EbSiHnMUjmfGjNvyjBsmogs6IcrJfsqi1gE80XS7Ipo/ZRT+faShrblZqb8R4ROVr7nW+JWYlER0vSId/ZS1B3ESuYb1xdPf+tfSckSql++RvakWtZ+rJOkCcIsJSo4t4dV20T5glgmliUnD3meH0JmGfazrnMu49wyHU2Uzz7SjT1kLV74dyJNpOl1BBqYRD9eCLKO0c6ozttpcui4VkE//FvJnrcyOXdgx5oK0jVxx7rg63OW51TJKtuRvQLH9rsyWS7rOA9sv2mu5ESX4UUZXbfgbKyMi7faUbyL9kE//Mseul9iWeM2M3cQv9d91W8/f/4s9Qtt8c13QR5slGwt2VMVULunziTTz7nzH1380/78co0oTVYu+yif4l00KrGMPSWjSzfPRHcu47ppC8KINMFnYTKHCXUeITheRB2rjB83rENU/UKUvc8hAgRP+J0q8JIHhAktwzV63FNVQKQJl/ztWxJ6gCxcnDBTu0gTkCbUl1jJ/CWdApQlKpeDy+clzNk5nwzS9D2ygDTBjS+SZgzHQolMdbFq/BV6KjChRgp5SyWk2gNgTrPebCT9b3jYThEmlIxrxHY+eLooFnLf77zgsgHSbCexpPfhYTtkOBYqIk27WxUhzqAfTuR+mEHckNNkAGnCFbLshYctT81QXUNM5ildhzs7Js5RjsKcKsnR7MqMqwZlwJxmPdhImiNKqBnzFJFeR9L3oB9+UobFQZYsIM33nqNM7h0oBTICVcd/k30zBAt1xZKy313RthdySBt38T1jJdtKrslf+yerZoFIs5nE+ucUFeZfwAcmSuY30xw+0JH0QdKHoB+e7P17/f/EAz173WX4fZ8QJjQ90ryxm6fTgvp90sVJKeSIBU+jzbGkbzX8aY9lHU4NUJk0TZznkwKaxlrSUS8cIQbgsTgnSrcwp2g2kkYkQ4dWSBMAvI04F6p+lOhR0gRhAtIEgLqLc2jivK3oJ3yJd9GUKwFIEwB8kudMKXLC5kBs0eWK2gekCQA+ivNGyZ7KcYHyPNl3zBmOBaQJAE2R59giz7yGbWOT5QJZAtIEgCYLdGSvob1cotBYtjVL0so1KQIA0gSAJsq0pySRwXOOCBKQJgAAQAPhlBMAAACkCQAAgDQBAACQJgAAANIEAABAmgAAAEgTAAAAkCYAAADSBAAAQJoAAABIEwAAAGkCAAAgTQAAAKQJAAAASBMAAABpAgAAIE0AAACkCQAAgDQBAACQJgAAACT8H8jlwfBxeY8xAAAAAElFTkSuQmCC" alt="Digdir" width="100" height="100"></span> Digitaliseringsdirektoratet</p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="../images/work-in-progress.png" alt="WIP" width="72" height="72"></span> <em>This showroom is under construction and will be "continuously" renewed.</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="purpose"><a class="anchor" href="#purpose"></a>Purpose</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This showroom is meant to</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>provide dummy assets as machine-readable RDF Turtle resources, to be referred to in e.g. examples/tests.</p>
-</li>
-</ul>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Merk"></i>
+</td>
+<td class="content">
+<strong>Innmelding av feil og mangler:</strong><br>
+Dersom du finner feil eller mangler, ber vi om at dette meldes inn på <a href="https://github.com/jimjyang/showroom/issues">Github Issues</a>. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="why"><a class="anchor" href="#why"></a>Why dummy assets?</h2>
+<h2 id="dmySrvc1"><a class="anchor" href="#dmySrvc1"></a>&lt;https://w3id.org/demo-resources/dummy-services#dmySrvc1&gt;</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>When testing or demonstrating your implementation of a given specification, you may often need to refer to instances of specific classes. You may of course use <code>https://example.org/nonExisting</code>, however, such a reference will usually cause validation errors because the instance your refer to doesn&#8217;t exist.</p>
-</div>
-<div class="paragraph">
-<p>We provide therefore in this showroom a number of generic dummy assets which you can refer to in e.g. your test implementations. "Dummy" because We have filled the assets with dummy data, such that they <em>hopefully</em> will validate correctly, though only in accordance with the Norwegian national specifications that are demonstrated in the other showrooms here. "Generic" because the assets will not contain value for optional properties that are only specific for a particular specification.</p>
-</div>
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Egenskapsnavn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>EgenskapsURI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdi</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er instans av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste (cpsvno:Service)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description of Dummy Service 1 (<a href="http://publications.europa.eu/resource/authority/language/ENG">engelsk</a>)<br>
+ Beskrivelse av Dummytjeneste 1 (<a href="http://publications.europa.eu/resource/authority/language/NOB">bokmål</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eies av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ownedBy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-agents#dmyOrg1" class="bare">https://w3id.org/demo-resources/dummy-agents#dmyOrg1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifikator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-services#dmySrvc1" class="bare">https://w3id.org/demo-resources/dummy-services#dmySrvc1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>kontaktpunkt</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-contact-points#dmyCP1" class="bare">https://w3id.org/demo-resources/dummy-contact-points#dmyCP1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dummy Service 1 (<a href="http://publications.europa.eu/resource/authority/language/ENG">engelsk</a>)<br>
+ Dummytjeneste 1 (<a href="http://publications.europa.eu/resource/authority/language/NOB">bokmål</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>produserer</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:produces</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-services#dmyOutput1">Dummytjenesteresultat 1</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="demo-resources"><a class="anchor" href="#demo-resources"></a>Demo resources in this showroom</h2>
+<h2 id="dmyPublSrvc1"><a class="anchor" href="#dmyPublSrvc1"></a>&lt;https://w3id.org/demo-resources/dummy-services#dmyPublSrvc1&gt;</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>There are mainly the following types of dummy-assets provided here in this showroom:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Agents</strong>, Organizations, Public Organizations etc.: In <a href="files/dummy-agents-en">this collection of dummy assets</a> (in <a href="files/dummy-agents.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Agent, <code>foaf:Agent</code></p>
-</li>
-<li>
-<p>Organization, <code>org:Organization</code></p>
-</li>
-<li>
-<p>Public organization, <code>cp:PublicOrganization</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Contact points</strong>: In <a href="files/dummy-contact-points-en">this collection of dummy assets</a> (in <a href="files/dummy-contact-points.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Organization, <code>vcard:Organization</code></p>
-</li>
-<li>
-<p><mark>(<em>to come</em>)</mark> Group, <code>vcard:Group</code></p>
-</li>
-<li>
-<p><mark>(<em>to come</em>)</mark> Contact point, <code>cv:ContactPoint</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Datasets</strong>, Distributions, Data services, etc.: In <a href="files/dummy-datasets-en">this collection of dummy assets</a> (in <a href="files/dummy-datasets.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Dataset, <code>dcat:Dataset</code></p>
-</li>
-<li>
-<p>Distribution, <code>dcat:Distribution</code></p>
-</li>
-<li>
-<p>Data service, <code>dcat:DataService</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Documents</strong>, Standards, etc.: In <a href="files/dummy-documents-en">this collection of dummy assets</a> (in <a href="files/dummy-documents.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Document, <code>foaf:Document</code></p>
-</li>
-<li>
-<p><mark>(<em>to come</em>)</mark> Standard, <code>dct:Standard</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Events</strong> etc.: In <a href="files/dummy-events-en">this collection of dummy assets</a> (in <a href="files/dummy-events.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Event, <code>cv:Event</code></p>
-</li>
-<li>
-<p>Life event, <code>cv:LifeEvent</code></p>
-</li>
-<li>
-<p>Business event, <code>cv:BusinessEvent</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Evidences</strong> etc.: In <a href="files/dummy-evidences-en">this collection of dummy assets</a> (in <a href="files/dummy-evidences.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Evidence, <code>cv:Evidence</code></p>
-</li>
-<li>
-<p>Evidence type, <code>cv:EvidenceType</code>
-Evidence type list, <code>cv:EvidenceTypeList</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Locations/addresses</strong> etc.: In <a href="files/dummy-locations-en">this collection of dummy assets</a> (in <a href="files/dummy-locations.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Location, <code>dct:Location</code></p>
-</li>
-<li>
-<p>Address, <code>locn:Address</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Services</strong>, Public Services etc.: In <a href="files/dummy-services-en">this collection of dummy assets</a> (in <a href="files/dummy-services.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Service, <code>cpsvno:Service</code></p>
-</li>
-<li>
-<p>Public service, <code>cpsv:PublicService</code></p>
-</li>
-<li>
-<p>(Service) Output, <code>cv:Output</code></p>
-</li>
-<li>
-<p>(Service) Channel, <code>cv:Channel</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Time</strong> periods, time entities etc.: In <a href="files/dummy-times-en">this collection of dummy assets</a> (in <a href="files/dummy-times.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Period of time, <code>dct:PeriodOfTime</code></p>
-</li>
-<li>
-<p>Proper interval, <code>time:ProperInterval</code></p>
-</li>
-<li>
-<p>Temporal entity, <code>time:TemporalEntity</code></p>
-</li>
-<li>
-<p>Time instant, <code>time:Instant</code></p>
-</li>
-<li>
-<p>Date time description, <code>time:DateTimeDescription</code></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Egenskapsnavn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>EgenskapsURI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdi</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er instans av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig tjeneste (cpsv:PublicService)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description of Dummy Public Service 1 (<a href="http://publications.europa.eu/resource/authority/language/ENG">engelsk</a>)<br>
+ Beskrivelse av Dummy offentlig tjeneste 1 (<a href="http://publications.europa.eu/resource/authority/language/NOB">bokmål</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har kompetent organ</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCompetentAuthority</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1" class="bare">https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifikator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-services#dmyPublSrvc1" class="bare">https://w3id.org/demo-resources/dummy-services#dmyPublSrvc1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>kontaktpunkt</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-contact-points#dmyCP1" class="bare">https://w3id.org/demo-resources/dummy-contact-points#dmyCP1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dummy Public Service 1 (<a href="http://publications.europa.eu/resource/authority/language/ENG">engelsk</a>)<br>
+ Dummy offentlig tjeneste 1 (<a href="http://publications.europa.eu/resource/authority/language/NOB">bokmål</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>produserer</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:produces</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-services#dmyOutput1">Dummytjenesteresultat 1</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="to-overview"><a class="anchor" href="#to-overview"></a><em>to the overview of the showrooms</em></h2>
+<h2 id="dmyOutput1"><a class="anchor" href="#dmyOutput1"></a>&lt;https://w3id.org/demo-resources/dummy-services#dmyOutput1&gt;</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><a href="../#overview">Click here for the overview of all the showrooms</a></p>
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Egenskapsnavn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>EgenskapsURI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdi</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er instans av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenesteresultat (cv:Output)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifikator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-services#dmyOutput1" class="bare">https://w3id.org/demo-resources/dummy-services#dmyOutput1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>tittel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dummy Output 1 (<a href="http://publications.europa.eu/resource/authority/language/ENG">engelsk</a>)<br>
+ Dummytjenesteresultat 1 (<a href="http://publications.europa.eu/resource/authority/language/NOB">bokmål</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description of Dummy Output 1 (<a href="http://publications.europa.eu/resource/authority/language/ENG">engelsk</a>)<br>
+ Beskrivelse av Dummytjenesteresultat 1 (<a href="http://publications.europa.eu/resource/authority/language/NOB">bokmål</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>språk</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/language/ENG">engelsk</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>kan skape</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:causes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-events#dmyEvent1" class="bare">https://w3id.org/demo-resources/dummy-events#dmyEvent1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/demo-classifications#demo-category-A" class="bare">https://w3id.org/demo-resources/demo-classifications#demo-category-A</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
+</div>
+<div class="sect1">
+<h2 id="dmySrvcChannel1"><a class="anchor" href="#dmySrvcChannel1"></a>&lt;https://w3id.org/demo-resources/dummy-services#dmySrvcChannel1&gt;</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Egenskapsnavn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>EgenskapsURI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdi</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>er instans av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenestekanal (cv:Channel)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifikator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-services#dmySrvcChannel1" class="bare">https://w3id.org/demo-resources/dummy-services#dmySrvcChannel1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>behandlingstid</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:processingTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PD3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>datatjeneste</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsvno:dataService</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1" class="bare">https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dokumentasjonskrav</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:hasInput</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-evidences#dmyEvidence1" class="bare">https://w3id.org/demo-resources/dummy-evidences#dmyEvidence1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eies av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:ownedBy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1" class="bare">https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har e-post</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mailto:cp1@example.org</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vocabulary/service-channel-type#e-mail" class="bare">https://data.norge.no/vocabulary/service-channel-type#e-mail</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>åpningstid fritekst</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:openingHours</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Round-the-clock service (24-7). (<a href="http://publications.europa.eu/resource/authority/language/NOB">bokmål</a>)<br>
+ Døgnkontinuerlig tjeneste (24-7). (<a href="http://publications.europa.eu/resource/authority/language/ENG">engelsk</a>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Namespace"><a class="anchor" href="#Namespace"></a>Navnerom</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Prefiks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cpsv</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/vocab/cpsv#" class="bare">http://purl.org/vocab/cpsv#</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cpsvno</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vocabulary/cpsvno#" class="bare">https://data.norge.no/vocabulary/cpsvno#</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cv</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/m8g/" class="bare">http://data.europa.eu/m8g/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcat</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/dcat#" class="bare">http://www.w3.org/ns/dcat#</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dct</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/terms/" class="bare">http://purl.org/dc/terms/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdf</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" class="bare">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>schema</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://schema.org/" class="bare">http://schema.org/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vcard</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2006/vcard/ns#" class="bare">http://www.w3.org/2006/vcard/ns#</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xkos</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://rdf-vocabulary.ddialliance.org/xkos#" class="bare">http://rdf-vocabulary.ddialliance.org/xkos#</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xsd</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema#" class="bare">http://www.w3.org/2001/XMLSchema#</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-19 12:34:12 UTC
+Sist oppdatert 2023-05-08 11:49:05 +0200
 </div>
 </div>
 </body>
