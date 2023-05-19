@@ -18,7 +18,12 @@ Welcome to the showroom with demo services and events, demonstrating the usage o
 
 _https://informasjonsforvaltning.github.io/cpsv-ap-no/[CPSV-AP-NO ↗, window="_blank", role="ext-link"] (#currently as a trial version#) is the the Norwegian application profile of https://github.com/SEMICeu/CPSV-AP[EU's Core Public Service Vocabulary Application Profile (CPSV-AP) ↗, window="_blank", role="ext-link"], for describing services and events._
 
-image:../images/work-in-progress.png[WIP,72,72] _This showroom is under construction and will be finalized as soon as practically possible after the finalizing of CPSV-AP-NO._ 
+// image:../images/work-in-progress.png[WIP,72,72] _This showroom is under construction and will be finalized as soon as practically possible after the finalizing of CPSV-AP-NO._ 
+
+[cols="10,90", grid=nome,frame=none] 
+|===
+| image:../images/work-in-progress.png[WIP,200,200] | _This showroom is under construction and will be finalized as soon as practically possible after the finalizing of CPSV-AP-NO._ 
+|===
 
 == Purpose [[purpose]]
 
@@ -71,4 +76,4 @@ In this showroom we have a https://w3id.org/demo-resources/demo-services-events[
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:../#overview[Click here for the overview of all the showrooms]
+link:../overview/#overview[Click here for the overview of all the showrooms]

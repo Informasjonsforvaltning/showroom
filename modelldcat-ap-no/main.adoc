@@ -110,4 +110,4 @@ The UML-elements in "Demo model 1" shown in <<img-demomodel1-mapping2modelldcatn
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:../#overview[Click here for the overview of all the showrooms]
+link:../overview/#overview[Click here for the overview of all the showrooms]
