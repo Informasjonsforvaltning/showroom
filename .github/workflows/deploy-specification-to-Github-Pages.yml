@@ -120,6 +120,7 @@ jobs:
     with:
       publish_branch: gh-pages
       publish_dir: ./docs
+      destination_dir: ./overview
       keep_files: true
       program: "asciidoctor -D docs -o index.html -a lang=en docs/main.adoc"
     secrets:
@@ -143,7 +144,7 @@ jobs:
     needs: filter_path
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
     if: ${{ filter_path.changes.outputs.xkos == 'true' }}
-    name: Deploy xkos-ap-no-begrep to GitHub Pages
+    name: Deploy xkos-ap-no to GitHub Pages
     with:
       publish_branch: gh-pages
       publish_dir: xkos-ap-no
