@@ -112,7 +112,7 @@ jobs:
   dummy_assets_build_deploy:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
-    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload dummy-assets
     with:
       host: 'https://data.norge.no'
@@ -128,7 +128,7 @@ jobs:
   modelldcat_build_deploy:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.modelldcat == 'true' }}
-    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload modelldcat
     with:
       host: 'https://data.norge.no'
@@ -172,7 +172,7 @@ jobs:
   skos_build_deploy:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.skos == 'true' }}
-    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload skos-ap-no-begrep
     with:
       ontology-type: "showroom"
@@ -194,7 +194,7 @@ jobs:
   xkos_build_deploy:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.xkos == 'true' }}
-    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload xkos-ap-no
     with:
       ontology-type: "showroom"
