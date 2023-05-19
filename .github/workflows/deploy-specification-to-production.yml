@@ -31,6 +31,8 @@ jobs:
       skos: ${{ steps.filter.outputs.skos }}
       xkos: ${{ steps.filter.outputs.xkos }}
     steps:
+    - name: Checkout
+      uses: actions/checkout@v3
     - name: Filter
       uses: dorny/paths-filter@v2
       id: filter
