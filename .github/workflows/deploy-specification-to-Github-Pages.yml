@@ -63,7 +63,7 @@ jobs:
     with:
       publish_branch: gh-pages
       publish_dir: cpsv-ap-no
-      destination_dir: ./showroom/cpsv-ap-no
+      destination_dir: './cpsv-ap-no'
       keep_files: true
       program: "asciidoctor -D cpsv-ap-no -o index.html -a lang=en cpsv-ap-no/main.adoc"
     secrets:
