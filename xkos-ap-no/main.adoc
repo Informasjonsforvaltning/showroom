@@ -99,4 +99,4 @@ Our demo classification, called https://w3id.org/demo-resources/demo-classificat
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:../#overview[Click here for the overview of all the showrooms]
+link:../overview/#overview[Click here for the overview of all the showrooms]
