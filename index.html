@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.20">
 <meta name="author" content="Norwegian Digitalisation Agency (Digdir)">
-<title>showroom - demo concepts</title>
+<title>showroom - demo classifications</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -512,25 +512,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image"><img src="../images/Digdir.png" alt="Digdir" width="200" height="200"></span> showroom - demo concepts</h1>
+<h1><span class="image"><img src="../images/Digdir.png" alt="Digdir" width="200" height="200"></span> showroom - demo classifications</h1>
 <div class="details">
 <span id="author" class="author">Norwegian Digitalisation Agency (Digdir)</span><br>
 </div>
 <div id="toc" class="toc2">
-<div id="toctitle">Concepts</div>
+<div id="toctitle">Classifications</div>
 <ul class="sectlevel1">
 <li><a href="#purpose">Purpose</a></li>
-<li><a href="#demo-resources">Demo resources in this showroom</a>
-<ul class="sectlevel2">
-<li><a href="#_more_about_concept_relations">More about concept relations</a>
-<ul class="sectlevel3">
-<li><a href="#hierarchical-relations">Hierarchical concept relations</a></li>
-<li><a href="#associative-relations">Associative concept relations</a></li>
-</ul>
-</li>
-<li><a href="#definition">More about concept definitions</a></li>
-</ul>
-</li>
+<li><a href="#demo-resources">Demo resources in this showroom</a></li>
 <li><a href="#cross-references">Some cross-references with other demo resources</a></li>
 <li><a href="#to-overview"><em>to the overview of the showrooms</em></a></li>
 </ul>
@@ -540,10 +530,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Welcome to the showroom with demo concepts, demonstrating the usage of SKOS-AP-NO-Begrep!</p>
+<p>Welcome to the showroom with demo classifications, demonstrating the usage of XKOS-AP-NO!</p>
 </div>
 <div class="paragraph">
-<p><em><a href="https://data.norge.no/specification/skos-ap-no-begrep" class="ext-link" target="_blank" rel="noopener">SKOS-AP-NO-Begrep ↗</a> is the Norwegian application profile of W3C&#8217;s <a href="https://www.w3.org/2004/02/skos/" class="ext-link" target="_blank" rel="noopener">SKOS ↗</a>, for describing and publishing concepts and concept collections.</em></p>
+<p><em><a href="https://data.norge.no/specification/xkos-ap-no" class="ext-link" target="_blank" rel="noopener">XKOS-AP-NO ↗</a> is the Norwegian application profile of <a href="https://rdf-vocabulary.ddialliance.org/xkos.html" class="ext-link" target="_blank" rel="noopener">XKOS ↗</a>, for describing and publishing classifications, controlled vocabularies, code lists etc.</em></p>
 </div>
 </div>
 </div>
@@ -556,21 +546,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>demonstrate machine-readable concept descriptions in accordance with SKOS-AP-NO-Begrep v.2.x;</p>
+<p>demonstrate machine-readable descriptions of classifications, classification levels and categories, in accordance with XKOS-AP-NO;</p>
 </li>
 <li>
-<p>demonstrate in particular how to describe concept relations, in accordance with SKOS-AP-NO-Begrep v.2.x;</p>
+<p>demonstrate some cross-references between classifications and other resources demonstrated in some of the other showrooms;</p>
 </li>
 <li>
-<p>demonstrate some cross-references between concepts and other resources demonstrated in some of the other showrooms;</p>
-</li>
-<li>
-<p>provide reusable, machine-readable concept descriptions, for testing and demonstration purposes.</p>
+<p>provided reusable, machine-readable classifications with  referenceable categories, for testing and demonstration purposes.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong><em>Disclaimer</em></strong>: <em>The machine-readable demo concepts are meant for demo purposes only. They do not represent any real world concepts at all. On the other hand, they are supposed to syntactically conform to SKOS-AP-NO-Begrep v.2.x.</em></p>
+<p><strong><em>Disclaimer</em></strong>: <em>The machine-readable demo classifications and demo categories are meant for demo purposes only. They do not represent any real world phenomena. On the other hand, they are supposed to syntactically conform to XKOS-AP-NO.</em></p>
 </div>
 </div>
 </div>
@@ -578,180 +565,52 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="demo-resources"><a class="anchor" href="#demo-resources"></a>Demo resources in this showroom</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In this showroom we have a <a href="https://w3id.org/demo-resources/demo-concepts">collection of demo concepts</a> (in <a href="files/demo-concepts.ttl">RDF Turtle</a>):</p>
+<p>In this showroom we have a demo <a href="https://data.norge.no/specification/xkos-ap-no#Klassifikasjon" class="ext-link" target="_blank" rel="noopener">classification (skos:ConceptScheme) ↗</a> with its <a href="https://data.norge.no/specification/xkos-ap-no#Klassifikasjonsniv%C3%A5" class="ext-link" target="_blank" rel="noopener">classification levels (xkos:ClassificationLevel) ↗</a> and <a href="https://data.norge.no/specification/xkos-ap-no#Kategori" class="ext-link" target="_blank" rel="noopener">categories (xkos:ClassificationLevel) ↗</a>,  illustrated in <a href="#img-demo-classification">Figure 1</a>.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>The demo concepts <mark>will be</mark> automatically harvested to and thus also (<mark>not yet</mark>) be findable via <a href="https://demo.fellesdatakatalog.digdir.no/concepts?q=demoCpt" class="ext-link" target="_blank" rel="noopener">the demo portal ↗</a>.</p>
-</li>
-<li>
-<p>There are seven <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep" class="ext-link" target="_blank" rel="noopener">concepts ↗</a> in the <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrepssamling" class="ext-link" target="_blank" rel="noopener">collection ↗</a>, where</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://w3id.org/demo-resources/demo-concepts#demoCpt1">"demo concept 1"</a> is a generalization of <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt11">"demo concept 11"</a> and <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt12">"demo concept 12"</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>"demo concept 11" is a specialization of "demo concept 1"</p>
-</li>
-<li>
-<p>"demo concept 12" is a specialization of "demo concept 1"</p>
-</li>
-<li>
-<p>in this <a href="https://termbasen.standard.no/term/168204371002565/en?origin=%2Fsearch-results%3FsearchText%3Dgeneric%2Brelation%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">generic relation  ↗</a>, "demo concept 1" is the <a href="https://termbasen.standard.no/term/167501330206913/en?origin=%2Fsearch-results%3FsearchText%3Dsuperordinate%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">superordinate concept  ↗</a> / <a href="https://termbasen.standard.no/term/167505059909767/en?origin=%2Fsearch-results%3FsearchText%3Dgeneric%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">generic concept ↗</a>, while "demo concept 11" and "demo concept 12" are <a href="https://termbasen.standard.no/term/168204369502114/en?origin=%2Fsearch-results%3FsearchText%3Dsubordinate%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">subordinate concepts ↗</a> / <a href="https://termbasen.standard.no/term/168204379908017/en?origin=%2Fsearch-results%3FsearchText%3Dspecific%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">specific concepts ↗</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a href="https://w3id.org/demo-resources/demo-concepts#demoCpt2">"demo concept 2"</a> contains <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt21">"demo concept 21"</a> and <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt22">"demo concept 22"</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>"demo concept 21" is part of  "demo concept 2"</p>
-</li>
-<li>
-<p>"demo concept 22" is part of  "demo concept 2"</p>
-</li>
-<li>
-<p>in this <a href="https://termbasen.standard.no/term/168204529503414/en?origin=%2Fsearch-results%3FsearchText%3Dpartitive%2Brelation%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">partitive relations ↗</a>, "demo concept 2" is the the <a href="https://termbasen.standard.no/term/167501330206913/en?origin=%2Fsearch-results%3FsearchText%3Dsuperordinate%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">superordinate concept  ↗</a> / <a href="https://termbasen.standard.no/term/168204367709913/en?origin=%2Fsearch-results%3FsearchText%3Dcomprehensive%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">comprehensive concept ↗</a>, while "demo concept 21" and "demo concept 22" are <a href="https://termbasen.standard.no/term/168204369502114/en?origin=%2Fsearch-results%3FsearchText%3Dsubordinate%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">subordinate concepts ↗</a> / <a href="https://termbasen.standard.no/term/168204378306478/en?origin=%2Fsearch-results%3FsearchText%3Dpartitive%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">partitive concepts ↗</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a href="https://w3id.org/demo-resources/demo-concepts#demoCpt3">"demo concept 3"</a> illustrates the usage of all <em>syntactically</em> possible relations that a concept may have with other concepts, in accordance with SKOS-AP-NO-Begrep v.2.x.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>"demo concept 2" illustrates the usage of all the other properties. "demo concept 2" and "demo concept 3" together illustrate therefore how to <em>syntactically</em> use all the properties in a  concept description, in accordance with SKOS-AP-NO-Begrep v.2.x.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<details>
-<summary class="title">Click for the concept diagrams.</summary>
+<div id="img-demo-classification" class="imageblock">
 <div class="content">
-<div id="img-concept-diagrams-iso" class="imageblock">
-<div class="content">
-<a class="image" href="images/concept-diagrams-iso.png"><img src="images/concept-diagrams-iso.png" alt="Diagram with six concepts and relations in between them. The content is explained in the text."></a>
+<a class="image" href="images/demo-classification1.png"><img src="images/demo-classification1.png" alt="Graph with nodes and relations between the nodes. The content is explained in the text."></a>
 </div>
-<div class="title">Figure 1. Concept diagrams (using the notations as in e.g. ISO 24156-1).</div>
-</div>
-</div>
-</details>
-<details>
-<summary class="title">Click for the concept models (in UML).</summary>
-<div class="content">
-<div id="img-concept-models-uml" class="imageblock">
-<div class="content">
-<a class="image" href="images/concept-models-uml.png"><img src="images/concept-models-uml.png" alt="Diagram with six UML-klasses and relations in between them. The content is explained in the text."></a>
-</div>
-<div class="title">Figure 2. Concept models (in UML).</div>
-</div>
-</div>
-</details>
-<div class="sect2">
-<h3 id="_more_about_concept_relations"><a class="anchor" href="#_more_about_concept_relations"></a>More about concept relations</h3>
-<div class="sect3">
-<h4 id="hierarchical-relations"><a class="anchor" href="#hierarchical-relations"></a>Hierarchical concept relations</h4>
-<div class="paragraph">
-<p>There are two types of hierarchical concept relations: generic and partitive.</p>
+<div class="title">Figure 1. Graphical illustration of the demo classification and its demo categories.</div>
 </div>
 <div class="paragraph">
-<p><a href="#img-hierarchical-relations">Figure 3</a> illustrates some of the hierarchically relations between the demo concepts that are in the above mentioned collection.</p>
-</div>
-<div id="img-hierarchical-relations" class="imageblock">
-<div class="content">
-<a class="image" href="images/hierarchical-relations-explanations.png"><img src="images/hierarchical-relations-explanations.png" alt="Figure with hierarchical relations. The content is explained in the text."></a>
-</div>
-<div class="title">Figure 3. Two ways in SKOS-AP-NO-Begrep to describe hierarchical relations.</div>
-</div>
-<div class="paragraph">
-<p>The figure illustrates in particular the two different ways in SKOS-AP-NO-Begrep v.2.x to describe a hierarchical concept relation, depending on if there is a need to specify the <a href="https://termbasen.standard.no/term/168204529703821/en?origin=%2Fsearch-results%3FsearchText%3Dcriterion%2Bof%2Bsubdivision%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100" class="ext-link" target="_blank" rel="noopener">criterion of subdivision ↗</a>:</p>
+<p>Our demo classification, called <a href="https://w3id.org/demo-resources/demo-classifications#demoClassification1">"Demo controlled vocabulary 1"</a> (in <a href="files/demo-classifications.ttl">RDF Turtle</a>), has:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The straightforward way, when there is no need to specify the criterion of subdivision:</p>
+<p>two classification levels, <a href="https://w3id.org/demo-resources/demo-classifications#demoLev1">"Demo level 1"</a> and <a href="https://w3id.org/demo-resources/demo-classifications#demoLev2">"Demo level 2"</a>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>by using the property <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-spesialiserer" class="ext-link" target="_blank" rel="noopener">specializes (xkos:specializes) ↗</a> or <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-generaliserer" class="ext-link" target="_blank" rel="noopener">generalizes (xkos:generalizes) ↗</a> for generic concept relations, demonstrated by the generic relations between <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt1">"demo concept 1"</a> and <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt11">"demo concept 11"</a></p>
+<p>"Demo level 1" contains categories <a href="https://w3id.org/demo-resources/demo-classifications#demo-category-A">"Demo category A"</a> and <a href="https://w3id.org/demo-resources/demo-classifications#demo-category-B">"Demo category B"</a>.</p>
 </li>
 <li>
-<p>by using the property <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-inneholder" class="ext-link" target="_blank" rel="noopener">has part (xkos:hasPart) ↗</a> or <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-er-del-av" class="ext-link" target="_blank" rel="noopener">is part of (xkos:isPartOf) ↗</a> for partitive concept relations, demonstrated by the partitive relations between <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt2">"demo concept 2"</a> and <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt21">"demo concept 21"</a></p>
+<p>"Demo level 2" contains <a href="https://w3id.org/demo-resources/demo-classifications#demo-category-A1">"Demo category A.1"</a> and <a href="https://w3id.org/demo-resources/demo-classifications#demo-category-A2">"Demo category A.2"</a>.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Via a generic/partitive concept relation, when there is a need to specify the criterion of subdivision:</p>
+<p>"Demo category A" generalizes "Demo category A.1" and "Demo category A.2" .</p>
 <div class="ulist">
 <ul>
 <li>
-<p>by using the property <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-har-generisk-begrepsrelasjon" class="ext-link" target="_blank" rel="noopener">has generic concept relation (skosno:hasGenericConceptRelation) ↗</a> referring to a generic concept relation in which the criterion of subdivision is specified, demonstrated by the generic relations between <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt1">"demo concept 1"</a> and <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt12">"demo concept 12"</a></p>
+<p>"Demo category A.1" specializes "Demo category A".</p>
 </li>
 <li>
-<p>by using the property <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-har-partitiv-begrepsrelasjon" class="ext-link" target="_blank" rel="noopener">has partitive concept relation (skosno:hasPartitiveConceptRelation) ↗</a> referring to a partitive concept relation in which the criterion of subdivision is specified, demonstrated by the partitive relations between <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt2">"demo concept 2"</a> and <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt22">"demo concept 22"</a></p>
+<p>"Demo category A.2" specializes "Demo category A".</p>
 </li>
 </ul>
 </div>
 </li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="associative-relations"><a class="anchor" href="#associative-relations"></a>Associative concept relations</h4>
-<div class="paragraph">
-<p>While there are only two types of hierarchical concept relations as demonstrated above, there is an unlimited number of types of associative concept relations.</p>
-</div>
-<div class="paragraph">
-<p>In SKOS-AP-NO-Begrep, some types of associative relations are explicitly supported, demonstrated by <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt3">"demo concept 3"</a>:</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
-<p><a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-erstatter" class="ext-link" target="_blank" rel="noopener">replaces (dct:replaces) ↗</a> / <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-er-erstattet-av" class="ext-link" target="_blank" rel="noopener">is replaced by (dct:isReplacedBy) ↗</a></p>
+<p>"Demo category A" should be presented before "Demo category B".</p>
 </li>
 <li>
-<p><a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-har-n%C3%A6rt-samsvar-med" class="ext-link" target="_blank" rel="noopener">has close match with (skos:closeMatch) ↗</a></p>
-</li>
-<li>
-<p><a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-har-eksakt-samsvar-med" class="ext-link" target="_blank" rel="noopener">has exact match with (skos:exactMatch) ↗</a></p>
-</li>
-<li>
-<p><a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-se-ogs%C3%A5" class="ext-link" target="_blank" rel="noopener">see also (rdfs:seeAlso) ↗</a></p>
+<p>"Demo category A.1" should be presented before "Demo category A.2".</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>SKOS-AP-NO-Begrep of course also allows you to specify your own types of associative concept relations, by using the property <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-er-fra-begrep-i" class="ext-link" target="_blank" rel="noopener">is from-concept in (skosno:isFromConceptIn) ↗</a> referring to an <a href="https://data.norge.no/specification/skos-ap-no-begrep#Assosiativ-begrepsrelasjon" class="ext-link" target="_blank" rel="noopener">Associative concept relation (skosno:AssociativeConceptRelation) ↗</a> in which you may specify the role that the concept has towards the other concept in the associative relation between the two. This is also demonstrated by <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt3">"demo concept 3"</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="definition"><a class="anchor" href="#definition"></a>More about concept definitions</h3>
-<div class="paragraph">
-<p>There are also two different ways to specify the definition of a given concept, depending on if there is a need to specify more details in addition to the definition text:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The straightforward way, when only the definition text is to be specified, by using the property <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-definisjon-direkte-angivelse" class="ext-link" target="_blank" rel="noopener">definition (direct statement) (skos:definition) ↗</a>, demonstrated by <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt1">"demo concept 1"</a>.</p>
-</li>
-<li>
-<p>Using the property <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-definisjon-via-definisjonsobjekt" class="ext-link" target="_blank" rel="noopener">definition (via definition object) (euvoc:xlDefinition) ↗</a> referring to a <a href="https://data.norge.no/specification/skos-ap-no-begrep#Definisjon" class="ext-link" target="_blank" rel="noopener">Definition (euvoc:XlNote) ↗</a> in which more details about the definition are specified. This is demonstrated by <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt2">"demo concept 2"</a>, where details about the source and the audience of the definition are given.</p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -762,16 +621,89 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong><em>Note</em></strong>: <em>Not all possible cross-references are demonstrated in this showroom. The lists are thus not exhaustive.</em></p>
 </div>
 <div class="paragraph">
-<p><strong>Concepts and classifications</strong>, for example:</p>
+<p><strong>Classifications and concepts</strong>, for example:</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>A category in a classification is usually a concept. The definition of the concept should preferably be published outside and independently of the classification, although XKOS-AP-NO allows to define the concept as a part of the category description.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Our "Demo category A" represents, and thus also refers to, <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt1">"demo concept 1"</a>,  using the property <a href="https://data.norge.no/specification/xkos-ap-no#Kategori-referererTilBegrep" class="ext-link" target="_blank" rel="noopener">concept (dct:subject) ↗</a>. This is demonstrated in our <a href="../skos-ap-no/">showroom with demo concepts</a>.</p>
+</li>
+<li>
+<p>Similarly, "Demo category B" represents and refers to <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt2">"demo concept 2"</a>, "Demo category A.1" represents and refers to <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt11">"demo concept 11"</a>, and "Demo category A.2" represents and refers to <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt12">"demo concept 12"</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>A classification and its classification levels usually covers (exhaustively or not,  mutually exclusively or not) a set of concepts.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Our "Demo level 1", <a href="https://data.norge.no/specification/xkos-ap-no#Klassifikasjonsniv%C3%A5-dekker" class="ext-link" target="_blank" rel="noopener">covers (xkos:covers) ↗</a>, <a href="https://data.norge.no/specification/xkos-ap-no#Klassifikasjonsniv%C3%A5-dekkerUtt%C3%B8mmende" class="ext-link" target="_blank" rel="noopener">covers exhaustively (xkos:coversExhaustively) ↗</a> and <a href="https://data.norge.no/specification/xkos-ap-no#Klassifikasjonsniv%C3%A5-dekkerGjensidigUtelukkende" class="ext-link" target="_blank" rel="noopener">mutually exclusively (xkos:coversMutuallyExclusively) ↗</a> "demo concept 1" and "demo concept 2". Similarly with our "Demo level 2" and "demo concept 11" and "demo concept 12".</p>
+</li>
+</ul>
+</div>
+</li>
 <li>
 <p>A concept may refer to a classification as its value range.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Our <a href="https://w3id.org/demo-resources/demo-concepts#demoCpt2">"demo concept 2"</a>, refers to our <a href="https://w3id.org/demo-resources/demo-classifications#demoClassification1">"demo controlled vocabulary 1"</a> (demonstrated in our <a href="../xkos-ap-no/">showroom with demo classificatinos</a>) as its <a href="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de" class="ext-link" target="_blank" rel="noopener">value range (skosno:valueRange) ↗</a>.</p>
+<p>This is demonstrated in our <a href="../skos-ap-no">showroom with demo concepts</a>.</p>
+</li>
+<li>
+<p>Classifications should therefore be made available, also machine-readably.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Classifications and datasets</strong>, for example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A classification with its categories is a dataset, and should be made available machine-readably.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In our <a href="../dcat-ap-no/">showroom with demo datasets</a>, we demonstrate how to describe this demo classification as a machine-readable open dataset, and to make it <a href="https://demo.fellesdatakatalog.digdir.no/datasets?q=demodataset" class="ext-link" target="_blank" rel="noopener">findable via the demo portal ↗</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>When describing a dataset, and where coded values are used, the coded values should preferably be chosen from controlled vocabularies (i.e., classifications). Examples of properties with coded values are <a href="https://data.norge.no/specification/dcat-ap-no#Datasett-tilgangsniv%C3%A5" class="ext-link" target="_blank" rel="noopener">access rights (dct:accessRights) ↗</a> and <a href="https://data.norge.no/specification/dcat-ap-no#Distribusjon-format" class="ext-link" target="_blank" rel="noopener">format (dct:format) ↗</a>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This is demonstrated and explained in our <a href="../dcat-ap-no/">showroom with demo datasets</a>.</p>
+</li>
+<li>
+<p>Classifications should therefore be made available, also machine-readably.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Classifications and information models</strong>, for example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>When describing an information model, and where coded values are used, the coded values should preferably be chosen from controlled vocabularies (i.e., classifications).</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This is demonstrated and explained in our <a href="../modelldcat-ap-no/">showroom with demo information models</a>.</p>
 </li>
 <li>
 <p>Classifications should therefore be made available, also machine-readably.</p>
@@ -780,65 +712,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </li>
 <li>
-<p>A concept may be included in or referred to from a classification.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>This is demonstrated and explained in our <a href="../xkos-ap-no/">showroom with demo classifications</a>.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Concepts and datasets</strong>, for example:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>A dataset may refer to concepts that the dataset represents or concepts that are relevant for understanding the dataset.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>This is demonstrated and explained in our <a href="../dcat-ap-no/">showroom with demo datasets</a>.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>When describing a dataset, and where coded values are used, the coded values should preferably be concepts chosen from controlled vocabularies (i.e., classifications).</p>
-<div class="ulist">
-<ul>
-<li>
-<p>This is demonstrated and explained in our <a href="../dcat-ap-no/">showroom with demo datasets</a>.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Concepts and information models</strong>, for example:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>An information model may refer to concepts that the information model represents or concepts that are relevant for understanding the information model.</p>
+<p>An information model may use classifications (controlled vocabularies, code lists etc.) as "datatype/range specification" for its "attributes".</p>
 <div class="ulist">
 <ul>
 <li>
 <p>This is demonstrated and explained in our <a href="../modelldcat-ap-no/">showroom with demo information models</a>.</p>
 </li>
-</ul>
-</div>
-</li>
 <li>
-<p>When describing an information model, and where coded values are used, the coded values should preferably be concepts chosen from controlled vocabularies (i.e., classifications).</p>
-<div class="ulist">
-<ul>
-<li>
-<p>This is demonstrated and explained and explained in our <a href="../modelldcat-ap-no/">showroom with demo information models</a>.</p>
+<p>Classifications should therefore be made available, also machine-readably.</p>
 </li>
 </ul>
 </div>
@@ -846,16 +727,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Concepts and services/events</strong>, for example:</p>
+<p><strong>Classifications and services/events</strong>, for example:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>A service or event, may refer to concepts that are relevant for understanding the service or event.</p>
+<p>When describing a service or event, and where coded values are used, the coded values should preferably be chosen from controlled vocabularies (i.e., classifications).</p>
 <div class="ulist">
 <ul>
 <li>
 <p>This is demonstrated and explained in our <a href="../cpsv-ap-no/">showroom with demo services and events</a>.</p>
+</li>
+<li>
+<p>Classifications should therefore be made available, also machine-readably.</p>
 </li>
 </ul>
 </div>
@@ -875,7 +759,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-19 12:34:16 UTC
+Last updated 2023-05-19 12:34:18 UTC
 </div>
 </div>
 </body>
