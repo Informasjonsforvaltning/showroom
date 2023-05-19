@@ -76,4 +76,4 @@ In this showroom we have a https://w3id.org/demo-resources/demo-services-events[
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:../#overview[Click here for the overview of all the showrooms]
+link:../overview/#overview[Click here for the overview of all the showrooms]
