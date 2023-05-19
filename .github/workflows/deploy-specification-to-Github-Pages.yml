@@ -19,10 +19,21 @@ jobs:
   filter_path:
     name: Setup path filter
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    outputs:
+      cpsv: ${{ steps.filter.outputs.cpsv }}
+      dcat: ${{ steps.filter.outputs.dcat }}
+      docs: ${{ steps.filter.outputs.docs }}
+      demo_uris: ${{ steps.filter.outputs.demo_uris }}
+      dummy_assets: ${{ steps.filter.outputs.dummy_assets }}
+      modelldcat: ${{ steps.filter.outputs.modelldcat }}
+      skos: ${{ steps.filter.outputs.skos }}
+      xkos: ${{ steps.filter.outputs.xkos }}
     steps:
     - name: Filter
       uses: dorny/paths-filter@v2
-      id: changes
+      id: filter
       with:
         filters: |
           cpsv:
@@ -45,7 +56,7 @@ jobs:
   cpsv_build_deploy:
     needs: filter_path
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
-    if: ${{ filter_path.changes.outputs.cpsv == 'true' }}
+    if: ${{ needs.filter_path.outputs.cpsv == 'true' }}
     name: Deploy cpsv-ap-no to GitHub Pages
     with:
       publish_branch: gh-pages
@@ -59,7 +70,7 @@ jobs:
   dcat_build_deploy:
     needs: filter_path
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
-    if: ${{ filter_path.changes.outputs.dcat == 'true' }}
+    if: ${{ needs.filter_path.outputs.dcat == 'true' }}
     name: Deploy dcat-ap-no to GitHub Pages
     with:
       publish_branch: gh-pages
@@ -73,7 +84,7 @@ jobs:
   demo_uris_build_deploy:
     needs: filter_path
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
-    if: ${{ filter_path.changes.outputs.demo_uris == 'true' }}
+    if: ${{ needs.filter_path.outputs.demo_uris == 'true' }}
     name: Deploy demo-uris to GitHub Pages
     with:
       publish_branch: gh-pages
@@ -87,7 +98,7 @@ jobs:
   dummy_assets_build_deploy:
     needs: filter_path
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
-    if: ${{ filter_path.changes.outputs.dummy_assets == 'true' }}
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
     name: Deploy dummy-assets to GitHub Pages
     with:
       publish_branch: gh-pages
@@ -101,7 +112,7 @@ jobs:
   modelldcat_build_deploy:
     needs: filter_path
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
-    if: ${{ filter_path.changes.outputs.modelldcat == 'true' }}
+    if: ${{ needs.filter_path.outputs.modelldcat == 'true' }}
     name: Deploy modelldcat-ap-no to GitHub Pages
     with:
       publish_branch: gh-pages
@@ -115,7 +126,7 @@ jobs:
   root_build_deploy:
     needs: filter_path
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
-    if: ${{ filter_path.changes.outputs.root == 'true' }}
+    if: ${{ needs.filter_path.outputs.root == 'true' }}
     name: Deploy root to GitHub Pages
     with:
       publish_branch: gh-pages
@@ -129,7 +140,7 @@ jobs:
   skos_build_deploy:
     needs: filter_path
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
-    if: ${{ filter_path.changes.outputs.skos == 'true' }}
+    if: ${{ needs.filter_path.outputs.skos == 'true' }}
     name: Deploy skos-ap-no-begrep to GitHub Pages
     with:
       publish_branch: gh-pages
@@ -143,7 +154,7 @@ jobs:
   xkos_build_deploy:
     needs: filter_path
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
-    if: ${{ filter_path.changes.outputs.xkos == 'true' }}
+    if: ${{ needs.filter_path.outputs.xkos == 'true' }}
     name: Deploy xkos-ap-no to GitHub Pages
     with:
       publish_branch: gh-pages
