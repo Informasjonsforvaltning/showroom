@@ -9,30 +9,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  adoc_build:
-    runs-on: ubuntu-latest
-    name: asciidoctor build
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Build html
-        id: adocbuild_html
-        uses: tonynv/asciidoctor-action@master
-        with:
-          program: "asciidoctor -D cpsv-ap-no -o index.html -a lang=en cpsv-ap-no/main.adoc"
-
-      - name: Upload to data.norge.no
-        uses: informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
-        id: upload-files
-        with:
-          ontology-type: "showroom"
-          ontology: "cpsv-ap-no"
-          host: "https://data.norge.no"
-          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-          files: |
-            cpsv-ap-no/index.html text/html en
-            cpsv-ap-no/files/demo-services-events.ttl text/turtle en
-            cpsv-ap-no/files/demo-services-events-en.html text/html en
-            cpsv-ap-no/files/demo-services-events-nb.html text/html nb
+  adoc_build_cpsv:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: adoc build cpsv
+    with:
+      host: 'https://data.norge.no'
+      ontology: 'cpsv-ap-no'
+      ontology-type: 'showroom'
+      program: "asciidoctor -D cpsv-ap-no -o index.html -a lang=en cpsv-ap-no/main.adoc"
+      files: |
+        cpsv-ap-no/index.html text/html en
+        cpsv-ap-no/files/demo-services-events.ttl text/turtle en
+        cpsv-ap-no/files/demo-services-events-en.html text/html en
+        cpsv-ap-no/files/demo-services-events-nb.html text/html nb
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
