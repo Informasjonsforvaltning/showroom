@@ -24,10 +24,10 @@ jobs:
     outputs:
       cpsv: ${{ steps.filter.outputs.cpsv }}
       dcat: ${{ steps.filter.outputs.dcat }}
-      docs: ${{ steps.filter.outputs.docs }}
       demo_uris: ${{ steps.filter.outputs.demo_uris }}
       dummy_assets: ${{ steps.filter.outputs.dummy_assets }}
       modelldcat: ${{ steps.filter.outputs.modelldcat }}
+      root: ${{ steps.filter.outputs.docs }}
       skos: ${{ steps.filter.outputs.skos }}
       xkos: ${{ steps.filter.outputs.xkos }}
     steps:
@@ -42,14 +42,14 @@ jobs:
             - 'cpsv-ap-no/**'
           dcat:
             - 'dcat-ap-no/**'
-          docs:
-            - 'docs/**'
           demo_uris:
             - 'demo-uris/**'
           dummy_assets:
             - 'dummy-assets/**'
           modelldcat:
             - 'modelldcat-ap-no/**'
+          root:
+            - 'docs/**'
           skos:
             - 'skos-ap-no/**'
           xkos:
