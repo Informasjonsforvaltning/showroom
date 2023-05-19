@@ -1,5 +1,5 @@
 include::../locale/attributes.adoc[]
-= image:../images/Digdir.png[Digdir,200,200] showroom with dummy assets
+= image:../images/Digdir.png[Digdir,200,200] showroom with demo permanent/persistent and dereferenced URIs
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
@@ -7,83 +7,82 @@ Norwegian Digitalisation Agency (Digdir)
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
-:toc-title: Dummy assets
+:toc-title: URIs
 :toclevels: 4
 // :sectlinks:
 :sectanchors:
 :table-stripes: even
 :xrefstyle: short
 
-Welcome to the showroom with some basic/generic dummy assets!
 
-image:../images/work-in-progress.png[WIP,72,72] _This showroom is under construction and will be "continuously" renewed._ 
+Welcome to the showroom with permanent/persistent and dereferenced demo URIs, demonstrating a possible implementation of the Norwegian URI-standard! 
+
+_https://www.digdir.no/standarder/peikarar-til-offentlege-ressursar-pa-nett/1492[The Norwegian URI-standard ↗, window="_blank", role="ext-link"] (in Norwegian only) is based on EU's https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs ↗, window="_blank", role="ext-link"]._ 
 
 == Purpose [[purpose]]
 
-This showroom is meant to 
+This showroom is meant to
 
-* provide dummy assets as machine-readable RDF Turtle resources, to be referred to in e.g. examples/tests.
-
-== Why dummy assets? [[why]]
-
-When testing or demonstrating your implementation of a given specification, you may often need to refer to instances of specific classes. You may of course use `\https://example.org/nonExisting`, however, such a reference will usually cause validation errors because the instance your refer to doesn't exist. 
-
-We provide therefore in this showroom a number of generic dummy assets which you can refer to in e.g. your test implementations. "Dummy" because We have filled the assets with dummy data, such that they _hopefully_ will validate correctly, though only in accordance with the Norwegian national specifications that are demonstrated in the other showrooms here. "Generic" because the assets will not contain value for optional properties that are only specific for a particular specification. 
+* demonstrate a possible pattern of URIs, in accordance with the Norwegian URI-standard;
+* demonstrate a possible way to implement permanent (also known as persistent) and dereferenced URIs. 
 
 == Demo resources in this showroom [[demo-resources]]
 
-There are mainly the following types of dummy-assets provided here in this showroom:
+In this showroom we demonstrate how to use the services provided by https://w3id.org[w3id.org ↗, window="_blank", role="ext-link"] to realize permanent/persistent URIs. 
 
-* *Agents*, Organizations, Public Organizations etc.: In link:files/dummy-agents-en[this collection of dummy assets] (in link:files/dummy-agents.ttl[RDF Turtle]) we have dummy instances of the following classes: 
-** Agent, `foaf:Agent`
-** Organization, `org:Organization`
-** Public organization, `cp:PublicOrganization` 
+=== URI-pattern
+
+The above-mentioned Norwegian URI-standard defines the following pattern for URIs: 
+
+[no-bullet]
+* `http(s)://{domain}/{optional(type)}/{optional(concept)}/{object_identifier}`
+
+Using w3id.org, our demo URI-pattern is as follows: 
+
+* `{domain}` = `w3id.org` 
+* `{optional(type)}` = `demo-resources`
+* `{optional(concept)}` omitted
+* `{object_identifier}` 
+** = `demo-classifications#demo-category-A` for our "Demo category A"
+** = `demo-concepts#demoCpt1` for our "demo concept 1"
+** = `demo-datasets#demoDataset1` for our "Demo controlled vocabulary 1"
+** = `demo-models#demomodel1` for our "Demo model 1"
+** etc. 
+
+=== Dereferencing URIs with content negotiation
+
+According to https://www.w3.org/TR/webarch/#representation-management[W3C ↗, window="_blank", role="ext-link"], "a URI owner SHOULD provide representations of the resource it identifies". 
+
+We use the services provided by w3id.org, and define https://github.com/perma-id/w3id.org/tree/master/demo-resources[RewriteRules for dereferencing our demo URIs ↗, window="_blank", role="ext-link"], such that every URI of ours returns at least one representation.
+
+In addition, we use the functionalities in RewriteRule to implement content negotiation  (incl. language negotiation), such that the same URI may return RDF Turtle or HTML in the preferred language, depending on "who's asking".
+
+For example, for the URI `\https://w3id.org/demo-resources/demo-concepts#demoCpt1`: 
+
+* `Accept: text/turtle` will redirect the request to the RDF Turtle representation of the resource identified by that URI.
+
+* `Accept-language: nb` will redirect to the HTML representation in Norwegian bokmål, of the resource identified by that URI.
+
+* `Accept-language: en` will redirect to the HTML representation in English, of the resource identified by that URI.
+
+== Why are permanent/persistent URIs important?
+
+ChatGPT gave (2023-03-30) the following answer to the above question: 
 
 
-* *Contact points*: In link:files/dummy-contact-points-en[this collection of dummy assets] (in link:files/dummy-contact-points.ttl[RDF Turtle]) we have dummy instances of the following classes:
-** Organization, `vcard:Organization`
-** #(_to come_)# Group, `vcard:Group`
-** #(_to come_)# Contact point, `cv:ContactPoint` 
+"A permanent URI (Uniform Resource Identifier), also known as a permanent link or a persistent identifier, is essential for the long-term accessibility and reliability of online resources. Here are some reasons why permanent URIs are important:
 
+   .  Accessibility: A permanent URI ensures that a resource can be accessed and linked to over time. This is especially important for scholarly articles, research data, and other digital resources that need to be available for a long time.
 
-* *Datasets*, Distributions, Data services, etc.: In link:files/dummy-datasets-en[this collection of dummy assets] (in link:files/dummy-datasets.ttl[RDF Turtle]) we have dummy instances of the following classes:
-** Dataset, `dcat:Dataset`
-** Distribution, `dcat:Distribution`
-** Data service, `dcat:DataService`
+   .  Stability: A permanent URI helps maintain the stability of links over time. Without a permanent URI, links to resources can break, making it difficult or impossible for users to access them.
 
-* *Documents*, Standards, etc.: In link:files/dummy-documents-en[this collection of dummy assets] (in link:files/dummy-documents.ttl[RDF Turtle]) we have dummy instances of the following classes:
-** Document, `foaf:Document` 
-** #(_to come_)# Standard, `dct:Standard`
+    . Citation: A permanent URI provides a way to cite digital resources in academic and research publications, making it easier for readers to locate and access the cited material.
 
+    . Reputation: A permanent URI helps establish the reputation of a digital resource by providing a persistent link to it that can be used to track its usage and impact over time.
 
-* *Events* etc.: In link:files/dummy-events-en[this collection of dummy assets] (in link:files/dummy-events.ttl[RDF Turtle]) we have dummy instances of the following classes:
-** Event, `cv:Event`
-** Life event, `cv:LifeEvent`
-** Business event, `cv:BusinessEvent`
+    . SEO: A permanent URI can also have SEO (Search Engine Optimization) benefits, as search engines consider the stability and longevity of links when ranking search results.
 
-* *Evidences* etc.: In link:files/dummy-evidences-en[this collection of dummy assets] (in link:files/dummy-evidences.ttl[RDF Turtle]) we have dummy instances of the following classes:
-** Evidence, `cv:Evidence`
-** Evidence type, `cv:EvidenceType`
-Evidence type list, `cv:EvidenceTypeList`
-
-
-* *Locations/addresses* etc.: In link:files/dummy-locations-en[this collection of dummy assets] (in link:files/dummy-locations.ttl[RDF Turtle]) we have dummy instances of the following classes:
-** Location, `dct:Location`
-** Address, `locn:Address`
-
-* *Services*, Public Services etc.: In link:files/dummy-services-en[this collection of dummy assets] (in link:files/dummy-services.ttl[RDF Turtle]) we have dummy instances of the following classes:
-** Service, `cpsvno:Service`
-** Public service, `cpsv:PublicService`
-** (Service) Output, `cv:Output`
-** (Service) Channel, `cv:Channel`
-
-* *Time* periods, time entities etc.: In link:files/dummy-times-en[this collection of dummy assets] (in link:files/dummy-times.ttl[RDF Turtle]) we have dummy instances of the following classes:
-** Period of time, `dct:PeriodOfTime`
-** Proper interval, `time:ProperInterval`
-** Temporal entity, `time:TemporalEntity`
-** Time instant, `time:Instant`
-** Date time description, `time:DateTimeDescription`
-
+Overall, a permanent URI is crucial for ensuring the long-term accessibility and reliability of digital resources, as well as for facilitating citation, reputation, and SEO."
 
 == _to the overview of the showrooms_ [[to-overview]]
 

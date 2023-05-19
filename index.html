@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.20">
 <meta name="author" content="Norwegian Digitalisation Agency (Digdir)">
-<title>showroom with dummy assets</title>
+<title>showroom with demo permanent/persistent and dereferenced URIs</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -512,16 +512,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image"><img src="../images/Digdir.png" alt="Digdir" width="200" height="200"></span> showroom with dummy assets</h1>
+<h1><span class="image"><img src="../images/Digdir.png" alt="Digdir" width="200" height="200"></span> showroom with demo permanent/persistent and dereferenced URIs</h1>
 <div class="details">
 <span id="author" class="author">Norwegian Digitalisation Agency (Digdir)</span><br>
 </div>
 <div id="toc" class="toc2">
-<div id="toctitle">Dummy assets</div>
+<div id="toctitle">URIs</div>
 <ul class="sectlevel1">
 <li><a href="#purpose">Purpose</a></li>
-<li><a href="#why">Why dummy assets?</a></li>
-<li><a href="#demo-resources">Demo resources in this showroom</a></li>
+<li><a href="#demo-resources">Demo resources in this showroom</a>
+<ul class="sectlevel2">
+<li><a href="#_uri_pattern">URI-pattern</a></li>
+<li><a href="#_dereferencing_uris_with_content_negotiation">Dereferencing URIs with content negotiation</a></li>
+</ul>
+</li>
+<li><a href="#_why_are_permanentpersistent_uris_important">Why are permanent/persistent URIs important?</a></li>
 <li><a href="#to-overview"><em>to the overview of the showrooms</em></a></li>
 </ul>
 </div>
@@ -530,10 +535,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Welcome to the showroom with some basic/generic dummy assets!</p>
+<p>Welcome to the showroom with permanent/persistent and dereferenced demo URIs, demonstrating a possible implementation of the Norwegian URI-standard!</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../images/work-in-progress.png" alt="WIP" width="72" height="72"></span> <em>This showroom is under construction and will be "continuously" renewed.</em></p>
+<p><em><a href="https://www.digdir.no/standarder/peikarar-til-offentlege-ressursar-pa-nett/1492" class="ext-link" target="_blank" rel="noopener">The Norwegian URI-standard ↗</a> (in Norwegian only) is based on EU&#8217;s <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris" class="ext-link" target="_blank" rel="noopener">10 Rules for Persistent URIs ↗</a>.</em></p>
 </div>
 </div>
 </div>
@@ -546,20 +551,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>provide dummy assets as machine-readable RDF Turtle resources, to be referred to in e.g. examples/tests.</p>
+<p>demonstrate a possible pattern of URIs, in accordance with the Norwegian URI-standard;</p>
+</li>
+<li>
+<p>demonstrate a possible way to implement permanent (also known as persistent) and dereferenced URIs.</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="why"><a class="anchor" href="#why"></a>Why dummy assets?</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>When testing or demonstrating your implementation of a given specification, you may often need to refer to instances of specific classes. You may of course use <code>https://example.org/nonExisting</code>, however, such a reference will usually cause validation errors because the instance your refer to doesn&#8217;t exist.</p>
-</div>
-<div class="paragraph">
-<p>We provide therefore in this showroom a number of generic dummy assets which you can refer to in e.g. your test implementations. "Dummy" because We have filled the assets with dummy data, such that they <em>hopefully</em> will validate correctly, though only in accordance with the Norwegian national specifications that are demonstrated in the other showrooms here. "Generic" because the assets will not contain value for optional properties that are only specific for a particular specification.</p>
 </div>
 </div>
 </div>
@@ -567,156 +564,119 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="demo-resources"><a class="anchor" href="#demo-resources"></a>Demo resources in this showroom</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>There are mainly the following types of dummy-assets provided here in this showroom:</p>
+<p>In this showroom we demonstrate how to use the services provided by <a href="https://w3id.org" class="ext-link" target="_blank" rel="noopener">w3id.org ↗</a> to realize permanent/persistent URIs.</p>
 </div>
-<div class="ulist">
-<ul>
+<div class="sect2">
+<h3 id="_uri_pattern"><a class="anchor" href="#_uri_pattern"></a>URI-pattern</h3>
+<div class="paragraph">
+<p>The above-mentioned Norwegian URI-standard defines the following pattern for URIs:</p>
+</div>
+<div class="ulist no-bullet">
+<ul class="no-bullet">
 <li>
-<p><strong>Agents</strong>, Organizations, Public Organizations etc.: In <a href="files/dummy-agents-en">this collection of dummy assets</a> (in <a href="files/dummy-agents.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Agent, <code>foaf:Agent</code></p>
-</li>
-<li>
-<p>Organization, <code>org:Organization</code></p>
-</li>
-<li>
-<p>Public organization, <code>cp:PublicOrganization</code></p>
+<p><code>http(s)://{domain}/{optional(type)}/{optional(concept)}/{object_identifier}</code></p>
 </li>
 </ul>
 </div>
-</li>
-<li>
-<p><strong>Contact points</strong>: In <a href="files/dummy-contact-points-en">this collection of dummy assets</a> (in <a href="files/dummy-contact-points.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Organization, <code>vcard:Organization</code></p>
-</li>
-<li>
-<p><mark>(<em>to come</em>)</mark> Group, <code>vcard:Group</code></p>
-</li>
-<li>
-<p><mark>(<em>to come</em>)</mark> Contact point, <code>cv:ContactPoint</code></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Using w3id.org, our demo URI-pattern is as follows:</p>
 </div>
-</li>
-<li>
-<p><strong>Datasets</strong>, Distributions, Data services, etc.: In <a href="files/dummy-datasets-en">this collection of dummy assets</a> (in <a href="files/dummy-datasets.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Dataset, <code>dcat:Dataset</code></p>
+<p><code>{domain}</code> = <code>w3id.org</code></p>
 </li>
 <li>
-<p>Distribution, <code>dcat:Distribution</code></p>
+<p><code>{optional(type)}</code> = <code>demo-resources</code></p>
 </li>
 <li>
-<p>Data service, <code>dcat:DataService</code></p>
-</li>
-</ul>
-</div>
+<p><code>{optional(concept)}</code> omitted</p>
 </li>
 <li>
-<p><strong>Documents</strong>, Standards, etc.: In <a href="files/dummy-documents-en">this collection of dummy assets</a> (in <a href="files/dummy-documents.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
+<p><code>{object_identifier}</code></p>
 <div class="ulist">
 <ul>
 <li>
-<p>Document, <code>foaf:Document</code></p>
+<p>= <code>demo-classifications#demo-category-A</code> for our "Demo category A"</p>
 </li>
 <li>
-<p><mark>(<em>to come</em>)</mark> Standard, <code>dct:Standard</code></p>
-</li>
-</ul>
-</div>
+<p>= <code>demo-concepts#demoCpt1</code> for our "demo concept 1"</p>
 </li>
 <li>
-<p><strong>Events</strong> etc.: In <a href="files/dummy-events-en">this collection of dummy assets</a> (in <a href="files/dummy-events.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Event, <code>cv:Event</code></p>
+<p>= <code>demo-datasets#demoDataset1</code> for our "Demo controlled vocabulary 1"</p>
 </li>
 <li>
-<p>Life event, <code>cv:LifeEvent</code></p>
+<p>= <code>demo-models#demomodel1</code> for our "Demo model 1"</p>
 </li>
 <li>
-<p>Business event, <code>cv:BusinessEvent</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Evidences</strong> etc.: In <a href="files/dummy-evidences-en">this collection of dummy assets</a> (in <a href="files/dummy-evidences.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Evidence, <code>cv:Evidence</code></p>
-</li>
-<li>
-<p>Evidence type, <code>cv:EvidenceType</code>
-Evidence type list, <code>cv:EvidenceTypeList</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Locations/addresses</strong> etc.: In <a href="files/dummy-locations-en">this collection of dummy assets</a> (in <a href="files/dummy-locations.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Location, <code>dct:Location</code></p>
-</li>
-<li>
-<p>Address, <code>locn:Address</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Services</strong>, Public Services etc.: In <a href="files/dummy-services-en">this collection of dummy assets</a> (in <a href="files/dummy-services.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Service, <code>cpsvno:Service</code></p>
-</li>
-<li>
-<p>Public service, <code>cpsv:PublicService</code></p>
-</li>
-<li>
-<p>(Service) Output, <code>cv:Output</code></p>
-</li>
-<li>
-<p>(Service) Channel, <code>cv:Channel</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Time</strong> periods, time entities etc.: In <a href="files/dummy-times-en">this collection of dummy assets</a> (in <a href="files/dummy-times.ttl">RDF Turtle</a>) we have dummy instances of the following classes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Period of time, <code>dct:PeriodOfTime</code></p>
-</li>
-<li>
-<p>Proper interval, <code>time:ProperInterval</code></p>
-</li>
-<li>
-<p>Temporal entity, <code>time:TemporalEntity</code></p>
-</li>
-<li>
-<p>Time instant, <code>time:Instant</code></p>
-</li>
-<li>
-<p>Date time description, <code>time:DateTimeDescription</code></p>
+<p>etc.</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dereferencing_uris_with_content_negotiation"><a class="anchor" href="#_dereferencing_uris_with_content_negotiation"></a>Dereferencing URIs with content negotiation</h3>
+<div class="paragraph">
+<p>According to <a href="https://www.w3.org/TR/webarch/#representation-management" class="ext-link" target="_blank" rel="noopener">W3C ↗</a>, "a URI owner SHOULD provide representations of the resource it identifies".</p>
+</div>
+<div class="paragraph">
+<p>We use the services provided by w3id.org, and define <a href="https://github.com/perma-id/w3id.org/tree/master/demo-resources" class="ext-link" target="_blank" rel="noopener">RewriteRules for dereferencing our demo URIs ↗</a>, such that every URI of ours returns at least one representation.</p>
+</div>
+<div class="paragraph">
+<p>In addition, we use the functionalities in RewriteRule to implement content negotiation  (incl. language negotiation), such that the same URI may return RDF Turtle or HTML in the preferred language, depending on "who&#8217;s asking".</p>
+</div>
+<div class="paragraph">
+<p>For example, for the URI <code>https://w3id.org/demo-resources/demo-concepts#demoCpt1</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Accept: text/turtle</code> will redirect the request to the RDF Turtle representation of the resource identified by that URI.</p>
+</li>
+<li>
+<p><code>Accept-language: nb</code> will redirect to the HTML representation in Norwegian bokmål, of the resource identified by that URI.</p>
+</li>
+<li>
+<p><code>Accept-language: en</code> will redirect to the HTML representation in English, of the resource identified by that URI.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_are_permanentpersistent_uris_important"><a class="anchor" href="#_why_are_permanentpersistent_uris_important"></a>Why are permanent/persistent URIs important?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ChatGPT gave (2023-03-30) the following answer to the above question:</p>
+</div>
+<div class="paragraph">
+<p>"A permanent URI (Uniform Resource Identifier), also known as a permanent link or a persistent identifier, is essential for the long-term accessibility and reliability of online resources. Here are some reasons why permanent URIs are important:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Accessibility: A permanent URI ensures that a resource can be accessed and linked to over time. This is especially important for scholarly articles, research data, and other digital resources that need to be available for a long time.</p>
+</li>
+<li>
+<p>Stability: A permanent URI helps maintain the stability of links over time. Without a permanent URI, links to resources can break, making it difficult or impossible for users to access them.</p>
+</li>
+<li>
+<p>Citation: A permanent URI provides a way to cite digital resources in academic and research publications, making it easier for readers to locate and access the cited material.</p>
+</li>
+<li>
+<p>Reputation: A permanent URI helps establish the reputation of a digital resource by providing a persistent link to it that can be used to track its usage and impact over time.</p>
+</li>
+<li>
+<p>SEO: A permanent URI can also have SEO (Search Engine Optimization) benefits, as search engines consider the stability and longevity of links when ranking search results.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Overall, a permanent URI is crucial for ensuring the long-term accessibility and reliability of digital resources, as well as for facilitating citation, reputation, and SEO."</p>
 </div>
 </div>
 </div>
@@ -731,7 +691,7 @@ Evidence type list, <code>cv:EvidenceTypeList</code></p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-19 12:34:12 UTC
+Last updated 2023-05-19 12:34:13 UTC
 </div>
 </div>
 </body>
