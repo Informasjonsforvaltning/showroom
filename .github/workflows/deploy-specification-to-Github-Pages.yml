@@ -27,7 +27,7 @@ jobs:
       demo_uris: ${{ steps.filter.outputs.demo_uris }}
       dummy_assets: ${{ steps.filter.outputs.dummy_assets }}
       modelldcat: ${{ steps.filter.outputs.modelldcat }}
-      root: ${{ steps.filter.outputs.docs }}
+      root: ${{ steps.filter.outputs.root }}
       skos: ${{ steps.filter.outputs.skos }}
       xkos: ${{ steps.filter.outputs.xkos }}
     steps:
