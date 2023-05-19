@@ -13,7 +13,7 @@ ifdef::backend-pdf[:toc: macro]
 :table-stripes: even
 :xrefstyle: short
 
-*Welcome* to the showrooms of the https://digdir.no[Norwegian Digitalisation Agency (Digdir) ↗, window="_blank", role="ext-link"], with RDF-based machine-readable demo resources!
+*Welcome* to the showrooms of the https://digdir.no[Norwegian Digitalisation Agency (Digdir) ↗, window="_blank", role="ext-link"], with RDF-based machine-readable demo resources! 
 
 *Feedback*: Please provide your feedback as https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues ↗, window="_blank", role="ext-link]. 
 
