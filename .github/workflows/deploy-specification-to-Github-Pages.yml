@@ -42,8 +42,6 @@ jobs:
             - 'cpsv-ap-no/**'
           dcat:
             - 'dcat-ap-no/**'
-          docs:
-            - 'docs/**'
           demo_uris:
             - 'demo-uris/**'
           dummy_assets:
