@@ -16,7 +16,7 @@ We have currently following showrooms:
 
 * link:../dummy-assets[Generic dummy assets]: Not directly related to one particular specification per se, but this showroom contains a number of machine-readable, generic dummy assets which may be used as "building blocks" when you e.g. test your implementation of a given specification.  
 
-<<img-overiew>> illustrates some of the cross-references between the resource types that are demonstrated in the various showrooms. The cross-references will be explained in the respective showrooms. 
+<<img-overview>> illustrates some of the cross-references between the resource types that are demonstrated in the various showrooms. The cross-references will be explained in the respective showrooms. 
 
 [[img-overview]]
 .Overview and cross-references between the resource types that are demonstrated in the showrooms.
