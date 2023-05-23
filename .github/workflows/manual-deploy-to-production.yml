@@ -1,66 +1,10 @@
-name: Build adocs and deploy specification to data.norge.no
+name: Manually build adocs and deploy specification to data.norge.no
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - cpsv-ap-no/**
-      - dcat-ap-no/**
-      - docs/**
-      - demo-uris/**
-      - dummy-assets/**
-      - modelldcat-ap-no/**
-      - skos-ap-no/**
-      - xkos-ap-no/**
+  workflow_dispatch:
 
 jobs:
-  filter_path:
-    name: Setup path filter
-    runs-on: ubuntu-latest
-    permissions:
-      pull-requests: read
-    outputs:
-      cpsv: ${{ steps.filter.outputs.cpsv }}
-      dcat: ${{ steps.filter.outputs.dcat }}
-      demo_uris: ${{ steps.filter.outputs.demo_uris }}
-      dummy_assets: ${{ steps.filter.outputs.dummy_assets }}
-      modelldcat: ${{ steps.filter.outputs.modelldcat }}
-      root: ${{ steps.filter.outputs.root }}
-      skos: ${{ steps.filter.outputs.skos }}
-      xkos: ${{ steps.filter.outputs.xkos }}
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Filter
-      uses: dorny/paths-filter@v2
-      id: filter
-      with:
-        base:
-          'main'
-        ref:
-          'develop'
-        filters: |
-          cpsv:
-            - 'cpsv-ap-no/**'
-          dcat:
-            - 'dcat-ap-no/**'
-          demo_uris:
-            - 'demo-uris/**'
-          dummy_assets:
-            - 'dummy-assets/**'
-          modelldcat:
-            - 'modelldcat-ap-no/**'
-          root:
-            - 'docs/**'
-          skos:
-            - 'skos-ap-no/**'
-          xkos:
-            - 'xkos-ap-no/**'
-
   cpsv_build_upload:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.cpsv == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload cpsv
     with:
@@ -78,8 +22,7 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   dcat_build_upload:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.dcat == 'true' }}
+    needs: cpsv_build_upload
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload dcat
     with:
@@ -97,8 +40,7 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   demo_uris_build_upload:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.demo_uris == 'true' }}
+    needs: dcat_build_upload
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload demo-uris
     with:
@@ -113,8 +55,7 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   dummy_assets_build_deploy:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    needs: demo_uris_build_upload
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload dummy-assets
     with:
@@ -129,8 +70,7 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   modelldcat_build_deploy:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.modelldcat == 'true' }}
+    needs: dummy_assets_build_deploy
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload modelldcat
     with:
@@ -153,15 +93,14 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
    
   root_build_upload:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.root == 'true' }}
+    needs: modelldcat_build_deploy
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload root
     with:
-      ontology-type: "showroom"
-      ontology: "overview"
-      host: "https://data.norge.no"
-      program: "asciidoctor -D docs -o index.html -a lang=en docs/main.adoc"
+      ontology-type: 'showroom'
+      ontology: 'overview'
+      host: 'https://data.norge.no'
+      program: 'asciidoctor -D docs -o index.html -a lang=en docs/main.adoc'
       files: |
         docs/index.html text/html en
         docs/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
@@ -173,15 +112,14 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   skos_build_deploy:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.skos == 'true' }}
+    needs: root_build_upload
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload skos-ap-no-begrep
     with:
-      ontology-type: "showroom"
-      ontology: "skos-ap-no"
-      host: "https://data.norge.no"
-      program: "asciidoctor -D skos-ap-no -o index.html -a lang=en skos-ap-no/main.adoc"
+      ontology-type: 'showroom'
+      ontology: 'skos-ap-no'
+      host: 'https://data.norge.no'
+      program: 'asciidoctor -D skos-ap-no -o index.html -a lang=en skos-ap-no/main.adoc'
       files: |
         skos-ap-no/index.html text/html en
         skos-ap-no/images/concept-diagrams-iso.png image/png en images/concept-diagrams-iso.png
@@ -195,15 +133,14 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
  
   xkos_build_deploy:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.xkos == 'true' }}
+    needs: skos_build_deploy
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: Build and upload xkos-ap-no
     with:
-      ontology-type: "showroom"
-      ontology: "xkos-ap-no"
-      host: "https://data.norge.no"
-      program: "asciidoctor -D xkos-ap-no -o index.html -a lang=en xkos-ap-no/main.adoc"
+      ontology-type: 'showroom'
+      ontology: 'xkos-ap-no'
+      host: 'https://data.norge.no'
+      program: 'asciidoctor -D xkos-ap-no -o index.html -a lang=en xkos-ap-no/main.adoc'
       files: |
         xkos-ap-no/index.html text/html en
         xkos-ap-no/images/demo-classification1.png image/png en images/demo-classification1.png
