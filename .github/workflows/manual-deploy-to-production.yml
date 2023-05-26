@@ -6,11 +6,11 @@ on:
 jobs:
   cpsv_build_upload:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload cpsv
+    name: cpsv
     with:
-      host: 'https://data.norge.no'
-      ontology: 'cpsv-ap-no'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "cpsv-ap-no"
+      ontology-type: "showroom"
       program: "asciidoctor -D cpsv-ap-no -o index.html -a lang=en cpsv-ap-no/main.adoc"
       files: |
         cpsv-ap-no/index.html text/html en
@@ -22,13 +22,12 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   dcat_build_upload:
-    needs: cpsv_build_upload
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload dcat
+    name: dcat
     with:
-      host: 'https://data.norge.no'
-      ontology: 'dcat-ap-no'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "dcat-ap-no"
+      ontology-type: "showroom"
       program: "asciidoctor -D dcat-ap-no -o index.html -a lang=en dcat-ap-no/main.adoc"
       files: |
         dcat-ap-no/index.html text/html en
@@ -40,13 +39,12 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   demo_uris_build_upload:
-    needs: dcat_build_upload
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload demo-uris
+    name: demo-uris
     with:
-      host: 'https://data.norge.no'
-      ontology: 'demo-uris'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "demo-uris"
+      ontology-type: "showroom"
       program: "asciidoctor -D demo-uris -o index.html -a lang=en demo-uris/main.adoc"
       files: |
         demo-uris/index.html text/html en
@@ -55,13 +53,12 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   dummy_assets_build_deploy:
-    needs: demo_uris_build_upload
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload dummy-assets
+    name: dummy-assets
     with:
-      host: 'https://data.norge.no'
-      ontology: 'dummy-assets'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
       program: "asciidoctor -D dummy-assets -o index.html -a lang=en dummy-assets/main.adoc"
       files: |
         dummy-assets/index.html text/html en
@@ -70,13 +67,12 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   modelldcat_build_deploy:
-    needs: dummy_assets_build_deploy
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload modelldcat
+    name: modelldcat
     with:
-      host: 'https://data.norge.no'
-      ontology: 'modelldcat-ap-no'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "modelldcat-ap-no"
+      ontology-type: "showroom"
       program: "asciidoctor -D modelldcat-ap-no -o index.html -a lang=en modelldcat-ap-no/main.adoc"
       files: |
         modelldcat-ap-no/index.html text/html en
@@ -93,14 +89,13 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
    
   root_build_upload:
-    needs: modelldcat_build_deploy
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload root
+    name: root
     with:
-      ontology-type: 'showroom'
-      ontology: 'overview'
-      host: 'https://data.norge.no'
-      program: 'asciidoctor -D docs -o index.html -a lang=en docs/main.adoc'
+      ontology-type: "showroom"
+      ontology: "overview"
+      host: "https://data.norge.no"
+      program: "asciidoctor -D docs -o index.html -a lang=en docs/main.adoc"
       files: |
         docs/index.html text/html en
         docs/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
@@ -112,14 +107,13 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   skos_build_deploy:
-    needs: root_build_upload
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload skos-ap-no-begrep
+    name: skos-ap-no-begrep
     with:
-      ontology-type: 'showroom'
-      ontology: 'skos-ap-no'
-      host: 'https://data.norge.no'
-      program: 'asciidoctor -D skos-ap-no -o index.html -a lang=en skos-ap-no/main.adoc'
+      ontology-type: "showroom"
+      ontology: "skos-ap-no"
+      host: "https://data.norge.no"
+      program: "asciidoctor -D skos-ap-no -o index.html -a lang=en skos-ap-no/main.adoc"
       files: |
         skos-ap-no/index.html text/html en
         skos-ap-no/images/concept-diagrams-iso.png image/png en images/concept-diagrams-iso.png
@@ -133,14 +127,13 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
  
   xkos_build_deploy:
-    needs: skos_build_deploy
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload xkos-ap-no
+    name: xkos-ap-no
     with:
-      ontology-type: 'showroom'
-      ontology: 'xkos-ap-no'
-      host: 'https://data.norge.no'
-      program: 'asciidoctor -D xkos-ap-no -o index.html -a lang=en xkos-ap-no/main.adoc'
+      ontology-type: "showroom"
+      ontology: "xkos-ap-no"
+      host: "https://data.norge.no"
+      program: "asciidoctor -D xkos-ap-no -o index.html -a lang=en xkos-ap-no/main.adoc"
       files: |
         xkos-ap-no/index.html text/html en
         xkos-ap-no/images/demo-classification1.png image/png en images/demo-classification1.png
