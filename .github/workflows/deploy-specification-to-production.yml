@@ -60,11 +60,11 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.cpsv == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload cpsv
+    name: cpsv
     with:
-      host: 'https://data.norge.no'
-      ontology: 'cpsv-ap-no'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "cpsv-ap-no"
+      ontology-type: "showroom"
       program: "asciidoctor -D cpsv-ap-no -o index.html -a lang=en cpsv-ap-no/main.adoc"
       files: |
         cpsv-ap-no/index.html text/html en
@@ -79,11 +79,11 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.dcat == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload dcat
+    name: dcat
     with:
-      host: 'https://data.norge.no'
-      ontology: 'dcat-ap-no'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "dcat-ap-no"
+      ontology-type: "showroom"
       program: "asciidoctor -D dcat-ap-no -o index.html -a lang=en dcat-ap-no/main.adoc"
       files: |
         dcat-ap-no/index.html text/html en
@@ -98,11 +98,11 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.demo_uris == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload demo-uris
+    name: demo-uris
     with:
-      host: 'https://data.norge.no'
-      ontology: 'demo-uris'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "demo-uris"
+      ontology-type: "showroom"
       program: "asciidoctor -D demo-uris -o index.html -a lang=en demo-uris/main.adoc"
       files: |
         demo-uris/index.html text/html en
@@ -114,11 +114,11 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload dummy-assets
+    name: dummy-assets
     with:
-      host: 'https://data.norge.no'
-      ontology: 'dummy-assets'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
       program: "asciidoctor -D dummy-assets -o index.html -a lang=en dummy-assets/main.adoc"
       files: |
         dummy-assets/index.html text/html en
@@ -130,11 +130,11 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.modelldcat == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload modelldcat
+    name: modelldcat
     with:
-      host: 'https://data.norge.no'
-      ontology: 'modelldcat-ap-no'
-      ontology-type: 'showroom'
+      host: "https://data.norge.no"
+      ontology: "modelldcat-ap-no"
+      ontology-type: "showroom"
       program: "asciidoctor -D modelldcat-ap-no -o index.html -a lang=en modelldcat-ap-no/main.adoc"
       files: |
         modelldcat-ap-no/index.html text/html en
@@ -154,7 +154,7 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.root == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload root
+    name: root
     with:
       ontology-type: "showroom"
       ontology: "overview"
@@ -174,7 +174,7 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.skos == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload skos-ap-no-begrep
+    name: skos-ap-no-begrep
     with:
       ontology-type: "showroom"
       ontology: "skos-ap-no"
@@ -196,7 +196,7 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.xkos == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload xkos-ap-no
+    name: xkos-ap-no
     with:
       ontology-type: "showroom"
       ontology: "xkos-ap-no"
