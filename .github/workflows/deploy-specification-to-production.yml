@@ -36,10 +36,8 @@ jobs:
       uses: dorny/paths-filter@v2
       id: filter
       with:
-        base:
-          'main'
         ref:
-          'develop'
+          'main'
         filters: |
           cpsv:
             - 'cpsv-ap-no/**'
