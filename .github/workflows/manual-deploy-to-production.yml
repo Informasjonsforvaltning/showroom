@@ -6,7 +6,7 @@ on:
 jobs:
   cpsv_build_upload:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload cpsv
+    name: cpsv
     with:
       host: "https://data.norge.no"
       ontology: "cpsv-ap-no"
@@ -23,7 +23,7 @@ jobs:
 
   dcat_build_upload:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload dcat
+    name: dcat
     with:
       host: "https://data.norge.no"
       ontology: "dcat-ap-no"
@@ -40,7 +40,7 @@ jobs:
 
   demo_uris_build_upload:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload demo-uris
+    name: demo-uris
     with:
       host: "https://data.norge.no"
       ontology: "demo-uris"
@@ -54,7 +54,7 @@ jobs:
 
   dummy_assets_build_deploy:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload dummy-assets
+    name: dummy-assets
     with:
       host: "https://data.norge.no"
       ontology: "dummy-assets"
@@ -68,7 +68,7 @@ jobs:
 
   modelldcat_build_deploy:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload modelldcat
+    name: modelldcat
     with:
       host: "https://data.norge.no"
       ontology: "modelldcat-ap-no"
@@ -90,7 +90,7 @@ jobs:
    
   root_build_upload:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload root
+    name: root
     with:
       ontology-type: "showroom"
       ontology: "overview"
@@ -108,7 +108,7 @@ jobs:
 
   skos_build_deploy:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload skos-ap-no-begrep
+    name: skos-ap-no-begrep
     with:
       ontology-type: "showroom"
       ontology: "skos-ap-no"
@@ -128,7 +128,7 @@ jobs:
  
   xkos_build_deploy:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: Build and upload xkos-ap-no
+    name: xkos-ap-no
     with:
       ontology-type: "showroom"
       ontology: "xkos-ap-no"
