@@ -1,5 +1,5 @@
 include::../locale/attributes.adoc[]
-= image:../images/Digdir.png[Digdir,200,200] showroom - demo datasets
+= image:../overview/images/Digdir.png[Digdir,200,200] showroom - demo datasets
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
