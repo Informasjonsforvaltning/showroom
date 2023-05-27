@@ -1,5 +1,5 @@
 include::../locale/attributes.adoc[]
-= image:../images/Digdir.png[Digdir,200,200]  showroom - demo services and events
+= image:../overview/images/Digdir.png[Digdir,200,200]  showroom - demo services and events
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
@@ -22,7 +22,7 @@ _https://informasjonsforvaltning.github.io/cpsv-ap-no/[CPSV-AP-NO ↗, window="_
 
 [cols="10,90", grid=nome,frame=none] 
 |===
-| image:../images/work-in-progress.png[WIP,200,200] | _This showroom is under construction and will be finalized as soon as practically possible after the finalizing of CPSV-AP-NO._ 
+| image:../overview/images/work-in-progress.png[WIP,200,200] | _This showroom is under construction and will be finalized as soon as practically possible after the finalizing of CPSV-AP-NO._ 
 |===
 
 == Purpose [[purpose]]
