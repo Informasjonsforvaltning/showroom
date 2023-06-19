@@ -7,7 +7,7 @@ on:
     paths:
       - cpsv-ap-no/**
       - dcat-ap-no/**
-      - docs/**
+      - overview/**
       - demo-uris/**
       - dummy-assets/**
       - modelldcat-ap-no/**
@@ -49,7 +49,7 @@ jobs:
           modelldcat:
             - 'modelldcat-ap-no/**'
           root:
-            - 'docs/**'
+            - 'overview/**'
           skos:
             - 'skos-ap-no/**'
           xkos:
@@ -132,10 +132,10 @@ jobs:
     name: Deploy root to GitHub Pages
     with:
       publish_branch: gh-pages
-      publish_dir: ./docs
+      publish_dir: ./overview
       destination_dir: ./overview
       keep_files: true
-      program: "asciidoctor -D docs -o index.html -a lang=en docs/main.adoc"
+      program: "asciidoctor -D overview -o index.html -a lang=en overview/main.adoc"
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

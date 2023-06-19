@@ -95,13 +95,13 @@ jobs:
       ontology-type: "showroom"
       ontology: "overview"
       host: "https://data.norge.no"
-      program: "asciidoctor -D docs -o index.html -a lang=en docs/main.adoc"
+      program: "asciidoctor -D overview -o index.html -a lang=en overview/main.adoc"
       files: |
-        docs/index.html text/html en
-        docs/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
-        docs/images/Digdir.png image/png en images/Digdir.png
-        docs/images/registering-n-harvesting.png image/png en images/registering-n-harvesting.png
-        docs/images/work-in-progress.png image/png en images/work-in-progress.png
+        overview/index.html text/html en
+        overview/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
+        overview/images/Digdir.png image/png en images/Digdir.png
+        overview/images/registering-n-harvesting.png image/png en images/registering-n-harvesting.png
+        overview/images/work-in-progress.png image/png en images/work-in-progress.png
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
