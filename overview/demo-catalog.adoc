@@ -2,7 +2,7 @@
 
 The Norwegian national specifications demonstrated in the various showrooms here, are also specifications for how to make the resource descriptions (metadata) available in a data portal, and in particular, https://data.norge.no/[the National Data Catalog of Norway ↗, window="_blank", role="ext-link"] maintained by the Norwegian Digitalisation Agency. The resources will thus be findable via the National Data Catalog. 
 
-In order to make the resource descriptions available in the National Data Catalog, you may 
+In order to make the resource descriptions available in the National Data Catalog, you may, if you are authorized to do so on behalf of your organization, 
 
 . use the registration services, to register your datasets, concepts etc., which will then be automatically harvested to the National Data Portal, or 
 . use the harvesting services, to specify the URLs where your machine-readable resource descriptions are made available for harvesting to the National Data Catalog.
@@ -14,7 +14,7 @@ This is illustrated in <<img-registering-n-harvesting>>, which also shows the us
 [link=images/registering-n-harvesting.png]
 image::images/registering-n-harvesting.png[alt="Drawing showing registration and harvesting in to the National Data Portal."]
 
-There is also a https://demo.fellesdatakatalog.digdir.no/[demo portal ↗, window="_blank", role="ext-link"] provided by the Norwegian Digitalisation Agency, which has the same functionalities as in the National Data Catalog, but the content in the demo portal is only meant for testing and demonstration purposes. 
+There is also a https://demo.fellesdatakatalog.digdir.no/[demo portal ↗, window="_blank", role="ext-link"] provided by the Norwegian Digitalisation Agency, which has the same functionalities as in the National Data Catalog, but the content in the demo portal is only meant for testing and demonstration purposes. Note that you need to be a registered user in the demo portal in order to use the editor and/or harvester of the demo portal. 
 
 Using the harvesting services, all the demo resources that are demonstrated in the various showrooms here are, or will be, automatically harvested to and thus also findable via the demo portal. 
 

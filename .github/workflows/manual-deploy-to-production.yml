@@ -1,64 +1,10 @@
-name: Build adocs and deploy specification to data.norge.no
+name: Manually build adocs and deploy specification to data.norge.no
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - cpsv-ap-no/**
-      - dcat-ap-no/**
-      - overview/**
-      - demo-uris/**
-      - dummy-assets/**
-      - modelldcat-ap-no/**
-      - skos-ap-no/**
-      - xkos-ap-no/**
+  workflow_dispatch:
 
 jobs:
-  filter_path:
-    name: Setup path filter
-    runs-on: ubuntu-latest
-    permissions:
-      pull-requests: read
-    outputs:
-      cpsv: ${{ steps.filter.outputs.cpsv }}
-      dcat: ${{ steps.filter.outputs.dcat }}
-      demo_uris: ${{ steps.filter.outputs.demo_uris }}
-      dummy_assets: ${{ steps.filter.outputs.dummy_assets }}
-      modelldcat: ${{ steps.filter.outputs.modelldcat }}
-      root: ${{ steps.filter.outputs.root }}
-      skos: ${{ steps.filter.outputs.skos }}
-      xkos: ${{ steps.filter.outputs.xkos }}
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Filter
-      uses: dorny/paths-filter@v2
-      id: filter
-      with:
-        ref:
-          'main'
-        filters: |
-          cpsv:
-            - 'cpsv-ap-no/**'
-          dcat:
-            - 'dcat-ap-no/**'
-          demo_uris:
-            - 'demo-uris/**'
-          dummy_assets:
-            - 'dummy-assets/**'
-          modelldcat:
-            - 'modelldcat-ap-no/**'
-          root:
-            - 'overview/**'
-          skos:
-            - 'skos-ap-no/**'
-          xkos:
-            - 'xkos-ap-no/**'
-
   cpsv_build_upload:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.cpsv == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: cpsv
     with:
@@ -76,8 +22,6 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   dcat_build_upload:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.dcat == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: dcat
     with:
@@ -95,8 +39,6 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   demo_uris_build_upload:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.demo_uris == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: demo-uris
     with:
@@ -111,8 +53,6 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   dummy_assets_build_deploy:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: dummy-assets
     with:
@@ -127,8 +67,6 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   modelldcat_build_deploy:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.modelldcat == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: modelldcat
     with:
@@ -151,8 +89,6 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
    
   root_build_upload:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.root == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: root
     with:
@@ -171,8 +107,6 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
   skos_build_deploy:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.skos == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: skos-ap-no-begrep
     with:
@@ -193,8 +127,6 @@ jobs:
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
  
   xkos_build_deploy:
-    needs: filter_path
-    if: ${{ needs.filter_path.outputs.xkos == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: xkos-ap-no
     with:

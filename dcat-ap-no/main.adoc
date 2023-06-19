@@ -1,9 +1,9 @@
 include::../locale/attributes.adoc[]
-= image:../images/Digdir.png[Digdir,200,200] showroom - demo datasets
+= image:./../overview/images/Digdir.png[Digdir,200,200] showroom - demo datasets
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
-:docinfodir: ../docs
+:docinfodir: ../overview
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
@@ -32,7 +32,7 @@ This showroom is meant to
 
 In this showroom we have a https://w3id.org/demo-resources/demo-datasets#demoDataset1[demo dataset, called "Demo controlled vocabulary 1"] (in link:files/demo-datasets.ttl[RDF Turtle]):
 
-* The dataset description shown here, describes the demo classification called "Demo controlled vocabulary 1" that is demonstrated in our link:../xkos-ap-no/[showroom with demo classifications]. 
+* The dataset description shown here, describes the demo classification called "Demo controlled vocabulary 1" that is demonstrated in our link:./../xkos-ap-no/[showroom with demo classifications]. 
 ** This is because a classification with its categories _is_ a dataset.   
 ** The difference between the two showrooms is: The showroom here illustrates how to describe a dataset in accordance with DCAT-AP-NO such that it is findable via e.g. the National Data Catalog, while the other showroom illustrates how to make available the dataset itself. 
 * The demo dataset (= our demo classification) is here described as an open dataset, i.e., 
@@ -61,7 +61,7 @@ In this showroom we have a https://w3id.org/demo-resources/demo-datasets#demoDat
 *Datasets and concepts*, for example:
 
 * A dataset may refer to concepts that the dataset represents or concepts that are relevant for understanding the dataset.
-** For example, in the description of our demo dataset, the property https://data.norge.no/specification/dcat-ap-no#Datasett-begrep[concept (dct:subject) ↗, window="_blank", role="ext-link"] refers to "demo concept 1" and "demo concept 2" that are demonstrated in our link:../skos-ap-no/[showroom with demo concepts]. 
+** For example, in the description of our demo dataset, the property https://data.norge.no/specification/dcat-ap-no#Datasett-begrep[concept (dct:subject) ↗, window="_blank", role="ext-link"] refers to "demo concept 1" and "demo concept 2" that are demonstrated in our link:./../skos-ap-no/[showroom with demo concepts]. 
 
 *Datasets and information models,* for example:
 
@@ -72,11 +72,11 @@ In this showroom we have a https://w3id.org/demo-resources/demo-datasets#demoDat
 *Datasets and services/events,* for example:
 
 * A dataset may be used as the input (evidence) needed in order to execute a service. A service may produce a dataset as the output. 
-** This is demonstrated and explained in our link:../cpsv-ap-no/[showroom with demo services and events].
+** This is demonstrated and explained in our link:./../cpsv-ap-no/[showroom with demo services and events].
 
 * An event may be a dataset such that one may subscribe to events in order to provide e.g. proactive services.
-** This is demonstrated and explained in our link:../cpsv-ap-no/[showroom with demo services and events].
+** This is demonstrated and explained in our link:./../cpsv-ap-no/[showroom with demo services and events].
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:../overview/#overview[Click here for the overview of all the showrooms]
+link:./../overview/#overview[Click here for the overview of all the showrooms]
