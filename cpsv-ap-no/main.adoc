@@ -1,9 +1,9 @@
 include::../locale/attributes.adoc[]
-= image:../overview/images/Digdir.png[Digdir,200,200]  showroom - demo services and events
+= image:./../overview/images/Digdir.png[Digdir,200,200]  showroom - demo services and events
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
-:docinfodir: ../docs
+:docinfodir: ../overview
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
@@ -17,8 +17,6 @@ ifdef::backend-pdf[:toc: macro]
 Welcome to the showroom with demo services and events, demonstrating the usage of CPSV-AP-NO!
 
 _https://informasjonsforvaltning.github.io/cpsv-ap-no/[CPSV-AP-NO ↗, window="_blank", role="ext-link"] (#currently as a trial version#) is the the Norwegian application profile of https://github.com/SEMICeu/CPSV-AP[EU's Core Public Service Vocabulary Application Profile (CPSV-AP) ↗, window="_blank", role="ext-link"], for describing services and events._
-
-// image:../images/work-in-progress.png[WIP,72,72] _This showroom is under construction and will be finalized as soon as practically possible after the finalizing of CPSV-AP-NO._ 
 
 [cols="10,90", grid=nome,frame=none] 
 |===
@@ -71,9 +69,9 @@ In this showroom we have a https://w3id.org/demo-resources/demo-services-events[
 *Services/events and information models*, for example: 
 
 * An evidence that is needed to execute a service, or the output from a service, may a dataset and thus may conform to one or more standards (incl. information models).
-** This is demonstrated and explained in our link:../dcat-ap-no[showroom with demo datasets].  
+** This is demonstrated and explained in our link:./../dcat-ap-no[showroom with demo datasets].  
 
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:../overview/#overview[Click here for the overview of all the showrooms]
+link:./../overview/#overview[Click here for the overview of all the showrooms]

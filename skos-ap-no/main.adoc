@@ -1,9 +1,9 @@
 include::../locale/attributes.adoc[]
-= image:../overview/images/Digdir.png[Digdir,200,200] showroom - demo concepts
+= image:./../overview/images/Digdir.png[Digdir,200,200] showroom - demo concepts
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
-:docinfodir: ../docs
+:docinfodir: ../overview
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
@@ -116,34 +116,34 @@ There are also two different ways to specify the definition of a given concept, 
 *Concepts and classifications*, for example:
 
 * A concept may refer to a classification as its value range. 
-** Our https://w3id.org/demo-resources/demo-concepts#demoCpt2["demo concept 2"], refers to our https://w3id.org/demo-resources/demo-classifications#demoClassification1["demo controlled vocabulary 1"] (demonstrated in our link:../xkos-ap-no/[showroom with demo classifications]) as its https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de[value range (skosno:valueRange) ↗, window="_blank", role="ext-link"].
+** Our https://w3id.org/demo-resources/demo-concepts#demoCpt2["demo concept 2"], refers to our https://w3id.org/demo-resources/demo-classifications#demoClassification1["demo controlled vocabulary 1"] (demonstrated in our link:./../xkos-ap-no/[showroom with demo classifications]) as its https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de[value range (skosno:valueRange) ↗, window="_blank", role="ext-link"].
 ** Classifications should therefore be made available, also machine-readably. 
 
 * A concept may be included in or referred to from a classification. 
-** This is demonstrated and explained in our link:../xkos-ap-no/[showroom with demo classifications]. 
+** This is demonstrated and explained in our link:./../xkos-ap-no/[showroom with demo classifications]. 
 
 *Concepts and datasets*, for example:
 
 * A dataset may refer to concepts that the dataset represents or concepts that are relevant for understanding the dataset.
-** This is demonstrated and explained in our link:../dcat-ap-no/[showroom with demo datasets].
+** This is demonstrated and explained in our link:./../dcat-ap-no/[showroom with demo datasets].
 
 * When describing a dataset, and where coded values are used, the coded values should preferably be concepts chosen from controlled vocabularies (i.e., classifications).  
-** This is demonstrated and explained in our link:../dcat-ap-no/[showroom with demo datasets].
+** This is demonstrated and explained in our link:./../dcat-ap-no/[showroom with demo datasets].
 
 *Concepts and information models*, for example:
 
 * An information model may refer to concepts that the information model represents or concepts that are relevant for understanding the information model.
-** This is demonstrated and explained in our link:../modelldcat-ap-no/[showroom with demo information models].
+** This is demonstrated and explained in our link:./../modelldcat-ap-no/[showroom with demo information models].
 
 * When describing an information model, and where coded values are used, the coded values should preferably be concepts chosen from controlled vocabularies (i.e., classifications). 
-** This is demonstrated and explained and explained in our link:../modelldcat-ap-no/[showroom with demo information models]. 
+** This is demonstrated and explained and explained in our link:./../modelldcat-ap-no/[showroom with demo information models]. 
 
 
 *Concepts and services/events*, for example:
 
 * A service or event, may refer to concepts that are relevant for understanding the service or event. 
-** This is demonstrated and explained in our link:../cpsv-ap-no/[showroom with demo services and events]. 
+** This is demonstrated and explained in our link:./../cpsv-ap-no/[showroom with demo services and events]. 
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:../overview/#overview[Click here for the overview of all the showrooms]
+link:./../overview/#overview[Click here for the overview of all the showrooms]
