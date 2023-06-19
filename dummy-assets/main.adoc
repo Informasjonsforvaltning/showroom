@@ -1,9 +1,9 @@
 include::../locale/attributes.adoc[]
-= image:../overview/images/Digdir.png[Digdir,200,200] showroom with dummy assets
+= image:./../overview/images/Digdir.png[Digdir,200,200] showroom with dummy assets
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
-:docinfodir: ../docs
+:docinfodir: ../overview
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
