@@ -2,7 +2,7 @@
 
 We have currently following showrooms:
 
-* link:./../xkos-ap-no/[Demo classifications / controlled vocabularies]: In this showroom we will demonstrate the usage of https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO  &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of DDI's https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"]), to describe and publish machine-readable classifications, controlled vocabularies, code lists etc., with cross-references to some of the other demo resources covered by the other specifications. 
+* link:/showroom/xkos-ap-no/[Demo classifications / controlled vocabularies]: In this showroom we will demonstrate the usage of https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO  &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of DDI's https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"]), to describe and publish machine-readable classifications, controlled vocabularies, code lists etc., with cross-references to some of the other demo resources covered by the other specifications. 
 
 * link:./../skos-ap-no/[Demo concepts]: In this showroom we will demonstrate the usage of https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep  &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of W3C's https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"]), to describe and publish machine-readable concepts and concept collections, with cross-references to some of the demo resources covered by the other specifications.     
 
