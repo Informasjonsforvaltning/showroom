@@ -24,7 +24,7 @@ jobs:
           with:
             ontology-type: "showroom"
             ontology: "cpsv-ap-no"
-            host: "https://data.norge.no"
+            host: "https://fellesdatakatalog.digdir.no"
             api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
             files: |
               cpsv-ap-no/files/demo-services-events.ttl text/turtle en /showroom/cpsv-ap-no/files/demo-services-events.ttl
