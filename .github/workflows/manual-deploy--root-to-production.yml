@@ -23,8 +23,8 @@ jobs:
          uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
          id: upload-root
          with:
-            ontology-type: "showroom"
-            ontology: "./"
+            ontology-type: ""
+            ontology: "showroom"
             host: "https://data.norge.no"
             api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
             files: |
