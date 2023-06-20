@@ -16,7 +16,7 @@ ifdef::backend-pdf[:toc: macro]
 
 Welcome to the showroom with demo datasets, demonstrating the usage of DCAT-AP-NO! 
 
-_https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO ↗, window="_blank", role="ext-link"] (in Norwegian only) is the Norwegian application profile of EU's https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP ↗, window="_blank", role="ext-link"], for describing datasets, data services and data catalogs._ 
+_https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] (in Norwegian only) is the Norwegian application profile of EU's https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP &#x29C9;, window="_blank", role="ext-link"], for describing datasets, data services and data catalogs._ 
 
 == Purpose [[purpose]] 
 
@@ -36,14 +36,14 @@ In this showroom we have a https://w3id.org/demo-resources/demo-datasets#demoDat
 ** This is because a classification with its categories _is_ a dataset.   
 ** The difference between the two showrooms is: The showroom here illustrates how to describe a dataset in accordance with DCAT-AP-NO such that it is findable via e.g. the National Data Catalog, while the other showroom illustrates how to make available the dataset itself. 
 * The demo dataset (= our demo classification) is here described as an open dataset, i.e., 
-** freely available, with https://data.norge.no/specification/dcat-ap-no#Datasett-tilgangsniv%C3%A5[access rights (dct:accessRights) ↗, window="_blank", role="ext-link"] set to "public", and 
-** with three https://data.norge.no/specification/dcat-ap-no#Datasett-datasettdistribusjon[distributions ↗, window="_blank", role="ext-link"] under https://data.norge.no/specification/dcat-ap-no#Distribusjon-lisens[licence ↗, window="_blank", role="ext-link"] CC0 which is an open licence.
+** freely available, with https://data.norge.no/specification/dcat-ap-no#Datasett-tilgangsniv%C3%A5[access rights (dct:accessRights) &#x29C9;, window="_blank", role="ext-link"] set to "public", and 
+** with three https://data.norge.no/specification/dcat-ap-no#Datasett-datasettdistribusjon[distributions &#x29C9;, window="_blank", role="ext-link"] under https://data.norge.no/specification/dcat-ap-no#Distribusjon-lisens[licence &#x29C9;, window="_blank", role="ext-link"] CC0 which is an open licence.
 * The three distributions are: 
-** one https://w3id.org/demo-resources/demo-datasets#demoDistribution1[machine-readable] (https://data.norge.no/specification/dcat-ap-no#Distribusjon-format[format (dct:format) ↗, window="_blank", role="ext-link"] = RDF_TURTLE), 
+** one https://w3id.org/demo-resources/demo-datasets#demoDistribution1[machine-readable] (https://data.norge.no/specification/dcat-ap-no#Distribusjon-format[format (dct:format) &#x29C9;, window="_blank", role="ext-link"] = RDF_TURTLE), 
 ** one https://w3id.org/demo-resources/demo-datasets#demoDistribution2[human-readable in Norwegian bokmål] (format = HTML), and 
 ** another https://w3id.org/demo-resources/demo-datasets#demoDistribution3[human-readable in English] (format = HTML).
 
-* This dataset description is automatically harvested to and thus https://demo.fellesdatakatalog.digdir.no/datasets?q=demodataset[findable via the demo portal ↗, window="_blank", role="ext-link"].
+* This dataset description is automatically harvested to and thus https://demo.fellesdatakatalog.digdir.no/datasets?q=demodataset[findable via the demo portal &#x29C9;, window="_blank", role="ext-link"].
  
 == Some cross-references with other demo resources [[cross-references]]
 
@@ -55,18 +55,18 @@ In this showroom we have a https://w3id.org/demo-resources/demo-datasets#demoDat
 ** This showroom shows how to describe our demo classification as an open dataset, and publish the description in the demo portal such that this dataset (our demo classification) is findable via the demo portal. 
 
 * When describing a dataset, and where coded values are used, the coded values should preferably be concepts chosen from controlled vocabularies (i.e., classifications). 
-** For example, in the description of our demo dataset, the property https://data.norge.no/specification/dcat-ap-no#Datasett-tilgangsniv%C3%A5[access rights (dct:accessRights) ↗, window="_blank", role="ext-link"] refers to "PUBLIC" which is chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[Access right ↗, window="_blank", role="ext-link"], and the https://data.norge.no/specification/dcat-ap-no#Distribusjon-format[format (dct:format)↗, window="_blank", role="ext-link"] of the distributions refer to "RDF_TURLE" and "HTML" which are chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[File type ↗, window="_blank", role="ext-link"]. 
+** For example, in the description of our demo dataset, the property https://data.norge.no/specification/dcat-ap-no#Datasett-tilgangsniv%C3%A5[access rights (dct:accessRights) &#x29C9;, window="_blank", role="ext-link"] refers to "PUBLIC" which is chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[Access right &#x29C9;, window="_blank", role="ext-link"], and the https://data.norge.no/specification/dcat-ap-no#Distribusjon-format[format (dct:format)↗, window="_blank", role="ext-link"] of the distributions refer to "RDF_TURLE" and "HTML" which are chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[File type &#x29C9;, window="_blank", role="ext-link"]. 
 ** Classifications should therefore be made available, also machine-readably.
 
 *Datasets and concepts*, for example:
 
 * A dataset may refer to concepts that the dataset represents or concepts that are relevant for understanding the dataset.
-** For example, in the description of our demo dataset, the property https://data.norge.no/specification/dcat-ap-no#Datasett-begrep[concept (dct:subject) ↗, window="_blank", role="ext-link"] refers to "demo concept 1" and "demo concept 2" that are demonstrated in our link:./../skos-ap-no/[showroom with demo concepts]. 
+** For example, in the description of our demo dataset, the property https://data.norge.no/specification/dcat-ap-no#Datasett-begrep[concept (dct:subject) &#x29C9;, window="_blank", role="ext-link"] refers to "demo concept 1" and "demo concept 2" that are demonstrated in our link:./../skos-ap-no/[showroom with demo concepts]. 
 
 *Datasets and information models,* for example:
 
 * A dataset (and/or its distributions, data services) may conform to one or more standards (incl. information models).
-** Our demo dataset https://data.norge.no/specification/dcat-ap-no#Datasett-iSamsvarMed[conforms to (dct:conformsTo) ↗, window="_blank", role="ext-link"] XKOS-AP-NO and its information models. 
+** Our demo dataset https://data.norge.no/specification/dcat-ap-no#Datasett-iSamsvarMed[conforms to (dct:conformsTo) &#x29C9;, window="_blank", role="ext-link"] XKOS-AP-NO and its information models. 
 ** Information models should therefore be made available, also machine-readably.
 
 *Datasets and services/events,* for example:

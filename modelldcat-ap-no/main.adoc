@@ -16,7 +16,7 @@ ifdef::backend-pdf[:toc: macro]
 
 Welcome to the showroom with demo information models, demonstrating the usage of ModellDCAT-AP-NO!
 
-_https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO ↗, window="_blank", role="ext-link"] (in Norwegian only) is the Norwegian application profile of https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO ↗, window="_blank", role="ext-link"], for describing information models and catalogs of information models._
+_https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] (in Norwegian only) is the Norwegian application profile of https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], for describing information models and catalogs of information models._
 
 == Purpose [[purpose]]
 
@@ -33,7 +33,7 @@ This showroom is meant to
 
 In this showroom we have a https://w3id.org/demo-resources/demo-models[a catalog with several demo information models] (in link:files/demo-models.ttl[RDF Turtle]):
 
-* The demo information models are automatically harvested to and thus findable via https://demo.fellesdatakatalog.digdir.no/informationmodels?q=demomodel[the demo portal ↗, window="_blank", role="ext-link"]. #Note: the demo portal has some bugs such that not all properties are currently shown in the portal.# 
+* The demo information models are automatically harvested to and thus findable via https://demo.fellesdatakatalog.digdir.no/informationmodels?q=demomodel[the demo portal &#x29C9;, window="_blank", role="ext-link"]. #Note: the demo portal has some bugs such that not all properties are currently shown in the portal.# 
 
 * There are four demo information models: 
 ** https://w3id.org/demo-resources/demo-models#demomodel1["Demo model 1"] contains https://w3id.org/demo-resources/demo-models#demomodel2["Demo model 2"] and https://w3id.org/demo-resources/demo-models#demomodel3["Demo model 3"], and https://w3id.org/demo-resources/demo-models#demomodel4["Demo model 4"] illustrates the usage of all _syntactically_ possible relations that an information model may have with other information models, in accordance with ModellDCAT-AP-NO. 
@@ -42,10 +42,10 @@ In this showroom we have a https://w3id.org/demo-resources/demo-models[a catalog
 *** Simply put: you don't need to describe all the details in your information model, before you can tell the world that you have an information model. 
 
 * "Demo model 1" also illustrates in particular the following: 
-** "Demo model 1" has four https://data.norge.no/specification/modelldcat-ap-no#klasse-modellelement[model elements ↗, window="_blank", role="ext-link"], which are https://data.norge.no/specification/modelldcat-ap-no#klasse-objekttype[object types ↗, window="_blank", role="ext-link"] (classes in UML): https://w3id.org/demo-resources/demo-models#demoObjType1["Demo Class 1"], https://w3id.org/demo-resources/demo-models#demoObjType2["Demo Class 2"], https://w3id.org/demo-resources/demo-models#demoObjType3["Demo Class 3"] and https://w3id.org/demo-resources/demo-models#demoObjType4["Demo Class 4"]. 
-** "Demo Class 1" has an association (in UML) to "Demo Class 2", which is a https://data.norge.no/specification/modelldcat-ap-no#Rolle-egenskaper[role ↗, window="_blank", role="ext-link"] in ModellDCAT-AP-NO.
-** "Demo Class 3" and "Demo Class 4" are subclasses of "Demo Class 1", described as https://data.norge.no/specification/modelldcat-ap-no#Spesialisering-egenskaper[specializations ↗, window="_blank", role="ext-link"] in ModellDCAT-AP-NO.  
-** "Demo Class 1" has an https://data.norge.no/specification/modelldcat-ap-no#Attributt-egenskaper[attribute  ↗, window="_blank", role="ext-link"] named https://w3id.org/demo-resources/demo-models#demoAttribute11["demo attribute 11"]. 
+** "Demo model 1" has four https://data.norge.no/specification/modelldcat-ap-no#klasse-modellelement[model elements &#x29C9;, window="_blank", role="ext-link"], which are https://data.norge.no/specification/modelldcat-ap-no#klasse-objekttype[object types &#x29C9;, window="_blank", role="ext-link"] (classes in UML): https://w3id.org/demo-resources/demo-models#demoObjType1["Demo Class 1"], https://w3id.org/demo-resources/demo-models#demoObjType2["Demo Class 2"], https://w3id.org/demo-resources/demo-models#demoObjType3["Demo Class 3"] and https://w3id.org/demo-resources/demo-models#demoObjType4["Demo Class 4"]. 
+** "Demo Class 1" has an association (in UML) to "Demo Class 2", which is a https://data.norge.no/specification/modelldcat-ap-no#Rolle-egenskaper[role &#x29C9;, window="_blank", role="ext-link"] in ModellDCAT-AP-NO.
+** "Demo Class 3" and "Demo Class 4" are subclasses of "Demo Class 1", described as https://data.norge.no/specification/modelldcat-ap-no#Spesialisering-egenskaper[specializations &#x29C9;, window="_blank", role="ext-link"] in ModellDCAT-AP-NO.  
+** "Demo Class 1" has an https://data.norge.no/specification/modelldcat-ap-no#Attributt-egenskaper[attribute  &#x29C9;, window="_blank", role="ext-link"] named https://w3id.org/demo-resources/demo-models#demoAttribute11["demo attribute 11"]. 
 *** This attribute uses a code list as its value range.
 *** The code list, https://jimjyang.github.io/showroom/modelldcat-ap-no/files/demo-models-nb#demoCodelist11["Demo Code List 1"], is our "Demo classification 1" demonstrated in our link:./../xkos-ap-no[showroom with demo classifications].
 
@@ -81,19 +81,19 @@ The UML-elements in "Demo model 1" shown in <<img-demomodel1-mapping2modelldcatn
 *Information models and classifications*, for example: 
 
 * When describing an information model, and where coded values are used, the coded values should preferably be chosen from controlled vocabularies (i.e., classifications). 
-** Examples of properties with coded values are https://data.norge.no/specification/modelldcat-ap-no#Informasjonsmodell-modellstatus[status (adms:status) ↗,  window="_blank", role="ext-link"] and https://data.norge.no/specification/modelldcat-ap-no#Informasjonsmodell-type[type (dct:type) ↗,  window="_blank", role="ext-link"], which are demonstrated by e.g. https://w3id.org/demo-resources/demo-models#demomodel1["Demo model 1"]. 
+** Examples of properties with coded values are https://data.norge.no/specification/modelldcat-ap-no#Informasjonsmodell-modellstatus[status (adms:status) &#x29C9;,  window="_blank", role="ext-link"] and https://data.norge.no/specification/modelldcat-ap-no#Informasjonsmodell-type[type (dct:type) &#x29C9;,  window="_blank", role="ext-link"], which are demonstrated by e.g. https://w3id.org/demo-resources/demo-models#demomodel1["Demo model 1"]. 
 ** Classifications should therefore be made available, also machine-readably.
 
 * An information model may use classifications (controlled vocabularies, code lists etc.) as "datatype/range specification" for its "attributes".
-** This is demonstrated by "Demo model 1", where https://w3id.org/demo-resources/demo-models#demoAttribute11["demo attribute 11"] refers to (by using the property https://data.norge.no/specification/modelldcat-ap-no#Attributt-harVerdierFra[has value from (modelldcatno:hasValueFrom) ↗,  window="_blank", role="ext-link"]) a code list. The code list it refers to is our "Demo controlled vocabulary 1" which is demonstrated in our link:./../xkos-ap-no[showroom with demo classifications]. 
+** This is demonstrated by "Demo model 1", where https://w3id.org/demo-resources/demo-models#demoAttribute11["demo attribute 11"] refers to (by using the property https://data.norge.no/specification/modelldcat-ap-no#Attributt-harVerdierFra[has value from (modelldcatno:hasValueFrom) &#x29C9;,  window="_blank", role="ext-link"]) a code list. The code list it refers to is our "Demo controlled vocabulary 1" which is demonstrated in our link:./../xkos-ap-no[showroom with demo classifications]. 
 ** Classifications should therefore be made available, also machine-readably.
 
 
 *Information models and concepts*, for example: 
 
 * An information model may refer to concepts that the information model represents or concepts that are relevant for understanding the information model.
-** This is demonstrated by "Demo model 1", where its https://w3id.org/demo-resources/demo-models#demoObjType1["Demo Class 1"] refers to (by using the property https://data.norge.no/specification/modelldcat-ap-no#Modellelement-begrep[subject (skos:Concept) ↗,  window="_blank", role="ext-link"]) our "demo concept 1" which is demonstrated in our link:./../skos-ap-no[showroom with demo concepts]. 
-** In general, an https://data.norge.no/specification/modelldcat-ap-no#Informasjonsmodell-egenskaper[information model ↗,  window="_blank", role="ext-link"] itself, its https://data.norge.no/specification/modelldcat-ap-no#Modellelement-egenskaper[model elements ↗,  window="_blank", role="ext-link"] (object types, code lists etc.) and https://data.norge.no/specification/modelldcat-ap-no#Egenskap-egenskaper[properties ↗,  window="_blank", role="ext-link"] (attributes, associations etc.) may all refer to concepts, using the property `subject (skos:Concept)` in accordance with ModellDCAT-AP-NO. 
+** This is demonstrated by "Demo model 1", where its https://w3id.org/demo-resources/demo-models#demoObjType1["Demo Class 1"] refers to (by using the property https://data.norge.no/specification/modelldcat-ap-no#Modellelement-begrep[subject (skos:Concept) &#x29C9;,  window="_blank", role="ext-link"]) our "demo concept 1" which is demonstrated in our link:./../skos-ap-no[showroom with demo concepts]. 
+** In general, an https://data.norge.no/specification/modelldcat-ap-no#Informasjonsmodell-egenskaper[information model &#x29C9;,  window="_blank", role="ext-link"] itself, its https://data.norge.no/specification/modelldcat-ap-no#Modellelement-egenskaper[model elements &#x29C9;,  window="_blank", role="ext-link"] (object types, code lists etc.) and https://data.norge.no/specification/modelldcat-ap-no#Egenskap-egenskaper[properties &#x29C9;,  window="_blank", role="ext-link"] (attributes, associations etc.) may all refer to concepts, using the property `subject (skos:Concept)` in accordance with ModellDCAT-AP-NO. 
 
 
 *Information models and datasets*, for example: 

@@ -2,28 +2,28 @@
 
 Some of the RDF-based Norwegian national specifications for data sharing and reuse: 
 
-* https://informasjonsforvaltning.github.io/cpsv-ap-no/[CPSV-AP-NO ↗, window="_blank", role="ext-link"] (#currently as a trial version#): the Norwegian national specification for describing services and events. 
+* https://informasjonsforvaltning.github.io/cpsv-ap-no/[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (#currently as a trial version#): the Norwegian national specification for describing services and events. 
 ** The specifications for RDF-representations are in English as well.
-** CPSV-AP-NO is based on, thus a profile of, EU's https://github.com/SEMICeu/CPSV-AP[Core Public Service Vocabulary Application Profile (CPSV-AP) ↗, window="_blank", role="ext-link"].
+** CPSV-AP-NO is based on, thus a profile of, EU's https://github.com/SEMICeu/CPSV-AP[Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"].
 
-* https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO ↗, window="_blank", role="ext-link"]: the Norwegian national specification for describing datasets, data services and data catalogs.
+* https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]: the Norwegian national specification for describing datasets, data services and data catalogs.
 ** In Norwegian only. 
-** DCAT-AP-NO is based on, thus a profile of, EU's https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP ↗, window="_blank", role="ext-link"].
+** DCAT-AP-NO is based on, thus a profile of, EU's https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP &#x29C9;, window="_blank", role="ext-link"].
 
-* https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO ↗, window="_blank", role="ext-link"]: the Norwegian national specification for describing information models and catalogs of information models.
+* https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]: the Norwegian national specification for describing information models and catalogs of information models.
 ** In Norwegian only. 
 ** The specification for catalogs of information models, is based on DCAT-AP-NO. 
 
-* https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep ↗, window="_blank", role="ext-link"]: the Norwegian national specification for describing and publishing concepts and concept collections. 
+* https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep &#x29C9;, window="_blank", role="ext-link"]: the Norwegian national specification for describing and publishing concepts and concept collections. 
 ** The specifications for RDF-representations are in English as well.
-** SKOS-AP-NO-Begrep is based on, thus a profile of, W3C's https://www.w3.org/2004/02/skos/[SKOS ↗, window="_blank", role="ext-link"].
+** SKOS-AP-NO-Begrep is based on, thus a profile of, W3C's https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"].
 
-* https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO ↗, window="_blank", role="ext-link"]: the Norwegian national specification for describing and publishing classifications (incl. controlled vocabularies etc.).
+* https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"]: the Norwegian national specification for describing and publishing classifications (incl. controlled vocabularies etc.).
 ** The specifications for RDF-representations are in English as well.
-** XKOS-AP-NO is based on, thus a profile of, DDI's https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS ↗, window="_blank", role="ext-link"]. 
+** XKOS-AP-NO is based on, thus a profile of, DDI's https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"]. 
 
 Some online (RDF-based) resources:
 
-* https://data.norge.no/about[The National Data Catalog of Norway ↗, window="_blank", role="ext-link"], overview of descriptions of datasets, concepts, APIs, information models, events and services. 
+* https://data.norge.no/about[The National Data Catalog of Norway &#x29C9;, window="_blank", role="ext-link"], overview of descriptions of datasets, concepts, APIs, information models, events and services. 
 
-* https://demo.fellesdatakatalog.digdir.no/[The Demo portal ↗, window="_blank", role="ext-link"], with the same functionalities as in the National Data Catalog of Norway mentioned above, but the content is only for testing and demonstration purposes.
+* https://demo.fellesdatakatalog.digdir.no/[The Demo portal &#x29C9;, window="_blank", role="ext-link"], with the same functionalities as in the National Data Catalog of Norway mentioned above, but the content is only for testing and demonstration purposes.
