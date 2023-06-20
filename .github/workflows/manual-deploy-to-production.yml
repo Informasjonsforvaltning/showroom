@@ -1,4 +1,4 @@
-name: Manually build adocs and deploy specification to data.norge.no
+name: Manually build adocs and deploy showroom to data.norge.no
 
 on:
   workflow_dispatch:
@@ -88,9 +88,9 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
    
-  root_build_upload:
+  overview_build_upload:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: root
+    name: overview
     with:
       ontology-type: "showroom"
       ontology: "overview"
