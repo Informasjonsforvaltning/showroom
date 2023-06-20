@@ -17,7 +17,7 @@ ifdef::backend-pdf[:toc: macro]
 
 Welcome to the showroom with permanent/persistent and dereferenced demo URIs, demonstrating a possible implementation of the Norwegian URI-standard! 
 
-_https://www.digdir.no/standarder/peikarar-til-offentlege-ressursar-pa-nett/1492[The Norwegian URI-standard ↗, window="_blank", role="ext-link"] (in Norwegian only) is based on EU's https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs ↗, window="_blank", role="ext-link"]._ 
+_https://www.digdir.no/standarder/peikarar-til-offentlege-ressursar-pa-nett/1492[The Norwegian URI-standard &#x29C9;, window="_blank", role="ext-link"] (in Norwegian only) is based on EU's https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs &#x29C9;, window="_blank", role="ext-link"]._ 
 
 == Purpose [[purpose]]
 
@@ -28,7 +28,7 @@ This showroom is meant to
 
 == Demo resources in this showroom [[demo-resources]]
 
-In this showroom we demonstrate how to use the services provided by https://w3id.org[w3id.org ↗, window="_blank", role="ext-link"] to realize permanent/persistent URIs. 
+In this showroom we demonstrate how to use the services provided by https://w3id.org[w3id.org &#x29C9;, window="_blank", role="ext-link"] to realize permanent/persistent URIs. 
 
 === URI-pattern
 
@@ -51,9 +51,9 @@ Using w3id.org, our demo URI-pattern is as follows:
 
 === Dereferencing URIs with content negotiation
 
-According to https://www.w3.org/TR/webarch/#representation-management[W3C ↗, window="_blank", role="ext-link"], "a URI owner SHOULD provide representations of the resource it identifies". 
+According to https://www.w3.org/TR/webarch/#representation-management[W3C &#x29C9;, window="_blank", role="ext-link"], "a URI owner SHOULD provide representations of the resource it identifies". 
 
-We use the services provided by w3id.org, and define https://github.com/perma-id/w3id.org/tree/master/demo-resources[RewriteRules for dereferencing our demo URIs ↗, window="_blank", role="ext-link"], such that every URI of ours returns at least one representation.
+We use the services provided by w3id.org, and define https://github.com/perma-id/w3id.org/tree/master/demo-resources[RewriteRules for dereferencing our demo URIs &#x29C9;, window="_blank", role="ext-link"], such that every URI of ours returns at least one representation.
 
 In addition, we use the functionalities in RewriteRule to implement content negotiation  (incl. language negotiation), such that the same URI may return RDF Turtle or HTML in the preferred language, depending on "who's asking".
 
