@@ -36,7 +36,7 @@ This showroom is meant to
 
 == Demo resources in this showroom [[demo-resources]]
 
-In this showroom we have a https://w3id.org/demo-resources/demo-services-events[catalog of demo services and demo events] (in link:files/demo-services-events.ttl[RDF Turtle]): 
+In this showroom we have a link:files/demo-services-events-en[catalog of demo services and demo events] (in link:files/demo-services-events.ttl[RDF Turtle]): 
 
 * #_... more to come ..._#
 

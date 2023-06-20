@@ -30,7 +30,7 @@ This showroom is meant to
 
 == Demo resources in this showroom [[demo-resources]]
 
-In this showroom we have a https://w3id.org/demo-resources/demo-datasets#demoDataset1[demo dataset, called "Demo controlled vocabulary 1"] (in link:files/demo-datasets.ttl[RDF Turtle]):
+In this showroom we have a link:files/demo-datasets-en#demoDataset1[demo dataset, called "Demo controlled vocabulary 1"] (in link:files/demo-datasets.ttl[RDF Turtle]):
 
 * The dataset description shown here, describes the demo classification called "Demo controlled vocabulary 1" that is demonstrated in our link:/showroom/xkos-ap-no/[showroom with demo classifications]. 
 ** This is because a classification with its categories _is_ a dataset.   
@@ -39,9 +39,9 @@ In this showroom we have a https://w3id.org/demo-resources/demo-datasets#demoDat
 ** freely available, with https://data.norge.no/specification/dcat-ap-no#Datasett-tilgangsniv%C3%A5[access rights (dct:accessRights) &#x29C9;, window="_blank", role="ext-link"] set to "public", and 
 ** with three https://data.norge.no/specification/dcat-ap-no#Datasett-datasettdistribusjon[distributions &#x29C9;, window="_blank", role="ext-link"] under https://data.norge.no/specification/dcat-ap-no#Distribusjon-lisens[licence &#x29C9;, window="_blank", role="ext-link"] CC0 which is an open licence.
 * The three distributions are: 
-** one https://w3id.org/demo-resources/demo-datasets#demoDistribution1[machine-readable] (https://data.norge.no/specification/dcat-ap-no#Distribusjon-format[format (dct:format) &#x29C9;, window="_blank", role="ext-link"] = RDF_TURTLE), 
-** one https://w3id.org/demo-resources/demo-datasets#demoDistribution2[human-readable in Norwegian bokmål] (format = HTML), and 
-** another https://w3id.org/demo-resources/demo-datasets#demoDistribution3[human-readable in English] (format = HTML).
+** one link:files/demo-datasets-en#demoDistribution1[machine-readable] (https://data.norge.no/specification/dcat-ap-no#Distribusjon-format[format (dct:format) &#x29C9;, window="_blank", role="ext-link"] = RDF_TURTLE), 
+** one link:files/demo-datasets-en#demoDistribution2[human-readable in Norwegian bokmål] (format = HTML), and 
+** another link:files/demo-datasets-en#demoDistribution3[human-readable in English] (format = HTML).
 
 * This dataset description is automatically harvested to and thus https://demo.fellesdatakatalog.digdir.no/datasets?q=demodataset[findable via the demo portal &#x29C9;, window="_blank", role="ext-link"].
  
