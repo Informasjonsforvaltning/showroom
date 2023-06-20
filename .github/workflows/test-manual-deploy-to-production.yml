@@ -1,0 +1,32 @@
+name: Test Manually upload cpsv-ap-no/files to data.norge.no/showroom/cpsv-ap-no/files
+
+on:
+   push:
+      branches:
+        - main
+      paths:
+        - cpsv-ap-no/**
+   workflow_dispatch:
+  
+jobs:
+   cpsv-uploading_of_file:
+      name: Upload files to static-rdf-server
+      runs-on: ubuntu-latest
+      if: github.event.pull_request.draft == false
+  
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v3
+  
+        - name: Upload files to static-rdf-server
+          uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+          id: upload-files
+          with:
+            ontology-type: "showroom"
+            ontology: "cpsv-ap-no"
+            host: "https://data.norge.no"
+            api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+            files: |
+              cpsv-ap-no/files/demo-services-events.ttl text/turtle en files/demo-services-events.ttl
+              cpsv-ap-no/files/demo-services-events-nb.html text/html nb files/demo-services-events-nb.html
+              cpsv-ap-no/files/demo-services-events-en.html text/html en files/demo-services-events-en.html
