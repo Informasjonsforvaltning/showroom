@@ -1,4 +1,4 @@
-name: Build adocs and deploy specification to Github Pages
+name: Build adocs and deploy showroom to Github Pages
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: Build adocs and deploy specification to data.norge.no
+name: Build adocs and deploy showroom to data.norge.no
 
 on:
   push:
@@ -7,12 +7,13 @@ on:
     paths:
       - cpsv-ap-no/**
       - dcat-ap-no/**
-      - overview/**
       - demo-uris/**
       - dummy-assets/**
       - modelldcat-ap-no/**
+      - overview/**
       - skos-ap-no/**
       - xkos-ap-no/**
+      - index.html
 
 jobs:
   filter_path:
@@ -49,8 +50,10 @@ jobs:
             - 'dummy-assets/**'
           modelldcat:
             - 'modelldcat-ap-no/**'
-          root:
+          overview:
             - 'overview/**'
+          root:
+            - index.html
           skos:
             - 'skos-ap-no/**'
           xkos:
@@ -150,11 +153,11 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
    
-  root_build_upload:
+  overview_build_upload:
     needs: filter_path
-    if: ${{ needs.filter_path.outputs.root == 'true' }}
+    if: ${{ needs.filter_path.outputs.overview == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: root
+    name: overview
     with:
       ontology-type: "showroom"
       ontology: "overview"
@@ -169,7 +172,7 @@ jobs:
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-
+    
   skos_build_deploy:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.skos == 'true' }}

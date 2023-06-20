@@ -1,5 +1,5 @@
 include::../locale/attributes.adoc[]
-= image:./../overview/images/Digdir.png[Digdir,200,200] showroom with demo permanent/persistent and dereferenced URIs
+= image:/showroom/overview/images/Digdir.png[Digdir,200,200] showroom with demo permanent/persistent and dereferenced URIs
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
@@ -86,4 +86,4 @@ Overall, a permanent URI is crucial for ensuring the long-term accessibility and
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:./../overview/#overview[Click here for the overview of all the showrooms]
+link:/showroom/overview/#overview[Click here for the overview of all the showrooms]
