@@ -15,7 +15,7 @@ ifdef::backend-pdf[:toc: macro]
 :xrefstyle: short
 
 
-Welcome to the showroom with demo concepts, demonstrating the usage of SKOS-AP-NO-Begrep! 
+Welcome to the showroom with demo concepts, demonstrating the usage of SKOS-AP-NO-Begrep!
 
 _https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep &#x29C9;, window="_blank", role="ext-link"] is the Norwegian application profile of W3C's https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"], for describing and publishing concepts and concept collections._
 
