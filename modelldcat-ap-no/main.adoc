@@ -1,5 +1,5 @@
 include::../locale/attributes.adoc[]
-= image:./../overview/images/Digdir.png[Digdir,200,200] showroom - demo information models
+= image:/showroom/overview/images/Digdir.png[Digdir,200,200] showroom - demo information models
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
@@ -47,7 +47,7 @@ In this showroom we have a https://w3id.org/demo-resources/demo-models[a catalog
 ** "Demo Class 3" and "Demo Class 4" are subclasses of "Demo Class 1", described as https://data.norge.no/specification/modelldcat-ap-no#Spesialisering-egenskaper[specializations &#x29C9;, window="_blank", role="ext-link"] in ModellDCAT-AP-NO.  
 ** "Demo Class 1" has an https://data.norge.no/specification/modelldcat-ap-no#Attributt-egenskaper[attribute  &#x29C9;, window="_blank", role="ext-link"] named https://w3id.org/demo-resources/demo-models#demoAttribute11["demo attribute 11"]. 
 *** This attribute uses a code list as its value range.
-*** The code list, https://jimjyang.github.io/showroom/modelldcat-ap-no/files/demo-models-nb#demoCodelist11["Demo Code List 1"], is our "Demo classification 1" demonstrated in our link:./../xkos-ap-no[showroom with demo classifications].
+*** The code list, https://jimjyang.github.io/showroom/modelldcat-ap-no/files/demo-models-nb#demoCodelist11["Demo Code List 1"], is our "Demo classification 1" demonstrated in our link:/showroom/xkos-ap-no[showroom with demo classifications].
 
 .Click for mapping to ModellDCAT-AP-NO.
 [%collapsible]
@@ -85,29 +85,29 @@ The UML-elements in "Demo model 1" shown in <<img-demomodel1-mapping2modelldcatn
 ** Classifications should therefore be made available, also machine-readably.
 
 * An information model may use classifications (controlled vocabularies, code lists etc.) as "datatype/range specification" for its "attributes".
-** This is demonstrated by "Demo model 1", where https://w3id.org/demo-resources/demo-models#demoAttribute11["demo attribute 11"] refers to (by using the property https://data.norge.no/specification/modelldcat-ap-no#Attributt-harVerdierFra[has value from (modelldcatno:hasValueFrom) &#x29C9;,  window="_blank", role="ext-link"]) a code list. The code list it refers to is our "Demo controlled vocabulary 1" which is demonstrated in our link:./../xkos-ap-no[showroom with demo classifications]. 
+** This is demonstrated by "Demo model 1", where https://w3id.org/demo-resources/demo-models#demoAttribute11["demo attribute 11"] refers to (by using the property https://data.norge.no/specification/modelldcat-ap-no#Attributt-harVerdierFra[has value from (modelldcatno:hasValueFrom) &#x29C9;,  window="_blank", role="ext-link"]) a code list. The code list it refers to is our "Demo controlled vocabulary 1" which is demonstrated in our link:/showroom/xkos-ap-no[showroom with demo classifications]. 
 ** Classifications should therefore be made available, also machine-readably.
 
 
 *Information models and concepts*, for example: 
 
 * An information model may refer to concepts that the information model represents or concepts that are relevant for understanding the information model.
-** This is demonstrated by "Demo model 1", where its https://w3id.org/demo-resources/demo-models#demoObjType1["Demo Class 1"] refers to (by using the property https://data.norge.no/specification/modelldcat-ap-no#Modellelement-begrep[subject (skos:Concept) &#x29C9;,  window="_blank", role="ext-link"]) our "demo concept 1" which is demonstrated in our link:./../skos-ap-no[showroom with demo concepts]. 
+** This is demonstrated by "Demo model 1", where its https://w3id.org/demo-resources/demo-models#demoObjType1["Demo Class 1"] refers to (by using the property https://data.norge.no/specification/modelldcat-ap-no#Modellelement-begrep[subject (skos:Concept) &#x29C9;,  window="_blank", role="ext-link"]) our "demo concept 1" which is demonstrated in our link:/showroom/skos-ap-no[showroom with demo concepts]. 
 ** In general, an https://data.norge.no/specification/modelldcat-ap-no#Informasjonsmodell-egenskaper[information model &#x29C9;,  window="_blank", role="ext-link"] itself, its https://data.norge.no/specification/modelldcat-ap-no#Modellelement-egenskaper[model elements &#x29C9;,  window="_blank", role="ext-link"] (object types, code lists etc.) and https://data.norge.no/specification/modelldcat-ap-no#Egenskap-egenskaper[properties &#x29C9;,  window="_blank", role="ext-link"] (attributes, associations etc.) may all refer to concepts, using the property `subject (skos:Concept)` in accordance with ModellDCAT-AP-NO. 
 
 
 *Information models and datasets*, for example: 
 
 * A dataset (and/or its distributions, data services) may conform to one or more standards (incl. information models).
-** This is demonstrated in our link:./../dcat-ap-no[showroom with demo datasets]. 
+** This is demonstrated in our link:/showroom/dcat-ap-no[showroom with demo datasets]. 
 ** Information models should therefore be made available, also machine-readably.   
 
 *Information models and services/events*, for example: 
 
 * An evidence needed to execute a service, is a dataset and thus may conform to one or more standards (incl. information models).
-** This is demonstrated in our link:./../cpsv-ap-no[showroom with demo services and events]. 
+** This is demonstrated in our link:/showroom/cpsv-ap-no[showroom with demo services and events]. 
 ** Information models should therefore be made available, also machine-readably.
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:./../overview/#overview[Click here for the overview of all the showrooms]
+link:/showroom/overview/#overview[Click here for the overview of all the showrooms]
