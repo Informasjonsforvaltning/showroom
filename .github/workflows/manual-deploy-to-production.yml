@@ -14,6 +14,8 @@ jobs:
       program: "asciidoctor -D cpsv-ap-no -o index.html -a lang=en cpsv-ap-no/main.adoc"
       files: |
         cpsv-ap-no/index.html text/html en
+        cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
+        cpsv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         cpsv-ap-no/files/demo-services-events.ttl text/turtle en files/demo-services-events.ttl
         cpsv-ap-no/files/demo-services-events-en.html text/html en files/demo-services-events-en.html
         cpsv-ap-no/files/demo-services-events-nb.html text/html nb files/demo-services-events-nb.html
@@ -31,6 +33,8 @@ jobs:
       program: "asciidoctor -D dcat-ap-no -o index.html -a lang=en dcat-ap-no/main.adoc"
       files: |
         dcat-ap-no/index.html text/html en
+        dcat-ap-no/images/Digdir.png image/png en images/Digdir.png
+        dcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         dcat-ap-no/files/demo-datasets.ttl text/turtle en files/demo-datasets.ttl
         dcat-ap-no/files/demo-datasets-en.html text/html en files/demo-datasets-en.html
         dcat-ap-no/files/demo-datasets-nb.html text/html nb files/demo-datasets-nb.html
@@ -48,6 +52,8 @@ jobs:
       program: "asciidoctor -D demo-uris -o index.html -a lang=en demo-uris/main.adoc"
       files: |
         demo-uris/index.html text/html en
+        demo-uris/images/Digdir.png image/png en images/Digdir.png
+        demo-uris/images/work-in-progress.png image/png en images/work-in-progress.png
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
@@ -62,6 +68,8 @@ jobs:
       program: "asciidoctor -D dummy-assets -o index.html -a lang=en dummy-assets/main.adoc"
       files: |
         dummy-assets/index.html text/html en
+        dummy-assets/images/Digdir.png image/png en images/Digdir.png
+        dummy-assets/images/work-in-progress.png image/png en images/work-in-progress.png
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
@@ -79,6 +87,8 @@ jobs:
         modelldcat-ap-no/files/demo-models.ttl text/turtle en files/demo-models.ttl
         modelldcat-ap-no/files/demo-models-en.html text/html en files/demo-models-en.html
         modelldcat-ap-no/files/demo-models-nb.html text/html nb files/demo-models-nb.html
+        modelldcat-ap-no/images/Digdir.png image/png en images/Digdir.png
+        modelldcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         modelldcat-ap-no/images/demomodel1.png image/png en images/demomodel1.png
         modelldcat-ap-no/images/demomodel1-mapping-examples.png image/png en images/demomodel1-mapping-examples.png
         modelldcat-ap-no/images/demomodel2.png image/png en images/demomodel2.png
@@ -116,6 +126,8 @@ jobs:
       program: "asciidoctor -D skos-ap-no -o index.html -a lang=en skos-ap-no/main.adoc"
       files: |
         skos-ap-no/index.html text/html en
+        skos-ap-no/images/Digdir.png image/png en images/Digdir.png
+        skos-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         skos-ap-no/images/concept-diagrams-iso.png image/png en images/concept-diagrams-iso.png
         skos-ap-no/images/concept-models-uml.png image/png en images/concept-models-uml.png
         skos-ap-no/images/hierarchical-relations-explanations.png image/png en images/hierarchical-relations-explanations.png
@@ -136,6 +148,8 @@ jobs:
       program: "asciidoctor -D xkos-ap-no -o index.html -a lang=en xkos-ap-no/main.adoc"
       files: |
         xkos-ap-no/index.html text/html en
+        xkos-ap-no/images/Digdir.png image/png en images/Digdir.png
+        xkos-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         xkos-ap-no/images/demo-classification1.png image/png en images/demo-classification1.png
         xkos-ap-no/files/demo-classifications.ttl text/turtle en files/demo-classifications.ttl
         xkos-ap-no/files/demo-classifications-en.html text/html en files/demo-classifications-en.html
