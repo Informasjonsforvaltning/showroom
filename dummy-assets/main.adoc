@@ -1,5 +1,5 @@
 include::../locale/attributes.adoc[]
-= image:/showroom/overview/images/Digdir.png[Digdir,200,200] showroom with dummy assets
+= image:images/Digdir.png[Digdir,200,200] showroom with dummy assets
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
@@ -16,7 +16,7 @@ ifdef::backend-pdf[:toc: macro]
 
 Welcome to the showroom with some basic/generic dummy assets!
 
-image:/showroom/overview/images/work-in-progress.png[WIP,72,72] _This showroom is under construction and will be "continuously" renewed._ 
+image:images/work-in-progress.png[WIP,72,72] _This showroom is under construction and will be "continuously" renewed._ 
 
 == Purpose [[purpose]]
 
