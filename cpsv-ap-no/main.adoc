@@ -1,5 +1,5 @@
 include::../locale/attributes.adoc[]
-= image:./../overview/images/Digdir.png[Digdir,200,200]  showroom - demo services and events
+= image:/showroom/overview/images/Digdir.png[Digdir,200,200]  showroom - demo services and events
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
@@ -69,9 +69,9 @@ In this showroom we have a https://w3id.org/demo-resources/demo-services-events[
 *Services/events and information models*, for example: 
 
 * An evidence that is needed to execute a service, or the output from a service, may a dataset and thus may conform to one or more standards (incl. information models).
-** This is demonstrated and explained in our link:./../dcat-ap-no[showroom with demo datasets].  
+** This is demonstrated and explained in our link:/showroom/dcat-ap-no[showroom with demo datasets].  
 
 
 == _to the overview of the showrooms_ [[to-overview]]
 
-link:./../overview/#overview[Click here for the overview of all the showrooms]
+link:/showroom/overview/#overview[Click here for the overview of all the showrooms]
