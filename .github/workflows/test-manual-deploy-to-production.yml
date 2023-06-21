@@ -1,4 +1,4 @@
-name: Test Manually upload cpsv-ap-no/files to data.norge.no/showroom/cpsv-ap-no/files
+name: Test Manually upload files to data.norge.no/showroom
 
 on:
   workflow_dispatch:
