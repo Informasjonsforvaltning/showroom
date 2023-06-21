@@ -1,32 +1,160 @@
 name: Test Manually upload cpsv-ap-no/files to data.norge.no/showroom/cpsv-ap-no/files
 
 on:
-   push:
-      branches:
-        - main
-      paths:
-        - cpsv-ap-no/**
-   workflow_dispatch:
-  
+  workflow_dispatch:
+
 jobs:
-   cpsv-uploading_of_file:
-      name: Upload files to static-rdf-server
-      runs-on: ubuntu-latest
-      if: github.event.pull_request.draft == false
-  
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v3
-  
-        - name: Upload files to static-rdf-server
-          uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
-          id: upload-files
-          with:
-            ontology-type: "showroom"
-            ontology: "cpsv-ap-no"
-            host: "https://fellesdatakatalog.digdir.no"
-            api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-            files: |
-              cpsv-ap-no/files/demo-services-events.ttl text/turtle en /showroom/cpsv-ap-no/files/demo-services-events.ttl
-              cpsv-ap-no/files/demo-services-events-nb.html text/html nb /showroom/cpsv-ap-no/files/demo-services-events-nb.html
-              cpsv-ap-no/files/demo-services-events-en.html text/html en /showroom/cpsv-ap-no/files/demo-services-events-en.html
+  cpsv_build_upload:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: cpsv
+    with:
+      host: "https://data.norge.no"
+      ontology: "cpsv-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D cpsv-ap-no -o index.html -a lang=en cpsv-ap-no/main.adoc"
+      files: |
+        cpsv-ap-no/index.html text/html en
+        cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
+        cpsv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        cpsv-ap-no/files/demo-services-events.ttl text/turtle en demo-services-events/demo-services-events.ttl
+        cpsv-ap-no/files/demo-services-events-en.html text/html en demo-services-events/demo-services-events-en.html
+        cpsv-ap-no/files/demo-services-events-nb.html text/html nb demo-services-events/demo-services-events-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dcat_build_upload:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dcat
+    with:
+      host: "https://data.norge.no"
+      ontology: "dcat-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dcat-ap-no -o index.html -a lang=en dcat-ap-no/main.adoc"
+      files: |
+        dcat-ap-no/index.html text/html en
+        dcat-ap-no/images/Digdir.png image/png en images/Digdir.png
+        dcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        dcat-ap-no/files/demo-datasets.ttl text/turtle en demo-datasets/demo-datasets.ttl
+        dcat-ap-no/files/demo-datasets-en.html text/html en demo-datasets/demo-datasets-en.html
+        dcat-ap-no/files/demo-datasets-nb.html text/html nb demo-datasets/demo-datasets-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  demo_uris_build_upload:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: demo-uris
+    with:
+      host: "https://data.norge.no"
+      ontology: "demo-uris"
+      ontology-type: "showroom"
+      program: "asciidoctor -D demo-uris -o index.html -a lang=en demo-uris/main.adoc"
+      files: |
+        demo-uris/index.html text/html en
+        demo-uris/images/Digdir.png image/png en images/Digdir.png
+        demo-uris/images/work-in-progress.png image/png en images/work-in-progress.png
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_build_deploy:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets -o index.html -a lang=en dummy-assets/main.adoc"
+      files: |
+        dummy-assets/index.html text/html en
+        dummy-assets/images/Digdir.png image/png en images/Digdir.png
+        dummy-assets/images/work-in-progress.png image/png en images/work-in-progress.png
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  modelldcat_build_deploy:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: modelldcat
+    with:
+      host: "https://data.norge.no"
+      ontology: "modelldcat-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D modelldcat-ap-no -o index.html -a lang=en modelldcat-ap-no/main.adoc"
+      files: |
+        modelldcat-ap-no/index.html text/html en
+        modelldcat-ap-no/files/demo-models.ttl text/turtle en demo-models/demo-models.ttl
+        modelldcat-ap-no/files/demo-models-en.html text/html en demo-models/demo-models-en.html
+        modelldcat-ap-no/files/demo-models-nb.html text/html nb demo-models/demo-models-nb.html
+        modelldcat-ap-no/images/Digdir.png image/png en images/Digdir.png
+        modelldcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        modelldcat-ap-no/images/demomodel1.png image/png en images/demomodel1.png
+        modelldcat-ap-no/images/demomodel1-mapping-examples.png image/png en images/demomodel1-mapping-examples.png
+        modelldcat-ap-no/images/demomodel2.png image/png en images/demomodel2.png
+        modelldcat-ap-no/images/demomodel3.png image/png en images/demomodel3.png
+        modelldcat-ap-no/images/demomodel4.png image/png en images/demomodel4.png
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+   
+  overview_build_upload:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: overview
+    with:
+      ontology-type: "showroom"
+      ontology: "overview"
+      host: "https://data.norge.no"
+      program: "asciidoctor -D overview -o index.html -a lang=en overview/main.adoc"
+      files: |
+        overview/index.html text/html en
+        overview/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
+        overview/images/Digdir.png image/png en images/Digdir.png
+        overview/images/registering-n-harvesting.png image/png en images/registering-n-harvesting.png
+        overview/images/work-in-progress.png image/png en images/work-in-progress.png
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  skos_build_deploy:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: skos-ap-no-begrep
+    with:
+      ontology-type: "showroom"
+      ontology: "skos-ap-no"
+      host: "https://data.norge.no"
+      program: "asciidoctor -D skos-ap-no -o index.html -a lang=en skos-ap-no/main.adoc"
+      files: |
+        skos-ap-no/index.html text/html en
+        skos-ap-no/images/Digdir.png image/png en images/Digdir.png
+        skos-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        skos-ap-no/images/concept-diagrams-iso.png image/png en images/concept-diagrams-iso.png
+        skos-ap-no/images/concept-models-uml.png image/png en images/concept-models-uml.png
+        skos-ap-no/images/hierarchical-relations-explanations.png image/png en images/hierarchical-relations-explanations.png
+        skos-ap-no/files/demo-concepts.ttl text/turtle en demo-concepts/demo-concepts.ttl
+        skos-ap-no/files/demo-concepts-en.html text/html en demo-concepts/demo-concepts-en.html
+        skos-ap-no/files/demo-concepts-nb.html text/html nb demo-concepts/demo-concepts-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+ 
+  xkos_build_deploy:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: xkos-ap-no
+    with:
+      ontology-type: "showroom"
+      ontology: "xkos-ap-no"
+      host: "https://data.norge.no"
+      program: "asciidoctor -D xkos-ap-no -o index.html -a lang=en xkos-ap-no/main.adoc"
+      files: |
+        xkos-ap-no/index.html text/html en
+        xkos-ap-no/images/Digdir.png image/png en images/Digdir.png
+        xkos-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        xkos-ap-no/images/demo-classification1.png image/png en images/demo-classification1.png
+        xkos-ap-no/files/demo-classifications.ttl text/turtle en demo-classifications/demo-classifications.ttl
+        xkos-ap-no/files/demo-classifications-en.html text/html en demo-classifications/demo-classifications-en.html
+        xkos-ap-no/files/demo-classifications-nb.html text/html nb demo-classifications/demo-classifications-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
