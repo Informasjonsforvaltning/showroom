@@ -2,6 +2,7 @@
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
+@orefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/demo-resources/dummy-contact-points#dmyCP1>
    rdf:type vcard:Organization;
@@ -12,4 +13,4 @@
    vcard:hasURL <https://w3id.org/demo-resources/dummy-assets>;
    .
  
-#### End of the file, 2023-05-03 12:45:07
+#### End of the file, 2023-06-21 10:08:09
