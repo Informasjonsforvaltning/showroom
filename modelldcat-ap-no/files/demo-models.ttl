@@ -236,7 +236,7 @@
    dct:title """Demo model 1 (png)"""@en,
        """Demomodell 1 (png)"""@nb;
    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://jimjyang.github.io/showroom/modelldcat-ap-no/images/demomodel1.png>;
+   rdfs:seeAlso <https://data.norge.no/showroom/modelldcat-ap-no/images/demomodel1.png>;
    .
  
 <https://w3id.org/demo-resources/demo-models#demomodel2-png>
@@ -245,7 +245,7 @@
    dct:title """Demo model 2 (png)"""@en,
        """Demomodell 2 (png)"""@nb;
    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://jimjyang.github.io/showroom/modelldcat-ap-no/images/demomodel2.png>;
+   rdfs:seeAlso <https://data.norge.no/showroom/modelldcat-ap-no/images/demomodel2.png>;
    .
  
 <https://w3id.org/demo-resources/demo-models#demomodel3-png>
@@ -254,7 +254,7 @@
    dct:title """Demo model 3 (png)"""@en,
        """Demomodell 3 (png)"""@nb;
    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://jimjyang.github.io/showroom/modelldcat-ap-no/images/demomodel3.png>;
+   rdfs:seeAlso <https://data.norge.no/showroom/modelldcat-ap-no/images/demomodel3.png>;
    .
  
 <https://w3id.org/demo-resources/demo-models#demomodel4-png>
@@ -263,7 +263,7 @@
    dct:title """Demo model 4 (png)"""@en,
        """Demomodell 4 (png)"""@nb;
    dct:format <http://publications.europa.eu/resource/authority/file-type/PNG>;
-   rdfs:seeAlso <https://jimjyang.github.io/showroom/modelldcat-ap-no/images/demomodel4.png>;
+   rdfs:seeAlso <https://data.norge.no/showroom/modelldcat-ap-no/images/demomodel4.png>;
    .
  
 <https://w3id.org/demo-resources/demo-models#digdir-contact-point>
@@ -275,4 +275,4 @@
    vcard:hasURL <https://digdir.no>;
    .
  
-#### End of the file, 2023-04-26 11:55:43
+#### End of the file, 2023-06-22 09:35:48

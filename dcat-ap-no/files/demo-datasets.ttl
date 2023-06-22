@@ -68,7 +68,7 @@
    dct:modified "2023-03-23"^^xsd:date;
    dcat:byteSize "9200"^^xsd:decimal;
    dcat:mediaType <https://www.w3.org/ns/iana/media-types/text/turtle>;
-   dcat:downloadURL <https://jimjyang.github.io/showroom/xkos-ap-no/files/demo-classifications.ttl>;
+   dcat:downloadURL <https://data.norge.no/showroom/xkos-ap-no/demo-classifications>;
    dct:rights [ a dct:RightsStatement ;
     rdfs:comment "No restrictions at all"@en ] ;;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
@@ -94,4 +94,4 @@
    vcard:hasURL <https://digdir.no>;
    .
  
-#### End of the file, 2023-06-21 14:30:53
+#### End of the file, 2023-06-22 09:30:39

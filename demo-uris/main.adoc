@@ -61,11 +61,11 @@ It is possible to use the functionalities in RewriteRule to implement content ne
 
 For example, for the URI `\https://w3id.org/demo-resources/demo-concepts#demoCpt1`: 
 
-* `Accept: text/turtle` will redirect the request to the RDF Turtle representation of the resource identified by that URI.
+* `Accept: text/turtle` should redirect the request to the RDF Turtle representation of the resource identified by that URI.
 
-* `Accept-language: nb` will redirect to the HTML representation in Norwegian bokmål, of the resource identified by that URI.
+* `Accept-language: nb` should redirect to the HTML representation in Norwegian bokmål, of the resource identified by that URI.
 
-* `Accept-language: en` will redirect to the HTML representation in English, of the resource identified by that URI.
+* `Accept-language: en` should redirect to the HTML representation in English, of the resource identified by that URI.
 
 Since our server for data.norge.no already has content and language negotiation implemented, we do not need to specify RewriteRules to handle content and language negotiation. 
 
