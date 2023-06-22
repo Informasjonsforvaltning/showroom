@@ -3,7 +3,7 @@ name: Build adocs and deploy showroom to Github Pages
 on:
   push:
     branches:
-      - develop
+      - develop-deprecated
     paths:
       - cpsv-ap-no/**
       - dcat-ap-no/**
