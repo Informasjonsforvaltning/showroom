@@ -1,0 +1,24 @@
+name: Test Manually deploy dcat-ap-no to data.norge.no/showroom/dcat-ap-no
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dcat_build_upload:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dcat
+    with:
+      host: "https://data.norge.no"
+      ontology: "dcat-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dcat-ap-no -o index.html -a lang=en dcat-ap-no/main.adoc"
+      files: |
+        dcat-ap-no/index.html text/html en
+        dcat-ap-no/images/Digdir.png image/png en images/Digdir.png
+        dcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        dcat-ap-no/files/demo-datasets.ttl text/turtle en demo-datasets/demo-datasets.ttl
+        dcat-ap-no/files/demo-datasets-en.html text/html en demo-datasets/demo-datasets-en.html
+        dcat-ap-no/files/demo-datasets-nb.html text/html nb demo-datasets/demo-datasets-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
