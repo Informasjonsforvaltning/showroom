@@ -43,9 +43,7 @@
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
    dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>,
        <https://w3id.org/demo-resources/demo-concepts#demoCpt2>;
-   dcat:distribution <https://w3id.org/demo-resources/demo-datasets#demoDistribution1>,
-       <https://w3id.org/demo-resources/demo-datasets#demoDistribution2>,
-       <https://w3id.org/demo-resources/demo-datasets#demoDistribution3>;
+   dcat:distribution <https://w3id.org/demo-resources/demo-datasets#demoDistribution1>;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
    dcat:keyword """demo"""@nb,
        """demo"""@en,
@@ -59,10 +57,11 @@
  
 <https://w3id.org/demo-resources/demo-datasets#demoDistribution1>
    rdf:type dcat:Distribution;
-   dcat:accessURL <https://jimjyang.github.io/showroom/xkos-ap-no/files/demo-classifications.ttl>;
+   dcat:accessURL <https://data.norge.no/showroom/xkos-ap-no/demo-classifications>;
    dct:description """Demo på en distribusjon (RDF Turtle)"""@nb,
        """Demo distribution (RDF Turtle)"""@en;
-   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>,
+       <http://publications.europa.eu/resource/authority/file-type/HTML>;
    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
    adms:status <http://purl.org/adms/status/Completed>;
    dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE>;
@@ -72,40 +71,8 @@
    dcat:downloadURL <https://jimjyang.github.io/showroom/xkos-ap-no/files/demo-classifications.ttl>;
    dct:rights [ a dct:RightsStatement ;
     rdfs:comment "No restrictions at all"@en ] ;;
-   dct:issued "2023-03-23"^^xsd:date;
-   .
- 
-<https://w3id.org/demo-resources/demo-datasets#demoDistribution2>
-   rdf:type dcat:Distribution;
-   dcat:accessURL <https://jimjyang.github.io/showroom/xkos-ap-no/files/demo-classifications-nb.html>;
-   dct:description """Demo på en distribusjon (HTML norsk bokmål)"""@nb,
-       """Demo distribution (HTML Norwegian bokmål)"""@en;
-   dct:format <http://publications.europa.eu/resource/authority/file-type/HTML>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
-   adms:status <http://purl.org/adms/status/Completed>;
-   dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE>;
-   dct:modified "2023-03-23"^^xsd:date;
-   dcat:mediaType <https://www.w3.org/ns/iana/media-types/text/html>;
-   dcat:downloadURL <https://jimjyang.github.io/showroom/xkos-ap-no/files/demo-classifications-nb.html>;
-   dct:rights [ a dct:RightsStatement ;
-    rdfs:comment "No restrictions at all"@en ] ;;
-   dct:issued "2023-03-23"^^xsd:date;
-   .
- 
-<https://w3id.org/demo-resources/demo-datasets#demoDistribution3>
-   rdf:type dcat:Distribution;
-   dcat:accessURL <https://jimjyang.github.io/showroom/xkos-ap-no/files/demo-classifications-en.html>;
-   dct:description """Demo på en distribusjon (HTML engelsk)"""@nb,
-       """Demo distribution (HTML English)"""@en;
-   dct:format <http://publications.europa.eu/resource/authority/file-type/HTML>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
-   adms:status <http://purl.org/adms/status/Completed>;
-   dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE>;
-   dct:modified "2023-03-23"^^xsd:date;
-   dcat:mediaType <https://www.w3.org/ns/iana/media-types/text/html>;
-   dcat:downloadURL <https://jimjyang.github.io/showroom/xkos-ap-no/files/demo-classifications-en.html>;
-   dct:rights [ a dct:RightsStatement ;
-    rdfs:comment "No restrictions at all"@en ] ;;
+   dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+       <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:issued "2023-03-23"^^xsd:date;
    .
  
@@ -127,4 +94,4 @@
    vcard:hasURL <https://digdir.no>;
    .
  
-#### End of the file, 2023-04-26 16:15:39
+#### End of the file, 2023-06-21 14:30:53

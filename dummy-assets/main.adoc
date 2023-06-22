@@ -34,50 +34,50 @@ We provide therefore in this showroom a number of generic dummy assets which you
 
 There are mainly the following types of dummy-assets provided here in this showroom:
 
-* *Agents*, Organizations, Public Organizations etc.: In link:files/dummy-agents-en[this collection of dummy assets] (in link:files/dummy-agents.ttl[RDF Turtle]) we have dummy instances of the following classes: 
+* *Agents*, Organizations, Public Organizations etc.: In https://w3id.org/demo-resources/dummy-agents[this collection of dummy assets], we have dummy instances of the following classes: 
 ** Agent, `foaf:Agent`
 ** Organization, `org:Organization`
 ** Public organization, `cp:PublicOrganization` 
 
 
-* *Contact points*: In link:files/dummy-contact-points-en[this collection of dummy assets] (in link:files/dummy-contact-points.ttl[RDF Turtle]) we have dummy instances of the following classes:
+* *Contact points*: In https://w3id.org/demo-resources/dummy-contact-points[this collection of dummy assets], we have dummy instances of the following classes:
 ** Organization, `vcard:Organization`
 ** #(_to come_)# Group, `vcard:Group`
 ** #(_to come_)# Contact point, `cv:ContactPoint` 
 
 
-* *Datasets*, Distributions, Data services, etc.: In link:files/dummy-datasets-en[this collection of dummy assets] (in link:files/dummy-datasets.ttl[RDF Turtle]) we have dummy instances of the following classes:
+* *Datasets*, Distributions, Data services, etc.: In https://w3id.org/demo-resources/dummy-datasets[this collection of dummy assets], we have dummy instances of the following classes:
 ** Dataset, `dcat:Dataset`
 ** Distribution, `dcat:Distribution`
 ** Data service, `dcat:DataService`
 
-* *Documents*, Standards, etc.: In link:files/dummy-documents-en[this collection of dummy assets] (in link:files/dummy-documents.ttl[RDF Turtle]) we have dummy instances of the following classes:
+* *Documents*, Standards, etc.: In https://w3id.org/demo-resources/dummy-documents[this collection of dummy assets], we have dummy instances of the following classes:
 ** Document, `foaf:Document` 
 ** #(_to come_)# Standard, `dct:Standard`
 
 
-* *Events* etc.: In link:files/dummy-events-en[this collection of dummy assets] (in link:files/dummy-events.ttl[RDF Turtle]) we have dummy instances of the following classes:
+* *Events* etc.: In https://w3id.org/demo-resources/dummy-events[this collection of dummy assets], we have dummy instances of the following classes:
 ** Event, `cv:Event`
 ** Life event, `cv:LifeEvent`
 ** Business event, `cv:BusinessEvent`
 
-* *Evidences* etc.: In link:files/dummy-evidences-en[this collection of dummy assets] (in link:files/dummy-evidences.ttl[RDF Turtle]) we have dummy instances of the following classes:
+* *Evidences* etc.: In https://w3id.org/demo-resources/dummy-evidences[this collection of dummy assets], we have dummy instances of the following classes:
 ** Evidence, `cv:Evidence`
 ** Evidence type, `cv:EvidenceType`
 Evidence type list, `cv:EvidenceTypeList`
 
 
-* *Locations/addresses* etc.: In link:files/dummy-locations-en[this collection of dummy assets] (in link:files/dummy-locations.ttl[RDF Turtle]) we have dummy instances of the following classes:
+* *Locations/addresses* etc.: In https://w3id.org/demo-resources/dummy-locations[this collection of dummy assets], we have dummy instances of the following classes:
 ** Location, `dct:Location`
 ** Address, `locn:Address`
 
-* *Services*, Public Services etc.: In link:files/dummy-services-en[this collection of dummy assets] (in link:files/dummy-services.ttl[RDF Turtle]) we have dummy instances of the following classes:
+* *Services*, Public Services etc.: In https://w3id.org/demo-resources/dummy-services[this collection of dummy assets], we have dummy instances of the following classes:
 ** Service, `cpsvno:Service`
 ** Public service, `cpsv:PublicService`
 ** (Service) Output, `cv:Output`
 ** (Service) Channel, `cv:Channel`
 
-* *Time* periods, time entities etc.: In link:files/dummy-times-en[this collection of dummy assets] (in link:files/dummy-times.ttl[RDF Turtle]) we have dummy instances of the following classes:
+* *Time* periods, time entities etc.: In https://w3id.org/demo-resources/dummy-times[this collection of dummy assets], we have dummy instances of the following classes:
 ** Period of time, `dct:PeriodOfTime`
 ** Proper interval, `time:ProperInterval`
 ** Temporal entity, `time:TemporalEntity`
