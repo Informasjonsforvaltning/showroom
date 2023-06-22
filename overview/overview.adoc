@@ -14,7 +14,7 @@ We have currently following showrooms:
 
 * link:/showroom/demo-uris/[Demo URIs and dereferenced URIs]: The "master key" to the showrooms is URI. In this showroom we will demonstrate one way to implement https://www.digdir.no/standarder/peikarar-til-offentlege-ressursar-pa-nett/1492[the Norwegian URI-standard &#x29C9;, window="_blank", role="ext-link"] (based on EU's https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs &#x29C9;, window="_blank", role="ext-link"]). 
 
-* link:/showroom/dummy-assets[Generic dummy assets]: Not directly related to one particular specification per se, but this showroom contains a number of machine-readable, generic dummy assets which may be used as "building blocks" when you e.g. test your implementation of a given specification.  
+* link:/showroom/dummy-assets[Generic dummy assets]: Not directly related to one particular specification per se, but this showroom contains a number of reusable, machine-readable and generic dummy assets which may be used as "building blocks" when you e.g. test your implementation of a given specification.  
 
 <<img-overview>> illustrates some of the cross-references between the resource types that are demonstrated in the various showrooms. The cross-references will be explained in the respective showrooms. 
 

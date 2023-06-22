@@ -10,7 +10,7 @@ In order to make the resource descriptions available in the National Data Catalo
 This is illustrated in <<img-registering-n-harvesting>>, which also shows the usage of the national specifications in the data portal. 
 
 [[img-registering-n-harvesting]]
-.Making your resources available and findable through the National Data Catalog.
+.Making your resource descriptions available and findable through the National Data Catalog.
 [link=images/registering-n-harvesting.png]
 image::images/registering-n-harvesting.png[alt="Drawing showing registration and harvesting in to the National Data Portal."]
 
