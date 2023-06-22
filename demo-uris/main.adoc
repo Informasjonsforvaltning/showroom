@@ -30,7 +30,7 @@ This showroom is meant to
 
 In this showroom we demonstrate how to use the services provided by https://w3id.org[w3id.org &#x29C9;, window="_blank", role="ext-link"] to realize permanent/persistent URIs. 
 
-=== URI-pattern
+=== URI-pattern [[URI-pattern]]
 
 The above-mentioned Norwegian URI-standard defines the following pattern for URIs: 
 
@@ -49,13 +49,15 @@ Using w3id.org, our demo URI-pattern is as follows:
 ** = `demo-models#demomodel1` for our "Demo model 1"
 ** etc. 
 
-=== Dereferencing URIs with content negotiation
+=== Dereferencing URIs [[Dereferencing-URIs]]
 
 According to https://www.w3.org/TR/webarch/#representation-management[W3C &#x29C9;, window="_blank", role="ext-link"], "a URI owner SHOULD provide representations of the resource it identifies". 
 
 We use the services provided by w3id.org, and define https://github.com/perma-id/w3id.org/tree/master/demo-resources[RewriteRules for dereferencing our demo URIs &#x29C9;, window="_blank", role="ext-link"], such that every URI of ours returns at least one representation.
 
-In addition, we use the functionalities in RewriteRule to implement content negotiation  (incl. language negotiation), such that the same URI may return RDF Turtle or HTML in the preferred language, depending on "who's asking".
+=== Content negotiation (incl. language negotiation) [[Content-negotiation]]
+
+It is possible to use the functionalities in RewriteRule to implement content negotiation  (incl. language negotiation), such that the same URI may return RDF Turtle or HTML in the preferred language, depending on "who's asking".
 
 For example, for the URI `\https://w3id.org/demo-resources/demo-concepts#demoCpt1`: 
 
@@ -64,6 +66,8 @@ For example, for the URI `\https://w3id.org/demo-resources/demo-concepts#demoCpt
 * `Accept-language: nb` will redirect to the HTML representation in Norwegian bokmål, of the resource identified by that URI.
 
 * `Accept-language: en` will redirect to the HTML representation in English, of the resource identified by that URI.
+
+Since our server for data.norge.no already has content and language negotiation implemented, we do not need to specify RewriteRules to handle content and language negotiation. 
 
 == Why are permanent/persistent URIs important?
 
