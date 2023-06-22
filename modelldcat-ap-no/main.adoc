@@ -47,7 +47,7 @@ In this showroom we have a https://w3id.org/demo-resources/demo-models[a catalog
 ** "Demo Class 3" and "Demo Class 4" are subclasses of "Demo Class 1", described as https://data.norge.no/specification/modelldcat-ap-no#Spesialisering-egenskaper[specializations &#x29C9;, window="_blank", role="ext-link"] in ModellDCAT-AP-NO.  
 ** "Demo Class 1" has an https://data.norge.no/specification/modelldcat-ap-no#Attributt-egenskaper[attribute  &#x29C9;, window="_blank", role="ext-link"] named https://w3id.org/demo-resources/demo-models#demoAttribute11["demo attribute 11"]. 
 *** This attribute uses a code list as its value range.
-*** The code list, https://w3id.org/demo-resources/demo-models#demoCodelist11["Demo Code List 1"], is our "Demo classification 1" demonstrated in our link:/showroom/xkos-ap-no[showroom with demo classifications].
+*** The code list, https://w3id.org/demo-resources/demo-models#demoCodelist11["Demo Code List 1"], is an external code list with reference to our "Demo classification 1" demonstrated in our link:/showroom/xkos-ap-no[showroom with demo classifications].
 
 .Click for mapping to ModellDCAT-AP-NO.
 [%collapsible]
