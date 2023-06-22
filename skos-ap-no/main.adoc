@@ -116,7 +116,7 @@ There are also two different ways to specify the definition of a given concept, 
 *Concepts and classifications*, for example:
 
 * A concept may refer to a classification as its value range. 
-** Our https://w3id.org/demo-resources/demo-concepts#demoCpt2["demo concept 2"], refers to our link:/showroom/xkos-ap-no/files/demo-classifications-en#demoClassification1["demo controlled vocabulary 1"] (demonstrated in our link:/showroom/xkos-ap-no/[showroom with demo classifications]) as its https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de[value range (skosno:valueRange) &#x29C9;, window="_blank", role="ext-link"].
+** Our https://w3id.org/demo-resources/demo-concepts#demoCpt2["demo concept 2"] refers to our https://w3id.org/demo-resources/demo-classifications#demoClassification1["demo controlled vocabulary 1"] (demonstrated in our link:/showroom/xkos-ap-no/[showroom with demo classifications]) as its https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de[value range (skosno:valueRange) &#x29C9;, window="_blank", role="ext-link"].
 ** Classifications should therefore be made available, also machine-readably. 
 
 * A concept may be included in or referred to from a classification. 
