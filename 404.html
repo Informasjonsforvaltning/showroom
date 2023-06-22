@@ -1,0 +1,31 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Error 404</title>
+
+    <script>
+        window.onload = function () {
+            const destination = window.location.href;
+            if (window.location.href.includes("informasjonsforvaltning.github.io/showroom")) {
+                const redirectLocation = window.location.href.replace(
+                    "informasjonsforvaltning.github.io/showroom",
+                    "data.norge.no/showroom"
+                );
+                document.getElementById("body").innerHTML = "This site has been permanently moved!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                
+                let tID = setTimeout(function () {
+                    window.location.href = redirectLocation;
+                    window.clearTimeout(tID);		// clear time out.
+                }, 1);
+            }
+        }
+    </script>
+</head>
+
+<body id="body" style="text-align: center">
+    Permanently moved
+</body>
+
+</html>
