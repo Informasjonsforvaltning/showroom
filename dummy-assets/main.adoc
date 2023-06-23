@@ -39,12 +39,10 @@ There are mainly the following types of dummy-assets provided here in this showr
 ** Organization, `org:Organization`
 ** Public organization, `cp:PublicOrganization` 
 
-
 * *Contact points*: In https://w3id.org/demo-resources/dummy-contact-points[this collection of dummy assets], we have dummy instances of the following classes:
+** Contact point, `cv:ContactPoint` 
+** Group, `vcard:Group`
 ** Organization, `vcard:Organization`
-** #(_to come_)# Group, `vcard:Group`
-** #(_to come_)# Contact point, `cv:ContactPoint` 
-
 
 * *Datasets*, Distributions, Data services, etc.: In https://w3id.org/demo-resources/dummy-datasets[this collection of dummy assets], we have dummy instances of the following classes:
 ** Dataset, `dcat:Dataset`

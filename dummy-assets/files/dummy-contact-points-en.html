@@ -448,6 +448,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Content</div>
 <ul class="sectlevel1">
 <li><a href="#dmyCP1">&lt;https://w3id.org/demo-resources/dummy-contact-points#dmyCP1&gt;</a></li>
+<li><a href="#dmyCP2Org">&lt;https://w3id.org/demo-resources/dummy-contact-points#dmyCP2Org&gt;</a></li>
+<li><a href="#dmyCP3Grp">&lt;https://w3id.org/demo-resources/dummy-contact-points#dmyCP3Grp&gt;</a></li>
 <li><a href="#Namespace">Name spaces</a></li>
 </ul>
 </div>
@@ -491,24 +493,135 @@ Please use <a href="https://github.com/jimjyang/showroom/issues">Github Issues</
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>is instance of</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdf:type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Organization (vcard:Organization)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact point (cv:ContactPoint)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has organization name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasOrganizationName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dummy contact point 1 (<a href="http://publications.europa.eu/resource/authority/language/ENG">English</a>)<br>
  Dummy kontaktpunkt 1 (<a href="http://publications.europa.eu/resource/authority/language/NOB">Norwegian Bokmål</a>)<br>
  Dummy kontaktpunkt 1 (<a href="http://publications.europa.eu/resource/authority/language/NNO">Norwegian Nynorsk</a>)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has email</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:email</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">mailto:cp1@example.org</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has language</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:availableLanguage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/language/ENG">English</a><br>
+<a href="http://publications.europa.eu/resource/authority/language/NOB">Norwegian Bokmål</a><br>
+<a href="http://publications.europa.eu/resource/authority/language/NNO">Norwegian Nynorsk</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>contact page</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:contactPage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-documents#dmyDoc1" class="bare">https://w3id.org/demo-resources/dummy-documents#dmyDoc1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>hours available (structured)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:openingHours</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1" class="bare">https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>availability restriction</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:specialOpeningHoursSpecification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1" class="bare">https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>telephone</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:telephone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">123456789</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>contact type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema:contactType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technical support (<a href="http://publications.europa.eu/resource/authority/language/ENG">English</a>)<br>
+ Teknisk støtte (<a href="http://publications.europa.eu/resource/authority/language/NOB">Norwegian Bokmål</a>)<br>
+ Teknisk støtte (<a href="http://publications.europa.eu/resource/authority/language/NNO">Norwegian Nynorsk</a>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dmyCP2Org"><a class="anchor" href="#dmyCP2Org"></a>&lt;https://w3id.org/demo-resources/dummy-contact-points#dmyCP2Org&gt;</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Property name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Property URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Value</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>is instance of</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Organization (vcard:Organization)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has organization name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasOrganizationName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dummy contact point 1 as a vcard:Organization (<a href="http://publications.europa.eu/resource/authority/language/ENG">English</a>)<br>
+ Dummy kontaktpunkt 1 som en vcard:Organization (<a href="http://publications.europa.eu/resource/authority/language/NOB">Norwegian Bokmål</a>)<br>
+ Dummy kontaktpunkt 2 som ein vcard:Organization (<a href="http://publications.europa.eu/resource/authority/language/NNO">Norwegian Nynorsk</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has email</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mailto:cp2org@example.org</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has URL</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasURL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/demo-resources/dummy-assets" class="bare">https://w3id.org/demo-resources/dummy-assets</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://example.org/contact-us" class="bare">https://example.org/contact-us</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dmyCP3Grp"><a class="anchor" href="#dmyCP3Grp"></a>&lt;https://w3id.org/demo-resources/dummy-contact-points#dmyCP3Grp&gt;</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Property name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Property URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Value</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>is instance of</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Group (vcard:Group)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasTitle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dummy contact point 3 as a vcard:Group (<a href="http://publications.europa.eu/resource/authority/language/ENG">English</a>)<br>
+ Dummy kontaktpunkt 3 som en vcard:Group (<a href="http://publications.europa.eu/resource/authority/language/NOB">Norwegian Bokmål</a>)<br>
+ Dummy kontaktpunkt 3 som ei vcard:Group (<a href="http://publications.europa.eu/resource/authority/language/NNO">Norwegian Nynorsk</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has email</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mailto:cp2grp@example.org</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>has URL</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasURL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://example.org/contact-us" class="bare">https://example.org/contact-us</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -528,16 +641,24 @@ Please use <a href="https://github.com/jimjyang/showroom/issues">Github Issues</
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cv</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/m8g/" class="bare">http://data.europa.eu/m8g/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dct</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/terms/" class="bare">http://purl.org/dc/terms/</a></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdf</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" class="bare">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vcard</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2006/vcard/ns#" class="bare">http://www.w3.org/2006/vcard/ns#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>schema</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://schema.org/" class="bare">http://schema.org/</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xsd</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema#" class="bare">http://www.w3.org/2001/XMLSchema#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vcard</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2006/vcard/ns#" class="bare">http://www.w3.org/2006/vcard/ns#</a></p></td>
 </tr>
 </tbody>
 </table>
