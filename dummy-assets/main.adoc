@@ -64,8 +64,7 @@ There are mainly the following types of dummy-assets provided here in this showr
 * *Evidences* etc.: In https://w3id.org/demo-resources/dummy-evidences[this collection of dummy assets], we have dummy instances of the following classes:
 ** Evidence, `cv:Evidence`
 ** Evidence type, `cv:EvidenceType`
-Evidence type list, `cv:EvidenceTypeList`
-
+** Evidence type list, `cv:EvidenceTypeList`
 
 * *Locations/addresses* etc.: In https://w3id.org/demo-resources/dummy-locations[this collection of dummy assets], we have dummy instances of the following classes:
 ** Location, `dct:Location`
@@ -83,7 +82,6 @@ Evidence type list, `cv:EvidenceTypeList`
 ** Temporal entity, `time:TemporalEntity`
 ** Time instant, `time:Instant`
 ** Date time description, `time:DateTimeDescription`
-
 
 == _to the overview of the showrooms_ [[to-overview]]
 

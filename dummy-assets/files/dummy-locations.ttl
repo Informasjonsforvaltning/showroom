@@ -4,13 +4,9 @@
 @prefix dct: <http://purl.org/dc/terms/> . 
 @prefix locn: <http://www.w3.org/ns/locn#> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
 <https://w3id.org/demo-resources/dummy-locations#dmyLocation1>
    rdf:type dct:Location;
-   rdfs:comment """Empty instance, more content may come later"""@en,
-       """Tom instans, mer innhold kan komme senere"""@nb;
    dcat:bbox """…""";
    dcat:centroid """…""";
    locn:geometry """…""";
@@ -18,9 +14,17 @@
  
 <https://w3id.org/demo-resources/dummy-locations#dmyAddr1>
    rdf:type locn:Address;
-   rdfs:comment """Empty instance, more content may come later"""@en,
-       """Tom instans, mer innhold kan komme senere"""@nb;
-   dct:identifier "https://w3id.org/demo-resources/dummy-locations#dmyAddr1"^^xsd:anyURI;
+   locn:adminUnitL1 """…"""@en;
+   locn:adminUnitL2 """…"""@en;
+   locn:addressId """…""";
+   locn:addressArea """…"""@en;
+   locn:locatorName """…"""@en;
+   locn:fullAddress """…"""@en;
+   locn:throughfare """…"""@en;
+   locn:locatorDesignator """…"""@en;
+   locn:poBox """…"""@en;
+   locn:postCode """…""";
+   locn:postName """…"""@en;
    .
  
-#### End of the file, 2023-05-05 06:53:41
+#### End of the file, 2023-06-23 11:07:03
