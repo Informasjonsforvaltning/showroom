@@ -22,13 +22,13 @@ image:images/work-in-progress.png[WIP,72,72] _This showroom is under constructio
 
 This showroom is meant to 
 
-* provide dummy assets as machine-readable RDF Turtle resources, to be referred to in e.g. examples/tests.
+* provide dummy assets as reusable, machine-readable RDF Turtle resources, to be referred to in e.g. examples/tests.
 
 == Why dummy assets? [[why]]
 
-When testing or demonstrating your implementation of a given specification, you may often need to refer to instances of specific classes. You may of course use `\https://example.org/nonExisting`, however, such a reference will usually cause validation errors because the instance your refer to doesn't exist. 
+When testing or demonstrating your implementation of a given specification, you may often need to refer to instances of specific classes. You may of course use `\https://example.org/nonExisting`, however, such a reference will usually cause validation errors because the instance you refer to doesn't exist. 
 
-We provide therefore in this showroom a number of generic dummy assets which you can refer to in e.g. your test implementations. "Dummy" because We have filled the assets with dummy data, such that they _hopefully_ will validate correctly, though only in accordance with the Norwegian national specifications that are demonstrated in the other showrooms here. "Generic" because the assets will not contain value for optional properties that are only specific for a particular specification. 
+We provide therefore in this showroom a number of generic dummy assets which you can refer to in e.g. your test implementations. "Dummy" because We have filled the assets with dummy data, such that they _hopefully_ will validate correctly, though only in accordance with the Norwegian national specifications that are demonstrated in the other showrooms here. "Generic" because the assets will not necessarily contain value for all optional properties that are only specific for a particular specification. 
 
 == Demo resources in this showroom [[demo-resources]]
 
@@ -51,8 +51,10 @@ There are mainly the following types of dummy-assets provided here in this showr
 
 * *Documents*, Standards, etc.: In https://w3id.org/demo-resources/dummy-documents[this collection of dummy assets], we have dummy instances of the following classes:
 ** Document, `foaf:Document` 
-** #(_to come_)# Standard, `dct:Standard`
-
+** Standard, `dct:Standard`
+** License document, `dct:LicenseDocument`
+** Provenance statement, `dct:ProvenanceStatement`
+** Rights statement, `dct:RightsStatement`
 
 * *Events* etc.: In https://w3id.org/demo-resources/dummy-events[this collection of dummy assets], we have dummy instances of the following classes:
 ** Event, `cv:Event`
