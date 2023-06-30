@@ -44,7 +44,8 @@ There are mainly the following types of dummy-assets provided here in this showr
 ** Group, `vcard:Group`
 ** Organization, `vcard:Organization`
 
-* *Datasets*, Distributions, Data services, etc.: In https://w3id.org/demo-resources/dummy-datasets[this collection of dummy assets], we have dummy instances of the following classes:
+* *Datasets*, Distributions, Data services, Catalogs etc.: In https://w3id.org/demo-resources/dummy-datasets[this collection of dummy assets], we have dummy instances of the following classes:
+** Catalog, `dcat:Catalog`
 ** Dataset, `dcat:Dataset`
 ** Distribution, `dcat:Distribution`
 ** Data service, `dcat:DataService`
