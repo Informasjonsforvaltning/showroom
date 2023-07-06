@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+   <meta charset="utf-8">
+   <title>Forsøker å hente og vise engelsk versjon av html-filen</title>
+</head>
+
+<body id="body">
+    <script>
+      async function fetchMyDocument(url) {
+         try {
+            let response = await fetch( url, {
+            method: 'GET',
+            redirect: 'follow', 
+            headers: {
+               'Accept': 'text/html',
+               'Accept-Language' : 'en'
+               }}) ; // Gets a promise
+               document.body.innerHTML = await response.text(); // Replaces body with response
+            } catch (err) {
+               console.log('Fetch error:' + err); // Display error text
+            }  
+         };
+      let targetURL = "https://data.norge.no/showroom/dummy-assets";
+      fetchMyDocument(targetURL);
+   </script>
+</body>
+
+</html>

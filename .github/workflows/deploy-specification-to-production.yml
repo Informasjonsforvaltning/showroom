@@ -197,9 +197,10 @@ jobs:
       ontology-type: "showroom"
       ontology: "overview"
       host: "https://data.norge.no"
-      program: "asciidoctor -D overview -o index.html -a lang=en overview/main.adoc"
+      program: "asciidoctor -D overview -o index-en.html -a lang=en overview/main.adoc"
       files: |
-        overview/index.html text/html en
+        overview/index-en.html text/html en
+        overview/index-nb.html text/html nb
         overview/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
         overview/images/Digdir.png image/png en images/Digdir.png
         overview/images/registering-n-harvesting.png image/png en images/registering-n-harvesting.png
