@@ -1,4 +1,4 @@
-name: Manually build adocs and deploy showroom to data.norge.no
+name: Test manually upload to data.norge.no/showroom
 
 on:
   workflow_dispatch:
