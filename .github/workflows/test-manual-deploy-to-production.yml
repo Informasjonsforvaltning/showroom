@@ -14,7 +14,7 @@ jobs:
       program: "asciidoctor -D cpsv-ap-no -o index-en.html -a lang=en cpsv-ap-no/main.adoc"
       files: |
         cpsv-ap-no/index-en.html text/html en index-en.html
-        cpsv-ap-no/files/index-nb.html text/html nb index-nb.html
+        cpsv-ap-no/index-nb.html text/html nb index-nb.html
         cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
         cpsv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         cpsv-ap-no/files/demo-services-events.ttl text/turtle en demo-services-events/demo-services-events.ttl
