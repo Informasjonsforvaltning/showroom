@@ -21,12 +21,164 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
+<https://w3id.org/demo-resources/demo-services-events#demoCatalog1>
+   rdf:type dcat:Catalog;
+   dct:description """For demo and testing only"""@en,
+       """Kun for demo og testing"""@nb;
+   cv:hasContactPoint <https://w3id.org/demo-resources/dummy-contact-points#dmyCP1>;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoCatalog1"^^xsd:anyURI;
+   dcatno:containsService <https://w3id.org/demo-resources/demo-services-events#demoPubService1>,
+       <https://w3id.org/demo-resources/demo-services-events#demoService1>;
+   dct:title """Demokatalog"""@nb,
+       """Demo Catalog"""@en;
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
+   dct:modified "2023-07-07"^^xsd:date;
+   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+   foaf:homepage <https://data.norge.no/showroom/cpsv-ap-no>;
+   dcatno:containsEvent <https://w3id.org/demo-resources/demo-services-events#demoEvent1>,
+       <https://w3id.org/demo-resources/demo-services-events#demoLifeEvent1>,
+       <https://w3id.org/demo-resources/demo-services-events#demoBusinessEvent1>;
+   dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>;
+   dct:provenance <https://w3id.org/demo-resources/dummy-documents#dmyProvStmnt1>;
+   dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+       <http://publications.europa.eu/resource/authority/language/NOB>;
+   dcat:themeTaxonomy <http://publications.europa.eu/resource/dataset/eurovoc>,
+       <https://psi.norge.no/los/ontologi/tema>;
+   dct:issued "2022-01-01"^^xsd:date;
+   dct:isPartOf <https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1>;
+   dct:hasPart <https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1>;
+   dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+   dct:rights <https://w3id.org/demo-resources/dummy-documents#dmyRightsStmnt1>;
+   .
+ 
+<https://w3id.org/demo-resources/demo-services-events#demoPubService1>
+   rdf:type cpsv:PublicService;
+   dct:description """For demo and testing only"""@en,
+       """Kun for demo og testing"""@nb;
+   cv:hasCompetentAuthority <https://w3id.org/demo-resources/demo-services-events#demoPubOrg1>;
+   dcat:contactPoint <https://w3id.org/demo-resources/demo-services-events#demoContactPoint1>;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoPubService1"^^xsd:anyURI;
+   dct:title """Demo Public Service 1"""@en,
+       """Demo offentlig tjeneste 1"""@nb;
+   cpsv:produces <https://w3id.org/demo-resources/demo-services-events#demoOutput1>;
+   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
+   dct:isPartOf <https://w3id.org/demo-resources/demo-services-events#demoService1>;
+   dct:hasPart <https://w3id.org/demo-resources/demo-services-events#demoService1>;
+   foaf:homepage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
+   dct:type <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
+   adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEVELOP>;
+   cv:thematicArea <http://eurovoc.europa.eu/100152>;
+   cv:processingTime "P2D"^^xsd:duration;
+   cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
+   cv:isGroupedBy <https://w3id.org/demo-resources/demo-services-events#demoEvent1>;
+   cv:isClassifiedBy <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
+   cv:hasChannel <https://w3id.org/demo-resources/demo-services-events#demoChannel>;
+   cpsv:follows <https://w3id.org/demo-resources/demo-services-events#demoRule1>;
+   cv:hasParticipation <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>,
+       <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
+   cpsv:hasInput <https://w3id.org/demo-resources/demo-services-events#demoEvidence1>;
+   cv:hasCost <https://w3id.org/demo-resources/demo-services-events#demoCost1>;
+   cv:holdsRequirement <https://w3id.org/demo-resources/demo-services-events#demoRequirement1>;
+   cv:hasLegalResource <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
+   dct:requires <https://w3id.org/demo-resources/demo-services-events#demoService1>;
+   dct:audience <https://w3id.org/demo-resources/demo-classifications#demo-category-A>;
+   dcat:keyword """demo"""@en,
+       """demo"""@nb;
+   dct:relation <https://w3id.org/demo-resources/demo-services-events#demoService1>;
+   cv:sector <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
+   dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+       <http://publications.europa.eu/resource/authority/language/NOB>,
+       <http://publications.europa.eu/resource/authority/language/NNO>;
+   .
+ 
+<https://w3id.org/demo-resources/demo-services-events#demoService1>
+   rdf:type cpsvno:Service;
+   dct:description """For demo and testing only"""@en,
+       """Kun for demo og testing"""@nb;
+   cv:ownedBy <https://w3id.org/demo-resources/dummy-agents#dmyAgt1>;
+   dcat:contactPoint <https://w3id.org/demo-resources/demo-services-events#demoContactPoint1>;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoService1"^^xsd:anyURI;
+   dct:title """Demo Service 1"""@en,
+       """Demotjeneste 1"""@nb;
+   cpsv:produces <https://w3id.org/demo-resources/demo-services-events#demoOutput1>;
+   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
+   dct:isPartOf <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
+   dct:hasPart <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
+   foaf:homepage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
+   adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEVELOP>;
+   cv:thematicArea <https://psi.norge.no/los/tema/handel-og-service>;
+   cv:processingTime "P2D"^^xsd:duration;
+   cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
+   cv:isGroupedBy <https://w3id.org/demo-resources/demo-services-events#demoEvent1>;
+   cv:isClassifiedBy <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
+   cv:hasChannel <https://w3id.org/demo-resources/demo-services-events#demoChannel>;
+   cpsv:follows <https://w3id.org/demo-resources/demo-services-events#demoRule1>;
+   cv:hasParticipation <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>,
+       <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
+   cpsv:hasInput <https://w3id.org/demo-resources/demo-services-events#demoEvidence1>;
+   cv:hasCost <https://w3id.org/demo-resources/demo-services-events#demoCost1>;
+   cv:holdsRequirement <https://w3id.org/demo-resources/demo-services-events#demoRequirement1>;
+   cv:hasLegalResource <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
+   dct:requires <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
+   dcat:keyword """demo"""@en,
+       """demo"""@nb;
+   dct:audience <https://w3id.org/demo-resources/demo-classifications#demo-category-A>;
+   dct:relation <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
+   cv:sector <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
+   dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+       <http://publications.europa.eu/resource/authority/language/NOB>,
+       <http://publications.europa.eu/resource/authority/language/NNO>;
+   dct:type <https://data.norge.no/vocabulary/service-type#dummy-service>;
+   .
+ 
+<https://w3id.org/demo-resources/demo-services-events#demoEvent1>
+   rdf:type cv:Event;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoEvent1"^^xsd:anyURI;
+   dct:title """Demo Event"""@en,
+       """Demohendelse"""@nb;
+   dct:description """For demo and testing only"""@en,
+       """Kun for demo og testing"""@nb;
+   cpsvno:mayInitiate <https://w3id.org/demo-resources/demo-services-events#demoService1>;
+   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
+   dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
+   dct:type <https://data.norge.no/vocabulary/event-type#data-changed>;
+   .
+ 
+<https://w3id.org/demo-resources/demo-services-events#demoLifeEvent1>
+   rdf:type cv:LifeEvent;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoLifeEvent1"^^xsd:anyURI;
+   dct:title """Demo Life Event"""@nb,
+       """Demolivshendelse"""@nn;
+   dct:description """For demo and testing only"""@en,
+       """Kun for demo og testing"""@nb;
+   cpsvno:triggersNeedFor <https://w3id.org/demo-resources/demo-services-events#demoService1>;
+   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
+   dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
+   dct:type <https://data.norge.no/vocabulary/life-event-type#having-a-child>;
+   .
+ 
+<https://w3id.org/demo-resources/demo-services-events#demoBusinessEvent1>
+   rdf:type cv:BusinessEvent;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoBusinessEvent1"^^xsd:anyURI;
+   dct:title """Demo Business Event 1"""@en,
+       """Demovirksomhetshendelse 1"""@nb;
+   dct:description """For demo and testing only"""@en,
+       """Kun for demo og testing"""@nb;
+   cpsvno:mayTriggerNeedFor <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
+   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
+   dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
+   dct:type <https://data.norge.no/vocabulary/business-event-type#dummy-event>;
+   .
+ 
 <https://w3id.org/demo-resources/demo-services-events#demoConstraint1>
    rdf:type cv:Constraint;
    cv:constrains <https://w3id.org/demo-resources/demo-services-events#demoInfoConcept1>;
    dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoConstraint1"^^xsd:anyURI;
-   dct:title """Demo constraint"""@en,
-       """Demobegrensning"""@nb;
+   dct:title """Demo Constraint 1"""@en,
+       """Demobegrensning 1"""@nb;
    dct:description """For demo and testing only"""@en,
        """Kun for demo og testing"""@nb;
    .
@@ -92,19 +244,6 @@
    cv:ifAccessedThrough <https://w3id.org/demo-resources/demo-services-events#demoChannel>;
    .
  
-<https://w3id.org/demo-resources/demo-services-events#demoEvent1>
-   rdf:type cv:Event;
-   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoEvent1"^^xsd:anyURI;
-   dct:title """Demo Event"""@en,
-       """Demohendelse"""@nb;
-   dct:description """For demo and testing only"""@en,
-       """Kun for demo og testing"""@nb;
-   cpsvno:mayInitiate <https://w3id.org/demo-resources/demo-services-events#demoService1>;
-   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
-   dct:type <https://data.norge.no/vocabulary/event-type#data-changed>;
-   .
- 
 <https://w3id.org/demo-resources/demo-services-events#demoInfoConcept1>
    rdf:type cv:InformationConcept;
    dct:description """For demo and testing only"""@en,
@@ -121,35 +260,6 @@
        """Demoinformasjonskrav 1"""@nb;
    dct:title """For demo and testing only"""@en,
        """Kun for demo og testing"""@nb;
-   .
- 
-<https://w3id.org/demo-resources/demo-services-events#demoCatalog1>
-   rdf:type dcat:Catalog;
-   dct:description """En demo katalog, bare for demo og testing"""@nb,
-       """A demo catalog, only for demo and testing"""@en;
-   cv:hasContactPoint <https://w3id.org/demo-resources/dummy-contact-points#dmyCP1>;
-   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoCatalog1"^^xsd:anyURI;
-   dcatno:containsService <https://w3id.org/demo-resources/demo-services-events#demoPubService1>,
-       <https://w3id.org/demo-resources/demo-services-events#demoService1>;
-   dct:title """Demokatalog"""@nb,
-       """Demo Catalog"""@en;
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
-   dct:modified "2023-07-03"^^xsd:date;
-   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-   foaf:homepage <https://data.norge.no/showroom/cpsv-ap-no>;
-   dcatno:containsEvent <https://w3id.org/demo-resources/demo-services-events#demoEvent1>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>;
-   dct:provenance <https://w3id.org/demo-resources/dummy-documents#dmyProvStmnt1>;
-   dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
-       <http://publications.europa.eu/resource/authority/language/NOB>;
-   dcat:themeTaxonomy <http://publications.europa.eu/resource/dataset/eurovoc>,
-       <https://psi.norge.no/los/ontologi/tema>;
-   dct:issued "2022-01-01"^^xsd:date;
-   dct:isPartOf <https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1>;
-   dct:hasPart <https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1>;
-   dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:rights <https://w3id.org/demo-resources/dummy-documents#dmyRightsStmnt1>;
    .
  
 <https://w3id.org/demo-resources/demo-services-events#demoContactPoint1>
@@ -184,19 +294,6 @@
        """Kun for demo og testing"""@nb;
    .
  
-<https://w3id.org/demo-resources/demo-services-events#demoLifeEvent1>
-   rdf:type cv:LifeEvent;
-   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoLifeEvent1"^^xsd:anyURI;
-   dct:title """Demo Life Event"""@nb,
-       """Demolivshendelse"""@nn;
-   dct:description """For demo and testing only"""@en,
-       """Kun for demo og testing"""@nb;
-   cpsvno:triggersNeedFor <https://w3id.org/demo-resources/demo-services-events#demoService1>;
-   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
-   dct:type <https://data.norge.no/vocabulary/life-event-type#having-a-child>;
-   .
- 
 <https://w3id.org/demo-resources/demo-services-events#demoPubOrg1>
    rdf:type cv:PublicOrganisation;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
@@ -212,47 +309,6 @@
    locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr2>;
    cv:participates <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
    foaf:homepage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
-   .
- 
-<https://w3id.org/demo-resources/demo-services-events#demoPubService1>
-   rdf:type cpsv:PublicService;
-   dct:description """For demo and testing only"""@en,
-       """Kun for demo og testing"""@nb;
-   cv:hasCompetentAuthority <https://w3id.org/demo-resources/demo-services-events#demoPubOrg1>;
-   dcat:contactPoint <https://w3id.org/demo-resources/demo-services-events#demoContactPoint1>;
-   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoPubService1"^^xsd:anyURI;
-   dct:title """Demo Public Service 1"""@en,
-       """Demo offentlig tjeneste 1"""@nb;
-   cpsv:produces <https://w3id.org/demo-resources/demo-services-events#demoOutput1>;
-   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
-   dct:isPartOf <https://w3id.org/demo-resources/demo-services-events#demoService1>;
-   dct:hasPart <https://w3id.org/demo-resources/demo-services-events#demoService1>;
-   foaf:homepage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
-   dct:type <http://publications.europa.eu/resource/authority/main-activity/gen-pub>;
-   adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEVELOP>;
-   cv:thematicArea <http://eurovoc.europa.eu/100152>;
-   cv:processingTime "P2D"^^xsd:duration;
-   cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
-   cv:isGroupedBy <https://w3id.org/demo-resources/demo-services-events#demoEvent1>;
-   cv:isClassifiedBy <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   cv:hasChannel <https://w3id.org/demo-resources/demo-services-events#demoChannel>;
-   cpsv:follows <https://w3id.org/demo-resources/demo-services-events#demoRule1>;
-   cv:hasParticipation <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>,
-       <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
-   cpsv:hasInput <https://w3id.org/demo-resources/demo-services-events#demoEvidence1>;
-   cv:hasCost <https://w3id.org/demo-resources/demo-services-events#demoCost1>;
-   cv:holdsRequirement <https://w3id.org/demo-resources/demo-services-events#demoRequirement1>;
-   cv:hasLegalResource <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
-   dct:requires <https://w3id.org/demo-resources/demo-services-events#demoService1>;
-   dct:audience <https://w3id.org/demo-resources/demo-classifications#demo-category-A>;
-   dcat:keyword """demo"""@en,
-       """demo"""@nb;
-   dct:relation <https://w3id.org/demo-resources/demo-services-events#demoService1>;
-   cv:sector <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
-   dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
-       <http://publications.europa.eu/resource/authority/language/NOB>,
-       <http://publications.europa.eu/resource/authority/language/NNO>;
    .
  
 <https://w3id.org/demo-resources/demo-services-events#demoOrg1>
@@ -342,47 +398,6 @@
    time:hasXSDDuration "PT4H"^^xsd:duration;
    .
  
-<https://w3id.org/demo-resources/demo-services-events#demoService1>
-   rdf:type cpsvno:Service;
-   dct:description """For demo and testing only"""@en,
-       """Kun for demo og testing"""@nb;
-   cv:ownedBy <https://w3id.org/demo-resources/dummy-agents#dmyAgt1>;
-   dcat:contactPoint <https://w3id.org/demo-resources/demo-services-events#demoContactPoint1>;
-   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoService1"^^xsd:anyURI;
-   dct:title """Demo Service 1"""@en,
-       """Demotjeneste 1"""@nb;
-   cpsv:produces <https://w3id.org/demo-resources/demo-services-events#demoOutput1>;
-   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
-   dct:isPartOf <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
-   dct:hasPart <https://example.org/dummy-tjeneste>;
-   foaf:homepage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
-   adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEVELOP>;
-   cv:thematicArea <https://psi.norge.no/los/tema/handel-og-service>;
-   cv:processingTime "P2D"^^xsd:duration;
-   cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
-   cv:isGroupedBy <https://w3id.org/demo-resources/demo-services-events#demoEvent1>;
-   cv:isClassifiedBy <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   cv:hasChannel <https://w3id.org/demo-resources/demo-services-events#demoChannel>;
-   cpsv:follows <https://w3id.org/demo-resources/demo-services-events#demoRule1>;
-   cv:hasParticipation <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>,
-       <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
-   cpsv:hasInput <https://w3id.org/demo-resources/demo-services-events#demoEvidence1>;
-   cv:hasCost <https://w3id.org/demo-resources/demo-services-events#demoCost1>;
-   cv:holdsRequirement <https://w3id.org/demo-resources/demo-services-events#demoRequirement1>;
-   cv:hasLegalResource <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
-   dct:requires <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
-   dcat:keyword """demo"""@en,
-       """demo"""@nb;
-   dct:audience <https://w3id.org/demo-resources/demo-classifications#demo-category-A>;
-   dct:relation <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
-   cv:sector <http://publications.europa.eu/resource/authority/data-theme/GOVE>;
-   dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
-       <http://publications.europa.eu/resource/authority/language/NOB>,
-       <http://publications.europa.eu/resource/authority/language/NNO>;
-   dct:type <https://data.norge.no/vocabulary/service-type#dummy-service>;
-   .
- 
 <https://w3id.org/demo-resources/demo-services-events#demoChannel>
    rdf:type cv:Channel;
    dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoChannel"^^xsd:anyURI;
@@ -430,17 +445,4 @@
    cv:value """…""";
    .
  
-<https://w3id.org/demo-resources/demo-services-events#demoBusinessEvent1>
-   rdf:type cv:BusinessEvent;
-   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoBusinessEvent1"^^xsd:anyURI;
-   dct:title """Demo Business Event 1"""@en,
-       """Demovirksomhetshendelse 1"""@nb;
-   dct:description """For demo and testing only"""@en,
-       """Kun for demo og testing"""@nb;
-   cpsvno:mayTriggerNeedFor <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
-   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
-   dct:type <https://data.norge.no/vocabulary/business-event-type#dummy-event>;
-   .
- 
-#### End of the file, 2023-07-07 08:52:15
+#### End of the file, 2023-07-07 11:23:04
