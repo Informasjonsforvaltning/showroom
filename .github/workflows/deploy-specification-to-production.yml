@@ -68,7 +68,6 @@ jobs:
       program: "asciidoctor -D cpsv-ap-no -o index-en.html -a lang=en cpsv-ap-no/main.adoc"
       files: |
         cpsv-ap-no/index-en.html text/html en
-        cpsv-ap-no/index-nb.html text/html nb
         cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
         cpsv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         cpsv-ap-no/files/demo-services-events.ttl text/turtle en demo-services-events/demo-services-events.ttl
@@ -90,7 +89,6 @@ jobs:
       program: "asciidoctor -D dcat-ap-no -o index-en.html -a lang=en dcat-ap-no/main.adoc"
       files: |
         dcat-ap-no/index-en.html text/html en
-        dcat-ap-no/index-nb.html text/html nb
         dcat-ap-no/images/Digdir.png image/png en images/Digdir.png
         dcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         dcat-ap-no/files/demo-datasets.ttl text/turtle en demo-datasets/demo-datasets.ttl
@@ -112,7 +110,6 @@ jobs:
       program: "asciidoctor -D demo-uris -o index-en.html -a lang=en demo-uris/main.adoc"
       files: |
         demo-uris/index-en.html text/html en
-        demo-uris/index-nb.html text/html nb
         demo-uris/images/Digdir.png image/png en images/Digdir.png
         demo-uris/images/work-in-progress.png image/png en images/work-in-progress.png
     secrets:
@@ -131,7 +128,6 @@ jobs:
       program: "asciidoctor -D dummy-assets -o index-en.html -a lang=en dummy-assets/main.adoc"
       files: |
         dummy-assets/index-en.html text/html en
-        dummy-assets/index-nb.html text/html nb
         dummy-assets/images/Digdir.png image/png en images/Digdir.png
         dummy-assets/images/work-in-progress.png image/png en images/work-in-progress.png
         dummy-assets/files/dummy-agents.ttl text/turtle en dummy-agents/dummy-agents.ttl
@@ -177,7 +173,6 @@ jobs:
       program: "asciidoctor -D modelldcat-ap-no -o index-en.html -a lang=en modelldcat-ap-no/main.adoc"
       files: |
         modelldcat-ap-no/index-en.html text/html en
-        modelldcat-ap-no/index-nb.html text/html nb
         modelldcat-ap-no/files/demo-models.ttl text/turtle en demo-models/demo-models.ttl
         modelldcat-ap-no/files/demo-models-en.html text/html en demo-models/demo-models-en.html
         modelldcat-ap-no/files/demo-models-nb.html text/html nb demo-models/demo-models-nb.html
@@ -204,7 +199,6 @@ jobs:
       program: "asciidoctor -D overview -o index-en.html -a lang=en overview/main.adoc"
       files: |
         overview/index-en.html text/html en
-        overview/index-nb.html text/html nb
         overview/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
         overview/images/Digdir.png image/png en images/Digdir.png
         overview/images/registering-n-harvesting.png image/png en images/registering-n-harvesting.png
@@ -225,7 +219,6 @@ jobs:
       program: "asciidoctor -D skos-ap-no -o index-en.html -a lang=en skos-ap-no/main.adoc"
       files: |
         skos-ap-no/index-en.html text/html en
-        skos-ap-no/index-nb.html text/html nb
         skos-ap-no/images/Digdir.png image/png en images/Digdir.png
         skos-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         skos-ap-no/images/concept-diagrams-iso.png image/png en images/concept-diagrams-iso.png
@@ -250,7 +243,6 @@ jobs:
       program: "asciidoctor -D xkos-ap-no -o index-en.html -a lang=en xkos-ap-no/main.adoc"
       files: |
         xkos-ap-no/index-en.html text/html en
-        xkos-ap-no/index-nb.html text/html nb
         xkos-ap-no/images/Digdir.png image/png en images/Digdir.png
         xkos-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         xkos-ap-no/images/demo-classification1.png image/png en images/demo-classification1.png
