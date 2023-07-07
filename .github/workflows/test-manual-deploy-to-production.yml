@@ -1,4 +1,4 @@
-name: Test manually upload to data.norge.no/showroom
+name: Test upload to data.norge.no/showroom/cpsv-ap-no
 
 on:
   workflow_dispatch:
@@ -11,9 +11,7 @@ jobs:
       host: "https://data.norge.no"
       ontology: "cpsv-ap-no"
       ontology-type: "showroom"
-      program: "asciidoctor -D cpsv-ap-no -o index-en.html -a lang=en cpsv-ap-no/main.adoc"
       files: |
-        cpsv-ap-no/index-en.html text/html en index-en.html
         cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
         cpsv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         cpsv-ap-no/files/demo-services-events.ttl text/turtle en demo-services-events/demo-services-events.ttl
