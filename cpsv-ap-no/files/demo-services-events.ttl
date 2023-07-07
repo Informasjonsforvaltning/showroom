@@ -9,6 +9,7 @@
 @prefix dct: <http://purl.org/dc/terms/> . 
 @prefix eli: <http://data.europa.eu/eli/ontology#> . 
 @prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix greg: <http://www.w3.org/ns/time/gregorian#> . 
 @prefix locn: <http://www.w3.org/ns/locn#> . 
 @prefix org: <http://www.w3.org/ns/org#> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
@@ -20,53 +21,6 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
-<https://w3id.org/demo-resources/demo-services-events#demoAdr1>
-   rdf:type locn:Address;
-   locn:adminUnitL1 """Foodland"""@en,
-       """Matland"""@nb;
-   locn:adminUnitL2 """Gourmet county"""@en,
-       """Gourmetfylke"""@nb;
-   locn:addressId """https://w3id.org/demo-resources/demo-services-events#anAddress""";
-   locn:addressArea """The Restaurant Square"""@en,
-       """Restauranttorget"""@nb;
-   locn:locatorName """The Food Tower"""@en,
-       """Mattårnet"""@nb;
-   locn:fullAddress """Foot street 1, 111111 Foodcity, Foodland"""@en,
-       """Matgate 1, 111111 Matby, Matland"""@nb;
-   locn:throughfare """Food street"""@en,
-       """Matgate"""@nb;
-   locn:locatorDesignator """1"""@en,
-       """1"""@nb;
-   locn:postCode """111111""";
-   locn:postName """Foodcity"""@en,
-       """Matby"""@nb;
-   .
- 
-<https://w3id.org/demo-resources/demo-services-events#demoAdr2>
-   rdf:type locn:Address;
-   locn:adminUnitL1 """Norway"""@en,
-       """Norge"""@nb;
-   locn:fullAddress """24 Sivert Nielsens street, 8905 Bronnoysund, Norway"""@en,
-       """Sivert Nielsens gate 24, 8905 Brønnøysund, Norge"""@nb;
-   locn:throughfare """Sivert Nielsens street"""@en,
-       """Sivert Nielsens gate"""@nb;
-   locn:locatorDesignator """24"""@en,
-       """24"""@nb;
-   locn:postCode """8905""";
-   locn:postName """Bronnoysund"""@en,
-       """Brønnøysund"""@nb;
-   .
- 
-<https://w3id.org/demo-resources/demo-services-events#demoAgent1>
-   rdf:type foaf:Agent;
-   foaf:name """The Best Restaurant AS"""@en,
-       """Den beste restauranten AS"""@nb;
-   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoAgent1"^^xsd:anyURI;
-   dct:type <http://purl.org/adms/publishertype/Company>;
-   locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr1>;
-   cv:participates <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>;
-   .
- 
 <https://w3id.org/demo-resources/demo-services-events#demoConstraint1>
    rdf:type cv:Constraint;
    cv:constrains <https://w3id.org/demo-resources/demo-services-events#demoInfoConcept1>;
@@ -135,7 +89,7 @@
        """Kun for demo og testing"""@nb;
    cv:currency <http://publications.europa.eu/resource/authority/currency/NOK>;
    cv:isDefinedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/983887406>;
-   cv:ifAccessedThrough ;
+   cv:ifAccessedThrough <https://w3id.org/demo-resources/demo-services-events#demoChannel>;
    .
  
 <https://w3id.org/demo-resources/demo-services-events#demoEvent1>
@@ -282,7 +236,7 @@
    cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    cv:isGroupedBy <https://w3id.org/demo-resources/demo-services-events#demoEvent1>;
    cv:isClassifiedBy <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   cv:hasChannel ;
+   cv:hasChannel <https://w3id.org/demo-resources/demo-services-events#demoChannel>;
    cpsv:follows <https://w3id.org/demo-resources/demo-services-events#demoRule1>;
    cv:hasParticipation <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>,
        <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
@@ -409,7 +363,7 @@
    cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    cv:isGroupedBy <https://w3id.org/demo-resources/demo-services-events#demoEvent1>;
    cv:isClassifiedBy <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   cv:hasChannel ;
+   cv:hasChannel <https://w3id.org/demo-resources/demo-services-events#demoChannel>;
    cpsv:follows <https://w3id.org/demo-resources/demo-services-events#demoRule1>;
    cv:hasParticipation <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>,
        <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
@@ -429,9 +383,9 @@
    dct:type <https://data.norge.no/vocabulary/service-type#dummy-service>;
    .
  
-<>
+<https://w3id.org/demo-resources/demo-services-events#demoChannel>
    rdf:type cv:Channel;
-   dct:identifier ""^^xsd:anyURI;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoChannel"^^xsd:anyURI;
    dct:type <https://data.norge.no/vocabulary/service-channel-type#e-mail>;
    cv:specialOpeningHoursSpecification <https://w3id.org/demo-resources/demo-services-events#demoTemporalEntity1>;
    cv:processingTime "P1D"^^xsd:duration;
@@ -489,4 +443,4 @@
    dct:type <https://data.norge.no/vocabulary/business-event-type#dummy-event>;
    .
  
-#### End of the file, 2023-07-06 15:06:02
+#### End of the file, 2023-07-07 08:52:15
