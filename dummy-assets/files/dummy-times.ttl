@@ -19,8 +19,8 @@
  
 <https://w3id.org/demo-resources/dummy-times#dmyPropInterval1>
    rdf:type time:ProperInterval;
-   rdfs:comment """This is a dummy asset, for demo and test only.""",
-       """Dette er en dummyressurs, kun for demo og test.""";
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    time:hasEnd <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
    time:hasBeginning <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
    time:hasXSDDuration "PT4H"^^xsd:duration;
@@ -28,8 +28,8 @@
  
 <https://w3id.org/demo-resources/dummy-times#dmyTemporalEntity1>
    rdf:type time:TemporalEntity;
-   rdfs:comment """This is a dummy asset, for demo and test only.""",
-       """Dette er en dummyressurs, kun for demo og test.""";
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    time:hasEnd <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
    time:hasBeginning <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
    time:hasXSDDuration "PT4H"^^xsd:duration;
@@ -40,15 +40,15 @@
  
 <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>
    rdf:type time:Instant;
-   rdfs:comment """This is a dummy asset, for demo and test only.""",
-       """Dette er en dummyressurs, kun for demo og test.""";
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    time:inDateTime <https://w3id.org/demo-resources/dummy-times#dmyDateTimeDescr1>;
    .
  
 <https://w3id.org/demo-resources/dummy-times#dmyDateTimeDescr1>
    rdf:type time:DateTimeDescription;
-   rdfs:comment """This is a dummy asset, for demo and test only.""",
-       """Dette er en dummyressurs, kun for demo og test.""";
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    time:unitType time:unitMinute;
    time:day "15"^^xsd:gDay;
    time:dayOfWeek time:Tuesday;
@@ -63,4 +63,4 @@
    time:year "2023"^^xsd:gYear;
    .
  
-#### End of the file, 2023-08-25 13:53:20
+#### End of the file, 2023-08-25 14:24:48

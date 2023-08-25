@@ -6,11 +6,14 @@
 @prefix locn: <http://www.w3.org/ns/locn#> . 
 @prefix org: <http://www.w3.org/ns/org#> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
 <https://w3id.org/demo-resources/dummy-agents#dmyAgt1>
    rdf:type foaf:Agent;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:identifier "https://w3id.org/demo-resources/dummy-agents#dmyAgt1"^^xsd:anyURI;
    foaf:name """Dummy agent 1"""@en,
        """Dummyaktør 1"""@nb,
@@ -23,6 +26,8 @@
  
 <https://w3id.org/demo-resources/dummy-agents#dmyOrg1>
    rdf:type org:Organization;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
    skos:prefLabel """DOrg1"""@nb,
        """DOrg1"""@nn,
@@ -32,13 +37,14 @@
        """Dimmy organisasjon 1"""@nn,
        """Dummy Organization 1"""@en;
    foaf:homepage <https://w3id.org/demo-resources/dummy-docs#dmyHPage1>;
-   dct:type <http://purl.org/adms/publishertype/NonProfitOrganisation>,
-       "NonProfitOrganisation"^^skos:Concept;
+   dct:type <http://purl.org/adms/publishertype/NonProfitOrganisation>;
    locn:address <https://w3id.org/demo-resources/dummy-locations#dmyAddr1>;
    .
  
 <https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1>
    rdf:type cv:PublicOrganisation;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
    skos:prefLabel """DPOrg1"""@nb,
        """DPOrg1"""@nn,
@@ -52,4 +58,4 @@
    locn:address <https://w3id.org/demo-resources/dummy-locations#dmyAddr1>;
    .
  
-#### End of the file, 2023-08-25 13:25:56
+#### End of the file, 2023-08-25 14:03:03

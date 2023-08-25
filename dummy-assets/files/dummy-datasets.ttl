@@ -8,11 +8,14 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> . 
 @prefix prov: <http://www.w3.org/ns/prov#> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
 <https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1>
    rdf:type dcat:Catalog;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:description """Description of Dummy Catalog 1"""@en,
        """Beskrivelse av Dummykatalog 1"""@nb;
    dct:identifier "https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1"^^xsd:anyURI;
@@ -34,6 +37,8 @@
  
 <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>
    rdf:type dcat:Dataset;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:description """Description of Dummy datasett 1"""@en,
        """Beskrivelse av Dummy dataset 1"""@nb;
    dct:identifier "https://w3id.org/demo-resources/dummy-datasets#dmyDataset1"^^xsd:anyURI;
@@ -56,6 +61,8 @@
  
 <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>
    rdf:type dcat:Distribution;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:description """Beskrivelse av Dummy distribusjon 1"""@nb,
        """Description of Dummy distribution 1"""@en;
    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
@@ -71,6 +78,8 @@
  
 <https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1>
    rdf:type dcat:DataService;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:identifier "https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1"^^xsd:anyURI;
    dct:title """Dummy Data service 1"""@en,
        """Dummy datatjeneste 1"""@nb;
@@ -83,4 +92,4 @@
    cpsv:follows <https://data.norge.no/vocabulary/rule-type#non-disclosure-rule>;
    .
  
-#### End of the file, 2023-06-30 10:18:40
+#### End of the file, 2023-08-25 14:10:49

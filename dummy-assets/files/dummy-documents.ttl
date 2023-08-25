@@ -7,6 +7,8 @@
 
 <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>
    rdf:type foaf:Document;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:title """Dummy document 1"""@en,
        """Dummy dokument 1"""@nb,
        """Dummy dokument 1"""@nn;
@@ -15,6 +17,8 @@
  
 <https://w3id.org/demo-resources/dummy-documents#dmyStd1>
    rdf:type dct:Standard;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:title """Dummy standard 1"""@en,
        """Dummy standard 1"""@nb,
        """Dummy standard 1"""@nn;
@@ -24,6 +28,8 @@
  
 <https://w3id.org/demo-resources/dummy-documents#dmyLicenseDoc1>
    rdf:type dct:LicenseDocument;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:title """Dummy license document 1"""@en,
        """Dummy lisensdokument 1"""@nb,
        """Dummy lisensdokument 1"""@nn;
@@ -32,6 +38,8 @@
  
 <https://w3id.org/demo-resources/dummy-documents#dmyProvStmnt1>
    rdf:type dct:ProvenanceStatement;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:title """Dummy provenance statement 1"""@en,
        """Dummy opphavsbeskrivelse 1"""@nb,
        """Dummy opphavsbeskriving 1"""@nn;
@@ -40,10 +48,12 @@
  
 <https://w3id.org/demo-resources/dummy-documents#dmyRightsStmnt1>
    rdf:type dct:RightsStatement;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:title """Dummy rights statement 1"""@en,
        """Dummy rettighetsutsagn 1"""@nb,
        """Dummy rettigheitsutsegn 1"""@nn;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>;
    .
  
-#### End of the file, 2023-06-23 10:45:27
+#### End of the file, 2023-08-25 14:14:12
