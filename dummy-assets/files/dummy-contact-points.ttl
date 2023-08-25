@@ -3,7 +3,6 @@
 @prefix cv: <http://data.europa.eu/m8g/> . 
 @prefix dct: <http://purl.org/dc/terms/> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
-@prefix schema: <http://schema.org/> . 
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
 
 <https://w3id.org/demo-resources/dummy-contact-points#dmyCP1>
@@ -12,14 +11,14 @@
        """Dummy kontaktpunkt 1"""@nb,
        """Dummy kontaktpunkt 1"""@nn;
    cv:email """mailto:cp1@example.org""";
-   schema:availableLanguage <http://publications.europa.eu/resource/authority/language/ENG>,
-       <http://publications.europa.eu/resource/authority/language/NOB>,
-       <http://publications.europa.eu/resource/authority/language/NNO>;
+   vcard:language "English (en)"^^dct:LinguisticSystem,
+       "Bokmål (nb)"^^dct:LinguisticSystem,
+       "Nynorsk (nn)"^^dct:LinguisticSystem;
    cv:contactPage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
    cv:openingHours <https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1>;
    cv:specialOpeningHoursSpecification <https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1>;
    cv:telephone """123456789""";
-   schema:contactType """Technical support"""@en,
+   vcard:category """Technical support"""@en,
        """Teknisk støtte"""@nb,
        """Teknisk støtte"""@nn;
    .
@@ -42,4 +41,4 @@
    vcard:hasURL <https://example.org/contact-us>;
    .
  
-#### End of the file, 2023-06-23 09:42:03
+#### End of the file, 2023-08-25 13:28:46

@@ -18,7 +18,6 @@
    dct:title """Dummy agent 1"""@en,
        """Dummyaktør 1"""@nb,
        """Dummyaktør 1"""@nn;
-   dct:type <http://purl.org/adms/publishertype/Company>;
    locn:address <https://w3id.org/demo-resources/dummy-locations#dmyAddr1>;
    .
  
@@ -53,4 +52,4 @@
    locn:address <https://w3id.org/demo-resources/dummy-locations#dmyAddr1>;
    .
  
-#### End of the file, 2023-05-04 10:25:37
+#### End of the file, 2023-08-25 13:25:56

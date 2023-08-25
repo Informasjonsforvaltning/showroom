@@ -14,17 +14,24 @@
  
 <https://w3id.org/demo-resources/dummy-locations#dmyAddr1>
    rdf:type locn:Address;
-   locn:adminUnitL1 """…"""@en;
-   locn:adminUnitL2 """…"""@en;
-   locn:addressId """…""";
-   locn:addressArea """…"""@en;
-   locn:locatorName """…"""@en;
-   locn:fullAddress """…"""@en;
-   locn:throughfare """…"""@en;
-   locn:locatorDesignator """…"""@en;
-   locn:poBox """…"""@en;
-   locn:postCode """…""";
-   locn:postName """…"""@en;
+   locn:adminUnitL1 """Dummy Adm. Unit Level 1"""@en,
+       """Dummy Adm. Enhet 1"""@nb;
+   locn:adminUnitL2 """Dummy Adm. Unit Level 2"""@en,
+       """Dummy Adm. Enhet 2"""@nb;
+   locn:addressId """123456789""";
+   locn:addressArea """Dummy Addr Area 1"""@en,
+       """Dummy adr.område 1"""@nb;
+   locn:locatorName """Dummy Locator Name 1"""@en,
+       """Dummy adr.tilleggsnavn 1"""@nb;
+   locn:fullAddress """Dummy full addr 1"""@en,
+       """Dummy fulladr 1"""@nb;
+   locn:thoroughfare """Dummy thoroughfare 1"""@en,
+       """Dummy områdernavn1"""@nb;
+   locn:locatorDesignator """321""";
+   locn:poBox """PB1""";
+   locn:postCode """9876""";
+   locn:postName """Dummy Post Name 1"""@en,
+       """Dummy poststed 1"""@nb;
    .
  
-#### End of the file, 2023-06-23 11:07:03
+#### End of the file, 2023-08-25 13:39:09
