@@ -5,17 +5,22 @@
 @prefix dct: <http://purl.org/dc/terms/> . 
 @prefix greg: <http://www.w3.org/ns/time/gregorian#> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 @prefix time: <http://www.w3.org/2006/time#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
 <https://w3id.org/demo-resources/dummy-times#dmyPoT1>
    rdf:type dct:PeriodOfTime;
+   rdfs:comment """This is a dummy asset, for demo and test only."""@en,
+       """Dette er en dummyressurs, kun for demo og test."""@nb;
    dcat:endDate "2000-01-01"^^xsd:date;
    dcat:startDate "2999-12-31"^^xsd:date;
    .
  
 <https://w3id.org/demo-resources/dummy-times#dmyPropInterval1>
    rdf:type time:ProperInterval;
+   rdfs:comment """This is a dummy asset, for demo and test only.""",
+       """Dette er en dummyressurs, kun for demo og test.""";
    time:hasEnd <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
    time:hasBeginning <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
    time:hasXSDDuration "PT4H"^^xsd:duration;
@@ -23,6 +28,8 @@
  
 <https://w3id.org/demo-resources/dummy-times#dmyTemporalEntity1>
    rdf:type time:TemporalEntity;
+   rdfs:comment """This is a dummy asset, for demo and test only.""",
+       """Dette er en dummyressurs, kun for demo og test.""";
    time:hasEnd <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
    time:hasBeginning <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
    time:hasXSDDuration "PT4H"^^xsd:duration;
@@ -33,11 +40,15 @@
  
 <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>
    rdf:type time:Instant;
+   rdfs:comment """This is a dummy asset, for demo and test only.""",
+       """Dette er en dummyressurs, kun for demo og test.""";
    time:inDateTime <https://w3id.org/demo-resources/dummy-times#dmyDateTimeDescr1>;
    .
  
 <https://w3id.org/demo-resources/dummy-times#dmyDateTimeDescr1>
    rdf:type time:DateTimeDescription;
+   rdfs:comment """This is a dummy asset, for demo and test only.""",
+       """Dette er en dummyressurs, kun for demo og test.""";
    time:unitType time:unitMinute;
    time:day "15"^^xsd:gDay;
    time:dayOfWeek time:Tuesday;
@@ -52,4 +63,4 @@
    time:year "2023"^^xsd:gYear;
    .
  
-#### End of the file, 2023-06-30 13:42:26
+#### End of the file, 2023-08-25 13:53:20
