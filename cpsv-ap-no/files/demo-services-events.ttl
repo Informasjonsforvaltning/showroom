@@ -14,7 +14,6 @@
 @prefix org: <http://www.w3.org/ns/org#> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
-@prefix schema: <http://schema.org/> . 
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
 @prefix time: <http://www.w3.org/2006/time#> . 
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
@@ -33,7 +32,7 @@
        """Demo Catalog"""@en;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
-   dct:modified "2023-08-22"^^xsd:date;
+   dct:modified "2023-08-25"^^xsd:date;
    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
    foaf:homepage <https://data.norge.no/showroom/cpsv-ap-no>;
    dcatno:containsEvent <https://w3id.org/demo-resources/demo-services-events#demoEvent1>,
@@ -267,13 +266,13 @@
    rdf:type cv:ContactPoint;
    cv:specialOpeningHoursSpecification <https://w3id.org/demo-resources/dummy-times#dmyTemporalEntity1>;
    cv:email "mailto:demoCP1@example.org"^^xsd:anyURI;
-   schema:availableLanguage "Bokmål (nb)"^^dct:LinguisticSystem,
+   vcard:language "Bokmål (nb)"^^dct:LinguisticSystem,
        "Nynorsk (nn)"^^dct:LinguisticSystem,
        "English (en)"^^dct:LinguisticSystem;
    cv:contactPage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
    cv:openingHours <https://w3id.org/demo-resources/dummy-times#dmyTemporalEntity1>;
    cv:telephone """12345678""";
-   schema:contactType """Technical support"""@en,
+   vcard:category """Technical support"""@en,
        """Teknisk brukerstøtte"""@nb;
    .
  
@@ -303,9 +302,6 @@
        """Brønnøy kommune"""@nn,
        """Brønnøy kommune"""@en;
    dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827"^^xsd:anyURI;
-   dct:title """Brønnøy kommune"""@nb,
-       """Brønnøy kommune"""@nn,
-       """Brønnøy kommune"""@en;
    dct:type <http://purl.org/adms/publishertype/LocalAuthority>;
    locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr2>;
    cv:participates <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
@@ -324,6 +320,51 @@
    locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr2>;
    cv:participates <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
    foaf:homepage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
+   .
+ 
+<https://w3id.org/demo-resources/demo-services-events#demoAgent1>
+   rdf:type foaf:Agent;
+   foaf:name """The Best Restaurant AS"""@en,
+       """Den beste restauranten AS"""@nb;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoAgent1"^^xsd:anyURI;
+   locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr1>;
+   cv:participates <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>;
+   .
+ 
+<https://w3id.org/demo-resources/demo-services-events#demoAdr1>
+   rdf:type locn:Address;
+   locn:adminUnitL1 """Foodland"""@en,
+       """Matland"""@nb;
+   locn:adminUnitL2 """Gourmet county"""@en,
+       """Gourmetfylke"""@nb;
+   locn:addressId """https://w3id.org/demo-resources/demo-services-events#anAddress""";
+   locn:addressArea """The Restaurant Square"""@en,
+       """Restauranttorget"""@nb;
+   locn:locatorName """The Food Tower"""@en,
+       """Mattårnet"""@nb;
+   locn:fullAddress """Foot street 1, 111111 Foodcity, Foodland"""@en,
+       """Matgate 1, 111111 Matby, Matland"""@nb;
+   locn:thoroughfare """Food street"""@en,
+       """Matgate"""@nb;
+   locn:locatorDesignator """1""";
+   locn:poBox """PB1""";
+   locn:postCode """111111""";
+   locn:postName """Foodcity"""@en,
+       """Matby"""@nb;
+   .
+ 
+<https://w3id.org/demo-resources/demo-services-events#demoAdr2>
+   rdf:type locn:Address;
+   locn:adminUnitL1 """Norway"""@en,
+       """Norge"""@nb;
+   locn:fullAddress """24 Sivert Nielsens street, 8905 Bronnoysund, Norway"""@en,
+       """Sivert Nielsens gate 24, 8905 Brønnøysund, Norge"""@nb;
+   locn:thoroughfare """Sivert Nielsens street"""@en,
+       """Sivert Nielsens gate"""@nb;
+   locn:locatorDesignator """24""";
+   locn:postCode """8905""";
+   locn:postName """Bronnoysund"""@en,
+       """Brønnøysund"""@nb;
    .
  
 <https://w3id.org/demo-resources/demo-services-events#demoRefFramework1>
@@ -365,7 +406,6 @@
    rdf:type time:TemporalEntity;
    time:hasEnd <https://w3id.org/demo-resources/demo-services-events#demoTimeInstant1>;
    time:hasBeginning <https://w3id.org/demo-resources/demo-services-events#demoTimeInstant1>;
-   time:hasXSDDuration "PT4H"^^xsd:duration;
    dct:description """For demo and testing only"""@en,
        """Kun for demo og testing"""@nb;
    cv:frequency <http://publications.europa.eu/resource/authority/frequency/DAILY>;
@@ -446,4 +486,4 @@
    cv:value """…""";
    .
  
-#### End of the file, 2023-08-22 13:57:45
+#### End of the file, 2023-08-25 13:21:55
