@@ -310,12 +310,10 @@
  
 <https://w3id.org/demo-resources/demo-services-events#demoOrg1>
    rdf:type org:Organization;
-   dct:identifier "https://w3id.org/demo-resources/dummy-agents#dmyOrg1"^^xsd:anyURI;
-   dct:title """Demo Organization 1"""@en,
+   skos:prefLabel """Demo Organization 1"""@en,
        """Demoorganisasjon 1"""@nb;
+   dct:identifier "https://w3id.org/demo-resources/dummy-agents#dmyOrg1"^^xsd:anyURI;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
-   skos:prefLabel """DemoOrg1"""@en,
-       """DemoOrg1"""@nb;
    dct:type <http://purl.org/adms/publishertype/NationalAuthority>;
    locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr2>;
    cv:participates <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
@@ -324,8 +322,8 @@
  
 <https://w3id.org/demo-resources/demo-services-events#demoAgent1>
    rdf:type foaf:Agent;
-   foaf:name """The Best Restaurant AS"""@en,
-       """Den beste restauranten AS"""@nb;
+   foaf:name """Demo Agent 1"""@en,
+       """Demoaktør 1"""@nb;
    dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoAgent1"^^xsd:anyURI;
    locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr1>;
    cv:participates <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>;
@@ -486,4 +484,4 @@
    cv:value """…""";
    .
  
-#### End of the file, 2023-08-25 13:21:55
+#### End of the file, 2023-08-29 11:27:49
