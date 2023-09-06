@@ -1,0 +1,30 @@
+include::../locale/attributes.adoc[]
+= image:images/Digdir.png[Digdir,200,200] utstillingsrom [[landingpage-nb]]
+Digitaliseringsdirektoratet (Digdir)
+:doctype: book
+:docinfo: shared
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toc-title: Digdir utstillingsrom
+:toclevels: 4
+// :sectlinks:
+:sectanchors:
+:table-stripes: even
+:xrefstyle: short
+
+*Velkommen* til utstillingsrommene til https://digdir.no[Digitraliseringsdirektoratet (Digdir) &#x29C9;, window="_blank", role="ext-link"], med RDF-baserte maskinlesbare demoressurser!
+
+*Tilbakemelding*: Vennligst registrer eventuelle tilbakemeldinger som https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link].
+
+*_Forbehold_*: _Demoressursene tilgjengeliggjort via de enkelte utstillingsrommene er kun ment for demo- og testingsformål._
+
+#*_Resten av teksten er (foreløpig) kun på engelsk._*#
+
+include::purpose.adoc[]
+
+include::overview.adoc[]
+
+include::demo-catalog.adoc[]
+
+include::references.adoc[]
