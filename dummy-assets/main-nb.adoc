@@ -16,7 +16,7 @@ ifdef::backend-pdf[:toc: macro]
 
 Velkommen til utstillingsrommet med noen basis/generiske dummyressurser!
 
-#*_Resten av teksten er (foreløpig) kun på engelsk._*#
+#*_Resten av teksten er kun på engelsk._*#
 
 
 

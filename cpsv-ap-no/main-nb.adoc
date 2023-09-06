@@ -23,7 +23,7 @@ _https://informasjonsforvaltning.github.io/cpsv-ap-no/[CPSV-AP-NO &#x29C9;, wind
 | image:images/work-in-progress.png[WIP,200,200] | _Dette utstillingsrommet er under konstruksjon og vil bli ferdigstilt så snart som praktisk mulig etter ferdigstilling av CPSV-AP-NO._ 
 |===
 
-#*_Resten av teksten er (foreløpig) kun på engelsk._*#
+#*_Resten av teksten er kun på engelsk._*#
 
 
 == Purpose [[purpose]]

@@ -18,7 +18,7 @@ Velkommen til utstillingsrommet med demodatasett, som demonstrerer bruken av DCA
 
 _https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av EUs https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP &#x29C9;, window="_blank", role="ext-link"], for beskrivelse av datasett, datatjenester og datakataloger._ 
 
-#*_Resten av teksten er (foreløpig) kun på engelsk._*#
+#*_Resten av teksten er kun på engelsk._*#
 
 
 == Purpose [[purpose]] 
