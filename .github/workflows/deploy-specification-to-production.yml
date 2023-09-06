@@ -86,7 +86,7 @@ jobs:
       host: "https://data.norge.no"
       ontology: "cpsv-ap-no"
       ontology-type: "showroom"
-      program: "asciidoctor -D cpsv-ap-no -o index-en.html -a lang=en cpsv-ap-no/main-nb.adoc"
+      program: "asciidoctor -D cpsv-ap-no -o index-nb.html -a lang=en cpsv-ap-no/main-nb.adoc"
       files: |
         cpsv-ap-no/index-nb.html text/html nb
         cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
