@@ -1,5 +1,5 @@
 include::../locale/attributes.adoc[]
-= image:images/Digdir.png[Digdir,200,200] showroom - demo classifications
+= image:images/Digdir.png[Digdir,200,200] utstillingsrom - demoklassifikasjoner
 Norwegian Digitalisation Agency (Digdir)
 :doctype: book
 :docinfo: shared
@@ -7,7 +7,7 @@ Norwegian Digitalisation Agency (Digdir)
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
-:toc-title: Classifications
+:toc-title: Demoklassifikasjoner
 :toclevels: 4
 // :sectlinks:
 :sectanchors:
@@ -15,9 +15,12 @@ ifdef::backend-pdf[:toc: macro]
 :xrefstyle: short
 
 
-Welcome to the showroom with demo classifications, demonstrating the usage of XKOS-AP-NO! 
+Velkommen til utstillingsrommet med demoklassifikasjoner, som demonstrerer bruken av XKOS-AP-NO! 
 
-_https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"] is the Norwegian application profile of https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"], for describing and publishing classifications, controlled vocabularies, code lists etc._ 
+_https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"] den norske applikasjonsprofilen av https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"], for beskrivelse og publisering av klassifikasjoner, kontrollerte vokabularer, kodelister osv._ 
+
+#*_Resten av teksten er kun på engelsk._*#
+
 
 == Purpose [[purpose]]
 
