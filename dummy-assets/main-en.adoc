@@ -1,0 +1,88 @@
+include::../locale/attributes.adoc[]
+= image:images/Digdir.png[Digdir,200,200] showroom with dummy assets
+Norwegian Digitalisation Agency (Digdir)
+:doctype: book
+:docinfo: shared
+:docinfodir: ../overview
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toc-title: Dummy assets
+:toclevels: 4
+// :sectlinks:
+:sectanchors:
+:table-stripes: even
+:xrefstyle: short
+
+Welcome to the showroom with some basic/generic dummy assets!
+
+
+== Purpose [[purpose]]
+
+This showroom is meant to 
+
+* provide dummy assets as reusable, machine-readable RDF Turtle resources, to be referred to in e.g. examples/tests.
+
+== Why dummy assets? [[why]]
+
+When testing or demonstrating your implementation of a given specification, you may often need to refer to instances of specific classes. You may of course use `\https://example.org/nonExisting`, however, such a reference will usually cause validation errors because the instance you refer to doesn't exist. 
+
+We provide therefore in this showroom a number of generic dummy assets which you can refer to in e.g. your test implementations. "Dummy" because We have filled the assets with dummy data, such that they _hopefully_ will validate correctly, though only in accordance with the Norwegian national specifications that are demonstrated in the other showrooms here. "Generic" because the assets will not necessarily contain value for all optional properties that are only specific for a particular specification. 
+
+== Demo resources in this showroom [[demo-resources]]
+
+There are mainly the following types of dummy-assets provided here in this showroom:
+
+* *Agents*, Organizations, Public Organizations etc.: In https://w3id.org/demo-resources/dummy-agents[this collection of dummy assets], we have dummy instances of the following classes: 
+** Agent, `foaf:Agent`
+** Organization, `org:Organization`
+** Public organization, `cp:PublicOrganization` 
+
+* *Contact points*: In https://w3id.org/demo-resources/dummy-contact-points[this collection of dummy assets], we have dummy instances of the following classes:
+** Contact point, `cv:ContactPoint` 
+** Group, `vcard:Group`
+** Organization, `vcard:Organization`
+
+* *Datasets*, Distributions, Data services, Catalogs etc.: In https://w3id.org/demo-resources/dummy-datasets[this collection of dummy assets], we have dummy instances of the following classes:
+** Catalog, `dcat:Catalog`
+** Dataset, `dcat:Dataset`
+** Distribution, `dcat:Distribution`
+** Data service, `dcat:DataService`
+
+* *Documents*, Standards, etc.: In https://w3id.org/demo-resources/dummy-documents[this collection of dummy assets], we have dummy instances of the following classes:
+** Document, `foaf:Document` 
+** Standard, `dct:Standard`
+** License document, `dct:LicenseDocument`
+** Provenance statement, `dct:ProvenanceStatement`
+** Rights statement, `dct:RightsStatement`
+
+* *Events* etc.: In https://w3id.org/demo-resources/dummy-events[this collection of dummy assets], we have dummy instances of the following classes:
+** Event, `cv:Event`
+** Life event, `cv:LifeEvent`
+** Business event, `cv:BusinessEvent`
+
+* *Evidences* etc.: In https://w3id.org/demo-resources/dummy-evidences[this collection of dummy assets], we have dummy instances of the following classes:
+** Evidence, `cv:Evidence`
+** Evidence type, `cv:EvidenceType`
+** Evidence type list, `cv:EvidenceTypeList`
+
+* *Locations/addresses* etc.: In https://w3id.org/demo-resources/dummy-locations[this collection of dummy assets], we have dummy instances of the following classes:
+** Location, `dct:Location`
+** Address, `locn:Address`
+
+* *Services*, Public Services etc.: In https://w3id.org/demo-resources/dummy-services[this collection of dummy assets], we have dummy instances of the following classes:
+** Service, `cpsvno:Service`
+** Public service, `cpsv:PublicService`
+** (Service) Output, `cv:Output`
+** (Service) Channel, `cv:Channel`
+
+* *Time* periods, time entities etc.: In https://w3id.org/demo-resources/dummy-times[this collection of dummy assets], we have dummy instances of the following classes:
+** Period of time, `dct:PeriodOfTime`
+** Proper interval, `time:ProperInterval`
+** Temporal entity, `time:TemporalEntity`
+** Time instant, `time:Instant`
+** Date time description, `time:DateTimeDescription`
+
+== _to the overview of the showrooms_ [[to-overview]]
+
+link:/showroom/overview/#overview[Click here for the overview of all the showrooms] 
