@@ -56,16 +56,16 @@ jobs:
           xkos:
             - 'xkos-ap-no/**'
 
-  cpsv_build_upload:
+  cpsv_build_upload_en:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.cpsv == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: cpsv
+    name: cpsv-english
     with:
       host: "https://data.norge.no"
       ontology: "cpsv-ap-no"
       ontology-type: "showroom"
-      program: "asciidoctor -D cpsv-ap-no -o index-en.html -a lang=en cpsv-ap-no/main.adoc"
+      program: "asciidoctor -D cpsv-ap-no -o index-en.html -a lang=en cpsv-ap-no/main-en.adoc"
       files: |
         cpsv-ap-no/index-en.html text/html en
         cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
@@ -77,6 +77,27 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
+  cpsv_build_upload_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.cpsv == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: cpsv-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "cpsv-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D cpsv-ap-no -o index-en.html -a lang=en cpsv-ap-no/main-nb.adoc"
+      files: |
+        cpsv-ap-no/index-nb.html text/html nb
+        cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
+        cpsv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        cpsv-ap-no/files/demo-services-events.ttl text/turtle en demo-services-events/demo-services-events.ttl
+        cpsv-ap-no/files/demo-services-events-en.html text/html en demo-services-events/demo-services-events-en.html
+        cpsv-ap-no/files/demo-services-events-nb.html text/html nb demo-services-events/demo-services-events-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
   dcat_build_upload:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.dcat == 'true' }}

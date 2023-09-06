@@ -1,27 +1,30 @@
 include::../locale/attributes.adoc[]
-= image:images/Digdir.png[Digdir,200,200]  showroom - demo services and events
-Norwegian Digitalisation Agency (Digdir)
+= image:images/Digdir.png[Digdir,200,200] utstillingsrom - demo-tjenester og -hendelser
+Digitaliseringsdirektoratet (Digdir)
 :doctype: book
 :docinfo: shared
 :docinfodir: ../overview
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
-:toc-title: Services and events
+:toc-title: Dem-tjenester og -hendelser
 :toclevels: 4
 // :sectlinks:
 :sectanchors:
 :table-stripes: even
 :xrefstyle: short
 
-Welcome to the showroom with demo services and events, demonstrating the usage of CPSV-AP-NO! 
+Velkommen til utstillingsrommet med demo-tjenester og -hendelser, som demonstrerer bruken av CPSV-AP-NO! 
 
-_https://informasjonsforvaltning.github.io/cpsv-ap-no/[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (#currently as a trial version#) is the the Norwegian application profile of https://github.com/SEMICeu/CPSV-AP[EU's Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"], for describing services and events._
+_https://informasjonsforvaltning.github.io/cpsv-ap-no/[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (#under ferdigstilling#) er den norske applikasjonsprofilen av https://github.com/SEMICeu/CPSV-AP[EUs Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"], for beskrivelse av tjenester og hendelser._
 
 [cols="10,90", grid=nome,frame=none] 
 |===
-| image:images/work-in-progress.png[WIP,200,200] | _This showroom is under construction and will be finalized as soon as practically possible after the finalizing of CPSV-AP-NO._ 
+| image:images/work-in-progress.png[WIP,200,200] | _Dette utstillingsrommet er under konstruksjon og vil bli ferdigstilt så snart som praktisk mulig etter ferdigstilling av CPSV-AP-NO._ 
 |===
+
+#*_Resten av teksten er (foreløpig) kun på engelsk._*#
+
 
 == Purpose [[purpose]]
 
