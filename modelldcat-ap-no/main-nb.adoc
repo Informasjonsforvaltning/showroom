@@ -1,6 +1,6 @@
 include::../locale/attributes.adoc[]
 = image:images/Digdir.png[Digdir,200,200] utstillingsrom - demoinformasjonsmodeller
-Norwegian Digitalisation Agency (Digdir)
+Digitaliseringsdirektoratet (Digdir)
 :doctype: book
 :docinfo: shared
 :docinfodir: ../overview

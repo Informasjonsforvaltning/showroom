@@ -1,6 +1,6 @@
 include::../locale/attributes.adoc[]
 = image:images/Digdir.png[Digdir,200,200] utstillingsrom - demobegreper
-Norwegian Digitalisation Agency (Digdir)
+Digitaliseringsdirektoratet (Digdir)
 :doctype: book
 :docinfo: shared
 :docinfodir: ../overview
@@ -17,7 +17,7 @@ ifdef::backend-pdf[:toc: macro]
 
 Velkommen til utstillingsrommet med demobegreper, som demonstrerer bruken av SKOS-AP-NO-Begrep! 
 
-_https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep &#x29C9;, window="_blank", role="ext-link"] den norske applikasjonsprofilen av W3C sin https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"], for beskrivelse og publisering av begreper og begrepssamlinger._
+_https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av W3C sin https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"], for beskrivelse og publisering av begreper og begrepssamlinger._
 
 #*_Resten av teksten er kun på engelsk._*#
 

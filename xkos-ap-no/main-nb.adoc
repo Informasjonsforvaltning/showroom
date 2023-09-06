@@ -1,6 +1,6 @@
 include::../locale/attributes.adoc[]
 = image:images/Digdir.png[Digdir,200,200] utstillingsrom - demoklassifikasjoner
-Norwegian Digitalisation Agency (Digdir)
+Digitaliseringsdirektoratet (Digdir)
 :doctype: book
 :docinfo: shared
 :docinfodir: ../overview
@@ -17,7 +17,7 @@ ifdef::backend-pdf[:toc: macro]
 
 Velkommen til utstillingsrommet med demoklassifikasjoner, som demonstrerer bruken av XKOS-AP-NO! 
 
-_https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"] den norske applikasjonsprofilen av https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"], for beskrivelse og publisering av klassifikasjoner, kontrollerte vokabularer, kodelister osv._ 
+_https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"], for beskrivelse og publisering av klassifikasjoner, kontrollerte vokabularer, kodelister osv._ 
 
 #*_Resten av teksten er kun på engelsk._*#
 
