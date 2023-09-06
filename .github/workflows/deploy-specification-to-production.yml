@@ -358,16 +358,16 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
     
-  skos_build_deploy:
+  skos_build_deploy_en:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.skos == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: skos-ap-no-begrep
+    name: skos-ap-no-begrep-english
     with:
       ontology-type: "showroom"
       ontology: "skos-ap-no"
       host: "https://data.norge.no"
-      program: "asciidoctor -D skos-ap-no -o index-en.html -a lang=en skos-ap-no/main.adoc"
+      program: "asciidoctor -D skos-ap-no -o index-en.html -a lang=en skos-ap-no/main-en.adoc"
       files: |
         skos-ap-no/index-en.html text/html en
         skos-ap-no/images/Digdir.png image/png en images/Digdir.png
@@ -381,7 +381,31 @@ jobs:
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
- 
+
+  skos_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.skos == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: skos-ap-no-begrep-bpkmål
+    with:
+      ontology-type: "showroom"
+      ontology: "skos-ap-no"
+      host: "https://data.norge.no"
+      program: "asciidoctor -D skos-ap-no -o index-nb.html -a lang=nb skos-ap-no/main-nb.adoc"
+      files: |
+        skos-ap-no/index-nb.html text/html nb
+        skos-ap-no/images/Digdir.png image/png en images/Digdir.png
+        skos-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        skos-ap-no/images/concept-diagrams-iso.png image/png en images/concept-diagrams-iso.png
+        skos-ap-no/images/concept-models-uml.png image/png en images/concept-models-uml.png
+        skos-ap-no/images/hierarchical-relations-explanations.png image/png en images/hierarchical-relations-explanations.png
+        skos-ap-no/files/demo-concepts.ttl text/turtle en demo-concepts/demo-concepts.ttl
+        skos-ap-no/files/demo-concepts-en.html text/html en demo-concepts/demo-concepts-en.html
+        skos-ap-no/files/demo-concepts-nb.html text/html nb demo-concepts/demo-concepts-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
   xkos_build_deploy:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.xkos == 'true' }}

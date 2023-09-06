@@ -1,0 +1,149 @@
+include::../locale/attributes.adoc[]
+= image:images/Digdir.png[Digdir,200,200] showroom - demo concepts
+Norwegian Digitalisation Agency (Digdir)
+:doctype: book
+:docinfo: shared
+:docinfodir: ../overview
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toc-title: Demo concepts
+:toclevels: 4
+// :sectlinks:
+:sectanchors:
+:table-stripes: even
+:xrefstyle: short
+
+
+Welcome to the showroom with demo concepts, demonstrating the usage of SKOS-AP-NO-Begrep!
+
+_https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep &#x29C9;, window="_blank", role="ext-link"] is the Norwegian application profile of W3C's https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"], for describing and publishing concepts and concept collections._
+
+== Purpose [[purpose]]
+
+This showroom is meant to
+
+* demonstrate machine-readable concept descriptions in accordance with SKOS-AP-NO-Begrep v.2.x;
+* demonstrate in particular how to describe concept relations, in accordance with SKOS-AP-NO-Begrep v.2.x;
+* demonstrate some cross-references between concepts and other resources demonstrated in some of the other showrooms;
+* provide reusable, machine-readable concept descriptions, for testing and demonstration purposes.
+
+*_Disclaimer_*: _The machine-readable demo concepts are meant for demo purposes only. They do not represent any real world concepts at all. On the other hand, they are supposed to syntactically conform to SKOS-AP-NO-Begrep v.2.x._ 
+
+
+== Demo resources in this showroom [[demo-resources]]
+
+In this showroom we have a https://w3id.org/demo-resources/demo-concepts[collection of demo concepts]:
+
+* The demo concepts #will be# automatically harvested to and thus also (#not yet#) be findable via https://demo.fellesdatakatalog.digdir.no/concepts?q=demoCpt[the demo portal &#x29C9;, window="_blank", role="ext-link"].
+* There are seven https://data.norge.no/specification/skos-ap-no-begrep#Begrep[concepts &#x29C9;, window="_blank", role="ext-link"] in the https://data.norge.no/specification/skos-ap-no-begrep#Begrepssamling[collection &#x29C9;, window="_blank", role="ext-link"], where
+** https://w3id.org/demo-resources/demo-concepts#demoCpt1["demo concept 1"] is a generalization of https://w3id.org/demo-resources/demo-concepts#demoCpt11["demo concept 11"] and https://w3id.org/demo-resources/demo-concepts#demoCpt12["demo concept 12"]
+*** "demo concept 11" is a specialization of "demo concept 1"
+*** "demo concept 12" is a specialization of "demo concept 1"
+*** in this https://termbasen.standard.no/term/168204371002565/en?origin=%2Fsearch-results%3FsearchText%3Dgeneric%2Brelation%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[generic relation  &#x29C9;, window="_blank", role="ext-link"], "demo concept 1" is the https://termbasen.standard.no/term/167501330206913/en?origin=%2Fsearch-results%3FsearchText%3Dsuperordinate%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[superordinate concept  &#x29C9;, window="_blank", role="ext-link"] / https://termbasen.standard.no/term/167505059909767/en?origin=%2Fsearch-results%3FsearchText%3Dgeneric%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[generic concept &#x29C9;, window="_blank", role="ext-link"], while "demo concept 11" and "demo concept 12" are https://termbasen.standard.no/term/168204369502114/en?origin=%2Fsearch-results%3FsearchText%3Dsubordinate%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[subordinate concepts &#x29C9;, window="_blank", role="ext-link"] / https://termbasen.standard.no/term/168204379908017/en?origin=%2Fsearch-results%3FsearchText%3Dspecific%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[specific concepts &#x29C9;, window="_blank", role="ext-link"]
+** https://w3id.org/demo-resources/demo-concepts#demoCpt2["demo concept 2"] contains https://w3id.org/demo-resources/demo-concepts#demoCpt21["demo concept 21"] and https://w3id.org/demo-resources/demo-concepts#demoCpt22["demo concept 22"] 
+*** "demo concept 21" is part of  "demo concept 2"
+*** "demo concept 22" is part of  "demo concept 2"
+*** in this https://termbasen.standard.no/term/168204529503414/en?origin=%2Fsearch-results%3FsearchText%3Dpartitive%2Brelation%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[partitive relations &#x29C9;, window="_blank", role="ext-link"], "demo concept 2" is the the https://termbasen.standard.no/term/167501330206913/en?origin=%2Fsearch-results%3FsearchText%3Dsuperordinate%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[superordinate concept  &#x29C9;, window="_blank", role="ext-link"] / https://termbasen.standard.no/term/168204367709913/en?origin=%2Fsearch-results%3FsearchText%3Dcomprehensive%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[comprehensive concept &#x29C9;, window="_blank", role="ext-link"], while "demo concept 21" and "demo concept 22" are https://termbasen.standard.no/term/168204369502114/en?origin=%2Fsearch-results%3FsearchText%3Dsubordinate%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[subordinate concepts &#x29C9;, window="_blank", role="ext-link"] / https://termbasen.standard.no/term/168204378306478/en?origin=%2Fsearch-results%3FsearchText%3Dpartitive%2Bconcept%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[partitive concepts &#x29C9;, window="_blank", role="ext-link"]
+** https://w3id.org/demo-resources/demo-concepts#demoCpt3["demo concept 3"] illustrates the usage of all _syntactically_ possible relations that a concept may have with other concepts, in accordance with SKOS-AP-NO-Begrep v.2.x. 
+*** "demo concept 2" illustrates the usage of all the other properties. "demo concept 2" and "demo concept 3" together illustrate therefore how to _syntactically_ use all the properties in a  concept description, in accordance with SKOS-AP-NO-Begrep v.2.x. 
+
+.Click for the concept diagrams.
+[%collapsible]
+====
+.Concept diagrams (using the notations as in e.g. ISO 24156-1). 
+[[img-concept-diagrams-iso]]
+[link=images/concept-diagrams-iso.png]
+image::images/concept-diagrams-iso.png[alt="Diagram with six concepts and relations in between them. The content is explained in the text."]
+====
+
+.Click for the concept models (in UML).
+[%collapsible]
+====
+.Concept models (in UML). 
+[[img-concept-models-uml]]
+[link=images/concept-models-uml.png]
+image::images/concept-models-uml.png[alt="Diagram with six UML-klasses and relations in between them. The content is explained in the text."]
+====
+
+=== More about concept relations
+
+==== Hierarchical concept relations [[hierarchical-relations]]
+
+There are two types of hierarchical concept relations: generic and partitive. 
+
+<<img-hierarchical-relations>> illustrates some of the hierarchically relations between the demo concepts that are in the above mentioned collection. 
+
+[[img-hierarchical-relations]]
+.Two ways in SKOS-AP-NO-Begrep to describe hierarchical relations. 
+[link=images/hierarchical-relations-explanations.png]
+image::images/hierarchical-relations-explanations.png[alt="Figure with hierarchical relations. The content is explained in the text."]
+
+The figure illustrates in particular the two different ways in SKOS-AP-NO-Begrep v.2.x to describe a hierarchical concept relation, depending on if there is a need to specify the https://termbasen.standard.no/term/168204529703821/en?origin=%2Fsearch-results%3FsearchText%3Dcriterion%2Bof%2Bsubdivision%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[criterion of subdivision &#x29C9;, window="_blank", role="ext-link"]: 
+
+* The straightforward way, when there is no need to specify the criterion of subdivision: 
+** by using the property https://data.norge.no/specification/skos-ap-no-begrep#Begrep-spesialiserer[specializes (xkos:specializes) &#x29C9;, window="_blank", role="ext-link"] or https://data.norge.no/specification/skos-ap-no-begrep#Begrep-generaliserer[generalizes (xkos:generalizes) &#x29C9;, window="_blank", role="ext-link"] for generic concept relations, demonstrated by the generic relations between https://w3id.org/demo-resources/demo-concepts#demoCpt1["demo concept 1"] and https://w3id.org/demo-resources/demo-concepts#demoCpt11["demo concept 11"]
+** by using the property https://data.norge.no/specification/skos-ap-no-begrep#Begrep-inneholder[has part (xkos:hasPart) &#x29C9;, window="_blank", role="ext-link"] or https://data.norge.no/specification/skos-ap-no-begrep#Begrep-er-del-av[is part of (xkos:isPartOf) &#x29C9;, window="_blank", role="ext-link"] for partitive concept relations, demonstrated by the partitive relations between https://w3id.org/demo-resources/demo-concepts#demoCpt2["demo concept 2"] and https://w3id.org/demo-resources/demo-concepts#demoCpt21["demo concept 21"]
+
+* Via a generic/partitive concept relation, when there is a need to specify the criterion of subdivision: 
+** by using the property https://data.norge.no/specification/skos-ap-no-begrep#Begrep-har-generisk-begrepsrelasjon[has generic concept relation (skosno:hasGenericConceptRelation) &#x29C9;, window="_blank", role="ext-link"] referring to a generic concept relation in which the criterion of subdivision is specified, demonstrated by the generic relations between https://w3id.org/demo-resources/demo-concepts#demoCpt1["demo concept 1"] and https://w3id.org/demo-resources/demo-concepts#demoCpt12["demo concept 12"]
+** by using the property https://data.norge.no/specification/skos-ap-no-begrep#Begrep-har-partitiv-begrepsrelasjon[has partitive concept relation (skosno:hasPartitiveConceptRelation) &#x29C9;, window="_blank", role="ext-link"] referring to a partitive concept relation in which the criterion of subdivision is specified, demonstrated by the partitive relations between https://w3id.org/demo-resources/demo-concepts#demoCpt2["demo concept 2"] and https://w3id.org/demo-resources/demo-concepts#demoCpt22["demo concept 22"] 
+ 
+==== Associative concept relations [[associative-relations]]
+
+While there are only two types of hierarchical concept relations as demonstrated above, there is an unlimited number of types of associative concept relations. 
+
+In SKOS-AP-NO-Begrep, some types of associative relations are explicitly supported, demonstrated by https://w3id.org/demo-resources/demo-concepts#demoCpt3["demo concept 3"]:
+
+* https://data.norge.no/specification/skos-ap-no-begrep#Begrep-erstatter[replaces (dct:replaces) &#x29C9;, window="_blank", role="ext-link"] / https://data.norge.no/specification/skos-ap-no-begrep#Begrep-er-erstattet-av[is replaced by (dct:isReplacedBy) &#x29C9;, window="_blank", role="ext-link"]
+* https://data.norge.no/specification/skos-ap-no-begrep#Begrep-har-n%C3%A6rt-samsvar-med[has close match with (skos:closeMatch) &#x29C9;, window="_blank", role="ext-link"]
+* https://data.norge.no/specification/skos-ap-no-begrep#Begrep-har-eksakt-samsvar-med[has exact match with (skos:exactMatch) &#x29C9;, window="_blank", role="ext-link"]
+* https://data.norge.no/specification/skos-ap-no-begrep#Begrep-se-ogs%C3%A5[see also (rdfs:seeAlso) &#x29C9;, window="_blank", role="ext-link"]
+
+SKOS-AP-NO-Begrep of course also allows you to specify your own types of associative concept relations, by using the property https://data.norge.no/specification/skos-ap-no-begrep#Begrep-er-fra-begrep-i[is from-concept in (skosno:isFromConceptIn) &#x29C9;, window="_blank", role="ext-link"] referring to an https://data.norge.no/specification/skos-ap-no-begrep#Assosiativ-begrepsrelasjon[Associative concept relation (skosno:AssociativeConceptRelation) &#x29C9;, window="_blank", role="ext-link"] in which you may specify the role that the concept has towards the other concept in the associative relation between the two. This is also demonstrated by https://w3id.org/demo-resources/demo-concepts#demoCpt3["demo concept 3"]. 
+
+=== More about concept definitions [[definition]]
+
+There are also two different ways to specify the definition of a given concept, depending on if there is a need to specify more details in addition to the definition text: 
+
+* The straightforward way, when only the definition text is to be specified, by using the property https://data.norge.no/specification/skos-ap-no-begrep#Begrep-definisjon-direkte-angivelse[definition (direct statement) (skos:definition) &#x29C9;, window="_blank", role="ext-link"], demonstrated by https://w3id.org/demo-resources/demo-concepts#demoCpt1["demo concept 1"].
+* Using the property https://data.norge.no/specification/skos-ap-no-begrep#Begrep-definisjon-via-definisjonsobjekt[definition (via definition object) (euvoc:xlDefinition) &#x29C9;, window="_blank", role="ext-link"] referring to a https://data.norge.no/specification/skos-ap-no-begrep#Definisjon[Definition (euvoc:XlNote) &#x29C9;, window="_blank", role="ext-link"] in which more details about the definition are specified. This is demonstrated by https://w3id.org/demo-resources/demo-concepts#demoCpt2["demo concept 2"], where details about the source and the audience of the definition are given. 
+
+== Some cross-references with other demo resources [[cross-references]]
+
+*_Note_*: _Not all possible cross-references are demonstrated in this showroom. The lists are thus not exhaustive._
+
+*Concepts and classifications*, for example:
+
+* A concept may refer to a classification as its value range. 
+** Our https://w3id.org/demo-resources/demo-concepts#demoCpt2["demo concept 2"] refers to our https://w3id.org/demo-resources/demo-classifications#demoClassification1["demo controlled vocabulary 1"] (demonstrated in our link:/showroom/xkos-ap-no/[showroom with demo classifications]) as its https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de[value range (skosno:valueRange) &#x29C9;, window="_blank", role="ext-link"].
+** Classifications should therefore be made available, also machine-readably. 
+
+* A concept may be included in or referred to from a classification. 
+** This is demonstrated and explained in our link:/showroom/xkos-ap-no/[showroom with demo classifications]. 
+
+*Concepts and datasets*, for example:
+
+* A dataset may refer to concepts that the dataset represents or concepts that are relevant for understanding the dataset.
+** This is demonstrated and explained in our link:/showroom/dcat-ap-no/[showroom with demo datasets].
+
+* When describing a dataset, and where coded values are used, the coded values should preferably be concepts chosen from controlled vocabularies (i.e., classifications).  
+** This is demonstrated and explained in our link:/showroom/dcat-ap-no/[showroom with demo datasets].
+
+*Concepts and information models*, for example:
+
+* An information model may refer to concepts that the information model represents or concepts that are relevant for understanding the information model.
+** This is demonstrated and explained in our link:/showroom/modelldcat-ap-no/[showroom with demo information models].
+
+* When describing an information model, and where coded values are used, the coded values should preferably be concepts chosen from controlled vocabularies (i.e., classifications). 
+** This is demonstrated and explained and explained in our link:/showroom/modelldcat-ap-no/[showroom with demo information models]. 
+
+
+*Concepts and services/events*, for example:
+
+* A service or event, may refer to concepts that are relevant for understanding the service or event. 
+** This is demonstrated and explained in our link:/showroom/cpsv-ap-no/[showroom with demo services and events]. 
+
+== _to the overview of the showrooms_ [[to-overview]]
+
+link:/showroom/overview/#overview[Click here for the overview of all the showrooms]
