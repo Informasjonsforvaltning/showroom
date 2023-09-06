@@ -19,7 +19,7 @@ ifdef::backend-pdf[:toc: macro]
 
 *_Forbehold_*: _Demoressursene tilgjengeliggjort via de enkelte utstillingsrommene er kun ment for demo- og testingsformål._
 
-#*_Resten av teksten er (foreløpig) kun på engelsk._*#
+#*_Resten av teksten er (foreløpig) kun på engelsk, slik at sidene kun virker i "engelske nettlesere (med `Accept-language = "en"`)"._*#
 
 include::purpose.adoc[]
 
