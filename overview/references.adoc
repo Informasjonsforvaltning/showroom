@@ -2,7 +2,7 @@
 
 Some of the RDF-based Norwegian national specifications for data sharing and reuse: 
 
-* https://informasjonsforvaltning.github.io/cpsv-ap-no/[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (#currently as a trial version#): the Norwegian national specification for describing services and events. 
+* https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]: the Norwegian national specification for describing services and events. 
 ** The specifications for RDF-representations are in English as well.
 ** CPSV-AP-NO is based on, thus a profile of, EU's https://github.com/SEMICeu/CPSV-AP[Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"].
 
