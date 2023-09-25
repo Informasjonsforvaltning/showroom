@@ -24,6 +24,7 @@
    dct:publisher <https://w3id.org/demo-resources/dummy-agents#dmyOrg1>;
    dcat:dataset <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
+   dct:modified "2023-09-25"^^xsd:date;
    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
    foaf:homepage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
    dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
@@ -57,6 +58,8 @@
    dcat:contactPoint <https://w3id.org/demo-resources/dummy-contact-points#dmyCP1>;
    dct:temporal <https://w3id.org/demo-resources/dummy-times#dmyPoT1>;
    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;
+   dct:modified "2023-09-25"^^xsd:date;
+   dcat:inSeries <https://w3id.org/demo-resources/dummy-datasets#dmyDatasetSeries1>;
    .
  
 <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>
@@ -92,4 +95,10 @@
    cpsv:follows <https://data.norge.no/vocabulary/rule-type#non-disclosure-rule>;
    .
  
-#### End of the file, 2023-08-25 14:10:49
+<https://w3id.org/demo-resources/dummy-datasets#dmyDatasetSeries1>
+   rdf:type dcat:DatasetSeries;
+   dcat:first <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
+   dcat:last <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
+   .
+ 
+#### End of the file, 2023-09-25 13:33:09
