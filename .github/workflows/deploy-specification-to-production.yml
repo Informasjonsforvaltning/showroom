@@ -330,9 +330,9 @@ jobs:
       program: "asciidoctor -D overview -o index-en.html -a lang=en overview/main-en.adoc"
       files: |
         overview/index-en.html text/html en
-        overview/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
+        overview/images/crossreferencing-en.png image/png en images/crossreferencing-en.png
         overview/images/Digdir.png image/png en images/Digdir.png
-        overview/images/registering-n-harvesting.png image/png en images/registering-n-harvesting.png
+        overview/images/registering-n-harvesting-en.png image/png en images/registering-n-harvesting-en.png
         overview/images/work-in-progress.png image/png en images/work-in-progress.png
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
