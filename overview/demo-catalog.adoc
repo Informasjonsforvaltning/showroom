@@ -11,8 +11,8 @@ This is illustrated in <<img-registering-n-harvesting>>, which also shows the us
 
 [[img-registering-n-harvesting]]
 .Making your resource descriptions available and findable through the National Data Catalog.
-[link=images/registering-n-harvesting.png]
-image::images/registering-n-harvesting.png[alt="Drawing showing registration and harvesting in to the National Data Portal."]
+[link=images/registering-n-harvesting-en.png]
+image::images/registering-n-harvesting-en.png[alt="Drawing showing registration and harvesting in to the National Data Portal."]
 
 There is also a https://demo.fellesdatakatalog.digdir.no/[demo portal &#x29C9;, window="_blank", role="ext-link"] provided by the Norwegian Digitalisation Agency, which has the same functionalities as in the National Data Catalog, but the content in the demo portal is only meant for testing and demonstration purposes. Note that you need to be a registered user in the demo portal in order to use the editor and/or harvester of the demo portal. 
 
