@@ -21,9 +21,9 @@ ifdef::backend-pdf[:toc: macro]
 
 #*_Hoveddelen av teksten i utstillingsrommene er kun på engelsk._*#
 
-include::purpose.adoc[]
+include::purpose-nb.adoc[]
 
-include::overview.adoc[]
+include::overview-nb.adoc[]
 
 include::demo-catalog.adoc[]
 

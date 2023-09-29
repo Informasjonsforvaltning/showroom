@@ -1,0 +1,8 @@
+== Hensikt [[hensikt]]
+
+
+*Hovedhensikten* med utstillingsrommene er å
+
+* demonstrere hvordan ulike RDF-baserte nasjonale spesifikasjoner brukes til å tilgjengeliggjøre maskinprosesserbare ressurser i henhold til spesifikasjonene; 
+* demonstrere hvordan kryss-referere/-lenke mellom ressursene på tvers av spesifikasjonene; 
+* gjøre tilgjengelig maskinprosesserbare ressurser for testing og demonstrasjonsformål. 
