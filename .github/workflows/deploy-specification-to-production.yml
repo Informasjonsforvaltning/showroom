@@ -350,10 +350,10 @@ jobs:
       program: "asciidoctor -D overview -o index-nb.html -a lang=nb overview/main-nb.adoc"
       files: |
         overview/index-nb.html text/html nb
-        overview/images/crossreferencing-between-showrooms.png image/png en images/crossreferencing-between-showrooms.png
-        overview/images/Digdir.png image/png en images/Digdir.png
-        overview/images/registering-n-harvesting.png image/png en images/registering-n-harvesting.png
-        overview/images/work-in-progress.png image/png en images/work-in-progress.png
+        overview/images/crossreferencing-nb.png image/png nb images/crossreferencing-nb.png
+        overview/images/Digdir.png image/png nb images/Digdir.png
+        overview/images/registering-n-harvesting-nb.png image/png nb images/registering-n-harvesting-nb.png
+        overview/images/work-in-progress.png image/png nb images/work-in-progress.png
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
