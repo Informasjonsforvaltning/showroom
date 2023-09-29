@@ -16,7 +16,7 @@ Vi har så langt følgende utstillingsrom:
 
 * link:/showroom/dummy-assets[Generiske dummy-ressurser]: Ikke direkte relatert til noen spesifikke spesifikasjoner per se, men dette utstillingsrommet inneholder et antall gjenbrukbare, maskinprosesserbare og generiske dummy-ressurser som kan brukes som "byggeklosser" når du f.eks. tester din implementering av en gitt spesifikasjon.
 
-<<img-oversikt>> illustrerer noen av kryssreferansene mellom ressurstypene som er demonstrert i utstillingsrommene. Kryssreferansene vil bli forklart nærmere i de enkelte utstillingsrommene. 
+<<img-oversikt>> illustrerer noen av kryssreferansene mellom ressurstypene som er demonstrert i utstillingsrommene. Kryssreferansene vil bli forklart nærmere i de enkelte utstillingsrommene.
 
 [[img-oversikt]]
 .Oversikt over og kryssreferanser mellom  utstillingsrommene.
