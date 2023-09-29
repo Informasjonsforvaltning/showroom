@@ -20,6 +20,6 @@ We have currently following showrooms:
 
 [[img-overview]]
 .Overview and cross-references between the resource types that are demonstrated in the showrooms.
-[link=images/crossreferencing-between-showrooms.png]
-image::images/crossreferencing-between-showrooms.png[alt="Conceptual model with some class and relations between them. The content is explained in the text."]
+[link=images/crossreferencing-en.png]
+image::images/crossreferencing-en.png[alt="Conceptual model with some class and relations between them. The content is explained in the text."]
 
