@@ -1,8 +1,10 @@
 == Målgruppe [[audience]]
 
-Utstillingsrommene er for deg som har et visst kjennskap til RDF, og når du f.eks. 
+Utstillingsrommene er primært for deg som har et visst kjennskap til RDF, og når du f.eks. 
 
 * implementerer en eller flere av de RDF-baserte nasjonale spesifikasjonene demonstrert i utstillingsrommene, 
 * leter etter noen RDF-eksempler på bruken av spesifikasjonene, 
 * leter etter noen "byggeklosser" (instanser i RDF) til å teste din implementering av spesifikasjonene,
 * eller bare lurer på hvordan ressursbeskrivelser (metadata) i henhold til spesifikasjonene kan se ut i RDF. 
+
+Utstillingsrommene er også ment for deg som er vår internasjonale kollega og som ønsker å lære om de norske RDF-baserte spesifikasjonene. 
