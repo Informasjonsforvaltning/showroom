@@ -1,6 +1,6 @@
 == Making the resources findable via a data portal [[about-demo-portal]]
 
-The Norwegian national specifications demonstrated in the various showrooms here, are also specifications for how to make the resource descriptions (metadata) available in a data portal, and in particular, https://data.norge.no/[the National Data Catalog of Norway &#x29C9;, window="_blank", role="ext-link"] maintained by the Norwegian Digitalisation Agency. The resources will thus be findable via the National Data Catalog. 
+The Norwegian national specifications demonstrated in the various showrooms here, are also specifications for how to make the resource descriptions (metadata) available in a data portal, and in particular, https://data.norge.no/[the National Data Catalog of Norway &#x29C9;, window="_blank", role="ext-link"] maintained by the Norwegian Digitalisation Agency.  
 
 In order to make the resource descriptions available in the National Data Catalog, you may, if you are authorized to do so on behalf of your organization, 
 
@@ -23,5 +23,5 @@ Examples for how to find some of the demo resources in the demo portal:
 * demo classifications / datasets: by for instance https://demo.fellesdatakatalog.digdir.no/datasets?q=demodataset[searching "demodataset" in the "Datasets" part of the demo portal &#x29C9;, window="_blank", role="ext-link"].
 * demo concepts (#not yet#): by for instance https://demo.fellesdatakatalog.digdir.no/concepts?q=demoCpt[searching "demoCpt" in the "Concepts" part of the demo portal &#x29C9;, window="_blank", role="ext-link"]. 
 * demo information models: by for instance https://demo.fellesdatakatalog.digdir.no/informationmodels?q=demomodel[searching "demomodel" in the "Information models" part of the demo portal &#x29C9;, window="_blank", role="ext-link"].
-* _#... more may come ...#_
+
 

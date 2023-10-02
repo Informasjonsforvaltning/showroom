@@ -25,6 +25,6 @@ include::purpose-nb.adoc[]
 
 include::overview-nb.adoc[]
 
-include::demo-catalog.adoc[]
+include::demo-catalog-nb.adoc[]
 
-include::references.adoc[]
+include::references-nb.adoc[]

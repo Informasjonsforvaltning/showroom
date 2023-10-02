@@ -5,7 +5,9 @@
 :chapter-label: Kapittel
 :chapter-refsig: {chapter-label}
 :example-caption: Eksempel
+:example-refsig: {example-label}
 :figure-caption: Figur
+:figure-refsig: {figure-label}
 :important-caption: Viktig
 :last-update-label: Sist oppdatert
 ifdef::listing-caption[:listing-caption: Programkode]
