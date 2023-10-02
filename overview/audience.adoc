@@ -6,4 +6,4 @@ The showrooms are meant for you who have certain knowledge of RDF, and when you 
 * implementing one or more of the RDF-based Norwegian national specifications demonstrated in the showrooms,  
 * looking for some RDF-examples of the usage of the specifications, 
 * looking for some "building blocks" (instances in RDF) to test your implementation of the specifications,
-* or simply wondering how the specifications may look like in RDF. 
+* or simply wondering how resource descriptions in accordance with the specifications may look like in RDF. 
