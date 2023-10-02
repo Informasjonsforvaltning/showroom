@@ -23,6 +23,8 @@ ifdef::backend-pdf[:toc: macro]
 
 include::purpose-nb.adoc[]
 
+include::audience-nb.adoc[]
+
 include::overview-nb.adoc[]
 
 include::demo-catalog-nb.adoc[]

@@ -21,6 +21,8 @@ ifdef::backend-pdf[:toc: macro]
 
 include::purpose.adoc[]
 
+include::audience.adoc[]
+
 include::overview.adoc[]
 
 include::demo-catalog.adoc[]
