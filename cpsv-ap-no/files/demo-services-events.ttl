@@ -322,9 +322,9 @@
  
 <https://w3id.org/demo-resources/demo-services-events#demoAgent1>
    rdf:type foaf:Agent;
-   foaf:name """Demo Agent 1"""@en,
-       """Demoaktør 1"""@nb;
    dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoAgent1"^^xsd:anyURI;
+   dct:title """Demo Agent 1"""@en,
+       """Demoaktør 1"""@nb;
    locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr1>;
    cv:participates <https://w3id.org/demo-resources/demo-services-events#demoParticipation1>;
    .
@@ -484,4 +484,4 @@
    cv:value """…""";
    .
  
-#### End of the file, 2023-08-29 11:27:49
+#### End of the file, 2023-10-03 10:49:19
