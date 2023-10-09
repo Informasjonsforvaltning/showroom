@@ -66,7 +66,7 @@ image::images/demoPublicService1-explanation.png[alt="Graph with nodes and relat
 **  For instance, our "https://w3id.org/demo-resources/demo-services-events#demoService1[Demo Service 1]" produces the dataset "https://w3id.org/demo-resources/dummy-datasets#dmyDataset1[Dummy Dataset 1]" as its result/output.
 
 * An event is a dataset. 
-** For instance our https://w3id.org/demo-resources/demo-services-events#demoEvent1[Demo Event]" is a dataset, with a https://w3id.org/demo-resources/dummy-datasets#dmyDistr1[distribution].
+** For instance our "https://w3id.org/demo-resources/demo-services-events#demoEvent1[Demo Event]" is a dataset, with a https://w3id.org/demo-resources/dummy-datasets#dmyDistr1[distribution].
 
 *Services/events and information models*, for example: 
 
