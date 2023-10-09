@@ -72,7 +72,7 @@
    cv:thematicArea <http://eurovoc.europa.eu/100152>;
    cv:processingTime "P2D"^^xsd:duration;
    cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
-   cv:isGroupedBy <https://w3id.org/demo-resources/demo-services-events#demoEvent1>;
+   cv:isGroupedBy <https://w3id.org/demo-resources/demo-services-events#demoLifeEvent1>;
    cv:isClassifiedBy <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
    cv:hasChannel <https://w3id.org/demo-resources/demo-services-events#demoChannel>;
    cpsv:follows <https://w3id.org/demo-resources/demo-services-events#demoRule1>;
@@ -296,12 +296,11 @@
  
 <https://w3id.org/demo-resources/demo-services-events#demoPubOrg1>
    rdf:type cv:PublicOrganisation;
-   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
-       <https://data.geonorge.no/administrativeEnheter/kommune/id/172833>;
-   skos:prefLabel """Brønnøy kommune"""@nb,
-       """Brønnøy kommune"""@nn,
-       """Brønnøy kommune"""@en;
-   dct:identifier "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827"^^xsd:anyURI;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
+   skos:prefLabel """Demo offentlig organisasjon 1"""@nb,
+       """Demo offentleg organisajon 1"""@nn,
+       """Demo Public Organization 1"""@en;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoPubOrg1"^^xsd:anyURI;
    dct:type <http://purl.org/adms/publishertype/LocalAuthority>;
    locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr2>;
    cv:participates <https://w3id.org/demo-resources/demo-services-events#demoParticipation2>;
@@ -484,4 +483,4 @@
    cv:value """…""";
    .
  
-#### End of the file, 2023-10-06 07:42:56
+#### End of the file, 2023-10-09 10:28:38
