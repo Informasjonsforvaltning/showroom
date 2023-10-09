@@ -69,7 +69,7 @@ jobs:
       files: |
         cpsv-ap-no/index-en.html text/html en
         cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
-        cpsv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        cpsv-ap-no/images/demoPublicService1-explanation.png en images/demoPublicService1-explanation.png
         cpsv-ap-no/files/demo-services-events.ttl text/turtle en demo-services-events/demo-services-events.ttl
         cpsv-ap-no/files/demo-services-events-en.html text/html en demo-services-events/demo-services-events-en.html
         cpsv-ap-no/files/demo-services-events-nb.html text/html nb demo-services-events/demo-services-events-nb.html
@@ -90,7 +90,7 @@ jobs:
       files: |
         cpsv-ap-no/index-nb.html text/html nb
         cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
-        cpsv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+        cpsv-ap-no/images/demoPublicService1-explanation.png en images/demoPublicService1-explanation.png
         cpsv-ap-no/files/demo-services-events.ttl text/turtle en demo-services-events/demo-services-events.ttl
         cpsv-ap-no/files/demo-services-events-en.html text/html en demo-services-events/demo-services-events-en.html
         cpsv-ap-no/files/demo-services-events-nb.html text/html nb demo-services-events/demo-services-events-nb.html
