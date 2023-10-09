@@ -102,12 +102,12 @@
    cv:contactPoint <https://w3id.org/demo-resources/demo-services-events#demoContactPoint1>;
    dct:title """Demo Service 1"""@en,
        """Demotjeneste 1"""@nb;
-   cpsv:produces <https://w3id.org/demo-resources/demo-services-events#demoOutput1>;
+   cpsv:produces <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
    dct:isPartOf <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
    dct:hasPart <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
-   cpsv:hasInput <https://w3id.org/demo-resources/demo-services-events#demoEvidence1>;
+   cpsv:hasInput <https://w3id.org/demo-resources/demo-datasets#demoDataset1>;
    foaf:homepage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
    adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEVELOP>;
    cv:thematicArea <https://psi.norge.no/los/tema/handel-og-service>;
@@ -483,4 +483,4 @@
    cv:value """…""";
    .
  
-#### End of the file, 2023-10-09 10:28:38
+#### End of the file, 2023-10-09 15:33:56
