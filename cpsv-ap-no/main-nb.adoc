@@ -18,10 +18,10 @@ Velkommen til utstillingsrommet med demo-tjenester og -hendelser, som demonstrer
 
 _https://data.norge.no/specification/cpsv-ap-no/[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av EUs https://github.com/SEMICeu/CPSV-AP[Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"], for beskrivelse av tjenester og hendelser._
 
-[cols="10,90", grid=nome,frame=none] 
-|===
-| image:images/work-in-progress.png[WIP,200,200] | _Dette utstillingsrommet er under konstruksjon._ 
-|===
+// [cols="10,90", grid=nome,frame=none] 
+// |===
+// | image:images/work-in-progress.png[WIP,200,200] | _Dette utstillingsrommet er under konstruksjon._ 
+// |===
 
 #*_Resten av teksten er kun på engelsk._*#
 
