@@ -245,6 +245,7 @@ jobs:
       files: |
         dqv-ap-no/index-en.html text/html en
         dqv-ap-no/images/Digdir.png image/png en images/Digdir.png
+        dqv-ap-no/images/work-in-progress.png image/png en work-in-progress.png
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
@@ -262,6 +263,7 @@ jobs:
       files: |
         dqv-ap-no/index-nb.html text/html nb
         dqv-ap-no/images/Digdir.png image/png en images/Digdir.png
+        dqv-ap-no/images/work-in-progress.png image/png en work-in-progress.png
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
