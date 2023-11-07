@@ -236,7 +236,7 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.dqv == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: cpsv-root-english
+    name: dqv-root-english
     with:
       host: "https://data.norge.no"
       ontology: "dqv-ap-no"
@@ -253,7 +253,7 @@ jobs:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.dqv == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: cpsv-root-bokmål
+    name: dqv-root-bokmål
     with:
       host: "https://data.norge.no"
       ontology: "dqv-ap-no"
