@@ -14,5 +14,4 @@ image:../images/Digdir.png[Digdir,100,100] Norwegian Digitalisation Agency
 NOTE: *Feedback:* +
 Please use https://github.com/jimjyang/showroom/issues[Github Issues] to give us your feedback, if any.
 
-
 include::demo-classifications-en.adoc[]
