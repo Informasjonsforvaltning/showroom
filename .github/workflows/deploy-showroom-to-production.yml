@@ -558,12 +558,45 @@ jobs:
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-    
-  modelldcat_build_deploy_en:
+
+  modelldcat_files_build_deploy_en:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.modelldcat == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: modelldcat-english
+    name: modelldcat-files-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "modelldcat-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D modelldcat-ap-no/files -o demo-models-en.html -a lang=en modelldcat-ap-no/files/demo-models-main-en.adoc"
+      files: |
+        modelldcat-ap-no/files/demo-models.ttl text/turtle en demo-models/demo-models.ttl
+        modelldcat-ap-no/files/demo-models-en.html text/html en demo-models/demo-models-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  modelldcat_files_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.modelldcat == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: modelldcat-files-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "modelldcat-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D modelldcat-ap-no/files -o demo-models-nb.html -a lang=nb modelldcat-ap-no/files/demo-models-main-nb.adoc"
+      files: |
+        modelldcat-ap-no/files/demo-models-nb.html text/html nb demo-models/demo-models-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
+  modelldcat_root_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.modelldcat == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: modelldcat-root-english
     with:
       host: "https://data.norge.no"
       ontology: "modelldcat-ap-no"
@@ -571,11 +604,7 @@ jobs:
       program: "asciidoctor -D modelldcat-ap-no -o index-en.html -a lang=en modelldcat-ap-no/main-en.adoc"
       files: |
         modelldcat-ap-no/index-en.html text/html en
-        modelldcat-ap-no/files/demo-models.ttl text/turtle en demo-models/demo-models.ttl
-        modelldcat-ap-no/files/demo-models-en.html text/html en demo-models/demo-models-en.html
-        modelldcat-ap-no/files/demo-models-nb.html text/html nb demo-models/demo-models-nb.html
         modelldcat-ap-no/images/Digdir.png image/png en images/Digdir.png
-        modelldcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         modelldcat-ap-no/images/demomodel1.png image/png en images/demomodel1.png
         modelldcat-ap-no/images/demomodel1-mapping-examples.png image/png en images/demomodel1-mapping-examples.png
         modelldcat-ap-no/images/demomodel2.png image/png en images/demomodel2.png
@@ -585,11 +614,11 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
   
-  modelldcat_build_deploy_nb:
+  modelldcat_root_build_deploy_nb:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.modelldcat == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: modelldcat-bokmål
+    name: modelldcat-root-bokmål
     with:
       host: "https://data.norge.no"
       ontology: "modelldcat-ap-no"
@@ -597,11 +626,7 @@ jobs:
       program: "asciidoctor -D modelldcat-ap-no -o index-nb.html -a lang=nb modelldcat-ap-no/main-nb.adoc"
       files: |
         modelldcat-ap-no/index-nb.html text/html nb
-        modelldcat-ap-no/files/demo-models.ttl text/turtle en demo-models/demo-models.ttl
-        modelldcat-ap-no/files/demo-models-en.html text/html en demo-models/demo-models-en.html
-        modelldcat-ap-no/files/demo-models-nb.html text/html nb demo-models/demo-models-nb.html
         modelldcat-ap-no/images/Digdir.png image/png en images/Digdir.png
-        modelldcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         modelldcat-ap-no/images/demomodel1.png image/png en images/demomodel1.png
         modelldcat-ap-no/images/demomodel1-mapping-examples.png image/png en images/demomodel1-mapping-examples.png
         modelldcat-ap-no/images/demomodel2.png image/png en images/demomodel2.png
