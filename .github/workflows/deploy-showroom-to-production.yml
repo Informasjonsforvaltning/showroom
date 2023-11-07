@@ -796,9 +796,6 @@ jobs:
         xkos-ap-no/index-en.html text/html en
         xkos-ap-no/images/Digdir.png image/png en images/Digdir.png
         xkos-ap-no/images/demo-classification1.png image/png en images/demo-classification1.png
-        xkos-ap-no/files/demo-classifications.ttl text/turtle en demo-classifications/demo-classifications.ttl
-        xkos-ap-no/files/demo-classifications-en.html text/html en demo-classifications/demo-classifications-en.html
-        xkos-ap-no/files/demo-classifications-nb.html text/html nb demo-classifications/demo-classifications-nb.html
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
