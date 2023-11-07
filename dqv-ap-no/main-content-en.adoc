@@ -1,3 +1,5 @@
+image:images/work-in-progress.png[50,50] #_This showroom is under construction and will open soon._#
+
 == Purpose [[purpose]] 
 
 This showroom is meant to 
