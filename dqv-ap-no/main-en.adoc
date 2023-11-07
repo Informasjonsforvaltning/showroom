@@ -1,0 +1,21 @@
+include::../locale/attributes.adoc[]
+= image:images/Digdir.png[Digdir,200,200] showroom - demo dataset quality descriptions
+Norwegian Digitalisation Agency (Digdir)
+:doctype: book
+:docinfo: shared
+:docinfodir: ../overview
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toc-title: Demo datasets
+:toclevels: 4
+// :sectlinks:
+:sectanchors:
+:table-stripes: even
+:xrefstyle: short
+
+Welcome to the showroom with demo dataset quality descriptions, demonstrating the usage of DQV-AP-NO!
+
+_https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (in Norwegian only) is the Norwegian application profile of W3C's https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"], for describing dataset quality._ 
+
+include::main-content-en.adoc[]

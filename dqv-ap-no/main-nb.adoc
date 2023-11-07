@@ -1,0 +1,23 @@
+include::../locale/attributes.adoc[]
+= image:images/Digdir.png[Digdir,200,200] utstillingsrom - demo datasett kvalitetsbeskrivelse
+Digitaliseringsdirektoratet (Digdir)
+:doctype: book
+:docinfo: shared
+:docinfodir: ../overview
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toc-title: Demo datasets
+:toclevels: 4
+// :sectlinks:
+:sectanchors:
+:table-stripes: even
+:xrefstyle: short
+
+Velkommen til utstillingsrommet med demo datasett kvalitetsbeskrivelse, som demonstrerer bruken av DQV-AP-NO!
+
+_https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofil av https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"] fra W3C, for beskrivelse av kvalitet på datasett._ 
+
+#_Resten av teksten er på engelsk_#
+
+include::main-content-en.adoc[]

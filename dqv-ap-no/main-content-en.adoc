@@ -1,0 +1,21 @@
+== Purpose [[purpose]] 
+
+This showroom is meant to 
+
+* demonstrate how to use DQV-AP-NO to describe dataset quality;
+* demonstrate some cross-references between dataset quality descriptions and other resources demonstrated in some of the other showrooms;
+* provide reusable, machine-readable dataset quality descriptions, for testing and demonstration purposes.
+
+*_Disclaimer_*: _The machine-readable demo dataset descriptions are meant for demo purposes only. They do not represent any real world phenomena at all. On the other hand, they are supposed to syntactically conform to DCAT-AP-NO._ 
+
+== Demo resources in this showroom [[demo-resources]]
+
+#_coming_#
+ 
+== Some cross-references with other demo resources [[cross-references]]
+
+#_coming_#
+
+== _to the overview of the showrooms_ [[to-overview]]
+
+link:/showroom/overview/#overview[Click here for the overview of all the showrooms]
