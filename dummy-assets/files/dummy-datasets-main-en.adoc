@@ -1,0 +1,17 @@
+include::../../locale/attributes-en.adoc[]
+= w3id.org/demo-resources/dummy-datasets
+HTML-view of RDF Turtle resource
+:doctype: article
+:icons: font
+:toc: left
+:toclevels: 9
+// :sectlinks:
+:sectanchors:
+:table-stripes: odd
+
+image:../images/Digdir.png[Digdir,100,100] Norwegian Digitalisation Agency
+
+NOTE: *Feedback:* +
+Please use https://github.com/jimjyang/showroom/issues[Github Issues] to give us your feedback, if any.
+
+include::dummy-datasets-en.adoc[]

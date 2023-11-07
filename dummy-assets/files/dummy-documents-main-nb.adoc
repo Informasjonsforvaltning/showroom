@@ -1,0 +1,18 @@
+include::../../locale/attributes-nb.adoc[]
+= w3id.org/demo-resources/dummy-documents
+HTML-visning av RDF Turtle ressurs
+:doctype: article
+:icons: font
+:toc: left
+:toclevels: 9
+// :sectlinks:
+:sectanchors:
+:table-stripes: odd
+
+image:../images/Digdir.png[Digdir,100,100] Digitaliseringsdirektoratet
+
+NOTE: *Innmelding av feil og mangler:* +
+Dersom du finner feil eller mangler, ber vi om at dette meldes inn på https://github.com/jimjyang/showroom/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+
+
+include::dummy-documents-nb.adoc[]
