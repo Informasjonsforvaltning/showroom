@@ -67,9 +67,38 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
     
-  dcat_build_upload_en:
+  dcat_files_build_upload_nb:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: dcat-english
+    name: dcat-files-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dcat-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dcat-ap-no/files -o demo-datasets-nb.html -a lang=nb dcat-ap-no/files/main-nb.adoc"
+      files: |
+        dcat-ap-no/files/demo-datasets-nb.html text/html nb demo-datasets/demo-datasets-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+            
+  dcat_files_build_upload_en:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dcat-files-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dcat-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dcat-ap-no/files -o demo-datasets-en.html -a lang=en dcat-ap-no/files/main-en.adoc"
+      files: |
+        dcat-ap-no/files/demo-datasets.ttl text/turtle en demo-datasets/demo-datasets.ttl
+        dcat-ap-no/files/demo-datasets-en.html text/html en demo-datasets/demo-datasets-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dcat_root_build_upload_en:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dcat-root-english
     with:
       host: "https://data.norge.no"
       ontology: "dcat-ap-no"
@@ -78,17 +107,13 @@ jobs:
       files: |
         dcat-ap-no/index-en.html text/html en
         dcat-ap-no/images/Digdir.png image/png en images/Digdir.png
-        dcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
-        dcat-ap-no/files/demo-datasets.ttl text/turtle en demo-datasets/demo-datasets.ttl
-        dcat-ap-no/files/demo-datasets-en.html text/html en demo-datasets/demo-datasets-en.html
-        dcat-ap-no/files/demo-datasets-nb.html text/html nb demo-datasets/demo-datasets-nb.html
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
-  dcat_build_upload_nb:
+  dcat_root_build_upload_nb:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: dcat-bokmål
+    name: dcat-root-bokmål
     with:
       host: "https://data.norge.no"
       ontology: "dcat-ap-no"
@@ -97,14 +122,10 @@ jobs:
       files: |
         dcat-ap-no/index-nb.html text/html nb
         dcat-ap-no/images/Digdir.png image/png en images/Digdir.png
-        dcat-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
-        dcat-ap-no/files/demo-datasets.ttl text/turtle en demo-datasets/demo-datasets.ttl
-        dcat-ap-no/files/demo-datasets-en.html text/html en demo-datasets/demo-datasets-en.html
-        dcat-ap-no/files/demo-datasets-nb.html text/html nb demo-datasets/demo-datasets-nb.html
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-    
+        
   demo_uris_build_upload_en:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: demo-uris-english

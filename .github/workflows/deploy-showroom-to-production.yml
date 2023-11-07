@@ -228,7 +228,238 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
-  dummy_assets_build_deploy_en:
+  dummy_assets_files_agents_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-agents-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-agents-en.html -a lang=en dummy-assets/files/dummy-agents-main-en.adoc"
+      files: |
+        dummy-assets/files/dummy-agents.ttl text/turtle en dummy-agents/dummy-agents.ttl
+        dummy-assets/files/dummy-agents-en.html text/html en dummy-agents/dummy-agents-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_agents_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-agents-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-agents-nb.html -a lang=nb dummy-assets/files/dummy-agents-main-nb.adoc"
+      files: |
+        dummy-assets/files/dummy-agents-nb.html text/html nb dummy-agents/dummy-agents-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_contactpoints_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-contactpoints-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-contact-points-en.html -a lang=en dummy-assets/files/dummy-contact-points-main-en.adoc"
+      files: |
+        dummy-assets/files/dummy-contact-points.ttl text/turtle en dummy-contact-points/dummy-contact-points.ttl
+        dummy-assets/files/dummy-contact-points-en.html text/html en dummy-contact-points/dummy-contact-points-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_contactpoints_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-contactpoints-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-contact-points-nb.html -a lang=nb dummy-assets/files/dummy-contact-points-main-nb.adoc"
+      files: |
+        dummy-assets/files/dummy-contact-points-nb.html text/html nb dummy-contact-points/dummy-contact-points-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_datasets_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-datasets-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-datasets-en.html -a lang=en dummy-assets/files/dummy-datasets-main-en.adoc"
+      files: |
+        dummy-assets/files/dummy-datasets.ttl text/turtle en dummy-datasets/dummy-datasets.ttl
+        dummy-assets/files/dummy-datasets-en.html text/html en dummy-datasets/dummy-datasets-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_datasets_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-datasets-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-datasets-nb.html -a lang=nb dummy-assets/files/dummy-datasets-main-nb.adoc"
+      files: |
+        dummy-assets/files/dummy-datasets-nb.html text/html nb dummy-datasets/dummy-datasets-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
+  dummy_assets_files_documents_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-documents-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-documents-en.html -a lang=en dummy-assets/files/dummy-documents-main-en.adoc"
+      files: |
+        dummy-assets/files/dummy-documents.ttl text/turtle en dummy-documents/dummy-documents.ttl
+        dummy-assets/files/dummy-documents-en.html text/html en dummy-documents/dummy-documents-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_documents_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-documents-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-documents-nb.html -a lang=nb dummy-assets/files/dummy-documents-main-nb.adoc"
+      files: |
+        dummy-assets/files/dummy-documents-nb.html text/html nb dummy-documents/dummy-documents-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_events_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-events-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-events-en.html -a lang=en dummy-assets/files/dummy-events-main-en.adoc"
+      files: |
+        dummy-assets/files/dummy-events.ttl text/turtle en dummy-events/dummy-events.ttl
+        dummy-assets/files/dummy-events-en.html text/html en dummy-events/dummy-events-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_events_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-events-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-events-nb.html -a lang=nb dummy-assets/files/dummy-events-main-nb.adoc"
+      files: |
+        dummy-assets/files/dummy-events-nb.html text/html nb dummy-events/dummy-events-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+          
+  dummy_assets_files_evidences_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-evidences-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-evidences-en.html -a lang=en dummy-assets/files/dummy-evidences-main-en.adoc"
+      files: |
+        dummy-assets/files/dummy-evidences.ttl text/turtle en dummy-evidences/dummy-evidences.ttl
+        dummy-assets/files/dummy-evidences-en.html text/html en dummy-evidences/dummy-evidences-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_evidences_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-evidences-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-evidences-nb.html -a lang=nb dummy-assets/files/dummy-evidences-main-nb.adoc"
+      files: |
+        dummy-assets/files/dummy-evidences-nb.html text/html nb dummy-evidences/dummy-evidences-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_locations_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-locations-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-locations-en.html -a lang=en dummy-assets/files/dummy-locations-main-en.adoc"
+      files: |
+        dummy-assets/files/dummy-locations.ttl text/turtle en dummy-locations/dummy-locations.ttl
+        dummy-assets/files/dummy-locations-en.html text/html en dummy-locations/dummy-locations-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
+  dummy_assets_files_locations_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-locations-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-locations-nb.html -a lang=nb dummy-assets/files/dummy-locations-main-nb.adoc"
+      files: |
+        dummy-assets/files/dummy-locations-nb.html text/html nb dummy-locations/dummy-locations-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_services_build_deploy_en:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
@@ -237,47 +468,85 @@ jobs:
       host: "https://data.norge.no"
       ontology: "dummy-assets"
       ontology-type: "showroom"
-      program: "asciidoctor -D dummy-assets -o index-en.html -a lang=en dummy-assets/main-en.adoc"
+      program: "asciidoctor -D dummy-assets/files -o dummy-services-en.html -a lang=en dummy-assets/files/dummy-services-main-en.adoc"
       files: |
-        dummy-assets/index-en.html text/html en
-        dummy-assets/images/Digdir.png image/png en images/Digdir.png
-        dummy-assets/images/work-in-progress.png image/png en images/work-in-progress.png
-        dummy-assets/files/dummy-agents.ttl text/turtle en dummy-agents/dummy-agents.ttl
-        dummy-assets/files/dummy-agents-en.html text/html en dummy-agents/dummy-agents-en.html
-        dummy-assets/files/dummy-agents-nb.html text/html nb dummy-agents/dummy-agents-nb.html
-        dummy-assets/files/dummy-contact-points.ttl text/turtle en dummy-contact-points/dummy-contact-points.ttl
-        dummy-assets/files/dummy-contact-points-en.html text/html en dummy-contact-points/dummy-contact-points-en.html
-        dummy-assets/files/dummy-contact-points-nb.html text/html nb dummy-contact-points/dummy-contact-points-nb.html
-        dummy-assets/files/dummy-datasets.ttl text/turtle en dummy-datasets/dummy-datasets.ttl
-        dummy-assets/files/dummy-datasets-en.html text/html en dummy-datasets/dummy-datasets-en.html
-        dummy-assets/files/dummy-datasets-nb.html text/html nb dummy-datasets/dummy-datasets-nb.html
-        dummy-assets/files/dummy-documents.ttl text/turtle en dummy-documents/dummy-documents.ttl
-        dummy-assets/files/dummy-documents-en.html text/html en dummy-documents/dummy-documents-en.html
-        dummy-assets/files/dummy-documents-nb.html text/html nb dummy-documents/dummy-documents-nb.html
-        dummy-assets/files/dummy-events.ttl text/turtle en dummy-events/dummy-events.ttl
-        dummy-assets/files/dummy-events-en.html text/html en dummy-events/dummy-events-en.html
-        dummy-assets/files/dummy-events-nb.html text/html nb dummy-events/dummy-events-nb.html
-        dummy-assets/files/dummy-evidences.ttl text/turtle en dummy-evidences/dummy-evidences.ttl
-        dummy-assets/files/dummy-evidences-en.html text/html en dummy-evidences/dummy-evidences-en.html
-        dummy-assets/files/dummy-evidences-nb.html text/html nb dummy-evidences/dummy-evidences-nb.html
-        dummy-assets/files/dummy-locations.ttl text/turtle en dummy-locations/dummy-locations.ttl
-        dummy-assets/files/dummy-locations-en.html text/html en dummy-locations/dummy-locations-en.html
-        dummy-assets/files/dummy-locations-nb.html text/html nb dummy-locations/dummy-locations-nb.html
         dummy-assets/files/dummy-services.ttl text/turtle en dummy-services/dummy-services.ttl
         dummy-assets/files/dummy-services-en.html text/html en dummy-services/dummy-services-en.html
-        dummy-assets/files/dummy-services-nb.html text/html nb dummy-services/dummy-services-nb.html
-        dummy-assets/files/dummy-times.ttl text/turtle en dummy-times/dummy-times.ttl
-        dummy-assets/files/dummy-times-en.html text/html en dummy-times/dummy-times-en.html
-        dummy-assets/files/dummy-times-nb.html text/html nb dummy-times/dummy-times-nb.html
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
-  dummy_assets_build_deploy_nb:
+  dummy_assets_files_services_build_deploy_nb:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: dummy-assets-bokmål
+    name: dummy-assets-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-services-nb.html -a lang=nb dummy-assets/files/dummy-services-main-nb.adoc"
+      files: |
+        dummy-assets/files/dummy-services-nb.html text/html nb dummy-services/dummy-services-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_times_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-times-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-times-en.html -a lang=en dummy-assets/files/dummy-times-main-en.adoc"
+      files: |
+        dummy-assets/files/dummy-times.ttl text/turtle en dummy-times/dummy-times.ttl
+        dummy-assets/files/dummy-times-en.html text/html en dummy-times/dummy-times-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  dummy_assets_files_times_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-files-times-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets/files -o dummy-times-nb.html -a lang=nb dummy-assets/files/dummy-times-main-nb.adoc"
+      files: |
+        dummy-assets/files/dummy-times-nb.html text/html nb dummy-times/dummy-times-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
+  dummy_assets_root_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-root-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dummy-assets"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dummy-assets -o index-en.html -a lang=en dummy-assets/main-en.adoc"
+      files: |
+        dummy-assets/index-en.html text/html en
+        dummy-assets/images/Digdir.png image/png en images/Digdir.png
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
+  dummy_assets_root_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dummy_assets == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dummy-assets-root-bokmål
     with:
       host: "https://data.norge.no"
       ontology: "dummy-assets"
@@ -286,34 +555,6 @@ jobs:
       files: |
         dummy-assets/index-nb.html text/html nb
         dummy-assets/images/Digdir.png image/png en images/Digdir.png
-        dummy-assets/images/work-in-progress.png image/png en images/work-in-progress.png
-        dummy-assets/files/dummy-agents.ttl text/turtle en dummy-agents/dummy-agents.ttl
-        dummy-assets/files/dummy-agents-en.html text/html en dummy-agents/dummy-agents-en.html
-        dummy-assets/files/dummy-agents-nb.html text/html nb dummy-agents/dummy-agents-nb.html
-        dummy-assets/files/dummy-contact-points.ttl text/turtle en dummy-contact-points/dummy-contact-points.ttl
-        dummy-assets/files/dummy-contact-points-en.html text/html en dummy-contact-points/dummy-contact-points-en.html
-        dummy-assets/files/dummy-contact-points-nb.html text/html nb dummy-contact-points/dummy-contact-points-nb.html
-        dummy-assets/files/dummy-datasets.ttl text/turtle en dummy-datasets/dummy-datasets.ttl
-        dummy-assets/files/dummy-datasets-en.html text/html en dummy-datasets/dummy-datasets-en.html
-        dummy-assets/files/dummy-datasets-nb.html text/html nb dummy-datasets/dummy-datasets-nb.html
-        dummy-assets/files/dummy-documents.ttl text/turtle en dummy-documents/dummy-documents.ttl
-        dummy-assets/files/dummy-documents-en.html text/html en dummy-documents/dummy-documents-en.html
-        dummy-assets/files/dummy-documents-nb.html text/html nb dummy-documents/dummy-documents-nb.html
-        dummy-assets/files/dummy-events.ttl text/turtle en dummy-events/dummy-events.ttl
-        dummy-assets/files/dummy-events-en.html text/html en dummy-events/dummy-events-en.html
-        dummy-assets/files/dummy-events-nb.html text/html nb dummy-events/dummy-events-nb.html
-        dummy-assets/files/dummy-evidences.ttl text/turtle en dummy-evidences/dummy-evidences.ttl
-        dummy-assets/files/dummy-evidences-en.html text/html en dummy-evidences/dummy-evidences-en.html
-        dummy-assets/files/dummy-evidences-nb.html text/html nb dummy-evidences/dummy-evidences-nb.html
-        dummy-assets/files/dummy-locations.ttl text/turtle en dummy-locations/dummy-locations.ttl
-        dummy-assets/files/dummy-locations-en.html text/html en dummy-locations/dummy-locations-en.html
-        dummy-assets/files/dummy-locations-nb.html text/html nb dummy-locations/dummy-locations-nb.html
-        dummy-assets/files/dummy-services.ttl text/turtle en dummy-services/dummy-services.ttl
-        dummy-assets/files/dummy-services-en.html text/html en dummy-services/dummy-services-en.html
-        dummy-assets/files/dummy-services-nb.html text/html nb dummy-services/dummy-services-nb.html
-        dummy-assets/files/dummy-times.ttl text/turtle en dummy-times/dummy-times.ttl
-        dummy-assets/files/dummy-times-en.html text/html en dummy-times/dummy-times-en.html
-        dummy-assets/files/dummy-times-nb.html text/html nb dummy-times/dummy-times-nb.html
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
