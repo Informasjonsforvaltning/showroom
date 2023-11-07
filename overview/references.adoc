@@ -24,10 +24,10 @@ Some of the RDF-based Norwegian national specifications for data sharing and reu
 
 * https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"]: the Norwegian national specification for describing and publishing classifications (incl. controlled vocabularies etc.).
 ** The specifications for RDF-representations are in English as well.
-** XKOS-AP-NO is based on, thus a profile of, DDI's https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS - An SKOS extension for representing statistical classifications &#x29C9;, window="_blank", role="ext-link"]. 
+** XKOS-AP-NO is based on, thus a profile of, DDI's https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"]. 
 
 Some online (RDF-based) resources:
 
 * https://data.norge.no/about[The National Data Catalog of Norway &#x29C9;, window="_blank", role="ext-link"], with overview of datasets, concepts, APIs, information models, services and events. 
 
-* https://demo.fellesdatakatalog.digdir.no/[The Demo portal &#x29C9;, window="_blank", role="ext-link"], with the same functionalities as in the National Data Catalog of Norway mentioned above, but the content is only for testing and demonstration purposes.
+* https://demo.fellesdatakatalog.digdir.no/[The demo version of the National Data Catalog of Norway &#x29C9;, window="_blank", role="ext-link"], with the same functionalities as in the National Data Catalog of Norway mentioned above, but the content is only for testing and demonstration purposes.

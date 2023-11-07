@@ -14,7 +14,7 @@ Noen av de RDF-baserte norske nasjonale spesifikasjonene for datadeling er:
 ** Spesifikasjonen er på norsk. 
 ** DQV-AP-NO er basert på, og dermed en profil av, W3Cs https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"].
 
-* https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for beskrivelse av informasjonsmodeller.
+* https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for beskrivelse av informasjonsmodeller og modellkataloger.
 ** Spesifikasjonen er på norsk. 
 ** ModellDCAT-AP-NO er basert på DCAT-AP-NO. 
 
@@ -24,7 +24,7 @@ Noen av de RDF-baserte norske nasjonale spesifikasjonene for datadeling er:
 
 * https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for klassifikasjonsbeskrivelser.
 ** Kravene til RDF-representasjoner er også beskrevet på engelsk.
-** XKOS-AP-NO er basert på, og dermed en profil av, DDIs https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS - An SKOS extension for representing statistical classifications &#x29C9;, window="_blank", role="ext-link"]. 
+** XKOS-AP-NO er basert på, og dermed en profil av, DDIs https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"]. 
 
 Noen RDF-baserte ressurser på nett:
 
