@@ -748,12 +748,45 @@ jobs:
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-    
-  xkos_build_deploy_en:
+ 
+  xkos_files_build_deploy_en:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.xkos == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: xkos-ap-no-english
+    name: xkos-ap-no-files-english
+    with:
+      ontology-type: "showroom"
+      ontology: "xkos-ap-no"
+      host: "https://data.norge.no"
+      program: "asciidoctor -D xkos-ap-no/files -o demo-classifications-en.html -a lang=en xkos-ap-no/files/demo-classifications-main-en.adoc"
+      files: |
+        xkos-ap-no/files/demo-classifications.ttl text/turtle en demo-classifications/demo-classifications.ttl
+        xkos-ap-no/files/demo-classifications-en.html text/html en demo-classifications/demo-classifications-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+
+  xkos_files_build_deploy_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.xkos == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: xkos-ap-no-files-bokmål
+    with:
+      ontology-type: "showroom"
+      ontology: "xkos-ap-no"
+      host: "https://data.norge.no"
+      program: "asciidoctor -D xkos-ap-no/files -o demo-classifications-nb.html -a lang=nb xkos-ap-no/files/demo-classifications-main-nb.adoc"
+      files: |
+        xkos-ap-no/files/demo-classifications-nb.html text/html nb demo-classifications/demo-classifications-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
+  xkos_root_build_deploy_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.xkos == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: xkos-ap-no-root-english
     with:
       ontology-type: "showroom"
       ontology: "xkos-ap-no"
@@ -762,7 +795,6 @@ jobs:
       files: |
         xkos-ap-no/index-en.html text/html en
         xkos-ap-no/images/Digdir.png image/png en images/Digdir.png
-        xkos-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         xkos-ap-no/images/demo-classification1.png image/png en images/demo-classification1.png
         xkos-ap-no/files/demo-classifications.ttl text/turtle en demo-classifications/demo-classifications.ttl
         xkos-ap-no/files/demo-classifications-en.html text/html en demo-classifications/demo-classifications-en.html
@@ -771,11 +803,11 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
-  xkos_build_deploy_nb:
+  xkos_root_build_deploy_nb:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.xkos == 'true' }}
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
-    name: xkos-ap-no-bokmål
+    name: xkos-ap-no-root-bokmål
     with:
       ontology-type: "showroom"
       ontology: "xkos-ap-no"
@@ -784,11 +816,7 @@ jobs:
       files: |
         xkos-ap-no/index-nb.html text/html nb
         xkos-ap-no/images/Digdir.png image/png en images/Digdir.png
-        xkos-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
         xkos-ap-no/images/demo-classification1.png image/png en images/demo-classification1.png
-        xkos-ap-no/files/demo-classifications.ttl text/turtle en demo-classifications/demo-classifications.ttl
-        xkos-ap-no/files/demo-classifications-en.html text/html en demo-classifications/demo-classifications-en.html
-        xkos-ap-no/files/demo-classifications-nb.html text/html nb demo-classifications/demo-classifications-nb.html
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
