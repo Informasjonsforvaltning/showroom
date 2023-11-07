@@ -10,6 +10,10 @@ Some of the RDF-based Norwegian national specifications for data sharing and reu
 ** In Norwegian only. 
 ** DCAT-AP-NO is based on, thus a profile of, EU's https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP &#x29C9;, window="_blank", role="ext-link"].
 
+* https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"]: the Norwegian national specification for describing dataset quality.
+** In Norwegian only.
+** DQV-AP-NO is based on, thus a profile of, W3C's https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"].
+
 * https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]: the Norwegian national specification for describing information models and catalogs of information models.
 ** In Norwegian only. 
 ** The specification for catalogs of information models, is based on DCAT-AP-NO. 
@@ -24,6 +28,6 @@ Some of the RDF-based Norwegian national specifications for data sharing and reu
 
 Some online (RDF-based) resources:
 
-* https://data.norge.no/about[The National Data Catalog of Norway &#x29C9;, window="_blank", role="ext-link"], overview of datasets, concepts, APIs, information models, events and services. 
+* https://data.norge.no/about[The National Data Catalog of Norway &#x29C9;, window="_blank", role="ext-link"], with overview of datasets, concepts, APIs, information models, services and events. 
 
 * https://demo.fellesdatakatalog.digdir.no/[The Demo portal &#x29C9;, window="_blank", role="ext-link"], with the same functionalities as in the National Data Catalog of Norway mentioned above, but the content is only for testing and demonstration purposes.

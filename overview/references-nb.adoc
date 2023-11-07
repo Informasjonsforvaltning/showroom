@@ -2,28 +2,32 @@
 
 Noen av de RDF-baserte norske nasjonale spesifikasjonene for datadeling er: 
 
-* https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for tjeneste- og hendelsesbeskrivelser 
+* https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for tjeneste- og hendelsesbeskrivelser.
 ** Kravene til RDF-representasjoner er også beskrevet på engelsk.
-** CPSV-AP-NO er basert på, og dermed en profile av, EU sin https://github.com/SEMICeu/CPSV-AP[Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"].
+** CPSV-AP-NO er basert på, og dermed en profil av, EUs https://github.com/SEMICeu/CPSV-AP[Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"].
 
-* https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Standard for beskrivelse av datasett, datatjenester og datakataloger
+* https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Standard for beskrivelse av datasett, datatjenester og datakataloger.
 ** Spesifikasjonen er på norsk.  
-** DCAT-AP-NO er basert på, og dermed en profile av, EU sin https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP &#x29C9;, window="_blank", role="ext-link"].
+** DCAT-AP-NO er basert på, og dermed en profil av, EUs https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP &#x29C9;, window="_blank", role="ext-link"].
 
-* https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for beskrivelse av informasjonsmodeller
+* https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for beskrivelse av datasettkvalitet.
 ** Spesifikasjonen er på norsk. 
-** Spesifikasjonen er basert på DCAT-AP-NO. 
+** DQV-AP-NO er basert på, og dermed en profil av, W3Cs https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"].
 
-* https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep &#x29C9;, window="_blank", role="ext-link"]: Forvaltningsstandard for begrepsbeskrivelser
-** Kravene til RDF-representasjoner er også beskrevet på engelsk.
-** SKOS-AP-NO-Begrep er basert på, og dermed en profile av, W3C sin https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"].
+* https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for beskrivelse av informasjonsmodeller.
+** Spesifikasjonen er på norsk. 
+** ModellDCAT-AP-NO er basert på DCAT-AP-NO. 
 
-* https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for klassifikasjonsbeskrivelser
+* https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep &#x29C9;, window="_blank", role="ext-link"]: Forvaltningsstandard for begrepsbeskrivelser.
 ** Kravene til RDF-representasjoner er også beskrevet på engelsk.
-** XKOS-AP-NO er basert på, og dermed en profile av, DDI sin https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS - An SKOS extension for representing statistical classifications &#x29C9;, window="_blank", role="ext-link"]. 
+** SKOS-AP-NO-Begrep er basert på, og dermed en profil av, W3Cs https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"].
+
+* https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"]: Spesifikasjon for klassifikasjonsbeskrivelser.
+** Kravene til RDF-representasjoner er også beskrevet på engelsk.
+** XKOS-AP-NO er basert på, og dermed en profil av, DDIs https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS - An SKOS extension for representing statistical classifications &#x29C9;, window="_blank", role="ext-link"]. 
 
 Noen RDF-baserte ressurser på nett:
 
-* https://data.norge.no/[Felles datakatalog &#x29C9;, window="_blank", role="ext-link"], oversikt over datasett, begreper, APIer, informasjonsmodeller, tjenester og hendelser.  
+* https://data.norge.no/[Felles datakatalog &#x29C9;, window="_blank", role="ext-link"], med oversikt over datasett, begreper, APIer, informasjonsmodeller, tjenester og hendelser.  
 
 * https://demo.fellesdatakatalog.digdir.no/[Demoportalen - demoversjon av Felles datakatalog &#x29C9;, window="_blank", role="ext-link"], med samme funksjonalitet som i Felles datakatalog, men innholdet er bare for testing og demonstrasjon. 
