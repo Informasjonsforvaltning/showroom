@@ -25,8 +25,8 @@ jobs:
       cpsv: ${{ steps.filter.outputs.cpsv }}
       dcat: ${{ steps.filter.outputs.dcat }}
       demo_uris: ${{ steps.filter.outputs.demo_uris }}
-      dqv: ${{ steps.filter.outputs.demo_uris }}
-      dummy_assets: ${{ steps.filter.outputs.dqv }}
+      dqv: ${{ steps.filter.outputs.dqv }}
+      dummy_assets: ${{ steps.filter.outputs.demo_uris }}
       modelldcat: ${{ steps.filter.outputs.modelldcat }}
       overview: ${{ steps.filter.outputs.overview }}
       skos: ${{ steps.filter.outputs.skos }}
