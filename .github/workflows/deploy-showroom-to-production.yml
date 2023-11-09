@@ -232,6 +232,39 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
+  dqv_files_build_upload_en:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dqv == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dqv-files-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dqv-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dqv-ap-no/files -o demo-data-quality-assessments-en.html -a lang=en dqv-ap-no/files/main-en.adoc"
+      files: |
+        dqv-ap-no/files/demo-data-quality-assessments.ttl text/turtle en demo-data-quality-assessments/demo-data-quality-assessments.ttl
+        dqv-ap-no/files/demo-data-quality-assessments-en.html text/html en demo-data-quality-assessments/demo-data-quality-assessments-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
+  dqv_files_build_upload_nb:
+    needs: filter_path
+    if: ${{ needs.filter_path.outputs.dqv == 'true' }}
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dqv-files-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dqv-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dqv-ap-no/files -o demo-data-quality-assessments-nb.html -a lang=nb dqv-ap-no/files/main-nb.adoc"
+      files: |
+        dqv-ap-no/files/demo-data-quality-assessments-nb.html text/html nb demo-data-quality-assessments/demo-data-quality-assessments-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+        
   dqv_root_build_upload_en:
     needs: filter_path
     if: ${{ needs.filter_path.outputs.dqv == 'true' }}
