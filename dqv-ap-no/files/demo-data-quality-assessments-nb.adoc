@@ -10,10 +10,10 @@
  This catalog contains demo datasets, for demonstrating the usage of DCAT-AP-NO in combination with DQV-AP-NO. (http://publications.europa.eu/resource/authority/language/ENG[engelsk])
 | identifikator | dct:identifier | https://w3id.org/demo-resources/demo-data-quality-assessments#demoDataCatalog1
 | tittel | dct:title |  Demokatalog med demodatasett (http://publications.europa.eu/resource/authority/language/NOB[bokmål]) + 
- Demo catalog with demo datasets (http://publications.europa.eu/resource/authority/language/ENG[engelsk])
+ Demo Catalog with Demo Datasets (http://publications.europa.eu/resource/authority/language/ENG[engelsk])
 | utgiver (org.nr.) | dct:publisher | https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827]
 | datasett | dcat:dataset | https://w3id.org/demo-resources/demo-data-quality-assessments#demoDataset1[Demodatasett med kvalitetsbeskrivelse]
-| endringsdato | dct:modified |  2023-11-26
+| endringsdato | dct:modified |  2023-11-10
 | utgivelsesdato | dct:issued |  2023-11-06
 |===
 
@@ -68,17 +68,16 @@ https://w3id.org/demo-resources/demo-data-quality-assessments#demoQM17
 | Egenskapsnavn | *EgenskapsURI* | *Verdi*
 | er instans av | rdf:type | Klasse Distribusjon (dcat:Distribution)
 | tilgangsURL | dcat:accessURL |  https://example.org/demoDatasetBuildings
-| beskrivelse | dct:description |  Demo på en distribusjon (RDF Turtle) (http://publications.europa.eu/resource/authority/language/NOB[bokmål]) + 
- Demo distribution (RDF Turtle) (http://publications.europa.eu/resource/authority/language/ENG[engelsk])
-| format | dct:format |  http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE + 
- http://publications.europa.eu/resource/authority/file-type/HTML
+| beskrivelse | dct:description |  Demo på en distribusjon (http://publications.europa.eu/resource/authority/language/NOB[bokmål]) + 
+ Demo distribution (http://publications.europa.eu/resource/authority/language/ENG[engelsk])
+| format | dct:format |  http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
 | lisens | dct:license |  http://publications.europa.eu/resource/authority/licence/CC0
 | status | adms:status | http://purl.org/adms/status/Completed[ferdigstilt]
 | tilgjengelighet | dcatap:availability |  http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE
 | endringsdato | dct:modified |  2023-11-10
 | filstørrelse | dcat:byteSize |  1024
 | medietype | dcat:mediaType |  https://www.w3.org/ns/iana/media-types/text/turtle
-| nedlastningslenke | dcat:downloadURL |  https://data.norge.no/showroom/xkos-ap-no/demo-classifications
+| nedlastningslenke | dcat:downloadURL |  https://example.org/demoDatasetBuildings
 | språk | dct:language | http://publications.europa.eu/resource/authority/language/ENG[engelsk] + 
 http://publications.europa.eu/resource/authority/language/NOB[bokmål]
 | utgivelsesdato | dct:issued |  2023-11-06
@@ -356,4 +355,4 @@ Klasse Kontaktopplysning (vcard:Kind)
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2023-11-09 09:43:32
+// End of the file, 2023-11-09 13:57:53

@@ -10,10 +10,10 @@
  This catalog contains demo datasets, for demonstrating the usage of DCAT-AP-NO in combination with DQV-AP-NO. (http://publications.europa.eu/resource/authority/language/ENG[English])
 | identifier | dct:identifier | https://w3id.org/demo-resources/demo-data-quality-assessments#demoDataCatalog1
 | title | dct:title |  Demokatalog med demodatasett (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]) + 
- Demo catalog with demo datasets (http://publications.europa.eu/resource/authority/language/ENG[English])
+ Demo Catalog with Demo Datasets (http://publications.europa.eu/resource/authority/language/ENG[English])
 | publisher | dct:publisher | https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827]
 | dataset | dcat:dataset | https://w3id.org/demo-resources/demo-data-quality-assessments#demoDataset1[Demo Dataset with Quality Description]
-| modified (last update) | dct:modified |  2023-11-26
+| modified (last update) | dct:modified |  2023-11-10
 | issued (release date) | dct:issued |  2023-11-06
 |===
 
@@ -68,17 +68,16 @@ https://w3id.org/demo-resources/demo-data-quality-assessments#demoQM17
 | Property name | *Property URI* | *Value*
 | is instance of | rdf:type | Class Distribution (dcat:Distribution)
 | access URL | dcat:accessURL |  https://example.org/demoDatasetBuildings
-| description | dct:description |  Demo på en distribusjon (RDF Turtle) (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]) + 
- Demo distribution (RDF Turtle) (http://publications.europa.eu/resource/authority/language/ENG[English])
-| format | dct:format |  http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE + 
- http://publications.europa.eu/resource/authority/file-type/HTML
+| description | dct:description |  Demo på en distribusjon (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]) + 
+ Demo distribution (http://publications.europa.eu/resource/authority/language/ENG[English])
+| format | dct:format |  http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
 | licence | dct:license |  http://publications.europa.eu/resource/authority/licence/CC0
 | status | adms:status | http://purl.org/adms/status/Completed[completed]
 | availability | dcatap:availability |  http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE
 | modified (last update) | dct:modified |  2023-11-10
 | byte size | dcat:byteSize |  1024
 | media type | dcat:mediaType |  https://www.w3.org/ns/iana/media-types/text/turtle
-| download URL | dcat:downloadURL |  https://data.norge.no/showroom/xkos-ap-no/demo-classifications
+| download URL | dcat:downloadURL |  https://example.org/demoDatasetBuildings
 | language | dct:language | http://publications.europa.eu/resource/authority/language/ENG[English] + 
 http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 | issued (release date) | dct:issued |  2023-11-06
@@ -89,7 +88,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-1001
 | has value | dqv:value |  true
 | has comment | rdfs:comment |  Yes, some buildings are missing in the dataset. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -101,7 +100,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-1002
 | has value | dqv:value |  2
 | has comment | rdfs:comment |  Two buildings are missing in the dataset. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -113,7 +112,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-1003
 | has value | dqv:value |  0.0002
 | has comment | rdfs:comment |  0.02% of buildings are missing in the dataset. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -125,7 +124,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-1004
 | has value | dqv:value |  2
 | has comment | rdfs:comment |  Two buildings in the dataset do not have value for the property “usable area”. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -137,7 +136,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-1003
 | has value | dqv:value |  0.0002
 | has comment | rdfs:comment |  0.02% of the buildings in the dataset do not have value for the property “usable area”. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -149,7 +148,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-2001
 | has value | dqv:value |  true
 | has comment | rdfs:comment |  Yes (Some buildings in the dataset are not supposed to be there). (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -161,7 +160,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-2002
 | has value | dqv:value |  3
 | has comment | rdfs:comment |  Three buildings in the dataset are not supposed to be there. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -173,7 +172,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-2003
 | has value | dqv:value |  0.0003
 | has comment | rdfs:comment |  0.03% of the buildings in the dataset are not supposed to be there. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -185,7 +184,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-3001
 | has value | dqv:value |  4
 | has comment | rdfs:comment |  Four buildings in the dataset have imputed value for the property “year of construction”. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -197,7 +196,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-3002
 | has value | dqv:value |  0.0004
 | has comment | rdfs:comment |  0.04% of the buildings have imputed value for the property “year of construction”. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -209,7 +208,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-currentness-1001
 | has value | dqv:value |  P24D
 | has comment | rdfs:comment |  On average there will be 24 days from a building is completed or demolished, to it is included in or excluded from the dataset. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -221,7 +220,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-consistency-1001
 | has value | dqv:value |  0.0003
 | has comment | rdfs:comment |  0.03% of the buildings have inconsistency between some properties. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -233,7 +232,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-consistency-1002
 | has value | dqv:value |  0.0003
 | has comment | rdfs:comment |  0.03% of the buildings in the dataset have “usable area” larger than “gross area”. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -245,7 +244,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-accuracy-1001
 | has value | dqv:value |  1
 | has comment | rdfs:comment |  One building in the dataset has wrong identifier. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -257,7 +256,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-completeness-1003
 | has value | dqv:value |  0.0001
 | has comment | rdfs:comment |  0.01% of the buildings in the dataset have wrong identifiers. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -269,7 +268,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-accuracy-2001
 | has value | dqv:value |  1
 | has comment | rdfs:comment |  One building in the dataset is classified with wrong occupancy code. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -281,7 +280,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Quality measurement (dqv:QualityMeasurement)
+| is instance of | rdf:type | Class Quality Measurement (dqv:QualityMeasurement)
 | is measurement of | dqv:isMeasurementOf |  https://data.norge.no/vocabulary/quality-metric#qm-accuracy-2002
 | has value | dqv:value |  0.0001
 | has comment | rdfs:comment |  0.01% of the buildings in the dataset are classified with wrong occupancy codes. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -293,7 +292,7 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class User quality feedback (dqv:UserQualityFeedback)
+| is instance of | rdf:type | Class User Quality Feedback (dqv:UserQualityFeedback)
 | is motivated by | oa:motivatedBy |  dqv:qualityAssessment
 | is in dimension | dqv:inDimension |  https://data.norge.no/vocabulary/quality-dimension#completeness
 | has body | oa:hasBody | https://w3id.org/demo-resources/demo-data-quality-assessments#demoTB1 + 
@@ -308,7 +307,7 @@ https://w3id.org/demo-resources/demo-data-quality-assessments#demoTB2
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Textual body (oa:TextualBody)
+| is instance of | rdf:type | Class Textual Body (oa:TextualBody)
 | has value | rdfs:value |  Bra nok kvalitet for min gjenbruk.
 | format | dct:format |  http://publications.europa.eu/resource/authority/file-type/TXT
 | language | dct:language | http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
@@ -319,7 +318,7 @@ https://w3id.org/demo-resources/demo-data-quality-assessments#demoTB2
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Textual body (oa:TextualBody)
+| is instance of | rdf:type | Class Textual Body (oa:TextualBody)
 | has value | rdfs:value |  Goog enough quality for my reuse.
 | format | dct:format |  http://publications.europa.eu/resource/authority/file-type/TXT
 | language | dct:language | http://publications.europa.eu/resource/authority/language/ENG[English]
@@ -356,4 +355,4 @@ Class Kind (vcard:Kind)
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2023-11-09 09:43:35
+// End of the file, 2023-11-09 13:57:55
