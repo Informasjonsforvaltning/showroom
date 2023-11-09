@@ -12,7 +12,7 @@ This showroom is meant to
 
 == Demo resources in this showroom [[demo-resources]]
 
-In this showroom we have a link:demo-data-quality-assessments#demoDataset1[demo dataset] with a set of quality measurements and quality annotations. 
+In this showroom we have a link:dqv-ap-no/demo-data-quality-assessments#demoDataset1[demo dataset] with a set of quality measurements and quality annotations. 
 
 #_explanations will come_#
  
