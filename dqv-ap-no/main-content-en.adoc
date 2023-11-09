@@ -12,11 +12,21 @@ This showroom is meant to
 
 == Demo resources in this showroom [[demo-resources]]
 
-#_coming_#
+In this showroom we have a link:demo-data-quality-assessments#demoDataset1[demo dataset] with a set of quality measurements and quality annotations. 
+
+#_explanations will come_#
  
 == Some cross-references with other demo resources [[cross-references]]
 
-#_coming_#
+*_Note_*: _Not all possible cross-references are demonstrated in this showroom. The lists are thus not exhaustive._
+
+*Data quality assessments and classifications*, for example: 
+
+* #_coming_#
+
+*Data quality assessments and datasets*, for example: 
+
+* #_coming_#
 
 == _to the overview of the showrooms_ [[to-overview]]
 
