@@ -14,7 +14,7 @@ This showroom is meant to
 In this showroom we have a https://w3id.org/demo-resources/demo-data-quality-assessments#demoDataset1[demo dataset] with a set of quality measurements and quality annotations:
 
 * It has two quality annotations: 
-** one referring to <https://data.norge.no/vocabulary/dqvno#isAuthoritative[]> which is a predefined instance of dqv:QualityCertificate indicting that the dataset is authoritative.
+** one referring direct to <https://data.norge.no/vocabulary/dqvno#isAuthoritative[]>, which is a predefined instance of dqv:QualityCertificate indicting that the dataset is authoritative.
 ** another referring to <https://w3id.org/demo-resources/demo-data-quality-assessments#demoQA1[demoQA1]>, which is an instance of dqv:UserQualityFeedback containing a user feedback on the quality of the dataset. It also refers to a predefined quality dimension, <https://data.norge.no/vocabulary/quality-dimension#completeness[]> ("completeness"), which is one of the categories in the controlled vocabulary of https://data.norge.no/vocabulary/quality-dimension[Quality (sub)dimension].
 
 * It has several quality measurements, <https://w3id.org/demo-resources/demo-data-quality-assessments#demoQA1[demoQM1]>, ..., <https://w3id.org/demo-resources/demo-data-quality-assessments#demoQM17[demoQM17]>: 
