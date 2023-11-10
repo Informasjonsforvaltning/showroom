@@ -15,7 +15,7 @@ In this showroom we have a https://w3id.org/demo-resources/demo-data-quality-ass
 
 * It has two quality annotations: 
 ** one referring direct to <https://data.norge.no/vocabulary/dqvno#isAuthoritative[]>, which is a predefined instance of dqv:QualityCertificate indicting that the dataset is authoritative.
-** another referring to <https://w3id.org/demo-resources/demo-data-quality-assessments#demoQA1[demoQA1]>, which is an instance of dqv:UserQualityFeedback containing a user feedback on the quality of the dataset. It also refers to a predefined quality dimension, <https://data.norge.no/vocabulary/quality-dimension#completeness[]> ("completeness"), which is one of the categories in the controlled vocabulary of https://data.norge.no/vocabulary/quality-dimension[Quality (sub)dimension].
+** another referring to <https://w3id.org/demo-resources/demo-data-quality-assessments#demoQA1[demoQA1]>, which is an instance of dqv:UserQualityFeedback containing a user feedback on the quality of the dataset. It also refers to a predefined quality dimension, <https://data.norge.no/vocabulary/quality-dimension#completeness[]> ("completeness"), which is one of the categories in the controlled vocabulary of https://data.norge.no/vocabulary/quality-dimension[Quality (sub)dimension &#x29C9;, window="_blank", role="ext-link"].
 
 * It has several quality measurements, <https://w3id.org/demo-resources/demo-data-quality-assessments#demoQA1[demoQM1]>, ..., <https://w3id.org/demo-resources/demo-data-quality-assessments#demoQM17[demoQM17]>: 
 ** Each  quality measurement refers to a predefined instance of dqv:Metric indicating the quality metric that particular measurement is a measurement of. For example, <demoQM1> is a measurement of the predefined quality metric <https://data.norge.no/vocabulary/quality-metric#qm-completeness-1001[]> (wether or not there are missing objects in the dataset); <https://w3id.org/demo-resources/demo-data-quality-assessments#demoQM2[demoQM2]> is a measurement of the predefined quality metric <https://data.norge.no/vocabulary/quality-metric#qm-completeness-1002[]> (number of missing object); <https://w3id.org/demo-resources/demo-data-quality-assessments#demoQM3[demoQM3]> is a measurement of the predefined quality metric <https://data.norge.no/vocabulary/quality-metric#qm-completeness-1003[]> (rate of missing object) etc. 
@@ -28,8 +28,8 @@ In this showroom we have a https://w3id.org/demo-resources/demo-data-quality-ass
 
 *Dataset quality descriptions and classifications*, for example: 
 
-* In order to have common understanding of the quality (sub)dimensions and quality metrics, there are a set of predefined quality (sub)dimensions published in the controlled vocabulary https://data.norge.no/vocabulary/quality-dimension[Quality (sub)dimension], and a set of predefined quality metrics published in the controlled vocabulary https://data.norge.no/vocabulary/quality-metric[Quality metric]. 
-* Quality descriptions may therefore refer to the predefined common categories of quality (sub)demensions and quality metrics, as explained above. 
+* In order to have common understanding of the quality (sub)dimensions and quality metrics, there are a set of predefined quality (sub)dimensions published in the controlled vocabulary https://data.norge.no/vocabulary/quality-dimension[Quality (sub)dimension &#x29C9;, window="_blank", role="ext-link"], and a set of predefined quality metrics published in the controlled vocabulary https://data.norge.no/vocabulary/quality-metric[Quality metric &#x29C9;, window="_blank", role="ext-link"]. 
+* Quality descriptions may therefore refer to the predefined common categories of quality (sub)dimensions and quality metrics, as explained above. 
 
 *Dataset quality descriptions and concepts*, for example: 
 
