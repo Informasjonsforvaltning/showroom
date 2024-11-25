@@ -5,8 +5,7 @@ HTML-visning av RDF Turtle ressurs
 :icons: font
 :toc: left
 :toclevels: 9
-// :sectlinks:
-:sectanchors:
+:sectlinks:
 :table-stripes: odd
 
 image:../images/Digdir.png[Digdir,100,100] Digitaliseringsdirektoratet

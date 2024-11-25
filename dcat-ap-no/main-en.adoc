@@ -9,8 +9,7 @@ Norwegian Digitalisation Agency (Digdir)
 ifdef::backend-pdf[:toc: macro]
 :toc-title: Demo datasets
 :toclevels: 4
-// :sectlinks:
-:sectanchors:
+:sectlinks:
 :table-stripes: even
 :xrefstyle: short
 

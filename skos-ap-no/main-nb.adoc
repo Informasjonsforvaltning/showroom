@@ -9,8 +9,7 @@ Digitaliseringsdirektoratet (Digdir)
 ifdef::backend-pdf[:toc: macro]
 :toc-title: Demobegreper
 :toclevels: 4
-// :sectlinks:
-:sectanchors:
+:sectlinks:
 :table-stripes: even
 :xrefstyle: short
 
