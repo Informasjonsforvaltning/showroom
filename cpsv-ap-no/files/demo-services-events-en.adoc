@@ -44,26 +44,26 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 | description | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | has competent authority | cv:hasCompetentAuthority | https://w3id.org/demo-resources/demo-services-events#demoPubOrg1[Demo Public Organization 1]
+| har mulig tjenesteresultat | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demo Output 1]
 | identifier | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoPubService1
 | contact point | cv:contactPoint | https://w3id.org/demo-resources/demo-services-events#demoContactPoint1
 | name | dct:title |  Demo Public Service 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Demo offentlig tjeneste 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
-| produces | cpsv:produces | https://w3id.org/demo-resources/demo-services-events#demoOutput1[Demo Output 1]
 | subject | dct:subject |  https://w3id.org/demo-resources/demo-concepts#demoCpt1
 | spatial coverage | dct:spatial |  http://publications.europa.eu/resource/authority/country/NOR
-| is part of | dct:isPartOf | https://w3id.org/demo-resources/demo-services-events#demoService1[Demo Service 1]
-| has part | dct:hasPart | https://w3id.org/demo-resources/demo-services-events#demoService1[Demo Service 1]
-| has input | cpsv:hasInput | https://w3id.org/demo-resources/demo-services-events#demoEvidence1[Demo Evidence 1]
+| has required evidence | cpsvno:hasRequiredEvidence | https://w3id.org/demo-resources/demo-services-events#demoReqEvidence1[Demo Required Evidence 1]
 | homepage | foaf:homepage |  https://w3id.org/demo-resources/dummy-documents#dmyDoc1
-| functions of government | dct:type |  http://publications.europa.eu/resource/authority/main-activity/gen-pub
-| status | adms:status | http://publications.europa.eu/resource/authority/dataset-status/DEVELOP[under development]
+| functions of government | dct:type |  http://publications.europa.eu/resource/authority/main-activity/
+| status | adms:status | http://publications.europa.eu/resource/authority/distribution-status/DEVELOP[under development]
 | thematic area | cv:thematicArea |  http://eurovoc.europa.eu/100152
 | processing time | cv:processingTime |  P2D
 | is described at | cv:isDescribedAt |  https://w3id.org/demo-resources/dummy-datasets#dmyDataset1
+| is part of | dct:isPartOf | https://w3id.org/demo-resources/demo-services-events#demoService1[Demo Service 1]
 | is grouped by | cv:isGroupedBy | https://w3id.org/demo-resources/demo-services-events#demoLifeEvent1
 | is classified by | cv:isClassifiedBy |  https://w3id.org/demo-resources/demo-concepts#demoCpt1
 | has channel | cv:hasChannel | https://w3id.org/demo-resources/demo-services-events#demoChannel
 | follows | cpsv:follows | https://w3id.org/demo-resources/demo-services-events#demoRule1[Demo Rule 1]
+| has part | dct:hasPart | https://w3id.org/demo-resources/demo-services-events#demoService1[Demo Service 1]
 | has participation | cv:hasParticipation | https://w3id.org/demo-resources/demo-services-events#demoParticipation1 + 
 https://w3id.org/demo-resources/demo-services-events#demoParticipation2
 | has input type | cv:hasInputType | https://w3id.org/demo-resources/demo-services-events#demoEvidenceType1
@@ -90,18 +90,18 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | description | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | owned by | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyAgt1
+| har mulig tjenesteresultat | cpsvno:hasPossibleOutput |  https://w3id.org/demo-resources/dummy-datasets#dmyPossibleOutput1
 | identifier | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoService1
 | contact point | cv:contactPoint | https://w3id.org/demo-resources/demo-services-events#demoContactPoint1
 | name | dct:title |  Demo Service 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Demotjeneste 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
-| produces | cpsv:produces |  https://w3id.org/demo-resources/dummy-datasets#dmyDataset1
 | subject | dct:subject |  https://w3id.org/demo-resources/demo-concepts#demoCpt1
 | spatial coverage | dct:spatial |  http://publications.europa.eu/resource/authority/country/NOR
 | is part of | dct:isPartOf |  https://w3id.org/demo-resources/dummy-services#dmySrvc1
 | has part | dct:hasPart |  https://w3id.org/demo-resources/dummy-services#dmySrvc1
 | has input | cpsv:hasInput |  https://w3id.org/demo-resources/demo-datasets#demoDataset1
 | homepage | foaf:homepage |  https://w3id.org/demo-resources/dummy-documents#dmyDoc1
-| status | adms:status | http://publications.europa.eu/resource/authority/dataset-status/DEVELOP[under development]
+| status | adms:status | http://publications.europa.eu/resource/authority/distribution-status/DEVELOP[under development]
 | thematic area | cv:thematicArea |  https://psi.norge.no/los/tema/handel-og-service
 | processing time | cv:processingTime |  P2D
 | is described at | cv:isDescribedAt |  https://w3id.org/demo-resources/dummy-datasets#dmyDataset1
@@ -125,6 +125,39 @@ https://w3id.org/demo-resources/demo-services-events#demoParticipation2
 http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål] + 
 http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | type | dct:type |  https://data.norge.no/vocabulary/service-type#dummy-service
+|===
+
+== <\https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1> [[demoPossibleOutput1]]
+
+[cols="20s,20d,60d"]
+|===
+| Property name | *Property URI* | *Value*
+| is instance of | rdf:type | cpsvno:PossibleOutput
+| description | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
+ Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
+| name | dct:title |  Demo Output 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
+ Demotjenesteresultat 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
+| language | dct:language | http://publications.europa.eu/resource/authority/language/ENG[English] + 
+http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
+| identifier | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1
+| may cause | xkos:causes |  https://w3id.org/demo-resources/dummy-events#dmyEvent1
+| type | dct:type |  https://data.norge.no/vocabulary/service-output-type#permit
+|===
+
+== <\https://w3id.org/demo-resources/demo-services-events#demoReqEvidence1> [[demoReqEvidence1]]
+
+[cols="20s,20d,60d"]
+|===
+| Property name | *Property URI* | *Value*
+| is instance of | rdf:type | cpsvno:RequiredEvidence
+| description | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
+ Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
+| title | dct:title |  Demo Required Evidence 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
+ Demo påkrevddokumentasjon 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
+| validity period | cv:validityPeriod |  P6M
+| language | dct:language | http://publications.europa.eu/resource/authority/language/ENG[English] + 
+http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål] + 
+http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 |===
 
 == <\https://w3id.org/demo-resources/demo-services-events#demoEvent1> [[demoEvent1]]
@@ -218,24 +251,6 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | role | cv:role |  https://data.norge.no/vocabulary/role-type#service-provider
 |===
 
-== <\https://w3id.org/demo-resources/demo-services-events#demoEvidence1> [[demoEvidence1]]
-
-[cols="20s,20d,60d"]
-|===
-| Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Evidence (cv:Evidence)
-| identifier | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoEvidence1
-| title | dct:title |  Demo Evidence 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
- Demodokumentasjonskrav 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
-| description | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
- Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
-| language | dct:language | http://publications.europa.eu/resource/authority/language/ENG[English] + 
-http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål] + 
-http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
-| related documentation (about the evidence) | foaf:page |  https://lovdata.no/dokument/NL/lov/1989-06-02-27/KAPITTEL_1#%C2%A71-7b
-| type | dct:type |  https://data.norge.no/vocabulary/evidence-type#attestation
-|===
-
 == <\https://w3id.org/demo-resources/demo-services-events#demoEvidenceType1> [[demoEvidenceType1]]
 
 [cols="20s,20d,60d"]
@@ -267,7 +282,7 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | Property name | *Property URI* | *Value*
 | is instance of | rdf:type | Class Cost (cv:Cost)
 | identifier | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoCost1
-| has value | cv:hasValue |  0,51
+| has value | cv:hasValue |  0.51
 | description | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | currency | cv:currency |  http://publications.europa.eu/resource/authority/currency/NOK
@@ -310,9 +325,9 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | is instance of | rdf:type | Class Contact Point (cv:ContactPoint)
 | availability restriction | cv:specialOpeningHoursSpecification |  https://w3id.org/demo-resources/dummy-times#dmyTemporalEntity1
 | email | cv:email |  mailto:demoCP1@example.org
-| has language | vcard:language |  Bokmål (nb) + 
- Nynorsk (nn) + 
- English (en)
+| has language | vcard:language | http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål] + 
+http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk] + 
+http://publications.europa.eu/resource/authority/language/ENG[English]
 | contact page | cv:contactPage |  https://w3id.org/demo-resources/dummy-documents#dmyDoc1
 | hours available | cv:openingHours |  https://w3id.org/demo-resources/dummy-times#dmyTemporalEntity1
 | telephone | cv:telephone |  12345678
@@ -530,7 +545,7 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | dct:PeriodOfTime
+| is instance of | rdf:type | Class Period of Time (time:ProperInterval)
 | end time | time:hasEnd | https://w3id.org/demo-resources/demo-services-events#demoTimeInstant1
 | start time | time:hasBeginning | https://w3id.org/demo-resources/demo-services-events#demoTimeInstant1
 | duration | time:hasXSDDuration |  PT4H
@@ -550,8 +565,8 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | data service | cpsvno:dataService |  https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1
 | is owned by | cv:ownedBy | https://w3id.org/demo-resources/demo-services-events#demoPubOrg1[Demo Public Organization 1]
-| has input | cpsv:hasInput | https://w3id.org/demo-resources/demo-services-events#demoEvidence1[Demo Evidence 1]
 | has email | vcard:hasEmail |  mailto:postmottak@bronnoy.kommune.no
+| has required evidence | cpsvno:hasRequiredEvidence | https://w3id.org/demo-resources/demo-services-events#demoReqEvidence1[Demo Required Evidence 1]
 | opening hours | cv:openingHours | https://w3id.org/demo-resources/demo-services-events#demoTemporalEntity1
 |===
 
@@ -569,34 +584,6 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | name | dct:title |  Demo Service Concession Contract 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Demo tjenestekonsesjonskontrakt 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | established under | cv:establishedUnder | https://w3id.org/demo-resources/demo-services-events#demoLegalResource1[Demo Legal Resource 1]
-|===
-
-== <\https://w3id.org/demo-resources/demo-services-events#demoOutput1> [[demoOutput1]]
-
-[cols="20s,20d,60d"]
-|===
-| Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Output (cv:Output)
-| identifier | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoOutput1
-| name | dct:title |  Demo Output 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
- Demotjenesteresultat 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
-| description | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
- Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
-| language | dct:language | http://publications.europa.eu/resource/authority/language/ENG[English] + 
-http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
-| may cause | xkos:causes |  https://w3id.org/demo-resources/dummy-events#dmyEvent1
-| type | dct:type |  https://data.norge.no/vocabulary/service-output-type#permit
-|===
-
-== <\https://w3id.org/demo-resources/demo-services-events#demoSupportedValue1> [[demoSupportedValue1]]
-
-[cols="20s,20d,60d"]
-|===
-| Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Supported Value (cv:SupportedValue)
-| provides value for | cv:providesValueFor | https://w3id.org/demo-resources/demo-services-events#demoInfoRequirement1[Demo Information Requirement 1]
-| query | cv:query |  …
-| value | cv:value |  …
 |===
 
 == Name spaces [[Namespace]]
@@ -625,4 +612,4 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2023-10-09 15:34:07
+// End of the file, 2024-11-25 16:31:19
