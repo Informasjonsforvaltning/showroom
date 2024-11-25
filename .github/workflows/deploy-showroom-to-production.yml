@@ -88,7 +88,7 @@ jobs:
       ontology-type: "showroom"
       program: "asciidoctor -D cpsv-ap-no/files -o demo-services-events-nb.html -a lang=nb cpsv-ap-no/files/main-nb.adoc"
       files: |
-        cpsv-ap-no/files/demo-services-events-nb.html text/html en demo-services-events/demo-services-events-nb.html
+        cpsv-ap-no/files/demo-services-events-nb.html text/html nb demo-services-events/demo-services-events-nb.html
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
