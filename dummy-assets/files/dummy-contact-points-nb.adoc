@@ -12,9 +12,9 @@
  Dummy kontaktpunkt 1 (http://publications.europa.eu/resource/authority/language/NOB[bokmål]) + 
  Dummy kontaktpunkt 1 (http://publications.europa.eu/resource/authority/language/NNO[nynorsk])
 | har e-post | cv:email |  mailto:cp1@example.org
-| språk | vcard:language |  English (en) + 
- Bokmål (nb) + 
- Nynorsk (nn)
+| språk | vcard:language | http://publications.europa.eu/resource/authority/language/ENG[engelsk] + 
+http://publications.europa.eu/resource/authority/language/NOB[bokmål] + 
+http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | kontaktside | cv:contactPage |  https://w3id.org/demo-resources/dummy-documents#dmyDoc1
 | ordinær åpningstid strukturert | cv:openingHours |  https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1
 | begrenset åpningstid strukturert | cv:specialOpeningHoursSpecification |  https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1
@@ -67,4 +67,4 @@
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2023-08-25 14:06:58
+// End of the file, 2024-11-25 11:08:27
