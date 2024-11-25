@@ -11,6 +11,8 @@ time:TemporalEntity"
  Dette er en dummyressurs, kun for demo og test. (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | sluttdato | dcat:endDate |  2000-01-01
 | startdato | dcat:startDate |  2999-12-31
+| begynnelse | time:hasBeginning | https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1
+| slutt | time:hasEnd | https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1
 |===
 
 == <\https://w3id.org/demo-resources/dummy-times#dmyPropInterval1> [[dmyPropInterval1]]
@@ -90,4 +92,4 @@ time:TemporalEntity"
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-25 16:08:25
+// End of the file, 2024-11-25 16:14:52

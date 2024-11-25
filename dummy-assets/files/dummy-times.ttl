@@ -16,6 +16,8 @@
        """Dette er en dummyressurs, kun for demo og test."""@nb;
    dcat:endDate "2000-01-01"^^xsd:date;
    dcat:startDate "2999-12-31"^^xsd:date;
+   time:hasBeginning <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
+   time:hasEnd <https://w3id.org/demo-resources/dummy-times#dmyTimeInstant1>;
    .
  
 <https://w3id.org/demo-resources/dummy-times#dmyPropInterval1>
@@ -64,4 +66,4 @@
    time:year "2023"^^xsd:gYear;
    .
  
-#### End of the file, 2024-11-25 16:08:19
+#### End of the file, 2024-11-25 16:14:45
