@@ -10,7 +10,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
 <https://w3id.org/demo-resources/dummy-times#dmyPoT1>
-   rdf:type dct:PeriodOfTime;
+   rdf:type dct:PeriodOfTime,
+       time:TemporalEntity";
    rdfs:comment """This is a dummy asset, for demo and test only."""@en,
        """Dette er en dummyressurs, kun for demo og test."""@nb;
    dcat:endDate "2000-01-01"^^xsd:date;
@@ -63,4 +64,4 @@
    time:year "2023"^^xsd:gYear;
    .
  
-#### End of the file, 2023-08-25 14:24:48
+#### End of the file, 2024-11-25 16:08:19
