@@ -53,7 +53,7 @@
    rdfs:comment """This is a dummy asset, for demo and test only."""@en,
        """Dette er en dummyressurs, kun for demo og test."""@nb;
    dct:identifier "https://w3id.org/demo-resources/dummy-services#dmySrvcChannel1"^^xsd:anyURI;
-   cv:processingTime "PD3"^^xsd:duration;
+   cv:processingTime "P1D"^^xsd:duration;
    cpsvno:dataService <https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1>;
    cpsv:hasInput <https://w3id.org/demo-resources/dummy-evidences#dmyEvidence1>;
    cv:ownedBy <https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1>;
@@ -63,4 +63,4 @@
        """Døgnkontinuerlig tjeneste (24-7)."""@en;
    .
  
-#### End of the file, 2024-11-25 15:32:36
+#### End of the file, 2024-11-25 15:45:58

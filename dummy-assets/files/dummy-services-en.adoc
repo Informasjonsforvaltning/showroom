@@ -59,7 +59,7 @@
 | Editorial comment | rdfs:comment |  This is a dummy asset, for demo and test only. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Dette er en dummyressurs, kun for demo og test. (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | identifier | dct:identifier | https://w3id.org/demo-resources/dummy-services#dmySrvcChannel1
-| processing time | cv:processingTime |  PD3
+| processing time | cv:processingTime |  P1D
 | data service | cpsvno:dataService |  https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1
 | has input | cpsv:hasInput |  https://w3id.org/demo-resources/dummy-evidences#dmyEvidence1
 | is owned by | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1
@@ -85,4 +85,4 @@
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-25 15:32:47
+// End of the file, 2024-11-25 15:46:11
