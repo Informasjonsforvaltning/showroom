@@ -29,10 +29,6 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 | theme taxonomy | dcat:themeTaxonomy |  http://publications.europa.eu/resource/dataset/eurovoc + 
  https://psi.norge.no/los/ontologi/tema
 | issued (release date) | dct:issued |  2022-01-01
-| is part of | dct:isPartOf |  https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1
-| has part | dct:hasPart |  https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1
-| creator | dct:creator | https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827]
-| rights (use terms) | dct:rights |  https://w3id.org/demo-resources/dummy-documents#dmyRightsStmnt1
 |===
 
 == <\https://w3id.org/demo-resources/demo-services-events#demoPubService1> [[demoPubService1]]
@@ -89,8 +85,8 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | is instance of | rdf:type | Class Service (cpsvno:Service)
 | description | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
-| owned by | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyAgt1
-| har mulig tjenesteresultat | cpsvno:hasPossibleOutput |  https://w3id.org/demo-resources/dummy-datasets#dmyPossibleOutput1
+| owned by | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyOrg1
+| har mulig tjenesteresultat | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demo Output 1]
 | identifier | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoService1
 | contact point | cv:contactPoint | https://w3id.org/demo-resources/demo-services-events#demoContactPoint1
 | name | dct:title |  Demo Service 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -99,7 +95,6 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | spatial coverage | dct:spatial |  http://publications.europa.eu/resource/authority/country/NOR
 | is part of | dct:isPartOf |  https://w3id.org/demo-resources/dummy-services#dmySrvc1
 | has part | dct:hasPart |  https://w3id.org/demo-resources/dummy-services#dmySrvc1
-| has input | cpsv:hasInput |  https://w3id.org/demo-resources/demo-datasets#demoDataset1
 | homepage | foaf:homepage |  https://w3id.org/demo-resources/dummy-documents#dmyDoc1
 | status | adms:status | http://publications.europa.eu/resource/authority/distribution-status/DEVELOP[under development]
 | thematic area | cv:thematicArea |  https://psi.norge.no/los/tema/handel-og-service
@@ -208,7 +203,7 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | may trigger need for | cpsvno:mayTriggerNeedFor |  https://w3id.org/demo-resources/dummy-services#dmySrvc1
 | subject | dct:subject |  https://w3id.org/demo-resources/demo-concepts#demoCpt1
 | distribution | dcat:distribution |  https://w3id.org/demo-resources/dummy-datasets#dmyDistr1
-| type | dct:type |  https://data.norge.no/vocabulary/business-event-type#dummy-event
+| type | dct:type |  https://data.norge.no/vocabulary/business-event-type#starting-business
 |===
 
 == <\https://w3id.org/demo-resources/demo-services-events#demoConstraint1> [[demoConstraint1]]
@@ -258,7 +253,7 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | Property name | *Property URI* | *Value*
 | is instance of | rdf:type | Class Evidence Type (cv:EvidenceType)
 | identifier | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoEvidenceType1
-| is spesified in | cv:isSpecifiedIn |  https://data.norge.no/vocabulary/document-reference-type#dummy-type
+| is spesified in | cv:isSpecifiedIn | https://w3id.org/demo-resources/demo-services-events#demoEvidenceTypeList1[Demo Evidence Type 1]
 |===
 
 == <\https://w3id.org/demo-resources/demo-services-events#demoEvidenceTypeList1> [[demoEvidenceTypeList1]]
@@ -612,4 +607,4 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-25 16:31:19
+// End of the file, 2024-11-26 11:05:57

@@ -45,10 +45,6 @@
    dcat:themeTaxonomy <http://publications.europa.eu/resource/dataset/eurovoc>,
        <https://psi.norge.no/los/ontologi/tema>;
    dct:issued "2022-01-01"^^xsd:date;
-   dct:isPartOf <https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1>;
-   dct:hasPart <https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1>;
-   dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:rights <https://w3id.org/demo-resources/dummy-documents#dmyRightsStmnt1>;
    .
  
 <https://w3id.org/demo-resources/demo-services-events#demoPubService1>
@@ -97,8 +93,8 @@
    rdf:type cpsvno:Service;
    dct:description """For demo and testing only"""@en,
        """Kun for demo og testing"""@nb;
-   cv:ownedBy <https://w3id.org/demo-resources/dummy-agents#dmyAgt1>;
-   cpsvno:hasPossibleOutput <https://w3id.org/demo-resources/dummy-datasets#dmyPossibleOutput1>;
+   cv:ownedBy <https://w3id.org/demo-resources/dummy-agents#dmyOrg1>;
+   cpsvno:hasPossibleOutput <https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1>;
    dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoService1"^^xsd:anyURI;
    cv:contactPoint <https://w3id.org/demo-resources/demo-services-events#demoContactPoint1>;
    dct:title """Demo Service 1"""@en,
@@ -107,7 +103,6 @@
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
    dct:isPartOf <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
    dct:hasPart <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
-   cpsv:hasInput <https://w3id.org/demo-resources/demo-datasets#demoDataset1>;
    foaf:homepage <https://w3id.org/demo-resources/dummy-documents#dmyDoc1>;
    adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEVELOP>;
    cv:thematicArea <https://psi.norge.no/los/tema/handel-og-service>;
@@ -196,7 +191,7 @@
    cpsvno:mayTriggerNeedFor <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
    dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
    dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
-   dct:type <https://data.norge.no/vocabulary/business-event-type#dummy-event>;
+   dct:type <https://data.norge.no/vocabulary/business-event-type#starting-business>;
    .
  
 <https://w3id.org/demo-resources/demo-services-events#demoConstraint1>
@@ -230,7 +225,7 @@
 <https://w3id.org/demo-resources/demo-services-events#demoEvidenceType1>
    rdf:type cv:EvidenceType;
    dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoEvidenceType1"^^xsd:anyURI;
-   cv:isSpecifiedIn <https://data.norge.no/vocabulary/document-reference-type#dummy-type>;
+   cv:isSpecifiedIn <https://w3id.org/demo-resources/demo-services-events#demoEvidenceTypeList1>;
    .
  
 <https://w3id.org/demo-resources/demo-services-events#demoEvidenceTypeList1>
@@ -474,4 +469,4 @@
    cv:establishedUnder <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
    .
  
-#### End of the file, 2024-11-25 16:31:10
+#### End of the file, 2024-11-26 11:05:47

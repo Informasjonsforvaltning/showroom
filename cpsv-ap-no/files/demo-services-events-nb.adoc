@@ -29,10 +29,6 @@ http://publications.europa.eu/resource/authority/language/NOB[bokmål]
 | temaer | dcat:themeTaxonomy |  http://publications.europa.eu/resource/dataset/eurovoc + 
  https://psi.norge.no/los/ontologi/tema
 | utgivelsesdato | dct:issued |  2022-01-01
-| er del av | dct:isPartOf |  https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1
-| har del | dct:hasPart |  https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1
-| produsent | dct:creator | https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827]
-| rettigheter | dct:rights |  https://w3id.org/demo-resources/dummy-documents#dmyRightsStmnt1
 |===
 
 == <\https://w3id.org/demo-resources/demo-services-events#demoPubService1> [[demoPubService1]]
@@ -89,8 +85,8 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | er instans av | rdf:type | Klasse Tjeneste (cpsvno:Service)
 | beskrivelse | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
-| eies av | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyAgt1
-| has possible output | cpsvno:hasPossibleOutput |  https://w3id.org/demo-resources/dummy-datasets#dmyPossibleOutput1
+| eies av | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyOrg1
+| has possible output | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demotjenesteresultat 1]
 | identifikator | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoService1
 | kontaktpunkt | cv:contactPoint | https://w3id.org/demo-resources/demo-services-events#demoContactPoint1
 | navn | dct:title |  Demo Service 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
@@ -99,7 +95,6 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | dekningsområde | dct:spatial |  http://publications.europa.eu/resource/authority/country/NOR
 | er del av | dct:isPartOf |  https://w3id.org/demo-resources/dummy-services#dmySrvc1
 | har del | dct:hasPart |  https://w3id.org/demo-resources/dummy-services#dmySrvc1
-| har dokumentasjonskrav  | cpsv:hasInput |  https://w3id.org/demo-resources/demo-datasets#demoDataset1
 | hjemmeside | foaf:homepage |  https://w3id.org/demo-resources/dummy-documents#dmyDoc1
 | status | adms:status | http://publications.europa.eu/resource/authority/distribution-status/DEVELOP[under utvikling]
 | temaområde | cv:thematicArea |  https://psi.norge.no/los/tema/handel-og-service
@@ -208,7 +203,7 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | kan utløse behov for | cpsvno:mayTriggerNeedFor |  https://w3id.org/demo-resources/dummy-services#dmySrvc1
 | begrep | dct:subject |  https://w3id.org/demo-resources/demo-concepts#demoCpt1
 | distribusjon | dcat:distribution |  https://w3id.org/demo-resources/dummy-datasets#dmyDistr1
-| type | dct:type |  https://data.norge.no/vocabulary/business-event-type#dummy-event
+| type | dct:type |  https://data.norge.no/vocabulary/business-event-type#starting-business
 |===
 
 == <\https://w3id.org/demo-resources/demo-services-events#demoConstraint1> [[demoConstraint1]]
@@ -258,7 +253,7 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | Egenskapsnavn | *EgenskapsURI* | *Verdi*
 | er instans av | rdf:type | Klasse Dokumentasjonstype (cv:EvidenceType)
 | identifikator | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoEvidenceType1
-| er spesifisert i | cv:isSpecifiedIn |  https://data.norge.no/vocabulary/document-reference-type#dummy-type
+| er spesifisert i | cv:isSpecifiedIn | https://w3id.org/demo-resources/demo-services-events#demoEvidenceTypeList1[Demodokumentasjonstype 1]
 |===
 
 == <\https://w3id.org/demo-resources/demo-services-events#demoEvidenceTypeList1> [[demoEvidenceTypeList1]]
@@ -612,4 +607,4 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-25 16:31:17
+// End of the file, 2024-11-26 11:05:54
