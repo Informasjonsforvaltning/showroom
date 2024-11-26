@@ -16,8 +16,8 @@
 http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål] + 
 http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | contact page | cv:contactPage |  https://w3id.org/demo-resources/dummy-documents#dmyDoc1
-| hours available (structured) | cv:openingHours |  https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1
-| availability restriction | cv:specialOpeningHoursSpecification |  https://w3id.org/demo-resources/dummy-times#dmyTimeEntity1
+| hours available (structured) | cv:openingHours |  https://w3id.org/demo-resources/dummy-times#dmyTemporalEntity1
+| availability restriction | cv:specialOpeningHoursSpecification |  https://w3id.org/demo-resources/dummy-times#dmyTemporalEntity1
 | telephone | cv:telephone |  123456789
 | contact type | vcard:category |  Technical support (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Teknisk støtte (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]) + 
@@ -67,4 +67,4 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-25 16:22:00
+// End of the file, 2024-11-26 10:39:32
