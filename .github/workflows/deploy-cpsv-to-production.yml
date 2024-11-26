@@ -1,0 +1,60 @@
+name: Build cpsv adocs and deploy to data.norge.no
+
+on:
+   push:
+     branches:
+       - main
+     paths:
+       - cpsv-ap-no/**
+
+jobs:
+   adoc_build:
+      runs-on: ubuntu-latest
+      name: asciidoctor build
+  
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+          with:
+            ref: main
+
+        - name: cpsv-root-files-en
+          id: adocbuild-cpsv-root-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D cpsv-ap-no -o index-en.html -a lang=en cpsv-ap-no/main-en.adoc"
+
+        - name: cpsv-root-files-nb
+          id: adocbuild-cpsv-root-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D cpsv-ap-no -o index-nb.html -a lang=nb cpsv-ap-no/main-nb.adoc"
+            
+        - name: cpsv-demo-files-en
+          id: adocbuild-cpsv-demo-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D cpsv-ap-no/files -o demo-services-events-en.html -a lang=en cpsv-ap-no/files/main-en.adoc"
+
+        - name: cpsv-demo-files-nb
+          id: adocbuild-cpsv-demo-files-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+             program: "aasciidoctor -D cpsv-ap-no/files -o demo-services-events-nb.html -a lang=nb cpsv-ap-no/files/main-nb.adoc"
+
+        - name: Upload dummy-assets-files to static-rdf-server
+          uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+          id: upload-dummy-agents
+          with:
+            ontology-type: "showroom"
+            ontology: "dummy-assets"
+            host: "https://data.norge.no"
+            api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+            files: |   
+              cpsv-ap-no/index-en.html text/html en
+              cpsv-ap-no/index-nb.html text/html nb
+              cpsv-ap-no/images/Digdir.png image/png en images/Digdir.png
+              cpsv-ap-no/images/demoPublicService1-explanation.png image/png en images/demoPublicService1-explanation.png
+              cpsv-ap-no/files/demo-services-events.ttl text/turtle en demo-services-events/demo-services-events.ttl
+              cpsv-ap-no/files/demo-services-events-en.html text/html en demo-services-events/demo-services-events-en.html
+              cpsv-ap-no/files/demo-services-events-nb.html text/html nb demo-services-events/demo-services-events-nb.html
