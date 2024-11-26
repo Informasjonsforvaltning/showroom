@@ -1,0 +1,166 @@
+name: Build dummy-assets adocs and deploy to data.norge.no
+
+on:
+   push:
+     branches:
+       - main
+     paths:
+       - dummy-assets/**
+
+jobs:
+   adoc_build:
+      runs-on: ubuntu-latest
+      name: asciidoctor build
+  
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+          with:
+            ref: main
+  
+        - name: dummy-agents-files-en
+          id: adocbuild-dummy-agents-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-agents-en.html -a lang=en dummy-assets/files/dummy-agents-main-en.adoc"
+
+        - name: dummy-agents-files-nb
+          id: adocbuild-dummy-agents-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+             program: "asciidoctor -D dummy-assets/files -o dummy-agents-nb.html -a lang=nb dummy-assets/files/dummy-agents-main-nb.adoc"
+
+        - name: dummy-contact-points-files-en
+          id: adocbuild-dummy-contact-points-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-contact-points-en.html -a lang=en dummy-assets/files/dummy-contact-points-main-en.adoc"
+
+        - name: dummy-contact-points-files-nb
+          id: adocbuild-dummy-contact-points-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-contact-points-nb.html -a lang=nb dummy-assets/files/dummy-contact-points-main-nb.adoc"
+
+        - name: dummy-datasets-files-en
+          id: adocbuild-dummy-datasets-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-datasets-en.html -a lang=en dummy-datasets/files/dummy-datasets-main-en.adoc"
+
+        - name: dummy-datasets-files-nb
+          id: adocbuild-dummy-datasets-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-datasets-nb.html -a lang=nb dummy-datasets/files/dummy-datasets-main-nb.adoc"
+
+        - name: dummy-documents-files-en
+          id: adocbuild-dummy-documents-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-documents-en.html -a lang=en dummy-documents/files/dummy-documents-main-en.adoc"
+
+        - name: dummy-documents-files-nb
+          id: adocbuild-dummy-documents-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-documents-nb.html -a lang=nb dummy-documents/files/dummy-documents-main-nb.adoc"
+  
+        - name: dummy-events-files-en
+          id: adocbuild-dummy-events-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-events-en.html -a lang=en dummy-events/files/dummy-events-main-en.adoc"
+
+        - name: dummy-events-files-nb
+          id: adocbuild-dummy-events-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-events-nb.html -a lang=nb dummy-events/files/dummy-events-main-nb.adoc"
+  
+        - name: dummy-evidences-files-en
+          id: adocbuild-dummy-evidences-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-evidences-en.html -a lang=en dummy-evidences/files/dummy-evidences-main-en.adoc"
+
+        - name: dummy-evidences-files-nb
+          id: adocbuild-dummy-evidences-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-evidences-nb.html -a lang=nb dummy-evidences/files/dummy-evidences-main-nb.adoc"
+   
+        - name: dummy-locations-files-en
+          id: adocbuild-dummy-locations-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-locations-en.html -a lang=en dummy-locations/files/dummy-locations-main-en.adoc"
+
+        - name: dummy-locations-files-nb
+          id: adocbuild-dummy-locations-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-locations-nb.html -a lang=nb dummy-locations/files/dummy-locations-main-nb.adoc"
+   
+        - name: dummy-services-files-en
+          id: adocbuild-dummy-services-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-services-en.html -a lang=en dummy-services/files/dummy-services-main-en.adoc"
+
+        - name: dummy-services-files-nb
+          id: adocbuild-dummy-services-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-services-nb.html -a lang=nb dummy-services/files/dummy-services-main-nb.adoc"
+   
+        - name: dummy-times-files-en
+          id: adocbuild-dummy-times-files-en
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-times-en.html -a lang=en dummy-times/files/dummy-times-main-en.adoc"
+
+        - name: dummy-times-files-nb
+          id: adocbuild-dummy-times-files-nb
+          uses: tonynv/asciidoctor-action@master
+          with:
+            program: "asciidoctor -D dummy-assets/files -o dummy-times-nb.html -a lang=nb dummy-times/files/dummy-times-main-nb.adoc"
+   
+        
+            
+        - name: Upload dummy-assets-files to static-rdf-server
+          uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+          id: upload-dummy-agents
+          with:
+             ontology-type: "showroom"
+             ontology: "dummy-assets"
+             host: "https://data.norge.no"
+             api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+             files: |   
+               dummy-assets/files/dummy-agents.ttl text/turtle en dummy-agents/dummy-agents.ttl
+               dummy-assets/files/dummy-agents-en.html text/html en dummy-agents/dummy-agents-en.html
+               dummy-assets/files/dummy-agents-nb.html text/html nb dummy-agents/dummy-agents-nb.html
+               dummy-assets/files/dummy-contact-points.ttl text/turtle en dummy-contact-points/dummy-contact-points.ttl
+               dummy-assets/files/dummy-contact-points-en.html text/html en dummy-contact-points/dummy-contact-points-en.html
+               dummy-assets/files/dummy-contact-points-nb.html text/html nb dummy-contact-points/dummy-contact-points-nb.html
+               dummy-assets/files/dummy-datasets.ttl text/turtle en dummy-datasets/dummy-datasets.ttl
+               dummy-assets/files/dummy-datasets-en.html text/html en dummy-datasets/dummy-datasets.html
+               dummy-assets/files/dummy-datasets-nb.html text/html nb dummy-datasets/dummy-datasets-nb.html
+               dummy-assets/files/dummy-documents.ttl text/turtle en dummy-documents/dummy-documents.ttl
+               dummy-assets/files/dummy-documents-en.html text/html en dummy-documents/dummy-documents-en.html
+               dummy-assets/files/dummy-documents-nb.html text/html nb dummy-documents/dummy-documents-nb.html
+               dummy-assets/files/dummy-events.ttl text/turtle en dummy-events/dummy-events.ttl
+               dummy-assets/files/dummy-events-en.html text/html en dummy-events/dummy-events-en.html
+               dummy-assets/files/dummy-events-nb.html text/html nb dummy-events/dummy-events-nb.html
+               dummy-assets/files/dummy-evidences.ttl text/turtle en dummy-evidences/dummy-evidences.ttl
+               dummy-assets/files/dummy-evidences-en.html text/html en dummy-evidences/dummy-evidences-en.html
+               dummy-assets/files/dummy-evidences-nb.html text/html nb dummy-evidences/dummy-evidences-nb.html
+               dummy-assets/files/dummy-locations.ttl text/turtle en dummy-locations/dummy-locations.ttl
+               dummy-assets/files/dummy-locations-en.html text/html en dummy-locations/dummy-locations-en.html
+               dummy-assets/files/dummy-locations-nb.html text/html nb dummy-locations/dummy-locations-nb.html
+               dummy-assets/files/dummy-services.ttl text/turtle en dummy-services/dummy-services.ttl
+               dummy-assets/files/dummy-services-en.html text/html en dummy-services/dummy-services-en.html
+               dummy-assets/files/dummy-services-nb.html text/html nb dummy-services/dummy-services-nb.html
+               dummy-assets/files/dummy-times.ttl text/turtle en dummy-times/dummy-times.ttl
+               dummy-assets/files/dummy-times-en.html text/html en dummy-times/dummy-times-en.html
+               dummy-assets/files/dummy-times-nb.html text/html nb dummy-times/dummy-times-nb.html
