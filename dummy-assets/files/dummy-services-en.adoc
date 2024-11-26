@@ -61,7 +61,6 @@
 | identifier | dct:identifier | https://w3id.org/demo-resources/dummy-services#dmySrvcChannel1
 | processing time | cv:processingTime |  P1D
 | data service | cpsvno:dataService |  https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1
-| has input | cpsv:hasInput |  https://w3id.org/demo-resources/dummy-evidences#dmyEvidence1
 | is owned by | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1
 | has email | vcard:hasEmail |  mailto:cp1@example.org
 | type | dct:type |  https://data.norge.no/vocabulary/service-channel-type#e-mail
@@ -85,4 +84,4 @@
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-25 15:46:11
+// End of the file, 2024-11-26 07:46:25

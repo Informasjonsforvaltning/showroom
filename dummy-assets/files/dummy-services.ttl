@@ -55,7 +55,6 @@
    dct:identifier "https://w3id.org/demo-resources/dummy-services#dmySrvcChannel1"^^xsd:anyURI;
    cv:processingTime "P1D"^^xsd:duration;
    cpsvno:dataService <https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1>;
-   cpsv:hasInput <https://w3id.org/demo-resources/dummy-evidences#dmyEvidence1>;
    cv:ownedBy <https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1>;
    vcard:hasEmail "mailto:cp1@example.org"^^vcard:Email;
    dct:type <https://data.norge.no/vocabulary/service-channel-type#e-mail>;
@@ -63,4 +62,4 @@
        """Døgnkontinuerlig tjeneste (24-7)."""@en;
    .
  
-#### End of the file, 2024-11-25 15:45:58
+#### End of the file, 2024-11-26 07:46:15
