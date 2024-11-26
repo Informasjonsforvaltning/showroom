@@ -3,7 +3,7 @@ name: Build cpsv adocs and deploy to data.norge.no
 on:
    push:
      branches:
-       - main
+       - main-test
      paths:
        - cpsv-ap-no/**
 

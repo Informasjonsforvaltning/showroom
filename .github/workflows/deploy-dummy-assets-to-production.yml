@@ -3,7 +3,7 @@ name: Build dummy-assets adocs and deploy to data.norge.no
 on:
    push:
      branches:
-       - main
+       - main-test
      paths:
        - dummy-assets/**
 
