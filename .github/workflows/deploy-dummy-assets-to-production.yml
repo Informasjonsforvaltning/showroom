@@ -46,85 +46,85 @@ jobs:
           id: adocbuild-dummy-datasets-files-en
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-datasets-en.html -a lang=en dummy-datasets/files/dummy-datasets-main-en.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-datasets-en.html -a lang=en dummy-assets/files/dummy-datasets-main-en.adoc"
 
         - name: dummy-datasets-files-nb
           id: adocbuild-dummy-datasets-files-nb
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-datasets-nb.html -a lang=nb dummy-datasets/files/dummy-datasets-main-nb.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-datasets-nb.html -a lang=nb dummy-assets/files/dummy-datasets-main-nb.adoc"
 
         - name: dummy-documents-files-en
           id: adocbuild-dummy-documents-files-en
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-documents-en.html -a lang=en dummy-documents/files/dummy-documents-main-en.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-documents-en.html -a lang=en dummy-assets/files/dummy-documents-main-en.adoc"
 
         - name: dummy-documents-files-nb
           id: adocbuild-dummy-documents-files-nb
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-documents-nb.html -a lang=nb dummy-documents/files/dummy-documents-main-nb.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-documents-nb.html -a lang=nb dummy-assets/files/dummy-documents-main-nb.adoc"
   
         - name: dummy-events-files-en
           id: adocbuild-dummy-events-files-en
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-events-en.html -a lang=en dummy-events/files/dummy-events-main-en.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-events-en.html -a lang=en dummy-assets/files/dummy-events-main-en.adoc"
 
         - name: dummy-events-files-nb
           id: adocbuild-dummy-events-files-nb
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-events-nb.html -a lang=nb dummy-events/files/dummy-events-main-nb.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-events-nb.html -a lang=nb dummy-assets/files/dummy-events-main-nb.adoc"
   
         - name: dummy-evidences-files-en
           id: adocbuild-dummy-evidences-files-en
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-evidences-en.html -a lang=en dummy-evidences/files/dummy-evidences-main-en.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-evidences-en.html -a lang=en dummy-assets/files/dummy-evidences-main-en.adoc"
 
         - name: dummy-evidences-files-nb
           id: adocbuild-dummy-evidences-files-nb
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-evidences-nb.html -a lang=nb dummy-evidences/files/dummy-evidences-main-nb.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-evidences-nb.html -a lang=nb dummy-assets/files/dummy-evidences-main-nb.adoc"
    
         - name: dummy-locations-files-en
           id: adocbuild-dummy-locations-files-en
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-locations-en.html -a lang=en dummy-locations/files/dummy-locations-main-en.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-locations-en.html -a lang=en dummy-assets/files/dummy-locations-main-en.adoc"
 
         - name: dummy-locations-files-nb
           id: adocbuild-dummy-locations-files-nb
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-locations-nb.html -a lang=nb dummy-locations/files/dummy-locations-main-nb.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-locations-nb.html -a lang=nb dummy-assets/files/dummy-locations-main-nb.adoc"
    
         - name: dummy-services-files-en
           id: adocbuild-dummy-services-files-en
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-services-en.html -a lang=en dummy-services/files/dummy-services-main-en.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-services-en.html -a lang=en dummy-assets/files/dummy-services-main-en.adoc"
 
         - name: dummy-services-files-nb
           id: adocbuild-dummy-services-files-nb
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-services-nb.html -a lang=nb dummy-services/files/dummy-services-main-nb.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-services-nb.html -a lang=nb dummy-assets/files/dummy-services-main-nb.adoc"
    
         - name: dummy-times-files-en
           id: adocbuild-dummy-times-files-en
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-times-en.html -a lang=en dummy-times/files/dummy-times-main-en.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-times-en.html -a lang=en dummy-assets/files/dummy-times-main-en.adoc"
 
         - name: dummy-times-files-nb
           id: adocbuild-dummy-times-files-nb
           uses: tonynv/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-times-nb.html -a lang=nb dummy-times/files/dummy-times-main-nb.adoc"
+            program: "asciidoctor -D dummy-assets/files -o dummy-times-nb.html -a lang=nb dummy-assets/files/dummy-times-main-nb.adoc"
    
         
             
