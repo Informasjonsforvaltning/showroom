@@ -134,8 +134,8 @@
    rdf:type cpsvno:PossibleOutput;
    dct:description """For demo and testing only"""@en,
        """Kun for demo og testing"""@nb;
-   dct:title """Demo Output 1"""@en,
-       """Demotjenesteresultat 1"""@nb;
+   dct:title """Demo Possible Output 1"""@en,
+       """Demo mulig tjenesteresultat 1"""@nb;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
        <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1"^^xsd:anyURI;
@@ -469,4 +469,4 @@
    cv:establishedUnder <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
    .
  
-#### End of the file, 2024-11-26 11:05:47
+#### End of the file, 2024-11-26 11:19:21

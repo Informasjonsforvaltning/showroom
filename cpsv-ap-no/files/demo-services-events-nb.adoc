@@ -40,7 +40,7 @@ http://publications.europa.eu/resource/authority/language/NOB[bokmål]
 | beskrivelse | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | har kompetent organ | cv:hasCompetentAuthority | https://w3id.org/demo-resources/demo-services-events#demoPubOrg1[Demo offentlig organisasjon 1]
-| has possible output | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demotjenesteresultat 1]
+| has possible output | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demo mulig tjenesteresultat 1]
 | identifikator | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoPubService1
 | kontaktpunkt | cv:contactPoint | https://w3id.org/demo-resources/demo-services-events#demoContactPoint1
 | navn | dct:title |  Demo Public Service 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
@@ -86,7 +86,7 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | beskrivelse | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | eies av | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyOrg1
-| has possible output | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demotjenesteresultat 1]
+| has possible output | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demo mulig tjenesteresultat 1]
 | identifikator | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoService1
 | kontaktpunkt | cv:contactPoint | https://w3id.org/demo-resources/demo-services-events#demoContactPoint1
 | navn | dct:title |  Demo Service 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
@@ -130,8 +130,8 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | er instans av | rdf:type | cpsvno:PossibleOutput
 | beskrivelse | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
-| tittel | dct:title |  Demo Output 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
- Demotjenesteresultat 1 (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
+| tittel | dct:title |  Demo Possible Output 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
+ Demo mulig tjenesteresultat 1 (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | språk | dct:language | http://publications.europa.eu/resource/authority/language/ENG[engelsk] + 
 http://publications.europa.eu/resource/authority/language/NOB[bokmål]
 | identifikator | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1
@@ -607,4 +607,4 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-26 11:05:54
+// End of the file, 2024-11-26 11:19:29
