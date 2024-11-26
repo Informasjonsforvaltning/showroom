@@ -42,7 +42,8 @@
    rdf:type cpsvno:PossibleOutput;
    rdfs:comment """This is a dummy asset, for demo and test only."""@en,
        """Dette er en dummyressurs, kun for demo og test."""@nb;
-   dct:description """Description of Dummy Possible Output 1, på engelsk"""@en;
+   dct:description """Description of Dummy Possible Output 1"""@en,
+       """Beskrivelse av Dummy mulig tjenesteresultat"""@nb;
    dct:title """Dummy Possible Output 1"""@en,
        """Dummy mulig tjenesteresultat 1"""@nb;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
@@ -63,4 +64,4 @@
        """Døgnkontinuerlig tjeneste (24-7)."""@en;
    .
  
-#### End of the file, 2024-11-26 09:03:37
+#### End of the file, 2024-11-26 09:51:38

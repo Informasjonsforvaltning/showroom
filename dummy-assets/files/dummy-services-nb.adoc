@@ -44,7 +44,8 @@
 | er instans av | rdf:type | cpsvno:PossibleOutput
 | Redaksjonell kommentar | rdfs:comment |  This is a dummy asset, for demo and test only. (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Dette er en dummyressurs, kun for demo og test. (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
-| beskrivelse | dct:description |  Description of Dummy Possible Output 1, på engelsk (http://publications.europa.eu/resource/authority/language/ENG[engelsk])
+| beskrivelse | dct:description |  Description of Dummy Possible Output 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
+ Beskrivelse av Dummy mulig tjenesteresultat (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | tittel | dct:title |  Dummy Possible Output 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Dummy mulig tjenesteresultat 1 (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | språk | dct:language | http://publications.europa.eu/resource/authority/language/ENG[engelsk] + 
@@ -85,4 +86,4 @@ http://publications.europa.eu/resource/authority/language/NOB[bokmål]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-26 09:03:45
+// End of the file, 2024-11-26 09:51:45
