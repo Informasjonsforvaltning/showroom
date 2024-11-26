@@ -19,7 +19,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
-
+  
 <https://w3id.org/demo-resources/demo-services-events#demoCatalog1>
    rdf:type dcat:Catalog;
    dct:description """For demo and testing only"""@en,
