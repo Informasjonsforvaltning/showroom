@@ -6,7 +6,7 @@
 |===
 | Property name | *Property URI* | *Value*
 | is instance of | rdf:type | Class Period of time (dct:PeriodOfTime) + 
-time:TemporalEntity"
+Class Temporal entity (time:TemporalEntity)
 | Editorial comment | rdfs:comment |  This is a dummy asset, for demo and test only. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Dette er en dummyressurs, kun for demo og test. (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | end date | dcat:endDate |  2000-01-01
@@ -92,4 +92,4 @@ time:TemporalEntity"
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-25 16:14:55
+// End of the file, 2024-11-26 15:15:21
