@@ -16,7 +16,7 @@ https://w3id.org/demo-resources/demo-services-events#demoService1[Demo Service 1
  Demo Catalog (http://publications.europa.eu/resource/authority/language/ENG[English])
 | publisher | dct:publisher | https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827]
 | spatial coverage | dct:spatial |  http://publications.europa.eu/resource/authority/country/NOR
-| modified (last update) | dct:modified |  2023-08-25
+| modified (last update) | dct:modified |  2024-11-26
 | accrual periodicity | dct:accrualPeriodicity |  http://publications.europa.eu/resource/authority/frequency/IRREG
 | homepage | foaf:homepage |  https://data.norge.no/showroom/cpsv-ap-no
 | event | dcatno:containsEvent | https://w3id.org/demo-resources/demo-services-events#demoEvent1[Demo Event] + 
@@ -607,4 +607,4 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-26 11:19:32
+// End of the file, 2024-11-26 11:22:40
