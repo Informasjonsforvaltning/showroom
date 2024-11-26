@@ -42,12 +42,12 @@ jobs:
           with:
              program: "asciidoctor -D cpsv-ap-no/files -o demo-services-events-nb.html -a lang=nb cpsv-ap-no/files/main-nb.adoc"
 
-        - name: Upload dummy-assets-files to static-rdf-server
+        - name: Upload cpsv-files to static-rdf-server
           uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
-          id: upload-dummy-agents
+          id: upload-cpsv-files
           with:
             ontology-type: "showroom"
-            ontology: "dummy-assets"
+            ontology: "cpsv-ap-no"
             host: "https://data.norge.no"
             api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
             files: |   
