@@ -40,7 +40,7 @@ jobs:
           id: adocbuild-cpsv-demo-files-files-nb
           uses: tonynv/asciidoctor-action@master
           with:
-             program: "aasciidoctor -D cpsv-ap-no/files -o demo-services-events-nb.html -a lang=nb cpsv-ap-no/files/main-nb.adoc"
+             program: "asciidoctor -D cpsv-ap-no/files -o demo-services-events-nb.html -a lang=nb cpsv-ap-no/files/main-nb.adoc"
 
         - name: Upload dummy-assets-files to static-rdf-server
           uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
