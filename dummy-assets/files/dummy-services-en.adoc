@@ -11,7 +11,7 @@
 | description | dct:description |  Description of Dummy Service 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Beskrivelse av Dummytjeneste 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | owned by | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyOrg1
-| har mulig tjenesteresultat | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/dummy-services#dmyPossibleOutput1[Description of Dummy Possible Output 1, på engelsk]
+| har mulig tjenesteresultat | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/dummy-services#dmyPossibleOutput1[Dummy Possible Output 1]
 | identifier | dct:identifier | https://w3id.org/demo-resources/dummy-services#dmySrvc1
 | contact point | cv:contactPoint |  https://w3id.org/demo-resources/dummy-contact-points#dmyCP1
 | name | dct:title |  Dummy Service 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -29,7 +29,7 @@
 | description | dct:description |  Description of Dummy Public Service 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Beskrivelse av Dummy offentlig tjeneste 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | has competent authority | cv:hasCompetentAuthority |  https://w3id.org/demo-resources/dummy-agents#dmyPublOrg1
-| har mulig tjenesteresultat | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/dummy-services#dmyPossibleOutput1[Description of Dummy Possible Output 1, på engelsk]
+| har mulig tjenesteresultat | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/dummy-services#dmyPossibleOutput1[Dummy Possible Output 1]
 | identifier | dct:identifier | https://w3id.org/demo-resources/dummy-services#dmyPublSrvc1
 | contact point | cv:contactPoint |  https://w3id.org/demo-resources/dummy-contact-points#dmyCP1
 | name | dct:title |  Dummy Public Service 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -45,9 +45,10 @@
 | Editorial comment | rdfs:comment |  This is a dummy asset, for demo and test only. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Dette er en dummyressurs, kun for demo og test. (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | description | dct:description |  Description of Dummy Possible Output 1, på engelsk (http://publications.europa.eu/resource/authority/language/ENG[English])
-| name | dct:title |  Description of Dummy Possible Output 1, på engelsk (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
- Beskrivelse av Dummy mulig tjenesteresultat 1, på bokmål (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
-| language | dct:language | http://publications.europa.eu/resource/authority/language/ENG[English]
+| name | dct:title |  Dummy Possible Output 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
+ Dummy mulig tjenesteresultat 1 (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
+| language | dct:language | http://publications.europa.eu/resource/authority/language/ENG[English] + 
+http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 |===
 
 == <\https://w3id.org/demo-resources/dummy-services#dmySrvcChannel1> [[dmySrvcChannel1]]
@@ -84,4 +85,4 @@
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-26 07:46:25
+// End of the file, 2024-11-26 09:03:47
