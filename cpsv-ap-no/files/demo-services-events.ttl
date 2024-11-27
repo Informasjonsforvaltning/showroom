@@ -138,6 +138,7 @@
        """Demo mulig tjenesteresultat 1"""@nb;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
        <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:isPartOf <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1"^^xsd:anyURI;
    xkos:causes <https://w3id.org/demo-resources/dummy-events#dmyEvent1>;
    dct:type <https://data.norge.no/vocabulary/service-output-type#permit>;
@@ -153,6 +154,7 @@
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
        <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>;
+   dct:isPartOf <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    .
  
 <https://w3id.org/demo-resources/demo-services-events#demoEvent1>
@@ -469,4 +471,4 @@
    cv:establishedUnder <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
    .
  
-#### End of the file, 2024-11-26 11:22:31
+#### End of the file, 2024-11-27 07:55:12
