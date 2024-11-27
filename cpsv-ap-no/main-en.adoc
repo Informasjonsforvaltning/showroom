@@ -17,9 +17,4 @@ Welcome to the showroom with demo services and events, demonstrating the usage o
 
 _https://data.norge.no/specification/cpsv-ap-no/[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"] is the the Norwegian application profile of EU's https://github.com/SEMICeu/CPSV-AP[Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"], for describing services and events._
 
-// [cols="10,90", grid=nome,frame=none] 
-// |===
-// | image:images/work-in-progress.png[WIP,200,200] | _This showroom is under construction._ 
-// |===
-
 include::main-en-content.adoc[]

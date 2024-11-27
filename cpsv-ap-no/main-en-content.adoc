@@ -26,8 +26,8 @@ image::images/demoPublicService1-explanation.png[alt="Graph with nodes and relat
 ** identifier: "\https://w3id.org/demo-resources/demo-services-events#demoPubService1".
 
 * This public service
-** produces https://w3id.org/demo-resources/demo-services-events#demoOutput1[<demoOutput1>] as a result,
-** needs https://w3id.org/demo-resources/demo-services-events#demoEvidence1[<demoEvidence1>] as its input/evidence,
+** has https://data.norge.no/showroom/cpsv-ap-no/demo-services-events#demoPossibleOutput1[<demoPossibleOutput1>] as a possible output,
+** has https://data.norge.no/showroom/cpsv-ap-no/demo-services-events#demoReqEvidence1[<demoReqEvidence1>] as a required evidence,
 ** is grouped by, or supports, https://w3id.org/demo-resources/demo-services-events#demoLifeEvent1[<demoLifeEvent1>].
 
 * This public service has
@@ -59,18 +59,19 @@ image::images/demoPublicService1-explanation.png[alt="Graph with nodes and relat
 
 *Services/events and datasets*, for example: 
 
-* An evidence that is needed in order to execute a service, may be a dataset. 
-**  For instance, our "https://w3id.org/demo-resources/demo-services-events#demoService1[Demo Service 1]" uses the dataset "https://w3id.org/demo-resources/demo-datasets#demoDataset1[Demo kontrollert vokabular 1]" as its evidence/input, which is demonstrated in our link:/showroom/dcat-ap-no/[showroom with demo datasets].
+* A required evidence that is needed in order to execute a service, may be a part of a dataset. 
+**  For instance, the required evidence https://w3id.org/demo-resources/demo-services-events#demoReqEvidence1[<demoRequiredEvidence1>] to our 
+https://w3id.org/demo-resources/demo-services-events#demoService1[<demoPublicService1>] is part of the dataset https://w3id.org/demo-resources/dummy-datasets#dmyDataset1[Dummy dataset 1]. Datasets are demonstrated in our link:/showroom/dcat-ap-no/[showroom with demo datasets].
 
-* A service may produce a dataset as the output. 
-**  For instance, our "https://w3id.org/demo-resources/demo-services-events#demoService1[Demo Service 1]" produces the dataset "https://w3id.org/demo-resources/dummy-datasets#dmyDataset1[Dummy Dataset 1]" as its result/output.
+* Similarly, a possible output from a service may be a part of a dataset. 
+**  For instance, the possible output https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[<demoPossibleOutput1>] of our https://w3id.org/demo-resources/demo-services-events#demoService1[<demoPublicService1>] is a part of the dataset https://w3id.org/demo-resources/dummy-datasets#dmyDataset1[Dummy dataset 1].
 
-* An event is a dataset. 
-** For instance our "https://w3id.org/demo-resources/demo-services-events#demoEvent1[Demo Event]" is a dataset, with a https://w3id.org/demo-resources/dummy-datasets#dmyDistr1[distribution].
+* An event may be described at a dataset. 
+** For instance our https://w3id.org/demo-resources/demo-services-events#demoEvent1[<demoEvent1>] is described at the dataset https://w3id.org/demo-resources/dummy-datasets#dmyDataset1[Dummy dataset 1]. Datasets may then be distributed using distribution or data services, which makes it possible to distribute events / event streams. This is demonstrated in our link:/showroom/dcat-ap-no/[showroom with demo datasets].
 
 *Services/events and information models*, for example: 
 
-* An evidence that is needed to execute a service, or the output from a service, may a dataset and thus may conform to one or more standards (incl. information models).
+* A required evidence that is needed to execute a service, or the possible output from a service, may a part of a dataset and thus may conform to one or more standards (incl. information models).
 ** This is demonstrated and explained in our link:/showroom/dcat-ap-no[showroom with demo datasets].  
 
 

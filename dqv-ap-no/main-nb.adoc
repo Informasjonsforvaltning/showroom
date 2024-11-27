@@ -1,5 +1,5 @@
 include::../locale/attributes.adoc[]
-= image:images/Digdir.png[Digdir,200,200] utstillingsrom - demo beskrivelser av datasettkvalitet
+= image:images/Digdir.png[Digdir,200,200] utstillingsrom - demo beskrivelser av datakvalitet
 Digitaliseringsdirektoratet (Digdir)
 :doctype: book
 :docinfo: shared

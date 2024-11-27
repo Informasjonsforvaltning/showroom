@@ -6,8 +6,8 @@ Vi har så langt følgende utstillingsrom, med kryssreferanser mellom utstilling
 
 * link:/showroom/dcat-ap-no/[Datasett,  datatjenester osv.]: I dette utstillingsrommet vil vi demonstrere bruken av https://data.norge.no/specification/dcat-ap-no["Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;", window="_blank", role="ext-link"] (norsk applikasjonsprofil av EUs https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP &#x29C9;, window="_blank", role="ext-link"]), til å beskrive og tilgjengeliggjøre maskinprosesserbare beskrivelser av datakataloger med datasett, datatjenester og distribusjoner.
 
-* link:/showroom/dqv-ap-no[Datasettkvalitet]: I dette utstillingsrommet vil vi demonstrere bruken av 
-https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (Norsk applikasjonsprofil av W3Cs https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"]), til å beskrive kvalitet på datasett.
+* link:/showroom/dqv-ap-no[Datakvalitet]: I dette utstillingsrommet vil vi demonstrere bruken av 
+https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (Norsk applikasjonsprofil av W3Cs https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"]), til å beskrive datakvalitet.
 
 * link:/showroom/modelldcat-ap-no/[Informasjonsmodeller]: I dette utstillingsrommet vil vi demonstrere bruken av https://data.norge.no/specification/modelldcat-ap-no[Spesifikasjon for beskrivelse av informasjonsmodeller (ModellDCAT-AP-NO) &#x29C9;, window="_blank", role="ext-link"] (norsk applikasjonsprofil av https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]), til å beskrive og tilgjengeliggjøre maskinprosesserbare beskrivelser av informasjonsmodeller og modellkataloger. 
 

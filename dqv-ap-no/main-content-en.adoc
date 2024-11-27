@@ -3,11 +3,11 @@
 
 This showroom is meant to 
 
-* demonstrate how to use DQV-AP-NO to describe dataset quality;
-* demonstrate some cross-references between dataset quality descriptions and other resources demonstrated in some of the other showrooms;
-* provide reusable, machine-readable dataset quality descriptions, for testing and demonstration purposes.
+* demonstrate how to use DQV-AP-NO to describe data quality;
+* demonstrate some cross-references between data quality descriptions and other resources demonstrated in some of the other showrooms;
+* provide reusable, machine-readable data quality descriptions, for testing and demonstration purposes.
 
-*_Disclaimer_*: _The machine-readable demo dataset descriptions are meant for demo purposes only. They do not represent any real world phenomena at all. On the other hand, they are supposed to syntactically conform to DCAT-AP-NO._ 
+*_Disclaimer_*: _The machine-readable demo data quality descriptions are meant for demo purposes only. They do not represent any real world phenomena at all. On the other hand, they are supposed to syntactically conform to DCAT-AP-NO._ 
 
 == Demo resources in this showroom [[demo-resources]]
 
@@ -26,18 +26,18 @@ In this showroom we have a https://w3id.org/demo-resources/demo-data-quality-ass
 
 *_Note_*: _Not all possible cross-references are demonstrated in this showroom. The lists are thus not exhaustive._
 
-*Dataset quality descriptions and classifications*, for example: 
+*Data quality descriptions and classifications*, for example: 
 
 * In order to have common understanding of the quality (sub)dimensions and quality metrics, there are a set of predefined quality (sub)dimensions published in the controlled vocabulary https://data.norge.no/vocabulary/quality-dimension[Quality (sub)dimension &#x29C9;, window="_blank", role="ext-link"], and a set of predefined quality metrics published in the controlled vocabulary https://data.norge.no/vocabulary/quality-metric[Quality metric &#x29C9;, window="_blank", role="ext-link"]. 
 * Quality descriptions may therefore refer to the predefined categories of quality (sub)dimensions and quality metrics, as explained above. 
 
-*Dataset quality descriptions and concepts*, for example: 
+*Data quality descriptions and concepts*, for example: 
 
 * The predefined quality (sub)dimensions and the predefined quality metrics that quality descriptions refer to, are concepts. 
 
-*Dataset quality descriptions and datasets*, for example: 
+*Data quality descriptions and datasets*, for example: 
 
-* Dataset quality descriptions are about the quality of datasets and referred to from descriptions of datasets.  
+* Data quality descriptions are about the quality of datasets and referred to from descriptions of datasets.  
 
 == _to the overview of the showrooms_ [[to-overview]]
 

@@ -8,7 +8,7 @@ We have currently following showrooms with cross-references between the showroom
 
 * link:/showroom/dcat-ap-no/[Datasets, data services etc.]: In this showroom we will demonstrate the usage of https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of EU's https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP &#x29C9;, window="_blank", role="ext-link"]), to describe and publish machine-readable descriptions of datasets with distributions and data services. 
 
-* link:/showroom/dqv-ap-no/[Dataset quality]: In this showroom we will demonstrate the usage of https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of W3C's https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"]), to describe dataset quality. 
+* link:/showroom/dqv-ap-no/[Data quality]: In this showroom we will demonstrate the usage of https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of W3C's https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"]), to describe data quality. 
 
 * link:/showroom/modelldcat-ap-no/[Information models]: In this showroom we will demonstrate the usage of https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]), to describe and publish machine-readable descriptions of information models.  
 
