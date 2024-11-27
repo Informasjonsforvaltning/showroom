@@ -18,7 +18,7 @@ In this showroom we have a https://w3id.org/demo-resources/demo-services-events#
 [link=images/demoPublicService1-explanation.png]
 image::images/demoPublicService1-explanation.png[alt="Graph with nodes and relations between the nodes. The content is explained in the text."]
 
-<<img-demo-publicService1>> illustrates the "https://w3id.org/demo-resources/demo-services-events#demoPubService1[Demo Public Service 1]" that is in the catalog: 
+<<img-demo-publicService1>> illustrates the https://w3id.org/demo-resources/demo-services-events#demoPubService1[Demo Public Service 1 (<demoPublicService1>)] that is in the catalog: 
 
 * This demo public service has the following annotation properties which are all mandatory:
 ** name: "Demo Public Service 1" in English, and "Demo offentlig tjeneste 1" in Norwegian Bokmål,
@@ -49,13 +49,13 @@ image::images/demoPublicService1-explanation.png[alt="Graph with nodes and relat
 *Services/events and classifications*, for example: 
 
 * When describing a service/event/etc., and where coded values are used, the coded values should preferably be chosen from controlled vocabularies (i.e., classifications). 
-** Examples of properties with coded values are https://data.norge.no/specification/cpsv-ap-no#OffentligTjeneste-dekningsomr%C3%A5de[spatial coverage (dct:spatial) &#x29C9;,  window="_blank", role="ext-link"], https://data.norge.no/specification/cpsv-ap-no#OffentligTjeneste-hovedform%C3%A5l[functions of government (dct:type) &#x29C9;,  window="_blank", role="ext-link"], https://data.norge.no/specification/cpsv-ap-no#OffentligTjeneste-status[status (adms:status) &#x29C9;,  window="_blank", role="ext-link"] etc., which are demonstrated in e.g. the "https://w3id.org/demo-resources/demo-services-events#demoPubService1[Demo Public Service 1]".    
+** Examples of properties with coded values are https://data.norge.no/specification/cpsv-ap-no#OffentligTjeneste-dekningsomr%C3%A5de[spatial coverage (dct:spatial) &#x29C9;,  window="_blank", role="ext-link"], https://data.norge.no/specification/cpsv-ap-no#OffentligTjeneste-hovedform%C3%A5l[functions of government (dct:type) &#x29C9;,  window="_blank", role="ext-link"], https://data.norge.no/specification/cpsv-ap-no#OffentligTjeneste-status[status (adms:status) &#x29C9;,  window="_blank", role="ext-link"] etc., which are demonstrated in e.g. https://w3id.org/demo-resources/demo-services-events#demoPubService1[Demo Public Service 1 (<demoPublicService1>)].    
 ** Classifications should therefore be made available, also machine-readably.
 
 *Services/events and concepts*, for example: 
 
 * A service/event/etc., may refer to concepts that are relevant for understanding the service/event/etc.  
-** For example, our "https://w3id.org/demo-resources/demo-services-events#demoPubService1[Demo Public Service 1]" refers to "demo concept 1" that is demonstrated in our link:/showroom/skos-ap-no/[showroom with demo concepts].
+** For example, our https://w3id.org/demo-resources/demo-services-events#demoPubService1[Demo Public Service 1 (<demoPublicService1>)] refers to "demo concept 1" that is demonstrated in our link:/showroom/skos-ap-no/[showroom with demo concepts].
 
 *Services/events and datasets*, for example: 
 
@@ -66,8 +66,8 @@ https://w3id.org/demo-resources/demo-services-events#demoService1[<demoPublicSer
 * Similarly, a possible output from a service may be a part of a dataset. 
 **  For instance, the possible output https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[<demoPossibleOutput1>] of our https://w3id.org/demo-resources/demo-services-events#demoService1[<demoPublicService1>] is a part of the dataset https://w3id.org/demo-resources/dummy-datasets#dmyDataset1[Dummy dataset 1].
 
-* An event may be described at a dataset. 
-** For instance our https://w3id.org/demo-resources/demo-services-events#demoEvent1[<demoEvent1>] is described at the dataset https://w3id.org/demo-resources/dummy-datasets#dmyDataset1[Dummy dataset 1]. Datasets may then be distributed using distribution or data services, which makes it possible to distribute events / event streams. This is demonstrated in our link:/showroom/dcat-ap-no/[showroom with demo datasets].
+* An event may be described at a dataset, in order to e.g. distribute the events / event streams as datasets. 
+** For instance our https://w3id.org/demo-resources/demo-services-events#demoEvent1[<demoEvent1>] is described at the dataset https://w3id.org/demo-resources/dummy-datasets#dmyDataset1[Dummy dataset 1]. Our link:/showroom/dcat-ap-no/[showroom with demo datasets] demonstrates further how to connect a dataset to its distributions and data services.  
 
 *Services/events and information models*, for example: 
 
