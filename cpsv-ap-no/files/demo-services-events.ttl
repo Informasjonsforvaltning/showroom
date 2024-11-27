@@ -166,7 +166,7 @@
        """Kun for demo og testing"""@nb;
    cpsvno:mayTrigger <https://w3id.org/demo-resources/demo-services-events#demoService1>;
    dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
+   cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    dct:type <https://data.norge.no/vocabulary/event-type#data-changed>;
    .
  
@@ -179,7 +179,7 @@
        """Kun for demo og testing"""@nb;
    cpsvno:mayTriggerNeedFor <https://w3id.org/demo-resources/demo-services-events#demoService1>;
    dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
+   cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    dct:type <https://data.norge.no/vocabulary/life-event-type#having-a-child>;
    .
  
@@ -192,7 +192,7 @@
        """Kun for demo og testing"""@nb;
    cpsvno:mayTriggerNeedFor <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
    dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1>;
-   dcat:distribution <https://w3id.org/demo-resources/dummy-datasets#dmyDistr1>;
+   cv:isDescribedAt <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    dct:type <https://data.norge.no/vocabulary/business-event-type#starting-business>;
    .
  
@@ -471,4 +471,4 @@
    cv:establishedUnder <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
    .
  
-#### End of the file, 2024-11-27 07:55:12
+#### End of the file, 2024-11-27 08:12:02
