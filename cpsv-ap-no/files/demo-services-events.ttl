@@ -42,7 +42,7 @@
    dct:provenance <https://w3id.org/demo-resources/dummy-documents#dmyProvStmnt1>;
    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
        <http://publications.europa.eu/resource/authority/language/NOB>;
-   dcat:themeTaxonomy <http://publications.europa.eu/resource/dataset/eurovoc>,
+   dcat:themeTaxonomy <http://eurovoc.europa.eu/>,
        <https://psi.norge.no/los/ontologi/tema>;
    dct:issued "2022-01-01"^^xsd:date;
    .
@@ -424,14 +424,14 @@
 <https://w3id.org/demo-resources/demo-services-events#demoDateTimeDescr1>
    rdf:type time:DateTimeDescription;
    time:unitType time:unitMinute;
-   time:day "15"^^xsd:gDay;
+   time:day "---02"^^xsd:gDay;
    time:dayOfWeek time:Tuesday;
    time:dayOfYear "40"^^xsd:nonNegativeInteger;
    time:minute "60"^^xsd:nonNegativeInteger;
-   time:month "11"^^xsd:gMonth;
-   time:monthOfYear greg:November;
+   time:month "--03"^^xsd:gMonth;
+   time:monthOfYear greg:March;
    time:second "0"^^xsd:decimal;
-   time:timeZone [ a time:TimeZone ];
+   time:timeZone <https://www.timeanddate.com/time/zone/norway/oslo>;
    time:hour "13"^^xsd:nonNegativeInteger;
    time:week "6"^^xsd:nonNegativeInteger;
    time:year "2023"^^xsd:gYear;
@@ -471,4 +471,4 @@
    cv:establishedUnder <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
    .
  
-#### End of the file, 2024-11-27 08:12:02
+#### End of the file, 2024-11-28 15:03:55
