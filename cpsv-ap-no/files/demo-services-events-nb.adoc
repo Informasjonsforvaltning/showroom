@@ -16,7 +16,7 @@ https://w3id.org/demo-resources/demo-services-events#demoService1[Demotjeneste 1
  Demo Catalog (http://publications.europa.eu/resource/authority/language/ENG[engelsk])
 | utgiver (org.nr.) | dct:publisher | https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827]
 | dekningsområde | dct:spatial |  http://publications.europa.eu/resource/authority/country/NOR
-| endringsdato | dct:modified |  2024-11-26
+| endringsdato | dct:modified |  2024-11-28
 | frekvens | dct:accrualPeriodicity |  http://publications.europa.eu/resource/authority/frequency/IRREG
 | hjemmeside | foaf:homepage |  https://data.norge.no/showroom/cpsv-ap-no
 | inneholder hendelse | dcatno:containsEvent | https://w3id.org/demo-resources/demo-services-events#demoEvent1[Demohendelse] + 
@@ -127,7 +127,7 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 [cols="20s,20d,60d"]
 |===
 | Egenskapsnavn | *EgenskapsURI* | *Verdi*
-| er instans av | rdf:type | cpsvno:PossibleOutput
+| er instans av | rdf:type | Klasse Mulig tjenesteresultat (cpsvno:PossibleOutput)
 | beskrivelse | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | tittel | dct:title |  Demo Possible Output 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
@@ -609,4 +609,4 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-28 15:04:03
+// End of the file, 2024-11-28 15:16:41
