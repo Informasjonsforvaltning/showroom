@@ -127,7 +127,7 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Possible Output (cpsvno:PossibleOutput)
+| is instance of | rdf:type | Class Possible (Service) Output (cpsvno:PossibleOutput)
 | description | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | name | dct:title |  Demo Possible Output 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -553,7 +553,7 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | Class Channel (cv:Channel)
+| is instance of | rdf:type | Class (Service) Channel (cv:Channel)
 | identifier | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoChannel
 | type | dct:type |  https://data.norge.no/vocabulary/service-channel-type#e-mail
 | availability restriction | cv:specialOpeningHoursSpecification | https://w3id.org/demo-resources/demo-services-events#demoTemporalEntity1
@@ -609,4 +609,4 @@ http://publications.europa.eu/resource/authority/language/NNO[Norwegian Nynorsk]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-28 15:16:45
+// End of the file, 2024-11-28 15:26:19

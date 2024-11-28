@@ -41,7 +41,7 @@
 [cols="20s,20d,60d"]
 |===
 | Property name | *Property URI* | *Value*
-| is instance of | rdf:type | cpsvno:PossibleOutput
+| is instance of | rdf:type | Class Possbile (Service) Output (cpsvno:PossibleOutput)
 | Editorial comment | rdfs:comment |  This is a dummy asset, for demo and test only. (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
  Dette er en dummyressurs, kun for demo og test. (http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål])
 | description | dct:description |  Description of Dummy Possible Output 1 (http://publications.europa.eu/resource/authority/language/ENG[English]) + 
@@ -86,4 +86,4 @@ http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-26 09:51:47
+// End of the file, 2024-11-28 15:29:30

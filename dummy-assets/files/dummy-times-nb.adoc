@@ -5,8 +5,7 @@
 [cols="20s,20d,60d"]
 |===
 | Egenskapsnavn | *EgenskapsURI* | *Verdi*
-| er instans av | rdf:type | Klasse Tidsrom (dct:PeriodOfTime) + 
-Klasse Tidsenhet (time:TemporalEntity)
+| er instans av | rdf:type | Klasse Tidsrom (dct:PeriodOfTime)
 | Redaksjonell kommentar | rdfs:comment |  This is a dummy asset, for demo and test only. (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Dette er en dummyressurs, kun for demo og test. (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | sluttdato | dcat:endDate |  2000-01-01
@@ -92,4 +91,4 @@ Klasse Tidsenhet (time:TemporalEntity)
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-26 15:15:18
+// End of the file, 2024-11-28 15:49:43
