@@ -23,7 +23,7 @@
 | opphav | dct:provenance |  https://w3id.org/demo-resources/dummy-documents#dmyProvStmnt1
 | språk | dct:language | http://publications.europa.eu/resource/authority/language/NOB[bokmål] + 
 http://publications.europa.eu/resource/authority/language/ENG[engelsk]
-| temaer | dcat:themeTaxonomy |  skos:ConceptScheme
+| temaer | dcat:themeTaxonomy |  http://eurovoc.europa.eu/
 | utgivelsesdato | dct:issued |  2023-07-01
 | datatjeneste | dcat:service | https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1[Dummy datatjeneste 1]
 |===
@@ -123,8 +123,7 @@ http://publications.europa.eu/resource/authority/language/ENG[engelsk]
 | prov | http://www.w3.org/ns/prov#
 | rdf | http://www.w3.org/1999/02/22-rdf-syntax-ns#
 | rdfs | http://www.w3.org/2000/01/rdf-schema#
-| skos | http://www.w3.org/2004/02/skos/core#
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2023-09-25 13:33:18
+// End of the file, 2024-11-28 09:20:23

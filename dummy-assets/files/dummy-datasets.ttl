@@ -9,7 +9,6 @@
 @prefix prov: <http://www.w3.org/ns/prov#> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
 <https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1>
@@ -31,7 +30,7 @@
    dct:provenance <https://w3id.org/demo-resources/dummy-documents#dmyProvStmnt1>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   dcat:themeTaxonomy skos:ConceptScheme;
+   dcat:themeTaxonomy <http://eurovoc.europa.eu/>;
    dct:issued "2023-07-01"^^xsd:date;
    dcat:service <https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1>;
    .
@@ -101,4 +100,4 @@
    dcat:last <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    .
  
-#### End of the file, 2023-09-25 13:33:09
+#### End of the file, 2024-11-28 09:20:17

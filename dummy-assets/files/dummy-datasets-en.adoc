@@ -23,7 +23,7 @@
 | provenance | dct:provenance |  https://w3id.org/demo-resources/dummy-documents#dmyProvStmnt1
 | language | dct:language | http://publications.europa.eu/resource/authority/language/NOB[Norwegian Bokmål] + 
 http://publications.europa.eu/resource/authority/language/ENG[English]
-| theme taxonomy | dcat:themeTaxonomy |  skos:ConceptScheme
+| theme taxonomy | dcat:themeTaxonomy |  http://eurovoc.europa.eu/
 | issued (release date) | dct:issued |  2023-07-01
 | service | dcat:service | https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1[Dummy Data service 1]
 |===
@@ -123,8 +123,7 @@ http://publications.europa.eu/resource/authority/language/ENG[English]
 | prov | http://www.w3.org/ns/prov#
 | rdf | http://www.w3.org/1999/02/22-rdf-syntax-ns#
 | rdfs | http://www.w3.org/2000/01/rdf-schema#
-| skos | http://www.w3.org/2004/02/skos/core#
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2023-09-25 13:33:21
+// End of the file, 2024-11-28 09:20:26
