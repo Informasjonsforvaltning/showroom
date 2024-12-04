@@ -2,8 +2,10 @@
 
 @prefix adms: <http://www.w3.org/ns/adms#> . 
 @prefix cpsv: <http://purl.org/vocab/cpsv#> . 
+@prefix cv: <http://data.europa.eu/m8g/> . 
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
 @prefix dcatap: <http://data.europa.eu/r5r/> . 
+@prefix dcatno: <https://data.norge.no/vocabulary/dcatno#> . 
 @prefix dct: <http://purl.org/dc/terms/> . 
 @prefix foaf: <http://xmlns.com/foaf/0.1/> . 
 @prefix prov: <http://www.w3.org/ns/prov#> . 
@@ -18,6 +20,7 @@
    dct:description """Description of Dummy Catalog 1"""@en,
        """Beskrivelse av Dummykatalog 1"""@nb;
    dct:identifier "https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1"^^xsd:anyURI;
+   dcat:contactPoint <https://w3id.org/demo-resources/dummy-contact-points#dmyCP2Org>;
    dct:title """Dummykatalog 1"""@nb,
        """Dummy Catalog 1"""@en;
    dct:publisher <https://w3id.org/demo-resources/dummy-agents#dmyOrg1>;
@@ -33,6 +36,9 @@
    dcat:themeTaxonomy <http://eurovoc.europa.eu/>;
    dct:issued "2023-07-01"^^xsd:date;
    dcat:service <https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1>;
+   dcatno:containsEvent <https://w3id.org/demo-resources/dummy-events#dmyEvent1>;
+   dcatno:containsService <https://w3id.org/demo-resources/dummy-services#dmySrvc1>;
+   cv:contactPoint <https://w3id.org/demo-resources/dummy-contact-points#dmyCP1>;
    .
  
 <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>
@@ -100,4 +106,4 @@
    dcat:last <https://w3id.org/demo-resources/dummy-datasets#dmyDataset1>;
    .
  
-#### End of the file, 2024-11-28 09:20:17
+#### End of the file, 2024-12-04 12:22:12

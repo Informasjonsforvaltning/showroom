@@ -11,6 +11,7 @@
 | beskrivelse | dct:description |  Description of Dummy Catalog 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Beskrivelse av Dummykatalog 1 (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | identifikator | dct:identifier | https://w3id.org/demo-resources/dummy-datasets#dmyCatalog1
+| kontaktpunkt | dcat:contactPoint |  https://w3id.org/demo-resources/dummy-contact-points#dmyCP2Org
 | tittel | dct:title |  Dummykatalog 1 (http://publications.europa.eu/resource/authority/language/NOB[bokmål]) + 
  Dummy Catalog 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk])
 | utgiver (org.nr.) | dct:publisher | https://w3id.org/demo-resources/dummy-agents#dmyOrg1
@@ -26,6 +27,9 @@ http://publications.europa.eu/resource/authority/language/ENG[engelsk]
 | temaer | dcat:themeTaxonomy |  http://eurovoc.europa.eu/
 | utgivelsesdato | dct:issued |  2023-07-01
 | datatjeneste | dcat:service | https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1[Dummy datatjeneste 1]
+| inneholder hendelse | dcatno:containsEvent |  https://w3id.org/demo-resources/dummy-events#dmyEvent1
+| inneholder tjeneste | dcatno:containsService |  https://w3id.org/demo-resources/dummy-services#dmySrvc1
+| kontaktpunkt | cv:contactPoint |  https://w3id.org/demo-resources/dummy-contact-points#dmyCP1
 |===
 
 == <\https://w3id.org/demo-resources/dummy-datasets#dmyDataset1> [[dmyDataset1]]
@@ -116,8 +120,10 @@ http://publications.europa.eu/resource/authority/language/ENG[engelsk]
 | Prefiks | *URI*
 | adms | http://www.w3.org/ns/adms#
 | cpsv | http://purl.org/vocab/cpsv#
+| cv | http://data.europa.eu/m8g/
 | dcat | http://www.w3.org/ns/dcat#
 | dcatap | http://data.europa.eu/r5r/
+| dcatno | https://data.norge.no/vocabulary/dcatno#
 | dct | http://purl.org/dc/terms/
 | foaf | http://xmlns.com/foaf/0.1/
 | prov | http://www.w3.org/ns/prov#
@@ -126,4 +132,4 @@ http://publications.europa.eu/resource/authority/language/ENG[engelsk]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-28 09:20:23
+// End of the file, 2024-12-04 12:22:21
