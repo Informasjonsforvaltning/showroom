@@ -13,6 +13,6 @@ ifdef::backend-pdf[:toc: macro]
 :table-stripes: even
 :xrefstyle: short
 
-Welcome to the showroom with some basic/generic dummy assets!
+Welcome to the showroom with some basic/generic dummy assets! 
 
 include::main-en-content.adoc[]

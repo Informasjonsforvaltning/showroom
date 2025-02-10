@@ -13,7 +13,7 @@ ifdef::backend-pdf[:toc: macro]
 :table-stripes: even
 :xrefstyle: short
 
-Welcome to the showroom with demo services and events, demonstrating the usage of CPSV-AP-NO! 
+Welcome to the showroom with demo services and events, demonstrating the usage of CPSV-AP-NO!
 
 _https://data.norge.no/specification/cpsv-ap-no/[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"] is the the Norwegian application profile of EU's https://github.com/SEMICeu/CPSV-AP[Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"], for describing services and events._
 
