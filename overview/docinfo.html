@@ -32,7 +32,7 @@
     $(function () {
         // Add a new container for the tocify toc into the existing toc so we can re-use its
         // styling
-        $("#toc").append("<div id='generated-toc'></div>");
+        $("#toc").append("<div id='generated-toc' tabindex="0"></div>");
         $("#generated-toc").tocify({
             extendPage: true,
             context: "#content",
