@@ -79,20 +79,10 @@
         $(window).resize(handleTocOnResize);
         handleTocOnResize();
     });
-
-    // Add focus and blur event listeners to the summary element
-    document.querySelectorAll('details summary').forEach(el => {
-        el.setAttribute('tabindex', '0'); // Make it focusable
-        el.addEventListener('focus', () => {
-            el.classList.add('focus-outline'); // Add the outline class on focus
-        });
-        el.addEventListener('blur', () => {
-            el.classList.remove('focus-outline'); // Remove the outline class on blur
-        });
-    });
 </script>
 
 <!-- 2) To make collapsible blocks outlined when focused -->
+ 
 <style>
 /* Add outline to the summary element when focused */
 details summary:focus {
@@ -101,12 +91,14 @@ details summary:focus {
 </style>
 
 <script>
-    document.querySelectorAll('.toc-link').forEach(link => {
-    link.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            link.click();
-        }
+    // Add focus and blur event listeners to the summary element
+    document.querySelectorAll('details summary').forEach(el => {
+        el.setAttribute('tabindex', '0'); // Make it focusable
+        el.addEventListener('focus', () => {
+            el.classList.add('focus-outline'); // Add the outline class on focus
+        });
+        el.addEventListener('blur', () => {
+            el.classList.remove('focus-outline'); // Remove the outline class on blur
         });
     });
 </script>
