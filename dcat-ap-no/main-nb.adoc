@@ -15,7 +15,7 @@ ifdef::backend-pdf[:toc: macro]
 
 Velkommen til utstillingsrommet med demodatasett, som demonstrerer bruken av DCAT-AP-NO!
 
-_https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av EUs https://github.com/SEMICeu/BregDCAT-AP[BRegDCAT-AP &#x29C9;, window="_blank", role="ext-link"], for beskrivelse av datasett, datatjenester og datakataloger._ 
+_https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av EUs https://semiceu.github.io/DCAT-AP/[DCAT-AP &#x29C9;, window="_blank", role="ext-link"] og W3Cs https://www.w3.org/TR/vocab-dcat-3/[DCAT &#x29C9;, window="_blank", role="ext-link"], for beskrivelse av datasett, datatjenester og datakataloger._ 
 
 #*_Resten av teksten er kun på engelsk._*#
 
