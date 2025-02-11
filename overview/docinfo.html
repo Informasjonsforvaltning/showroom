@@ -1,118 +1,124 @@
 <!-- this docinfo contains several modifications to the default asciidoc-CSS -->
 
 <!-- 1) Generate a collapsible TOC, based on DeepSeek suggestion -->
-
 <style>
-    /* Make TOC sticky and focused */
-        #toc {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 300px;
-            height: 100vh;
-            overflow-y: auto;
-            background: #f8f9fa;
-            padding: 20px;
-            border-right: 1px solid #ddd;
-            z-index: 1000;
+    /* Responsive TOC Container */
+    #toc { /*    copied from the default CSS for asciidoc */
+        margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto; 
+    }
+  
+    /* Collapsible Items */
+    #toc .sectlevel1 > li > a {
+      font-style: italic;
+      font-size:.9em;margin-bottom:0;  /* copied from asciidoc CSS */
+    }
+  
+    #toc .sectlevel1 ul {
+      display: none;
+      font-size: 90%;
+      margin-left:0;padding-left:1em; /* copied from asciidoc CSS */
+    }
+  
+    #toc .sectlevel1 li.active > ul {
+      display: block;
+    }
+  
+    /* Accessible Toggle */
+    .toggle {
+      cursor: pointer;
+      margin-right: 5px;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+  
+    .toggle:focus {
+      outline: thin dotted;
+      outline-offset: 2px;
+      color: #7a2518;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  
+    .toggle::before {
+      content: "▶";
+      font-size: 0.8em;
+    }
+  
+    li.active > .toggle::before {
+      content: "▼";
+    }
+  
+    /* Responsive Behavior */
+    @media (max-width: 768px) {
+      #toc {
+        margin: 10px;
+        padding: 15px;
+      }
+      
+      .toggle {
+        padding: 2px;
+      }
+    }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toc = document.getElementById('toc');
+  
+    // Add accessible toggle buttons
+    toc.querySelectorAll('.sectlevel1 > li').forEach((listItem) => {
+      const link = listItem.querySelector('a');
+      const sublist = listItem.querySelector('ul');
+      
+      if (sublist) {
+        const toggle = document.createElement('span');
+        toggle.className = 'toggle';
+        toggle.setAttribute('role', 'button');
+        toggle.setAttribute('tabindex', '0');
+        toggle.setAttribute('aria-label', 'Toggle section');
+        listItem.insertBefore(toggle, link);
+      }
+    });
+  
+    // Toggle function
+    function toggleSection(toggle) {
+      const listItem = toggle.parentElement;
+      listItem.classList.toggle('active');
+      const isExpanded = listItem.classList.contains('active');
+      toggle.setAttribute('aria-expanded', isExpanded);
+    }
+  
+    // Event listeners
+    toc.querySelectorAll('.toggle').forEach((toggle) => {
+      toggle.addEventListener('click', () => toggleSection(toggle));
+      toggle.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleSection(toggle);
         }
+      });
+    });
+  });
+</script>
+
+
+<!-- 2) To make collapsible blocks outlined when focused, based on DeepSeek suggestion -->
+ 
+<style>
+    /* Add outline to the summary element when focused */
+    details summary:focus {
+        outline: thin dotted; /* Adjust thickness and color as needed */
+    }
+</style>
     
-        /* Collapsible TOC items */
-        #toc .sectlevel1 > li > a {
-            font-style: italic;
-        }
-    
-        #toc .sectlevel1 ul {
-            display: none;
-            padding-left: 15px;
-        }
-    
-        #toc .sectlevel1 li.active > ul {
-            display: block;
-        }
-    
-        /* Toggle icon */
-        .toggle {
-            cursor: pointer;
-            margin-right: 5px;
-        }
-    
-        .toggle::before {
-            content: "▶";
-            font-size: 0.8em; 
-        }
-    
-        li.active > .toggle::before {
-            content: "▼";
-        }
-    
-        /* Focus styles for toggle */
-        .toggle:focus {
-            outline: thin dotted;
-            outline-offset: 2px;
-        }
-    </style>
-    
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-        const toc = document.getElementById('toc');
-    
-        // Add accessible toggle buttons
-        toc.querySelectorAll('.sectlevel1 > li > a').forEach((item) => {
-            if (item.nextElementSibling?.tagName === 'UL') {
-            const toggle = document.createElement('span');
-            toggle.className = 'toggle';
-            toggle.setAttribute('role', 'button');
-            toggle.setAttribute('tabindex', '0');
-            toggle.setAttribute('aria-label', 'Toggle section');
-            item.parentNode.insertBefore(toggle, item);
-            }
+<script>
+    // Add focus and blur event listeners to the summary element
+    document.querySelectorAll('details summary').forEach(el => {
+        el.setAttribute('tabindex', '0'); // Make it focusable
+        el.addEventListener('focus', () => {
+            el.classList.add('focus-outline'); // Add the outline class on focus
         });
-    
-        // Toggle function
-        function toggleSection(toggle) {
-            const listItem = toggle.parentElement;
-            listItem.classList.toggle('active');
-            
-            // Update ARIA state
-            const isExpanded = listItem.classList.contains('active');
-            toggle.setAttribute('aria-expanded', isExpanded);
-        }
-    
-        // Click and keyboard events
-        toc.querySelectorAll('.toggle').forEach((toggle) => {
-            // Mouse click
-            toggle.addEventListener('click', () => toggleSection(toggle));
-            
-            // Keyboard support
-            toggle.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                toggleSection(toggle);
-            }
-            });
+        el.addEventListener('blur', () => {
+            el.classList.remove('focus-outline'); // Remove the outline class on blur
         });
-        });
-    </script>
-    
-    <!-- 2) To make collapsible blocks outlined when focused, based on DeepSeek suggestion -->
-     
-    <style>
-        /* Add outline to the summary element when focused */
-        details summary:focus {
-            outline: thin dotted; /* Adjust thickness and color as needed */
-        }
-    </style>
-        
-    <script>
-        // Add focus and blur event listeners to the summary element
-        document.querySelectorAll('details summary').forEach(el => {
-            el.setAttribute('tabindex', '0'); // Make it focusable
-            el.addEventListener('focus', () => {
-                el.classList.add('focus-outline'); // Add the outline class on focus
-            });
-            el.addEventListener('blur', () => {
-                el.classList.remove('focus-outline'); // Remove the outline class on blur
-            });
-        });
-    </script>
+    });
+</script>
