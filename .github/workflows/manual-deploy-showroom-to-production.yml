@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   cpsv_files_build_upload_en:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: cpsv-files-english
@@ -29,8 +28,7 @@ jobs:
       ontology-type: "showroom"
       program: "asciidoctor -D cpsv-ap-no/files -o demo-services-events-nb.html -a lang=nb cpsv-ap-no/files/main-nb.adoc"
       files: |
-        cpsv-ap-no/files/demo-services-events.ttl text/turtle en demo-services-events/demo-services-events.ttl
-        cpsv-ap-no/files/demo-services-events-nb.html text/html en demo-services-events/demo-services-events-nb.html
+        cpsv-ap-no/files/demo-services-events-nb.html text/html nb demo-services-events/demo-services-events-nb.html
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
@@ -125,7 +123,7 @@ jobs:
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-        
+    
   demo_uris_build_upload_en:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: demo-uris-english
@@ -158,6 +156,67 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
 
+  dqv_files_build_upload_en:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dqv-files-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dqv-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dqv-ap-no/files -o demo-data-quality-assessments-en.html -a lang=en dqv-ap-no/files/main-en.adoc"
+      files: |
+        dqv-ap-no/files/demo-data-quality-assessments.ttl text/turtle en demo-data-quality-assessments/demo-data-quality-assessments.ttl
+        dqv-ap-no/files/demo-data-quality-assessments-en.html text/html en demo-data-quality-assessments/demo-data-quality-assessments-en.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
+  dqv_files_build_upload_nb:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dqv-files-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dqv-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dqv-ap-no/files -o demo-data-quality-assessments-nb.html -a lang=nb dqv-ap-no/files/main-nb.adoc"
+      files: |
+        dqv-ap-no/files/demo-data-quality-assessments-nb.html text/html nb demo-data-quality-assessments/demo-data-quality-assessments-nb.html
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+        
+  dqv_root_build_upload_en:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dqv-root-english
+    with:
+      host: "https://data.norge.no"
+      ontology: "dqv-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dqv-ap-no -o index-en.html -a lang=nb dqv-ap-no/main-en.adoc"
+      files: |
+        dqv-ap-no/index-en.html text/html en
+        dqv-ap-no/images/Digdir.png image/png en images/Digdir.png
+        dqv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
+  dqv_root_build_upload_nb:
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    name: dqv-root-bokmål
+    with:
+      host: "https://data.norge.no"
+      ontology: "dqv-ap-no"
+      ontology-type: "showroom"
+      program: "asciidoctor -D dqv-ap-no -o index-nb.html -a lang=nb dqv-ap-no/main-nb.adoc"
+      files: |
+        dqv-ap-no/index-nb.html text/html nb
+        dqv-ap-no/images/Digdir.png image/png en images/Digdir.png
+        dqv-ap-no/images/work-in-progress.png image/png en images/work-in-progress.png
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+    
   dummy_assets_files_agents_build_deploy_en:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: dummy-assets-files-agents-english
@@ -618,7 +677,7 @@ jobs:
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-  
+ 
   xkos_files_build_deploy_en:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
     name: xkos-ap-no-files-english
