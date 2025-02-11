@@ -1,3 +1,5 @@
+<!-- this docinfo contains several modifications to the default asciidoc-CSS -->
+
 <!-- 1) Generate a collapsible TOC, based on DeepSeek suggestion -->
 
 <style>
@@ -36,12 +38,12 @@
         }
     
         .toggle::before {
-            content: "▼";
-            font-size: 0.8em;
+            content: "▶";
+            font-size: 0.8em; 
         }
     
         li.active > .toggle::before {
-            content: "▲";
+            content: "▼";
         }
     
         /* Focus styles for toggle */
@@ -93,25 +95,24 @@
         });
     </script>
     
-
-<!-- 2) To make collapsible blocks outlined when focused, based on DeepSeek suggestion -->
- 
-<style>
-/* Add outline to the summary element when focused */
-details summary:focus {
-    outline: thin dotted; /* Adjust thickness and color as needed */
-}
-</style>
-
-<script>
-    // Add focus and blur event listeners to the summary element
-    document.querySelectorAll('details summary').forEach(el => {
-        el.setAttribute('tabindex', '0'); // Make it focusable
-        el.addEventListener('focus', () => {
-            el.classList.add('focus-outline'); // Add the outline class on focus
+    <!-- 2) To make collapsible blocks outlined when focused, based on DeepSeek suggestion -->
+     
+    <style>
+        /* Add outline to the summary element when focused */
+        details summary:focus {
+            outline: thin dotted; /* Adjust thickness and color as needed */
+        }
+    </style>
+        
+    <script>
+        // Add focus and blur event listeners to the summary element
+        document.querySelectorAll('details summary').forEach(el => {
+            el.setAttribute('tabindex', '0'); // Make it focusable
+            el.addEventListener('focus', () => {
+                el.classList.add('focus-outline'); // Add the outline class on focus
+            });
+            el.addEventListener('blur', () => {
+                el.classList.remove('focus-outline'); // Remove the outline class on blur
+            });
         });
-        el.addEventListener('blur', () => {
-            el.classList.remove('focus-outline'); // Remove the outline class on blur
-        });
-    });
-</script>
+    </script>
