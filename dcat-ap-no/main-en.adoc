@@ -17,4 +17,6 @@ Welcome to the showroom with demo datasets, demonstrating the usage of DCAT-AP-N
 
 _https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] is the Norwegian application profile of EU's https://semiceu.github.io/DCAT-AP/[DCAT-AP &#x29C9;, window="_blank", role="ext-link"] and W3C's https://www.w3.org/TR/vocab-dcat-3/[DCAT &#x29C9;, window="_blank", role="ext-link"], for describing datasets, data services and data catalogs._ 
 
+*Feedback*: Please provide your feedback as https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link], if any.
+
 include::main-en-content.adoc[]

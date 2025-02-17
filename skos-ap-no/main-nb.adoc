@@ -18,6 +18,8 @@ Velkommen til utstillingsrommet med demobegreper, som demonstrerer bruken av SKO
 
 _https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av W3C sin https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"], for beskrivelse og publisering av begreper og begrepssamlinger._
 
+*Tilbakemelding*: Vennligst registrer eventuelle tilbakemeldinger som https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link].
+
 #*_Resten av teksten er kun på engelsk._*#
 
 include::main-en-content.adoc[]

@@ -17,6 +17,8 @@ Velkommen til utstillingsrommet med demodatasett, som demonstrerer bruken av DCA
 
 _https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av EUs https://semiceu.github.io/DCAT-AP/[DCAT-AP &#x29C9;, window="_blank", role="ext-link"] og W3Cs https://www.w3.org/TR/vocab-dcat-3/[DCAT &#x29C9;, window="_blank", role="ext-link"], for beskrivelse av datasett, datatjenester og datakataloger._ 
 
+*Tilbakemelding*: Vennligst registrer eventuelle tilbakemeldinger som https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link].
+
 #*_Resten av teksten er kun på engelsk._*#
 
 include::main-en-content.adoc[]

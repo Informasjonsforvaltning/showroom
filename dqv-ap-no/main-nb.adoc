@@ -17,6 +17,8 @@ Velkommen til utstillingsrommet med demobeskrivelser av datasettkvalitet, som de
 
 _https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofil av https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"] fra W3C, for beskrivelse av kvalitet på datasett._ 
 
+*Tilbakemelding*: Vennligst registrer eventuelle tilbakemeldinger som https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link].
+
 #_Resten av teksten er på engelsk_#
 
 include::main-content-en.adoc[]

@@ -17,4 +17,6 @@ Welcome to the showroom with demo information models, demonstrating the usage of
 
 _https://data.norge.no/specification/modelldcat-ap-no[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] (in Norwegian only) is the Norwegian application profile of https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], for describing information models and catalogs of information models._
 
+*Feedback*: Please provide your feedback as https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link], if any.
+
 include::main-en-content.adoc[]

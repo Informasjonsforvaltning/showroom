@@ -17,6 +17,8 @@ Velkommen til utstillingsrommet med demo-tjenester og -hendelser, som demonstrer
 
 _https://data.norge.no/specification/cpsv-ap-no/[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av EUs https://github.com/SEMICeu/CPSV-AP[Core Public Service Vocabulary Application Profile (CPSV-AP) &#x29C9;, window="_blank", role="ext-link"], for beskrivelse av tjenester og hendelser._
 
+*Tilbakemelding*: Vennligst registrer eventuelle tilbakemeldinger som https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link].
+
 #*_Resten av teksten er kun på engelsk._*#
 
 

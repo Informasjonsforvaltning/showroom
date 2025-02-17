@@ -17,4 +17,6 @@ Welcome to the showroom with demo dataset quality descriptions, demonstrating th
 
 _https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"] (in Norwegian only) is the Norwegian application profile of W3C's https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"], for describing dataset quality._ 
 
+*Feedback*: Please provide your feedback as https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link], if any.
+
 include::main-content-en.adoc[]

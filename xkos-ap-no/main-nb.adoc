@@ -18,6 +18,8 @@ Velkommen til utstillingsrommet med demoklassifikasjoner, som demonstrerer bruke
 
 _https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"] er den norske applikasjonsprofilen av DDI sin https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"], for beskrivelse og publisering av klassifikasjoner, kontrollerte vokabularer, kodelister osv._ 
 
+*Tilbakemelding*: Vennligst registrer eventuelle tilbakemeldinger som https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link].
+
 #*_Resten av teksten er kun på engelsk._*#
 
 include::main-en-content.adoc[]

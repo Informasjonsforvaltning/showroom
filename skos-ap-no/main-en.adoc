@@ -18,4 +18,6 @@ Welcome to the showroom with demo concepts, demonstrating the usage of SKOS-AP-N
 
 _https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-Begrep &#x29C9;, window="_blank", role="ext-link"] is the Norwegian application profile of W3C's https://www.w3.org/2004/02/skos/[SKOS &#x29C9;, window="_blank", role="ext-link"], for describing and publishing concepts and concept collections._
 
+*Feedback*: Please provide your feedback as https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link], if any.
+
 include::main-en-content.adoc[]

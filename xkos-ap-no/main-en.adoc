@@ -18,4 +18,6 @@ Welcome to the showroom with demo classifications, demonstrating the usage of XK
 
 _https://data.norge.no/specification/xkos-ap-no[XKOS-AP-NO &#x29C9;, window="_blank", role="ext-link"] is the Norwegian application profile of DDI's https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS &#x29C9;, window="_blank", role="ext-link"], for describing and publishing classifications, controlled vocabularies, code lists etc._ 
 
+*Feedback*: Please provide your feedback as https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link], if any.
+
 include::main-en-content.adoc[]
