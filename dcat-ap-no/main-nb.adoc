@@ -19,6 +19,8 @@ _https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_bl
 
 *Tilbakemelding*: Vennligst registrer eventuelle tilbakemeldinger som https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link].
 
+*_Forbehold_*: _Demoressursene tilgjengeliggjort via de enkelte utstillingsrommene er kun ment for demo- og testingsformål._
+
 #*_Resten av teksten er kun på engelsk._*#
 
 include::main-en-content.adoc[]

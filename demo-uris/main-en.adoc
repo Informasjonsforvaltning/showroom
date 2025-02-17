@@ -20,4 +20,6 @@ _https://www.digdir.no/standarder/peikarar-til-offentlege-ressursar-pa-nett/1492
 
 *Feedback*: Please provide your feedback as https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link], if any.
 
+*_Disclaimer_*: _The demo resources made available from the various showrooms are meant for demo purposes only._ 
+
 include::main-en-content.adoc[]
