@@ -11,7 +11,7 @@ HTML-visning av RDF Turtle ressurs
 image:../images/Digdir.png[Digdir,100,100] Digitaliseringsdirektoratet
 
 NOTE: *Innmelding av feil og mangler:* +
-Dersom du finner feil eller mangler, ber vi om at dette meldes inn på https://github.com/jimjyang/showroom/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+Dersom du finner feil eller mangler, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
 include::dummy-contact-points-nb.adoc[]
