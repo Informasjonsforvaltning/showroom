@@ -40,7 +40,7 @@ http://publications.europa.eu/resource/authority/language/NOB[bokmål]
 | beskrivelse | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | har kompetent organ | cv:hasCompetentAuthority | https://w3id.org/demo-resources/demo-services-events#demoPubOrg1[Demo offentlig organisasjon 1]
-| has possible output | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demo mulig tjenesteresultat 1]
+| har mulig tjenesteresultat | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demo mulig tjenesteresultat 1]
 | identifikator | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoPubService1
 | kontaktpunkt | cv:contactPoint | https://w3id.org/demo-resources/demo-services-events#demoContactPoint1
 | navn | dct:title |  Demo Public Service 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
@@ -60,7 +60,7 @@ http://publications.europa.eu/resource/authority/language/NOB[bokmål]
 | er tilgjengelig via | cv:hasChannel | https://w3id.org/demo-resources/demo-services-events#demoChannel
 | følger regel | cpsv:follows | https://w3id.org/demo-resources/demo-services-events#demoRule1[Demoregel 1]
 | har del | dct:hasPart | https://w3id.org/demo-resources/demo-services-events#demoService1[Demotjeneste 1]
-| har deltagende | cv:hasParticipation | https://w3id.org/demo-resources/demo-services-events#demoParticipation1 + 
+| har deltageelse | cv:hasParticipation | https://w3id.org/demo-resources/demo-services-events#demoParticipation1 + 
 https://w3id.org/demo-resources/demo-services-events#demoParticipation2
 | har dokumentasjonstype | cv:hasInputType | https://w3id.org/demo-resources/demo-services-events#demoEvidenceType1
 | har gebyr | cv:hasCost | https://w3id.org/demo-resources/demo-services-events#demoCost1
@@ -86,7 +86,7 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | beskrivelse | dct:description |  For demo and testing only (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Kun for demo og testing (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
 | eies av | cv:ownedBy |  https://w3id.org/demo-resources/dummy-agents#dmyOrg1
-| has possible output | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demo mulig tjenesteresultat 1]
+| har mulig tjenesteresultat | cpsvno:hasPossibleOutput | https://w3id.org/demo-resources/demo-services-events#demoPossibleOutput1[Demo mulig tjenesteresultat 1]
 | identifikator | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoService1
 | kontaktpunkt | cv:contactPoint | https://w3id.org/demo-resources/demo-services-events#demoContactPoint1
 | navn | dct:title |  Demo Service 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
@@ -104,7 +104,7 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | er klassifisert under | cv:isClassifiedBy |  https://w3id.org/demo-resources/demo-concepts#demoCpt1
 | er tilgjengelig via | cv:hasChannel | https://w3id.org/demo-resources/demo-services-events#demoChannel
 | følger regel | cpsv:follows | https://w3id.org/demo-resources/demo-services-events#demoRule1[Demoregel 1]
-| har deltagende | cv:hasParticipation | https://w3id.org/demo-resources/demo-services-events#demoParticipation1 + 
+| har deltagelse | cv:hasParticipation | https://w3id.org/demo-resources/demo-services-events#demoParticipation1 + 
 https://w3id.org/demo-resources/demo-services-events#demoParticipation2
 | har dokumentasjonstype | cv:hasInputType | https://w3id.org/demo-resources/demo-services-events#demoEvidenceType1
 | har gebyr | cv:hasCost | https://w3id.org/demo-resources/demo-services-events#demoCost1
@@ -383,7 +383,7 @@ http://publications.europa.eu/resource/authority/language/ENG[engelsk]
 | er instans av | rdf:type | Klasse Organisasjon (org:Organization)
 | foretrukket navn | skos:prefLabel |  Demo Organization 1 (http://publications.europa.eu/resource/authority/language/ENG[engelsk]) + 
  Demoorganisasjon 1 (http://publications.europa.eu/resource/authority/language/NOB[bokmål])
-| identifikator | dct:identifier | https://w3id.org/demo-resources/dummy-agents#dmyOrg1
+| identifikator | dct:identifier | https://w3id.org/demo-resources/demo-services-events#demoOrg1
 | dekningsområde | dct:spatial |  http://publications.europa.eu/resource/authority/country/NOR
 | type | dct:type |  http://purl.org/adms/publishertype/NationalAuthority
 | adresse | locn:address | https://w3id.org/demo-resources/demo-services-events#demoAdr2
@@ -609,4 +609,4 @@ http://publications.europa.eu/resource/authority/language/NNO[nynorsk]
 | xsd | http://www.w3.org/2001/XMLSchema#
 |===
 
-// End of the file, 2024-11-28 15:54:50
+// End of the file, 2025-06-16 10:52:01

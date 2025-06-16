@@ -319,7 +319,7 @@
    rdf:type org:Organization;
    skos:prefLabel """Demo Organization 1"""@en,
        """Demoorganisasjon 1"""@nb;
-   dct:identifier "https://w3id.org/demo-resources/dummy-agents#dmyOrg1"^^xsd:anyURI;
+   dct:identifier "https://w3id.org/demo-resources/demo-services-events#demoOrg1"^^xsd:anyURI;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
    dct:type <http://purl.org/adms/publishertype/NationalAuthority>;
    locn:address <https://w3id.org/demo-resources/demo-services-events#demoAdr2>;
@@ -471,4 +471,4 @@
    cv:establishedUnder <https://w3id.org/demo-resources/demo-services-events#demoLegalResource1>;
    .
  
-#### End of the file, 2024-11-28 15:54:43
+#### End of the file, 2025-06-16 10:51:54
