@@ -11,6 +11,6 @@ HTML-view of RDF Turtle resource
 image:../images/Digdir.png[Digdir,100,100] Norwegian Digitalisation Agency
 
 NOTE: *Feedback:* +
-Please use https://github.com/jimjyang/showroom/issues[Github Issues] to give us your feedback, if any.
+Please use https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link] to give us your feedback, if any.
 
 include::dummy-documents-en.adoc[]
