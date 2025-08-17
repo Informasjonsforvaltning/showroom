@@ -33,7 +33,7 @@ jobs:
       xkos: ${{ steps.filter.outputs.xkos }}
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
     - name: Filter
       uses: dorny/paths-filter@v3
       id: filter
