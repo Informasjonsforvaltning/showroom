@@ -12,7 +12,7 @@ ifdef::backend-pdf[:toc: macro]
 :table-stripes: even
 :xrefstyle: short
  
-*Velkommen* til utstillingsrommene til https://digdir.no[Digitraliseringsdirektoratet (Digdir) &#x29C9;, window="_blank", role="ext-link"], med RDF-baserte maskinlesbare demoressurser!
+*Velkommen* til utstillingsrommene til https://digdir.no[Digitaliseringsdirektoratet (Digdir) &#x29C9;, window="_blank", role="ext-link"], med RDF-baserte maskinlesbare demoressurser!
 
 *Tilbakemelding*: Vennligst registrer eventuelle tilbakemeldinger som https://github.com/Informasjonsforvaltning/showroom/issues[Github Issues &#x29C9;, window="_blank", role="ext-link].
 
