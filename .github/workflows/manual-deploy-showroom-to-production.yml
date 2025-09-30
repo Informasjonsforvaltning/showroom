@@ -3,6 +3,10 @@ name: Manually build adocs and deploy showroom to data.norge.no
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  actions: read
+
 jobs:
   cpsv_files_build_upload_en:
     uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
