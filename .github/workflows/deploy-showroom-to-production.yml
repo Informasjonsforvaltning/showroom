@@ -18,12 +18,15 @@ on:
       - skos-ap-no/**
       - xkos-ap-no/**
 
+permissions:
+  contents: read
+  actions: read
+  pull-requests: read
+
 jobs:
   filter_path:
     name: Setup path filter
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: read
     outputs:
       cpsv: ${{ steps.filter.outputs.cpsv }}
       dcat: ${{ steps.filter.outputs.dcat }}
@@ -38,7 +41,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
     - name: Filter
-      uses: dorny/paths-filter@v3
+      uses: dorny/paths-filter@v4
       id: filter
       with:
         ref:
