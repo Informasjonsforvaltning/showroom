@@ -1,5 +1,8 @@
 name: Build dummy-assets adocs and deploy to data.norge.no
 
+permissions:
+  contents: read
+
 on:
    push:
      branches:
@@ -14,122 +17,122 @@ jobs:
   
       steps:
         - name: Checkout code
-          uses: actions/checkout@v5
+          uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
           with:
             ref: main
   
         - name: dummy-agents-files-en
           id: adocbuild-dummy-agents-files-en
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-agents-en.html -a lang=en dummy-assets/files/dummy-agents-main-en.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-agents-en.html -a lang=en dummy-assets/files/dummy-agents-main-en.adoc"
 
         - name: dummy-agents-files-nb
           id: adocbuild-dummy-agents-files-nb
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-             program: "asciidoctor -D dummy-assets/files -o dummy-agents-nb.html -a lang=nb dummy-assets/files/dummy-agents-main-nb.adoc"
+             shellcommand: "asciidoctor -D dummy-assets/files -o dummy-agents-nb.html -a lang=nb dummy-assets/files/dummy-agents-main-nb.adoc"
 
         - name: dummy-contact-points-files-en
           id: adocbuild-dummy-contact-points-files-en
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-contact-points-en.html -a lang=en dummy-assets/files/dummy-contact-points-main-en.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-contact-points-en.html -a lang=en dummy-assets/files/dummy-contact-points-main-en.adoc"
 
         - name: dummy-contact-points-files-nb
           id: adocbuild-dummy-contact-points-files-nb
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-contact-points-nb.html -a lang=nb dummy-assets/files/dummy-contact-points-main-nb.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-contact-points-nb.html -a lang=nb dummy-assets/files/dummy-contact-points-main-nb.adoc"
 
         - name: dummy-datasets-files-en
           id: adocbuild-dummy-datasets-files-en
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-datasets-en.html -a lang=en dummy-assets/files/dummy-datasets-main-en.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-datasets-en.html -a lang=en dummy-assets/files/dummy-datasets-main-en.adoc"
 
         - name: dummy-datasets-files-nb
           id: adocbuild-dummy-datasets-files-nb
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-datasets-nb.html -a lang=nb dummy-assets/files/dummy-datasets-main-nb.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-datasets-nb.html -a lang=nb dummy-assets/files/dummy-datasets-main-nb.adoc"
 
         - name: dummy-documents-files-en
           id: adocbuild-dummy-documents-files-en
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-documents-en.html -a lang=en dummy-assets/files/dummy-documents-main-en.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-documents-en.html -a lang=en dummy-assets/files/dummy-documents-main-en.adoc"
 
         - name: dummy-documents-files-nb
           id: adocbuild-dummy-documents-files-nb
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-documents-nb.html -a lang=nb dummy-assets/files/dummy-documents-main-nb.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-documents-nb.html -a lang=nb dummy-assets/files/dummy-documents-main-nb.adoc"
   
         - name: dummy-events-files-en
           id: adocbuild-dummy-events-files-en
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-events-en.html -a lang=en dummy-assets/files/dummy-events-main-en.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-events-en.html -a lang=en dummy-assets/files/dummy-events-main-en.adoc"
 
         - name: dummy-events-files-nb
           id: adocbuild-dummy-events-files-nb
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-events-nb.html -a lang=nb dummy-assets/files/dummy-events-main-nb.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-events-nb.html -a lang=nb dummy-assets/files/dummy-events-main-nb.adoc"
   
         - name: dummy-evidences-files-en
           id: adocbuild-dummy-evidences-files-en
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-evidences-en.html -a lang=en dummy-assets/files/dummy-evidences-main-en.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-evidences-en.html -a lang=en dummy-assets/files/dummy-evidences-main-en.adoc"
 
         - name: dummy-evidences-files-nb
           id: adocbuild-dummy-evidences-files-nb
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-evidences-nb.html -a lang=nb dummy-assets/files/dummy-evidences-main-nb.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-evidences-nb.html -a lang=nb dummy-assets/files/dummy-evidences-main-nb.adoc"
    
         - name: dummy-locations-files-en
           id: adocbuild-dummy-locations-files-en
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-locations-en.html -a lang=en dummy-assets/files/dummy-locations-main-en.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-locations-en.html -a lang=en dummy-assets/files/dummy-locations-main-en.adoc"
 
         - name: dummy-locations-files-nb
           id: adocbuild-dummy-locations-files-nb
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-locations-nb.html -a lang=nb dummy-assets/files/dummy-locations-main-nb.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-locations-nb.html -a lang=nb dummy-assets/files/dummy-locations-main-nb.adoc"
    
         - name: dummy-services-files-en
           id: adocbuild-dummy-services-files-en
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-services-en.html -a lang=en dummy-assets/files/dummy-services-main-en.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-services-en.html -a lang=en dummy-assets/files/dummy-services-main-en.adoc"
 
         - name: dummy-services-files-nb
           id: adocbuild-dummy-services-files-nb
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-services-nb.html -a lang=nb dummy-assets/files/dummy-services-main-nb.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-services-nb.html -a lang=nb dummy-assets/files/dummy-services-main-nb.adoc"
    
         - name: dummy-times-files-en
           id: adocbuild-dummy-times-files-en
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-times-en.html -a lang=en dummy-assets/files/dummy-times-main-en.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-times-en.html -a lang=en dummy-assets/files/dummy-times-main-en.adoc"
 
         - name: dummy-times-files-nb
           id: adocbuild-dummy-times-files-nb
-          uses: tonynv/asciidoctor-action@master
+          uses: Analog-inc/asciidoctor-action@master
           with:
-            program: "asciidoctor -D dummy-assets/files -o dummy-times-nb.html -a lang=nb dummy-assets/files/dummy-times-main-nb.adoc"
+            shellcommand: "asciidoctor -D dummy-assets/files -o dummy-times-nb.html -a lang=nb dummy-assets/files/dummy-times-main-nb.adoc"
    
         
             
         - name: Upload dummy-assets-files to static-rdf-server
-          uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+          uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@84beeeacd364f310ef6a253bc079354cdf62e5dd
           id: upload-dummy-agents
           with:
              ontology-type: "showroom"
