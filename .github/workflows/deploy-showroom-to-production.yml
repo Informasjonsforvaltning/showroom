@@ -18,11 +18,6 @@ on:
       - skos-ap-no/**
       - xkos-ap-no/**
 
-permissions:
-  contents: read
-  actions: read
-  pull-requests: read
-
 jobs:
   filter_path:
     name: Setup path filter

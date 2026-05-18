@@ -10,10 +10,6 @@ on:
      paths:
        - cpsv-ap-no/**
 
-permissions:
-  contents: read
-  actions: read
-
 jobs:
    adoc_build:
       runs-on: ubuntu-latest
